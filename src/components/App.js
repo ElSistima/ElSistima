@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
+import '../styles/global-style.css';
 import {Route, Switch} from 'react-router-dom';
+import Header from './Header';
 import Home from './Home';
 import Calendar from './Calendar';
 import About from './About';
@@ -14,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <main>
-        <h1>APP COMPONENT</h1>
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/calendar" component={Calendar} />
