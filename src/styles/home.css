@@ -1,0 +1,289 @@
+.homeBanner {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 27.5vh;
+  background-image: url('./../images/elsistema.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quoteContainer {
+  position: absolute;
+  height: 100%;
+  width: 47.5%;
+  background-color: rgba(74,95,107,0.85);
+}
+
+.socialIconsQuote {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.socialIconsQuote a {
+  text-decoration: none;
+}
+
+.socialCircleQuote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #ECC749;
+  margin-right: 1em;
+  margin-top: .5em;
+}
+
+blockquote {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+.quote {
+  color: white;
+  font-weight: 300;
+  font-size: .65em;
+  line-height: 1.5em;
+}
+
+.quoteAttribute {
+  width: 100%;
+  height: auto;
+  color: white;
+  padding-top: .75em;
+  text-align: right;
+}
+
+.author {
+  font-size: .65em;
+  font-weight: 700;
+  padding-bottom: .5em;
+}
+
+.authorTitle {
+  font-size: .5em;
+  font-weight: 300;
+}
+
+.upcomingEvents {
+  width: 100%;
+  min-height: 30vh;
+}
+
+.eventsContainer {
+  min-height: 30vh;
+  width: 90%;
+  margin: 0 auto;
+  /*background-color: pink;*/
+}
+
+.eventsHeaderContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 10vh;
+}
+
+.eventsHeader {
+  font-size: 1.25em;
+  color: rgb(74,95,107);
+}
+
+.seeMoreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5em;
+  width: 4.75em;
+  margin-left: .5em;
+  background-color: #ECC749;
+}
+
+.seeMoreButtonText {
+  color: white;
+}
+
+.linkedButton {
+  text-decoration: none;
+}
+
+.eventsPreviewsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-height: 40vh;
+}
+
+.eventPreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vh;
+  min-height: 35vh;
+  padding-bottom: 2em;
+}
+
+.eventImg {
+  width: 35vh;
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.previewOne {
+  background-image: url('./../images/pitt-violin.jpg');
+}
+
+.previewTwo {
+  background-image: url('./../images/pitt-carnival-showcase.jpg');
+}
+
+.previewThree {
+  background-image: url('./../images/family-night-performance.jpeg');
+}
+
+.eventDate {
+  font-size: 1em;
+  font-weight: 700;
+  color: rgb(74,95,107);
+  margin: .6em 0 .35em 0;
+}
+
+.eventName {
+  font-size: .75em;
+  color: rgb(74,95,107);
+}
+
+.orgMission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 32.5vh;
+  background-color: rgb(74,95,107);
+}
+
+.orgMissionImgContainer {
+  position: relative;
+  width: 90%;
+  min-height: 20vh;
+  background-image: url('./../images/pitt-trombone.jpg');
+  background-size: cover;
+}
+
+.floatingMissionDiv {
+  position: absolute;
+  width: 65%;
+  min-height: 8vh;
+  background-color: #6D8A9A;
+  top: -25px;
+  right: -10px;
+}
+
+.floatingMissionText {
+  color: white;
+  font-size: .6em;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.15em;
+}
+
+.orgCoreValues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40vh;
+  background: white;
+}
+
+.coreValuesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 225vh;
+  background-color: plum;
+}
+
+.coreValuesTop, .coreValuesBottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 7%;
+  min-height: 108vh;
+  width: 100%;
+  background-color: lime;
+}
+
+.coreValuesImgDiv {
+  position: relative;
+  min-height: 24vh;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url('./../images/pitt-cello.jpeg');
+  background-size: cover;
+}
+
+.coreValuesTextOne {
+  position: absolute;
+  min-height: 24vh;
+  width: 70%;
+  bottom: -28vh;
+  left: -1vh;
+  padding: 1em;
+  background-color: white;
+  border: 2px solid rgb(74,95,107);
+}
+
+.valuesTextBlock {
+  font-size: .75em;
+  line-height: 1.15em;
+  color: rgb(74,95,107);
+}
+
+.coreValuesButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7em;
+  height: 2em;
+  margin: 0 auto;
+  margin-top: 1em;
+  border: 1px solid #ECC749;
+}
+
+.supportUsButtonText {
+  font-size: 1em;
+  color: #ECC749;
+}
+
+.coreValuesTextTwo {
+  width: 100%;
+  min-height: 40vh;
+  background-color: white;
+  border: 2px solid #5289A9;
+  margin: 25vh auto 0 auto;
+  padding-bottom: 1em;
+}
+
+.textBlockTwo {
+  color: #5289A9;
+  padding: 1.25em 1em;
+}
+
+.textBlockTwoHeader {
+  font-size: 2em;
+  line-height: 1.4em;
+}
+
+.textBlockTwoText {
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
