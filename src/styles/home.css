@@ -222,7 +222,7 @@ blockquote {
   background-color: lime;
 }
 
-.coreValuesImgDiv {
+.coreValuesImgDivOne {
   position: relative;
   min-height: 24vh;
   width: 90%;
@@ -262,6 +262,15 @@ blockquote {
 .supportUsButtonText {
   font-size: 1em;
   color: #ECC749;
+}
+
+.coreValuesImgDivTwo {
+  position: relative;
+  min-height: 24vh;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url('./../images/conduct.jpg');
+  background-size: cover;
 }
 
 .coreValuesTextTwo {
@@ -363,4 +372,58 @@ blockquote {
     text-align: center;
     line-height: 1.45em;
   }
+
+  .orgMission {
+    min-height: 29vh;
+  }
+
+  .floatingMissionText {
+    font-size: .9em;
+    letter-spacing: 0.05em;
+    line-height: 1.25em;
+    padding-top: .7em;
+  }
+
+  .coreValuesTop, .coreValuesBottom {
+    padding-top: 7%;
+    min-height: 98vh;
+    background-color: lime;
+  }
+
+  .coreValuesTextOne {
+    min-height: 14vh;
+    bottom: -18vh;
+    left: -1vh;
+
+  }
+
+  .valuesTextBlock {
+    font-size: 1em;
+  }
+
+  .coreValuesTextTwo {
+    width: 100%;
+    min-height: 40vh;
+    background-color: white;
+    border: 2px solid #5289A9;
+    margin: 25vh auto 0 auto;
+    padding-bottom: 1em;
+  }
+
+  .textBlockTwo {
+    color: #5289A9;
+    padding: 1.25em 1em;
+  }
+
+  .textBlockTwoHeader {
+    font-size: 2em;
+    line-height: 1.4em;
+  }
+
+  .textBlockTwoText {
+    font-size: 1.25em;
+    line-height: 1.2em;
+  }
+
+
 }
