@@ -153,6 +153,29 @@ app.get('/api/volunteers', userController.getVolunteers)
 app.get('/api/quote', userController.getQuote)
 app.get('/api/performances', userController.getPerformances)
 
+//===============POST REQUESTS===================
+app.post('/api/events')
+app.post('/api/volunteers')
+app.post('/api/quote')
+app.post('/api/newimage')
+app.post('/api/post')
+
+
+//===============PUT REQUESTS===================
+app.put('/api/events/:eventid')
+app.put('/api/volunteers/:volunteerid')
+// app.put('/api/volunteers/profilePic/:volunteerid')
+app.put('/api/users/:userid')
+// app.put('/api/users/profilePic/:userid')
+app.put('/api/posts/:postid')
+
+//===============DELETE REQUESTS===================
+app.delete('/api/posts/:postid')
+app.delete('/api/volunteers/:volunteerid')
+// app.delete('/api/images/:imageid')
+app.delete('/api/events/eventid')
+
+
 
 
 // const path = require('path')
