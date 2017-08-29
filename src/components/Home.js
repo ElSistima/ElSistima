@@ -84,8 +84,11 @@ export default function Home (props) {
             <div className="coreValuesImgDivOne">
               <div className="coreValuesTextOne">
                 <p className="valuesTextBlock">El Sistema Pittsburgh is grateful for our family of supporters. Partnerships with individual donors, corporations, government agencies, and foundations ensure that music education programs are available to young musicians in every neighborhood, regardless of socio-economic circumstance. Every dollar dontated to ESPGH helps change {"kids'"} lives through music.</p>
-                <div className="coreValuesButton"><p className="supportUsButtonText">Support Us</p>
-                </div>
+                <Link to="/support" className="linkedButton">
+                  <div className="coreValuesButton">
+                  <p className="supportUsButtonText">Support Us</p>
+                  </div>
+                </Link>
               </div>
             </div>
 
@@ -104,20 +107,26 @@ export default function Home (props) {
 
           <div className="coreValuesBottom">
           <div className="coreValuesImgDivTwo">
+
             <div className="coreValuesTextOne">
               <p className="valuesTextBlock">El Sistema Pittsburgh is grateful for our family of supporters. Partnerships with individual donors, corporations, government agencies, and foundations ensure that music education programs are available to young musicians in every neighborhood, regardless of socio-economic circumstance. Every dollar dontated to ESPGH helps change {"kids'"} lives through music.</p>
               <div className="coreValuesButton"><p className="supportUsButtonText">Support Us</p>
               </div>
+
             </div>
           </div>
 
-          <div className="coreValuesTextTwo">
-            <div className="valuesTextBlock textBlockTwo">
-              <p className="textBlockTwoHeader">Vision</p>
-              <p className="textBlockTwoText">for the future</p>
+          <div className="coreValuesTextFour">
+            <div className="valuesTextBlock textBlockFour">
+              <p className="textBlockFourHeader">Registration</p>
+              <p className="textBlockTwoText">Registration is open!</p>
               <br />
-              <p className="textBlockTwoText">
-                Over time, El Sistema Pittsburgh will create a network of El Sistema-inspired nucleos, or community locations, throughout the city and the region. Each will have a unique, community-based approach to realizing core values at the heart of our mission. Every child in ESPGH will be treated as a "key player." The orchestra will grow as a tight-knit community devoted to cultivating responsible citizens within and beyond the orchestra.
+              <p className="textBlockFourText">
+                To sign up for El {"Sistema's"} after-school program, registration forms are available for pickup at the Pittsburgh Public Schools.
+              </p>
+              <br />
+              <p className="textBlockFourText">
+                For all students outside of the school district, they are able to join with a tuition cost.
               </p>
             </div>
           </div>
