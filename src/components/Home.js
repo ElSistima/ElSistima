@@ -81,11 +81,14 @@ export default function Home (props) {
       <section className="orgCoreValues">
         <div className="coreValuesContainer">
           <div className="coreValuesTop">
-            <div className="coreValuesImgDiv">
+            <div className="coreValuesImgDivOne">
               <div className="coreValuesTextOne">
                 <p className="valuesTextBlock">El Sistema Pittsburgh is grateful for our family of supporters. Partnerships with individual donors, corporations, government agencies, and foundations ensure that music education programs are available to young musicians in every neighborhood, regardless of socio-economic circumstance. Every dollar dontated to ESPGH helps change {"kids'"} lives through music.</p>
-                <div className="coreValuesButton"><p className="supportUsButtonText">Support Us</p>
-                </div>
+                <Link to="/support" className="linkedButton">
+                  <div className="coreValuesButton">
+                  <p className="supportUsButtonText">Support Us</p>
+                  </div>
+                </Link>
               </div>
             </div>
 
@@ -103,7 +106,45 @@ export default function Home (props) {
           </div>
 
           <div className="coreValuesBottom">
-            <p>TEXT HERE</p>
+          <div className="coreValuesImgDivTwo">
+            <div className="coreValuesTextThree">
+            <p className="textBlockThreeHeader">El Sistema Core Values</p>
+              <ul className="valuesTextBlock">
+                <div className="valuesItem">
+                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Music education as social change</p>
+                </div>
+                <div className="valuesItem">
+                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Accessibility</p>
+                </div>
+                <div className="valuesItem">
+                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">High standards of musical excellence</p>
+                </div>
+                <div className="valuesItem">
+                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Community</p>
+                </div>
+              </ul>
+              <Link to="/about" className="linkedButton">
+                <div className="coreValuesButton"><p className="supportUsButtonText">Read More</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <div className="coreValuesTextFour">
+            <div className="valuesTextBlock textBlockFour">
+              <p className="textBlockFourHeader">Registration</p>
+              <p className="textBlockTwoText">Registration is open!</p>
+              <br />
+              <p className="textBlockFourText">
+                To sign up for El {"Sistema's"} after-school program, registration forms are available for pickup at the Pittsburgh Public Schools.
+              </p>
+              <br />
+              <p className="textBlockFourText">
+                For all students outside of the school district, they are able to join with a tuition cost.
+              </p>
+            </div>
+          </div>
+
           </div>
         </div>
       </section>
