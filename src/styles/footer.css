@@ -94,6 +94,11 @@
   display: none;
 }
 
+.authLogin {
+  text-decoration: none;
+  color: white;
+}
+
 @media(min-width: 700px){
 
   .topFooterDiviPhone {
@@ -106,7 +111,7 @@
 
   .sectionsContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .topFooterDivTabDesk{
@@ -151,7 +156,7 @@
 
   .signUpButton {
     text-align: center;
-    width: 7em;
+    width: 5em;
     height: 1.5em;
     margin-top: .5em;
     border: 1px solid #ECC749;
@@ -195,6 +200,12 @@
   .footerNavigation {
     display: none;
   }
+
+  .authLogin {
+    line-height: 3em;
+    width: 8em;
+    text-align: center;
+  }
 }
 
 @media(min-width: 1000px){
@@ -210,7 +221,6 @@
     width: 100%;
     min-height: 20vh;
     display: flex;
-    justify-content: space-between;
   }
 
   .stayConnectedTabDesk{
@@ -223,15 +233,19 @@
     color: white;
   }
 
+  .signUpButton {
+    width: 7em;
+  }
+
   .committedToPitt {
-    width: 40%;
+    width: 30%;
   }
 
   .footerNavigation {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 25%;
+    width: 20%;
   }
 
   .footerNavigation a {

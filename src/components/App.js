@@ -9,6 +9,7 @@ import About from './About';
 import Media from './Media';
 import PublicBlog from './PublicBlog';
 import Support from './Support';
+import AdminPortal from './AdminPortal';
 
 
 class App extends Component {
