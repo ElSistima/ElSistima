@@ -1,0 +1,276 @@
+.footer {
+  width: 100%;
+  min-height: 20vh;
+  background-color: #4A4A4A;
+}
+.sectionsContainer {
+  display: none;
+}
+
+.topFooterDivTabDesk{
+  display: none;
+}
+
+.topFooterDiviPhone{
+  width: 100%;
+  height: 13vh;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+}
+
+.stayConnectediPhone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: .5em 0;
+}
+
+.stayConnectedTabDesk{
+  display: none;
+}
+
+.stayConnectediPhone p:nth-child(1) {
+  font-size: 10px;
+  padding: 6px 0px;
+  color: white;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.socialIcons a {
+  text-decoration: none;
+}
+
+.socialCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #ECC749;
+  margin-right: 1em;
+  margin-top: .5em;
+}
+
+.fa-facebook {
+  color: #4A4A4A;
+}
+
+.fa-twitter {
+  color: #4A4A4A;
+}
+
+.fa-linkedin {
+  color: #4A4A4A;
+}
+
+.bottomFooterDiv {
+  width: 100%;
+  height: 7vh;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.bottomFooterDiv p:nth-child(1) {
+  font-size: 8px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.bottomFooterDiv p:nth-child(2) {
+  font-size: 8px;
+  color: white;
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+
+.footerNavigation {
+  display: none;
+}
+
+@media(min-width: 700px){
+
+  .topFooterDiviPhone {
+    display: none;
+  }
+
+  .footer {
+    min-height: 36vh;
+  }
+
+  .sectionsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topFooterDivTabDesk{
+    display: flex;
+    justify-content: space-between;
+    min-height: 24vh;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 16px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+  }
+
+  .stayConnectediPhone {
+    display: none;
+  }
+
+  .stayConnectedTabDesk{
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    height: 100%;
+    color: white;
+    line-height: 1.15em;
+    letter-spacing: 0.025em;
+  }
+
+  .signUpForTexts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: .5em;
+    margin-bottom: 1em;
+  }
+
+  .textInput {
+    width: 60%;
+    height: 2em;
+    margin: 1em 0 .25em 0;
+  }
+
+  .signUpButton {
+    text-align: center;
+    width: 7em;
+    height: 1.5em;
+    margin-top: .5em;
+    border: 1px solid #ECC749;
+  }
+
+  .signUpButton p {
+    line-height: 100%;
+    font-size: 14px;
+    padding: 4px 0px;
+    color: #ECC749;
+  }
+
+  .stayConnectedTabDesk h3, .committedToPitt h3 {
+    font-size: 14px;
+    padding: 6px 0px;
+  }
+
+  .committedToPitt {
+    width: 56%;
+    height: 100%;
+    color: white;
+    line-height: 1.15em;
+    letter-spacing: 0.025em;
+  }
+
+  .bottomFooterDiv {
+    height: 8vh;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  .bottomFooterDiv p:nth-child(1) {
+    font-size: 16px;
+    margin-bottom: 1.5em;
+  }
+
+  .bottomFooterDiv p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .footerNavigation {
+    display: none;
+  }
+}
+
+@media(min-width: 1000px){
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 28vh;
+  }
+
+  .sectionsContainer{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stayConnectedTabDesk{
+    width: 25%;
+  }
+
+  .stayConnectedTabDesk h3, .committedToPitt h3, .footerNavigation h3 {
+    font-size: 18px;
+    padding: 6px 0px;
+    color: white;
+  }
+
+  .committedToPitt {
+    width: 40%;
+  }
+
+  .footerNavigation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+  }
+
+  .footerNavigation a {
+    color: #ECC749;
+    text-decoration: none;
+  }
+
+  .footerNavLinks p{
+    margin: .5em 0;
+  }
+
+  .fa-caret-right {
+    color: #5392B6;
+  }
+
+  .contactUsButton {
+    width: 7em;
+  }
+
+  .contactUsButton p{
+    padding: 6px 4px;
+  }
+
+  .bottomFooterDiv {
+    min-height: 20%;
+    text-align: center;
+  }
+
+  .bottomContents {
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .bottomFooterDiv p:nth-child(1) {
+    font-size: .8em;
+    margin-bottom: .75em;
+  }
+
+  .bottomFooterDiv p:nth-child(2) {
+    font-size: 14px;
+  }
+}
