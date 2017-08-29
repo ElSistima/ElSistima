@@ -208,16 +208,16 @@ blockquote {
   flex-direction: column;
   justify-content: space-between;
   width: 90%;
-  min-height: 125vh;
+  min-height: 225vh;
   background-color: plum;
 }
 
 .coreValuesTop, .coreValuesBottom {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 7%;
-  min-height: 57vh;
+  min-height: 108vh;
   width: 100%;
   background-color: lime;
 }
@@ -262,4 +262,28 @@ blockquote {
 .supportUsButtonText {
   font-size: 1em;
   color: #ECC749;
+}
+
+.coreValuesTextTwo {
+  width: 100%;
+  min-height: 40vh;
+  background-color: white;
+  border: 2px solid #5289A9;
+  margin: 25vh auto 0 auto;
+  padding-bottom: 1em;
+}
+
+.textBlockTwo {
+  color: #5289A9;
+  padding: 1.25em 1em;
+}
+
+.textBlockTwoHeader {
+  font-size: 2em;
+  line-height: 1.4em;
+}
+
+.textBlockTwoText {
+  font-size: 1.25em;
+  line-height: 1.2em;
 }
