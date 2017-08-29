@@ -69,3 +69,84 @@ blockquote {
   font-size: .5em;
   font-weight: 300;
 }
+
+.upcomingEvents {
+  width: 100%;
+  min-height: 30vh;
+}
+
+.eventsContainer {
+  min-height: 30vh;
+  width: 90%;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+.eventsHeaderContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 10vh;
+  background-color: plum;
+}
+
+.eventsHeader {
+  font-size: 1.25em;
+  color: rgb(74,95,107);
+}
+
+.seeMoreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5em;
+  width: 4.75em;
+  margin-left: .5em;
+  background-color: #ECC749;
+}
+
+.seeMoreButtonText {
+  color: white;
+}
+
+.linkedButton {
+  text-decoration: none;
+}
+
+.eventsPreviewsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-height: 40vh;
+  background-color: yellow;
+}
+
+.eventPreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vh;
+  min-height: 35vh;
+  padding-bottom: 1.5em;
+  background-color: tan;
+}
+
+.eventImg {
+  width: 35vh;
+  height: 35vh;
+  background-image: url('./../images/pitt-violin.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.eventDate {
+  font-size: 1em;
+  color: rgb(74,95,107);
+  margin: .35em 0;
+}
+
+.eventName {
+  font-size: .75em;
+  color: rgb(74,95,107);
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './../styles/mainContent.css';
 import './../styles/home.css';
+import {Link} from 'react-router-dom';
 
 export default function Home (props) {
   return (
@@ -28,6 +29,28 @@ export default function Home (props) {
               <p className="authorTitle">Founder of {"Venezuela's"} El Sistema</p>
             </div>
           </blockquote>
+        </div>
+      </section>
+
+      <section className="upcomingEvents">
+        <div className="eventsContainer">
+          <div className="eventsHeaderContainer"><p className="eventsHeader">Upcoming Events  |  </p>
+          <Link to="/calendar" className="linkedButton">
+            <div className="seeMoreButton">
+              <p className="seeMoreButtonText">See More</p>
+            </div>
+          </Link>
+          </div>
+
+          <div className="eventsPreviewsContainer">
+            <div className="eventPreview">
+              <Link to="/calendar">
+                <div className="eventImg"></div>
+              </Link>
+              <p className="eventDate">June 12th</p>
+              <p className="eventName">Jazz Vilin "The Pittsburgh Way"</p>
+            </div>
+          </div>
 
         </div>
       </section>
