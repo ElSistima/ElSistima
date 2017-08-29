@@ -57,6 +57,30 @@ export default function About(props){
 
 
       <section className="imgContainerThree"></section>
+
+      
+      <section className="volunteersContainer">
+        <div className="volunteersText">
+          <h1 className="volunteersTitle">Volunteers</h1>
+          <p className="volunteersBodyText">
+          Sistema Global is a group of passionate volunteers who contribute from their expertise and experience to help drive the mission of this virtual organization.  We are a volunteer digital communications network which connects all the interdependent but widely dispersed programs, and provides up-to-date information about El Sistema to the world at large. The organization serves to facilitate ongoing conversations, foster mutual support, and extend the reach of shared resources.
+          <br/>
+          <br/>
+          We welcome, support and encourage volunteer members from diverse occupational and educational backgrounds who believe in music making as a means for transforming lives.  Volunteers work together as highly collaborative teams.
+          </p>
+            <div className="volunteersProfile"></div>
+          <p className="volunteersFooter">Interested in becoming a volunteer?</p>
+          <div className="volunteersButton">
+            <p className="volunteersButtonText">Connect</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="ourLocationContainer">
+        <div className="ourLocationText">
+        <h1 className="ourLocationTitle">Our Location</h1>
+        </div>
+      </section>
      
       </div>
     </main>

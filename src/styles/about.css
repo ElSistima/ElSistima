@@ -151,3 +151,78 @@
 .imgContainerThree {
     height: 20vh;
 }
+
+.volunteersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.volunteersText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.volunteersTitle {
+    font-size: .7em;
+}
+
+.volunteersBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.volunteersProfile {
+    height: 55%;
+    width: 100%;
+    background-color: indianred;
+    padding-bottom: 1em;
+}
+
+.volunteersFooter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.volunteersButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    width: 3.5em;
+    background-color: #ECC749;
+}
+
+.volunteersButtonText {
+    font-size: .5em;
+}
+
+.ourLocationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.ourLocationText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.ourLocationTitle {
+    font-size: .7em;
+}
