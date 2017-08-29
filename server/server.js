@@ -14,6 +14,7 @@ var port = 8080;
 
 
 
+
 app.use(cors());
 
 app.use(session({
@@ -102,7 +103,38 @@ app.get('/api/hello', function(req, res){
   res.json(req.user);
 })
 
+//===========Twitter API setup
+var error = function (err, response, body) {
+    console.log('ERROR [%s]', err);
+};
+var success = function (data) {
+    console.log('Data [%s]', data);
+};
 
+var Twitter = require('twitter-node-client').Twitter;
+
+
+var config = {
+    "consumerKey": process.env.TWITTER_CONSUMERKEY,
+    "consumerSecret": process.env.TWITTER_CONSUMERSECRET,
+    "accessToken": process.env.TWITTER_ACCESSTOKEN,
+    "accessTokenSecret": process.env.TWITTER_TOKENSECRET,
+    // "callBackUrl":
+
+}
+
+var twitter = new Twitter(config);
+
+app.get('/api/getUserTimeLine', function(req, res){
+  console.log('endpoint hit')
+  twitter.getUserTimeline({ screen_name: 'ElSistemaPGH', count: '10'}, error, results => {
+    console.log(results)
+    return res.send(results)});
+})
+
+
+
+//===========Twitter API setup Ends Here
 
 app.listen(port, ()=> {
   console.log('server is running on port ' + port );
