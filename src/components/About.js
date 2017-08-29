@@ -1,12 +1,16 @@
 import React from 'react';
 import './../styles/global-style.css';
 import './../styles/about.css';
+import { Parallax } from 'react-parallax';
 
 
 
 export default function About(props){
   return (
+
+  
     <main className="aboutContainer">
+      <div className="parallax">
       <section className="whoWeAreContainer">
         <div className="whoWeAreText">
           <h1 className="whoWeAreTitle">Who We Are</h1>
@@ -54,7 +58,7 @@ export default function About(props){
 
       <section className="imgContainerThree"></section>
      
-      
+      </div>
     </main>
   )
 }
