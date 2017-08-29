@@ -97,9 +97,8 @@
     padding: .5em .25em 8px .25em;
   }
 
-  .link a:focus {
+  .link  {
     height: 100%;
-    border-bottom: solid 8px #ECC749;
   }
 
   .mainNav p {
