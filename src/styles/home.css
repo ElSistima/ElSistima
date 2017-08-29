@@ -193,3 +193,73 @@ blockquote {
   letter-spacing: 0.03em;
   line-height: 1.15em;
 }
+
+.orgCoreValues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40vh;
+  background: white;
+}
+
+.coreValuesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 125vh;
+  background-color: plum;
+}
+
+.coreValuesTop, .coreValuesBottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 7%;
+  min-height: 57vh;
+  width: 100%;
+  background-color: lime;
+}
+
+.coreValuesImgDiv {
+  position: relative;
+  min-height: 24vh;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url('./../images/pitt-cello.jpeg');
+  background-size: cover;
+}
+
+.coreValuesTextOne {
+  position: absolute;
+  min-height: 24vh;
+  width: 70%;
+  bottom: -28vh;
+  left: -1vh;
+  padding: 1em;
+  background-color: white;
+  border: 2px solid rgb(74,95,107);
+}
+
+.valuesTextBlock {
+  font-size: .75em;
+  line-height: 1.15em;
+  color: rgb(74,95,107);
+}
+
+.coreValuesButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7em;
+  height: 2em;
+  margin: 0 auto;
+  margin-top: 1em;
+  border: 1px solid #ECC749;
+}
+
+.supportUsButtonText {
+  font-size: 1em;
+  color: #ECC749;
+}
