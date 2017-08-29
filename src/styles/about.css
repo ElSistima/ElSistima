@@ -1,0 +1,157 @@
+.aboutContainer {
+    min-height: 80vh;
+    width: 100%;
+
+}
+
+/* .parallax {
+    background-image: url('./../images/pittsburgh.jpg');
+    min-height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.whoWeAreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.whoWeAreText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.whoWeAreTitle {
+    font-size: .70em;
+}
+
+.whoWeAreBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.whoWeAreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    width: 3.5em;
+    background-color: #ECC749;
+}
+
+.whoWeAreButtonText {
+    font-size: .5em;
+}
+
+.imgContainerOne {
+    height: 20vh;
+    background-image: url('./../images/pittsburgh.jpg');
+    background-size: cover;
+}
+
+.missionStatementContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.missionStatementText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.missionStatementTitle {
+    font-size: .7em;
+}
+
+.missionStatementBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.missionStatementButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    width: 3.5em;
+    background-color: #ECC749;
+}
+
+.missionStatementButtonText {
+    font-size: .5em;
+}
+
+.imgContainerTwo {
+    height: 20vh;
+    background-image: url('./../images/pittsburgh.jpg');
+    background-size: cover;
+}
+
+.curriculumContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.curriculumText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.curriculumTitle {
+    font-size: .7em;
+}
+
+.curriculumBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.curriculumButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    width: 3.5em;
+    background-color: #ECC749;
+}
+
+.curriculumButtonText {
+    font-size: .5em;
+}
+
+.imgContainerThree {
+    height: 20vh;
+    background-image: url('./../images/pittsburgh.jpg');
+    background-size: cover;
+}
