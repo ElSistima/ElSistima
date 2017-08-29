@@ -1,0 +1,71 @@
+.homeBanner {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 27.5vh;
+  background-image: url('./../images/elsistema.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quoteContainer {
+  position: absolute;
+  height: 100%;
+  width: 47.5%;
+  background-color: rgba(74,95,107,0.85);
+}
+
+.socialIconsQuote {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.socialIconsQuote a {
+  text-decoration: none;
+}
+
+.socialCircleQuote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #ECC749;
+  margin-right: 1em;
+  margin-top: .5em;
+}
+
+blockquote {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+.quote {
+  color: white;
+  font-weight: 300;
+  font-size: .65em;
+  line-height: 1.5em;
+}
+
+.quoteAttribute {
+  width: 100%;
+  height: auto;
+  color: white;
+  padding-top: .75em;
+  text-align: right;
+}
+
+.author {
+  font-size: .65em;
+  font-weight: 700;
+  padding-bottom: .5em;
+}
+
+.authorTitle {
+  font-size: .5em;
+  font-weight: 300;
+}
