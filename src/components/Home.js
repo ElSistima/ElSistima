@@ -45,10 +45,26 @@ export default function Home (props) {
           <div className="eventsPreviewsContainer">
             <div className="eventPreview">
               <Link to="/calendar">
-                <div className="eventImg"></div>
+                <div className="eventImg previewOne"></div>
               </Link>
               <p className="eventDate">June 12th</p>
-              <p className="eventName">Jazz Vilin "The Pittsburgh Way"</p>
+              <p className="eventName">Jazz Violin "The Pittsburgh Way"</p>
+            </div>
+
+            <div className="eventPreview">
+              <Link to="/calendar">
+                <div className="eventImg previewTwo"></div>
+              </Link>
+              <p className="eventDate">June 24th</p>
+              <p className="eventName">Pittsburgh Carnival Showcase 2017!</p>
+            </div>
+
+            <div className="eventPreview">
+              <Link to="/calendar">
+                <div className="eventImg previewThree"></div>
+              </Link>
+              <p className="eventDate">July 30th</p>
+              <p className="eventName">Family Night Performance</p>
             </div>
           </div>
 

@@ -79,7 +79,7 @@ blockquote {
   min-height: 30vh;
   width: 90%;
   margin: 0 auto;
-  background-color: pink;
+  /*background-color: pink;*/
 }
 
 .eventsHeaderContainer {
@@ -87,7 +87,6 @@ blockquote {
   align-items: center;
   width: 100%;
   min-height: 10vh;
-  background-color: plum;
 }
 
 .eventsHeader {
@@ -119,7 +118,6 @@ blockquote {
   justify-content: center;
   width: 100%;
   min-height: 40vh;
-  background-color: yellow;
 }
 
 .eventPreview {
@@ -128,22 +126,33 @@ blockquote {
   align-items: center;
   width: 35vh;
   min-height: 35vh;
-  padding-bottom: 1.5em;
-  background-color: tan;
+  padding-bottom: 2em;
 }
 
 .eventImg {
   width: 35vh;
   height: 35vh;
-  background-image: url('./../images/pitt-violin.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.previewOne {
+  background-image: url('./../images/pitt-violin.jpg');
+}
+
+.previewTwo {
+  background-image: url('./../images/pitt-carnival-showcase.jpg');
+}
+
+.previewThree {
+  background-image: url('./../images/family-night-performance.jpeg');
+}
+
 .eventDate {
   font-size: 1em;
+  font-weight: 700;
   color: rgb(74,95,107);
-  margin: .35em 0;
+  margin: .6em 0 .35em 0;
 }
 
 .eventName {
