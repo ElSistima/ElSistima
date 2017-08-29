@@ -432,6 +432,11 @@ blockquote {
     padding-top: .7em;
   }
 
+  .coreValuesContainer {
+    min-height: 210vh;
+    /*background-color: plum;*/
+  }
+
   .coreValuesTop, .coreValuesBottom {
     padding-top: 7%;
     min-height: 98vh;
