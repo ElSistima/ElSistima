@@ -27,3 +27,5 @@ yarn-error.log*
 .env.prod
 
 .env.prod
+
+.env
