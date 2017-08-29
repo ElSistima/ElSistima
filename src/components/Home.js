@@ -67,8 +67,19 @@ export default function Home (props) {
               <p className="eventName">Family Night Performance</p>
             </div>
           </div>
-
         </div>
+      </section>
+
+      <section className="orgMission">
+        <div className="orgMissionImgContainer">
+          <div className="floatingMissionDiv">
+            <blockquote className="floatingMissionText">El Sistema Pittsburg provides {"Pittsburgh's"} youth with accessible and instensive classical music instruction.</blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section className="orgCoreValues">
+
       </section>
     </main>
   )

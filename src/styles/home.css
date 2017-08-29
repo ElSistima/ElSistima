@@ -159,3 +159,37 @@ blockquote {
   font-size: .75em;
   color: rgb(74,95,107);
 }
+
+.orgMission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 32.5vh;
+  background-color: rgb(74,95,107);
+}
+
+.orgMissionImgContainer {
+  position: relative;
+  width: 90%;
+  min-height: 20vh;
+  background-image: url('./../images/pitt-trombone.jpg');
+  background-size: cover;
+}
+
+.floatingMissionDiv {
+  position: absolute;
+  width: 65%;
+  min-height: 8vh;
+  background-color: #6D8A9A;
+  top: -25px;
+  right: -10px;
+}
+
+.floatingMissionText {
+  color: white;
+  font-size: .6em;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.15em;
+}
