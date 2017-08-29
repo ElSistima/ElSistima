@@ -114,7 +114,7 @@
 
 @media(min-width: 1000px){
   .mainHeader {
-    height: 10vh;
+    min-height: 10vh;
     padding: 0 8%;
   }
 

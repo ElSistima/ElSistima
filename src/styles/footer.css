@@ -1,10 +1,17 @@
 .footer {
   width: 100%;
-  height: 20vh;
+  min-height: 20vh;
   background-color: #4A4A4A;
 }
+.sectionsContainer {
+  display: none;
+}
 
-.topFooterDiv{
+.topFooterDivTabDesk{
+  display: none;
+}
+
+.topFooterDiviPhone{
   width: 100%;
   height: 13vh;
   font-weight: 300;
@@ -83,16 +90,29 @@
   font-weight: 300;
 }
 
+.footerNavigation {
+  display: none;
+}
+
 @media(min-width: 700px){
 
-  .footer {
-    height: 36vh;
+  .topFooterDiviPhone {
+    display: none;
   }
 
-  .topFooterDiv{
+  .footer {
+    min-height: 36vh;
+  }
+
+  .sectionsContainer {
     display: flex;
     justify-content: space-between;
-    height: 24vh;
+  }
+
+  .topFooterDivTabDesk{
+    display: flex;
+    justify-content: space-between;
+    min-height: 24vh;
     width: 90%;
     margin: 0 auto;
     padding-top: 16px;
@@ -131,7 +151,7 @@
 
   .signUpButton {
     text-align: center;
-    width: 30%;
+    width: 7em;
     height: 1.5em;
     margin-top: .5em;
     border: 1px solid #ECC749;
@@ -141,11 +161,10 @@
     line-height: 100%;
     font-size: 14px;
     padding: 4px 0px;
-
     color: #ECC749;
   }
 
-  .stayConnectedTabDesk h3 {
+  .stayConnectedTabDesk h3, .committedToPitt h3 {
     font-size: 14px;
     padding: 6px 0px;
   }
@@ -156,11 +175,6 @@
     color: white;
     line-height: 1.15em;
     letter-spacing: 0.025em;
-  }
-
-  .committedToPitt h3 {
-    font-size: 14px;
-    padding: 6px 0px;
   }
 
   .bottomFooterDiv {
@@ -178,4 +192,85 @@
     font-size: 14px;
   }
 
+  .footerNavigation {
+    display: none;
+  }
+}
+
+@media(min-width: 1000px){
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 28vh;
+  }
+
+  .sectionsContainer{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stayConnectedTabDesk{
+    width: 25%;
+  }
+
+  .stayConnectedTabDesk h3, .committedToPitt h3, .footerNavigation h3 {
+    font-size: 18px;
+    padding: 6px 0px;
+    color: white;
+  }
+
+  .committedToPitt {
+    width: 40%;
+  }
+
+  .footerNavigation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+  }
+
+  .footerNavigation a {
+    color: #ECC749;
+    text-decoration: none;
+  }
+
+  .footerNavLinks p{
+    margin: .5em 0;
+  }
+
+  .fa-caret-right {
+    color: #5392B6;
+  }
+
+  .contactUsButton {
+    width: 7em;
+  }
+
+  .contactUsButton p{
+    padding: 6px 4px;
+  }
+
+  .bottomFooterDiv {
+    min-height: 20%;
+    text-align: center;
+  }
+
+  .bottomContents {
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .bottomFooterDiv p:nth-child(1) {
+    font-size: .8em;
+    margin-bottom: .75em;
+  }
+
+  .bottomFooterDiv p:nth-child(2) {
+    font-size: 14px;
+  }
 }

@@ -8,6 +8,7 @@ import Calendar from './Calendar';
 import About from './About';
 import Media from './Media';
 import PublicBlog from './PublicBlog';
+import Support from './Support';
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/media" component={Media} />
             <Route path="/blog" component={PublicBlog} />
+            <Route path="/support" component={Support} />
           </Switch>
         <Footer />
       </main>
