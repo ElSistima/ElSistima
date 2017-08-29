@@ -14,6 +14,7 @@ var port = 8080;
 
 
 
+
 app.use(cors());
 
 app.use(session({
@@ -102,7 +103,38 @@ app.get('/api/hello', function(req, res){
   res.json(req.user);
 })
 
+//===========Twitter API setup
+var error = function (err, response, body) {
+    console.log('ERROR [%s]', err);
+};
+var success = function (data) {
+    console.log('Data [%s]', data);
+};
 
+var Twitter = require('twitter-node-client').Twitter;
+
+
+var config = {
+    "consumerKey": process.env.TWITTER_CONSUMERKEY,
+    "consumerSecret": process.env.TWITTER_CONSUMERSECRET,
+    "accessToken": process.env.TWITTER_ACCESSTOKEN,
+    "accessTokenSecret": process.env.TWITTER_TOKENSECRET,
+    // "callBackUrl":
+
+}
+
+var twitter = new Twitter(config);
+
+app.get('/api/getUserTimeLine', function(req, res){
+  console.log('endpoint hit')
+  twitter.getUserTimeline({ screen_name: 'ElSistemaPGH', count: '10'}, error, results => {
+    console.log(results)
+    return res.send(results)});
+})
+
+
+
+//===========Twitter API setup Ends Here
 
 app.listen(port, ()=> {
   console.log('server is running on port ' + port );
@@ -127,3 +159,26 @@ app.get('/api/performances', userController.getPerformances)
 // app.get('*', (req, res)=>{
 // res.sendFile(path.join(__dirname, '..','build','index.html'));
 // })
+
+
+// REACT_APP_LOGIN="http://localhost:8080/auth/callback"
+// REACT_APP_LOGOUT="http://localhost:8080/auth/logout"
+// REACT_APP_SOCKET="https://localhost:8080"
+//
+// AMAZON_ACCESSID="AKIAIBTLO5Q2ONWFWM2Q"
+// AMAZON_KEY="kdygy6EOzABKX3LHVrbUW2ESZSFBTF9Av5v4w2Pj"
+//
+// TWITTER_CONSUMERKEY= "QBnk1liSkAmxwTFFPtsCmvDbh"
+// TWITTER_CONSUMERSECRET= "PhRtpGKOY2P7MKJEvaryIRwate2aXvFiwA6BTQmG6jvps0kmAj"
+// TWITTER_ACCESSTOKEN= "3060311976-vHq8jRDA6I0NxOw3zpP0rAAdrTIPswrpxVoLaSi"
+// TWITTER_TOKENSECRET= "RpEDuHviUUErMPyRKDi748IVPP9sv2uZmA6cJtMjDNtTF"
+//
+//
+//
+// DOMAIN="elsistima.auth0.com"
+// ID="LDng1BJX3U1MvJR4Tz-fvjSBbSwhkx0D"
+// SECRET="eKtu5IPIAKy0ytimhQAdO4cUR_oxJoFl9NPwGQFe97D1cCE7hHmoKZLq-RaHk0m1"
+// CONNECTION_STRING="postgres://wknyvumhvedrfa:3dad983b09b3328789e08a32474517b1de959ff779de7a981449c54509898b39@ec2-54-221-196-253.compute-1.amazonaws.com:5432/dfoim8kfpqoa9s?ssl=true"
+// LOGIN_SUCCESS_REDIRECT1="http://localhost:3000/home"
+// LOGOUT_SUCCESS_REDIRECT1="http://localhost:3000"
+// NODE_ENV=development
