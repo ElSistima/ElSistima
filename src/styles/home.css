@@ -206,10 +206,10 @@ blockquote {
 .coreValuesContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90%;
   min-height: 225vh;
-  background-color: plum;
+  /*background-color: plum;*/
 }
 
 .coreValuesTop, .coreValuesBottom {
@@ -219,7 +219,7 @@ blockquote {
   padding-top: 7%;
   min-height: 108vh;
   width: 100%;
-  background-color: lime;
+  /*background-color: lime;*/
 }
 
 .coreValuesImgDivOne {
@@ -228,6 +228,15 @@ blockquote {
   width: 90%;
   margin: 0 auto;
   background-image: url('./../images/pitt-cello.jpeg');
+  background-size: cover;
+}
+
+.coreValuesImgDivTwo {
+  position: relative;
+  min-height: 24vh;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url('./../images/conduct.jpg');
   background-size: cover;
 }
 
@@ -242,10 +251,37 @@ blockquote {
   border: 2px solid rgb(74,95,107);
 }
 
+.coreValuesTextThree {
+  position: absolute;
+  min-height: 24vh;
+  width: 70%;
+  bottom: -34vh;
+  right: -1vh;
+  padding: 1em;
+  background-color: white;
+  border: 2px solid rgb(74,95,107);
+}
+
 .valuesTextBlock {
   font-size: .75em;
   line-height: 1.15em;
   color: rgb(74,95,107);
+}
+
+.valuesItem {
+  display: flex;
+  justify-content: flex-start;
+  width: 95%;
+  margin: .5em auto;
+}
+
+.fa-music{
+  margin-right: 1em;
+}
+
+.valuesListItemText {
+  font-size: 1.2em;
+  line-height: 1.15em;
 }
 
 .coreValuesButton {
@@ -273,7 +309,8 @@ blockquote {
   background-size: cover;
 }
 
-.coreValuesTextTwo {
+.coreValuesTextTwo, .coreValuesTextFour {
+
   width: 100%;
   min-height: 40vh;
   background-color: white;
@@ -282,14 +319,25 @@ blockquote {
   padding-bottom: 1em;
 }
 
-.textBlockTwo {
+.coreValuesTextFour {
+  min-height: 30vh;
+  margin-top: 26vh;
+}
+
+.textBlockTwo, .textBlockThree, .textBlockFour{
   color: #5289A9;
   padding: 1.25em 1em;
 }
 
-.textBlockTwoHeader {
+
+.textBlockTwoHeader, .textBlockFourHeader {
   font-size: 2em;
   line-height: 1.4em;
+}
+
+.textBlockThreeHeader {
+  font-size: 1.5em;
+  line-height: 1em;
 }
 
 .textBlockTwoText {
