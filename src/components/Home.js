@@ -107,6 +107,14 @@ export default function Home (props) {
 
           <div className="coreValuesBottom">
           <div className="coreValuesImgDivTwo">
+
+
+            <div className="coreValuesTextOne">
+              <p className="valuesTextBlock">El Sistema Pittsburgh is grateful for our family of supporters. Partnerships with individual donors, corporations, government agencies, and foundations ensure that music education programs are available to young musicians in every neighborhood, regardless of socio-economic circumstance. Every dollar dontated to ESPGH helps change {"kids'"} lives through music.</p>
+              <div className="coreValuesButton"><p className="supportUsButtonText">Support Us</p>
+              </div>
+
+
             <div className="coreValuesTextThree">
             <p className="textBlockThreeHeader">El Sistema Core Values</p>
               <ul className="valuesTextBlock">
@@ -127,6 +135,7 @@ export default function Home (props) {
                 <div className="coreValuesButton"><p className="supportUsButtonText">Read More</p>
                 </div>
               </Link>
+
             </div>
           </div>
 
