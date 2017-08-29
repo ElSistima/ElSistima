@@ -5,14 +5,13 @@
 }
 
 .topFooterDiv{
-
   width: 100%;
-  height: 65%;
+  height: 13vh;
   font-weight: 300;
   letter-spacing: 0.025em;
 }
 
-.stayConnected {
+.stayConnectediPhone {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +20,11 @@
   padding: .5em 0;
 }
 
-.stayConnected p:nth-child(1) {
+.stayConnectedTabDesk{
+  display: none;
+}
+
+.stayConnectediPhone p:nth-child(1) {
   font-size: 10px;
   padding: 6px 0px;
   color: white;
@@ -62,7 +65,7 @@
 
 .bottomFooterDiv {
   width: 100%;
-  height: 35%;
+  height: 7vh;
   padding: 8px 0;
   text-align: center;
 }
@@ -78,4 +81,101 @@
   color: white;
   margin-bottom: 12px;
   font-weight: 300;
+}
+
+@media(min-width: 700px){
+
+  .footer {
+    height: 36vh;
+  }
+
+  .topFooterDiv{
+    display: flex;
+    justify-content: space-between;
+    height: 24vh;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 16px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+  }
+
+  .stayConnectediPhone {
+    display: none;
+  }
+
+  .stayConnectedTabDesk{
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    height: 100%;
+    color: white;
+    line-height: 1.15em;
+    letter-spacing: 0.025em;
+  }
+
+  .signUpForTexts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: .5em;
+    margin-bottom: 1em;
+  }
+
+  .textInput {
+    width: 60%;
+    height: 2em;
+    margin: 1em 0 .25em 0;
+  }
+
+  .signUpButton {
+    text-align: center;
+    width: 30%;
+    height: 1.5em;
+    margin-top: .5em;
+    border: 1px solid #ECC749;
+  }
+
+  .signUpButton p {
+    line-height: 100%;
+    font-size: 14px;
+    padding: 4px 0px;
+
+    color: #ECC749;
+  }
+
+  .stayConnectedTabDesk h3 {
+    font-size: 14px;
+    padding: 6px 0px;
+  }
+
+  .committedToPitt {
+    width: 56%;
+    height: 100%;
+    color: white;
+    line-height: 1.15em;
+    letter-spacing: 0.025em;
+  }
+
+  .committedToPitt h3 {
+    font-size: 14px;
+    padding: 6px 0px;
+  }
+
+  .bottomFooterDiv {
+    height: 8vh;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  .bottomFooterDiv p:nth-child(1) {
+    font-size: 16px;
+    margin-bottom: 1.5em;
+  }
+
+  .bottomFooterDiv p:nth-child(2) {
+    font-size: 14px;
+  }
+
 }
