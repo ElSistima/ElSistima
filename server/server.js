@@ -44,7 +44,7 @@ passport.use(new Auth0Strategy({
    callbackURL:  '/auth/callback'
   },
   function(accessToken, refreshToken, extraParams, profile, done) {
-    let db = app.get('db');
+    const db = app.get('db');
     //Find user in database
     db.get_user_by_auth([profile.id])
     .then(
@@ -107,6 +107,21 @@ app.get('/api/hello', function(req, res){
 app.listen(port, ()=> {
   console.log('server is running on port ' + port );
 })
+
+
+
+
+
+//=============GET REQUESTS =====================
+app.get('/api/blogs', userController.getBlogPosts)
+app.get('/api/events', userController.getEvents)
+// app.get('/api/pictures')
+app.get('/api/users', userController.getUsers)
+app.get('/api/volunteers', userController.getVolunteers)
+app.get('/api/quote', userController.getQuote)
+app.get('/api/performances', userController.getPerformances)
+
+
 
 // const path = require('path')
 // app.get('*', (req, res)=>{
