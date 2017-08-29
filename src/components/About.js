@@ -68,7 +68,9 @@ export default function About(props){
           <br/>
           We welcome, support and encourage volunteer members from diverse occupational and educational backgrounds who believe in music making as a means for transforming lives.  Volunteers work together as highly collaborative teams.
           </p>
-            <div className="volunteersProfile"></div>
+            <div className="volunteersProfile">
+              <p className="volunteersPlaceHolder">Charlie Brown</p>
+            </div>
           <p className="volunteersFooter">Interested in becoming a volunteer?</p>
           <div className="volunteersButton">
             <p className="volunteersButtonText">Connect</p>

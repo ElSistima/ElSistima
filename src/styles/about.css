@@ -181,7 +181,9 @@
 .volunteersProfile {
     height: 55%;
     width: 100%;
-    background-color: indianred;
+    background-image: url('./../images/peanut1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
     padding-bottom: 1em;
 }
 
