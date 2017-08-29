@@ -13,9 +13,9 @@
   height: 5vh;
   background-image: url('./../images/logoWhiteSmall.png');
   background-repeat: no-repeat;
-  background-size: 70% ;
+  background-size: 70%;
   background-position: center;
-  background-color: rgba(74,95,107,0.7);
+  background-color: rgba(74,95,107,0.85);
 }
 
 .mainNav {
@@ -75,7 +75,6 @@
 }
 
 .headerSupportButton p {
-  color: red;
   margin-left: auto;
   margin-right: auto;
   color: #525049;
@@ -110,6 +109,51 @@
   .headerSupportButton {
     width: 5em;
     height: 1.5em;
+  }
+
+}
+
+@media(min-width: 1000px){
+  .mainHeader {
+    height: 10vh;
+    padding: 0 8%;
+  }
+
+  .logoContainer {
+    width: 17.5%;
+    height: 10vh;
+    background-size: 65%;
+  }
+
+  .mainNav {
+    width: 64%;
+    height: 9vh;
+    margin-top: 1vh;
+  }
+
+  .link {
+    height: 7.35vh;
+  }
+
+  .link a {
+    height: 7.35vh;
+    padding: 1em .25em 1.15em .5em;
+  }
+
+  .link a:focus {
+    height: 100%;
+    padding: 1em .25em 0 .5em;
+    border-bottom: solid 1.15em #ECC749;
+  }
+
+  .mainNav p {
+    font-size: 1.25em;
+  }
+
+  .headerSupportButton {
+    width: 9.5em;
+    height: 2.75em;
+    margin-bottom: .45em;
   }
 
 }
