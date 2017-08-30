@@ -100,7 +100,7 @@
   }
 
   .volunteerOverwrite {
-    height: 500px;
+    height: 460px;
   }
 
 
@@ -146,8 +146,8 @@
   }
 
   .add_pic_inner img {
-    width: 80%;
-    height: 80%;
+    width: 180px;
+    height: 180px;
     margin-top: 15px;
     margin-left: 15px;
   }
@@ -201,6 +201,29 @@
     display: flex;
     margin-top: 25px;
   }
+
+  .profileVolunteer img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-left: 25px;
+  }
+
+  .fullpicvolunteer img, .fullpicvolunteer div{
+    margin-left: 0px;
+  }
+
+  .volunteerbtnOR {
+    margin-top: 35px;
+  }
+
+  .volunteersaveOR {
+    margin-left: 0px;
+  }
+
+  .volunteercancelOR {
+    margin-left: 55px;
+  }
 }
 
 
@@ -237,5 +260,14 @@
 
   .add_pic_inner div {
     margin-left: 3px;
+  }
+
+  /*=====permission&button section for volunteer*/
+  .permission, .volunteerbtnOR {
+    margin-left: 65px;
+  }
+
+  .volunteerbtnOR {
+    margin-top: 10px;
   }
 }

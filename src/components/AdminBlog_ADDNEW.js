@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
 import '../styles/AdminBlog_ADDNEW.css';
+import {connect} from 'react-redux';
 
-
-export default class AdminBlog_ADDNEW extends Component{
+class AdminBlog_ADDNEW extends Component{
   constructor(props){
     super(props);
 
   }
 
   render(){
+
+    const fullPageStyle = { width: "100%" }
+
     return(
-      <main className="AdminBlog_ADDNEW_Main">
+      <main className="AdminBlog_ADDNEW_Main" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
       <div className="add_new_blog">
         <div className="anb_headerText">Add New Blog</div>
         <div className="anb_topInput">
@@ -18,7 +21,7 @@ export default class AdminBlog_ADDNEW extends Component{
           <input placeholder="Caption"/>
         </div>
 
-        <div className="anb_Content taOverwrite">
+        <div className="anb_Content">
           <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></textarea>
         </div>
       </div>
@@ -46,3 +49,11 @@ export default class AdminBlog_ADDNEW extends Component{
     )
   }
 }
+
+function mapStateToProps(state){
+  return{
+    dropdownDisplayed: state.clicked
+  }
+}
+
+export default connect(mapStateToProps)(AdminBlog_ADDNEW);

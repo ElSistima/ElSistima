@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
 import '../styles/AdminBlog_ADDNEW.css';
+import {connect} from 'react-redux';
 
 
 
-export default class AdminVolunteer_ADDNEW extends Component{
+class AdminVolunteer_ADDNEW extends Component{
   constructor(props){
     super(props);
 
   }
 
   render(){
+
+    const fullPageStyle = { width: "100%" }
+
     return(
-      <main className="AdminBlog_ADDNEW_Main">
+      <main className="AdminBlog_ADDNEW_Main" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <div className="add_new_blog volunteerOverwrite">
             <div className="anb_headerText">Add New Volunteer</div>
             <div className="anb_topInput">
@@ -71,7 +75,35 @@ export default class AdminVolunteer_ADDNEW extends Component{
           </div>
         </div>
 
+
+        <div className="add_new_pics">
+
+        <div className="add_pic_inner fullpicvolunteer">
+          <div>Add Full Picture</div>
+          <img src='https://i.imgur.com/FTLTf6u.png' />
+        </div>
+
+
+          <div className="add_pic_inner profileVolunteer">
+            <div>Add Profile Picture</div>
+            <img src='https://i.imgur.com/FTLTf6u.png' />
+          </div>
+        </div>
+
+        <div className="anb_btn volunteerbtnOR">
+          <div className="pblg save_btn volunteersaveOR">SAVE</div>
+          <div className="pblg cancel_btn volunteercancelOR">CANCEL</div>
+        </div>
+
       </main>
     )
   }
 }
+
+function mapStateToProps(state){
+  return{
+    dropdownDisplayed: state.clicked
+  }
+}
+
+export default connect(mapStateToProps)(AdminVolunteer_ADDNEW);
