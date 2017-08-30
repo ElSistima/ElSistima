@@ -1,0 +1,58 @@
+/* placeholder styleing */
+::-webkit-input-placeholder {
+    font-weight: lighter;/* WebKit, Blink, Edge */
+    color:    #e4e4e4;
+    font-size: 17px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   opacity:  1;
+   font-size: 17px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   opacity:  1;
+   font-size: 17px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   font-size: 17px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   font-size: 17px;
+}
+
+/* placeholder styleing */
+
+.AdminVolunteer_ADDNEW_Main {
+  float: left;
+  width: calc(100vw - 70%);
+  height: 820px;
+  background-color: red;
+}
+
+
+
+@media(min-width: 700px) {
+  .AdminVolunteer_ADDNEW_Main {
+    width: calc(100vw - 31%);
+    height: 1320px;
+  }
+}
+
+
+
+
+
+@media(min-width: 1000px) {
+  .AdminVolunteer_ADDNEW_Main {
+    width: calc(100vw - 22%);
+    height: 100vh;
+  }
+
+}
