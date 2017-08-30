@@ -7,7 +7,8 @@
 }
 
 .adminContentContainer {
-  width: 80%;
+  /*width: 80%;*/
+  width: 95%;
   height: auto;
   background-color: white;
 }
@@ -26,6 +27,7 @@
 }
 
 .itemsSelected {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   width: 100%;
@@ -33,4 +35,23 @@
   padding-left: 2.5%;
   background-color: #E8EFFC;
   color: #5182EA;
+}
+
+.columnTitles {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 5vh;
+  border-top: 1px solid rgb(74,95,107);
+  border-bottom: 1px solid rgb(74,95,107);
+  color: rgb(74,95,107);
+}
+
+.checkbox {
+  height: 1.75vh;
+  width: 1.75vh;
+  border: 1.5px solid rgb(74,95,107);
+  border-radius: 2px;
 }

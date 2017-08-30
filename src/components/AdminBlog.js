@@ -43,6 +43,15 @@ componentDidMount(){
           <div className="itemsSelected">
             <p>1 item selected</p>
           </div>
+          <div className="columnTitles">
+            <div className="checkbox"></div>
+            <p>Title</p>
+            <p>Publish Date</p>
+            <p>Checkbox</p>
+            <p>Author</p>
+            <p><i className="fa fa-pencil fa-lg" aria-hidden="true"></i></p>
+            <p><i className="fa fa-trash fa-lg" aria-hidden="true"></i></p>
+          </div>
           {allPosts}
         </section>
       </main>
