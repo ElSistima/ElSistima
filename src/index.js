@@ -10,10 +10,11 @@ import AdminPortal from './components/AdminPortal';
 
 ReactDOM.render(
   <BrowserRouter>
+  <Provider store={store}>
   <Switch>
     <Route path="/admin" component={AdminPortal} />
-      <Provider store={store}>
         <App />
-      </Provider>
   </Switch>
+  </Provider>
+
   </BrowserRouter>, document.getElementById('root'));
