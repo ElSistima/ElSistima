@@ -126,9 +126,9 @@ module.exports = {
 
   postVolunteer: function(req,res){
     const db = req.app.get('db');
-    const {name, email, title, profile_pic, facebookLink, twitterLink, LinkedInLink, summary} = req.body
+    const {name, email, title, profilePic, facebookLink, twitterLink, LinkedInLink, summary} = req.body
 
-    db.post_add_volunteer([name, email, title, profile_pic, facebookLink, twitterLink, LinkedInLink, summary])
+    db.post_add_volunteer([name, email, title, profilePic, facebookLink, twitterLink, LinkedInLink, summary])
       .then( (response) => {
         res.status(200).send('sentSuccessfully')} )
       .catch( (err) => {
@@ -151,7 +151,7 @@ module.exports = {
     let month_num;
     const db = req.app.get('db');
     const {user_id} = req.user;
-    const {postContent, postThumbnail, postTitle, postDate, year, month, day, blogImage, blogSubtitle} = req.body
+    const {postContent, postThumbnail, postTitle,  year, month, day, blogImage, blogSubtitle} = req.body
     switch (month) {
       case 'January':
         month_num = 1;
@@ -193,7 +193,7 @@ module.exports = {
       default:break;
     }
 
-    db.post_add_post([user_id, postContent, postThumbnail, postTitle, year, month, day, month_num, blogImage, blogSubtitle])
+    db.post_add_posts([user_id, postContent, postThumbnail, postTitle, year, month, day, month_num, blogImage, blogSubtitle])
     .then( (response) => {
       res.status(200).send('sentSuccessfully')} )
     .catch( (err) => {
@@ -266,6 +266,7 @@ module.exports = {
 
         default:break;
       }
+    console.log(eventid, type, title, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle)
 
     db.put_edit_event([eventid, type, title, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle ])
     .then( (response) => {
@@ -277,10 +278,11 @@ module.exports = {
 
   putVolunteer: function(req,res){ //NO PROFILE DO NOT FORGET
     const db = req.app.get('db');
-    const {volunteerid} = req.body;
-    const {name, email, title, facebookLink, twitterLink, LinkedInLink, summary} = req.body;
+    const {volunteerid} = req.params;
+    const {name, email, title, facebookLink, twitterLink, linkedInLink, summary} = req.body;
 
-    db.put_edit_volunteer([volunteerid, name, email, title, facebookLink, twitterLink, LinkedInLink, summary])
+    console.log(volunteerid, name, email, title, facebookLink, twitterLink, linkedInLink, summary);
+    db.put_edit_volunteer([volunteerid, name, email, title, facebookLink, twitterLink, linkedInLink, summary])
     .then( (response) => {
       res.status(200).send('sentSuccessfully')} )
     .catch( (err) => {
@@ -302,6 +304,7 @@ module.exports = {
     const db = req.app.get('db');
     const {userid} = req.params;
     const {userName, adminStatus} = req.body;
+
 
     db.put_edit_user([userid, userName, adminStatus])
     .then( (response) => {
@@ -343,12 +346,13 @@ module.exports = {
     const db = req.app.get('db');
     const {postid} = req.params
 
-    db.delete_event([postid])
+    db.delete_posts([postid])
     .then( (response) => {
       res.status(200).send('sentSuccessfully')} )
     .catch( (err) => {
       res.status(500).send(err)} )
   },
+
   deleteVolunteer: function(req,res){
     const db = req.app.get('db');
     const {volunteerid} = req.params
@@ -388,7 +392,7 @@ module.exports = {
     const db = req.app.get('db');
     const {quoteid} = req.params
 
-    db.delete_event([quoteid])
+    db.delete_quote([quoteid])
     .then( (response) => {
       res.status(200).send('sentSuccessfully')} )
     .catch( (err) => {
