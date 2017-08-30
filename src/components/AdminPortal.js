@@ -6,13 +6,14 @@ import AdminHome from './AdminHome';
 import AdminVolunteer from './AdminVolunteer';
 import AdminBlog from './AdminBlog';
 import AdminBlogEditor from './AdminBlogEditor';
+import {hamClicked} from './../ducks/reducer';
+import {connect} from 'react-redux';
 
 
 
-export default class AdminPortal extends Component{
+class AdminPortal extends Component{
   constructor(props){
     super(props);
-
     this.state ={
       sidebarOn:true
     }
@@ -23,6 +24,7 @@ export default class AdminPortal extends Component{
     this.setState({
       sidebarOn: !this.state.sidebarOn
     })
+    this.props.hamClicked(this.state.sidebarOn)
   }
 
 
@@ -50,3 +52,6 @@ export default class AdminPortal extends Component{
     )
   }
 }
+
+
+export default connect(null, {hamClicked})(AdminPortal);

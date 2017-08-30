@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import IndivBlogPostDetails from './IndivBlogPostDetails';
 import './../styles/adminEditor.css';
+import {connect} from 'react-redux';
 
 
-export default class AdminBlog extends Component {
+class AdminBlog extends Component {
   constructor(props){
     super(props);
       this.state ={
@@ -31,8 +32,10 @@ componentDidMount(){
     )
     })
 
+    const fullPageStyle = { width: "100%" }
+
     return(
-      <main className="adminWrapper">
+      <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
             <p className="adminPageHeader">Current Blog Posts</p>
@@ -46,3 +49,11 @@ componentDidMount(){
     )
   }
 }
+
+function mapStateToProps(state){
+  return{
+    dropdownDisplayed: state.clicked
+  }
+}
+
+export default connect(mapStateToProps)(AdminBlog);
