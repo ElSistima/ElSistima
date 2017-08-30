@@ -1,0 +1,50 @@
+.Ad_sidebarMain {
+  width: 14%;
+  height: 820px;
+  background-color: #EDEDED;
+  color: #7b7b7c;
+  float: left;
+}
+
+.sideNav {
+  height: 60px;
+  /*border: 2px solid red;*/
+  display: flex;
+  align-items: center;
+}
+
+.sidefa {
+  font-size: 20px;
+  width: 35px;
+  margin-left: 15px;
+}
+
+.sideNav div {
+  display: none;
+}
+
+
+.sideNav:hover {
+  background-color: #F6A440;
+  color: white;
+}
+
+@media(min-width: 700px) {
+  .sideNav div {
+    display: inline-block;
+  }
+
+  .Ad_sidebarMain {
+    width: 31%;
+    height: 1320px;
+    background-color: #EDEDED;
+  }
+}
+
+@media(min-width: 1000px) {
+  .Ad_sidebarMain {
+    width: 22%;
+    height: 100vh;
+    background-color: #EDEDED;
+  }
+}

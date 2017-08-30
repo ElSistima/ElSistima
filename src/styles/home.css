@@ -38,10 +38,10 @@
   margin-top: .5em;
 }
 
-blockquote {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 1em;
+.blockquote {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1em;
 }
 
 .quote {
@@ -79,7 +79,6 @@ blockquote {
   min-height: 30vh;
   width: 90%;
   margin: 0 auto;
-  /*background-color: pink;*/
 }
 
 .eventsHeaderContainer {
@@ -137,15 +136,15 @@ blockquote {
 }
 
 .previewOne {
-  background-image: url('./../images/pitt-violin.jpg');
+  background-image: url('./../images/pitt-violin-small.jpg');
 }
 
 .previewTwo {
-  background-image: url('./../images/pitt-carnival-showcase.jpg');
+  background-image: url('./../images/pitt-carnival-showcase-small.jpg');
 }
 
 .previewThree {
-  background-image: url('./../images/family-night-performance.jpeg');
+  background-image: url('./../images/family-night-performance-small.jpg');
 }
 
 .eventDate {
@@ -184,6 +183,7 @@ blockquote {
   background-color: #6D8A9A;
   top: -25px;
   right: -10px;
+  padding: .5% 0;
 }
 
 .floatingMissionText {
@@ -192,6 +192,9 @@ blockquote {
   font-weight: 300;
   letter-spacing: 0.03em;
   line-height: 1.15em;
+  width: 90%;
+  padding-top: 3%;
+  margin: 0 auto;
 }
 
 .orgCoreValues {
@@ -209,7 +212,6 @@ blockquote {
   justify-content: space-around;
   width: 90%;
   min-height: 225vh;
-  /*background-color: plum;*/
 }
 
 .coreValuesTop, .coreValuesBottom {
@@ -219,7 +221,6 @@ blockquote {
   padding-top: 7%;
   min-height: 108vh;
   width: 100%;
-  /*background-color: lime;*/
 }
 
 .coreValuesImgDivOne {
@@ -227,7 +228,7 @@ blockquote {
   min-height: 24vh;
   width: 90%;
   margin: 0 auto;
-  background-image: url('./../images/pitt-cello.jpeg');
+  background-image: url('./../images/standup-violin.jpg');
   background-size: cover;
 }
 
@@ -253,9 +254,9 @@ blockquote {
 
 .coreValuesTextThree {
   position: absolute;
-  min-height: 24vh;
+  height: 34vh;
   width: 70%;
-  bottom: -34vh;
+  bottom: -33vh;
   right: -1vh;
   padding: 1em;
   background-color: white;
@@ -265,6 +266,7 @@ blockquote {
 .valuesTextBlock {
   font-size: .75em;
   line-height: 1.15em;
+  margin-top: 1em;
   color: rgb(74,95,107);
 }
 
@@ -275,7 +277,7 @@ blockquote {
   margin: .5em auto;
 }
 
-.fa-music{
+.home-music{
   margin-right: 1em;
 }
 
@@ -310,12 +312,11 @@ blockquote {
 }
 
 .coreValuesTextTwo, .coreValuesTextFour {
-
   width: 100%;
   min-height: 40vh;
   background-color: white;
   border: 2px solid #5289A9;
-  margin: 25vh auto 0 auto;
+  margin: 27vh auto 0 auto;
   padding-bottom: 1em;
 }
 
@@ -340,7 +341,7 @@ blockquote {
   line-height: 1em;
 }
 
-.textBlockTwoText {
+.textBlockTwoText, .textBlockFourText {
   font-size: 1.25em;
   line-height: 1.2em;
 }
@@ -359,9 +360,9 @@ blockquote {
     margin-top: 1.5em;
   }
 
-  blockquote {
-      width: 78%;
-      padding-top: 1.5em;
+  .blockquote {
+    width: 78%;
+    padding-top: 1.5em;
   }
 
   .quote {
@@ -426,35 +427,56 @@ blockquote {
   }
 
   .floatingMissionText {
-    font-size: .9em;
+    font-size: 1em;
     letter-spacing: 0.05em;
     line-height: 1.25em;
     padding-top: .7em;
   }
 
+  .coreValuesContainer {
+    min-height: 210vh;
+  }
+
   .coreValuesTop, .coreValuesBottom {
     padding-top: 7%;
-    min-height: 98vh;
-    background-color: lime;
+    min-height: 105vh;
+  }
+
+  .coreValuesBottom {
+    padding-bottom: 5%;
+  }
+
+  .coreValuesImgDivOne {
+    min-height: 300px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .coreValuesImgDivTwo {
+    min-height: 300px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .coreValuesTextOne {
-    min-height: 14vh;
-    bottom: -18vh;
+    height: 250px;
+    top: 24vh;
     left: -1vh;
-
   }
 
-  .valuesTextBlock {
-    font-size: 1em;
+  .valuesTextBlock, .textBlockTwoText, .textBlockFourText {
+    font-size: 1.15em;
+    line-height: 1.2em;
+    margin-top: 0em;
+
   }
 
   .coreValuesTextTwo {
     width: 100%;
-    min-height: 40vh;
+    min-height: 34vh;
     background-color: white;
     border: 2px solid #5289A9;
-    margin: 25vh auto 0 auto;
+    margin: 18vh auto 0 auto;
     padding-bottom: 1em;
   }
 
@@ -468,10 +490,228 @@ blockquote {
     line-height: 1.4em;
   }
 
-  .textBlockTwoText {
+  .textBlockThreeHeader {
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  .coreValuesTextThree {
+    height: 350px;
+    min-height: 24vh;
+    bottom: -32vh;
+  }
+
+  .valuesItem {
+    font-size: 1.15em;
+    margin: .75em auto;
+  }
+
+  .coreValuesTextFour {
+    margin-top: 32vh;
+  }
+
+  .coreValuesButton {
+    width: 9.5em;
+    height: 2.75em;
+    margin-top: 1.4em;
+  }
+
+  .supportUsButtonText {
     font-size: 1.25em;
-    line-height: 1.2em;
+  }
+
+}
+
+@media(min-width: 1000px){
+
+  .homeBanner {
+    min-height: 50vh;
+    background-position: 0% 25%;
+  }
+
+  .quoteContainer {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    height: 100%;
+  }
+
+  .socialIconsQuote {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    min-height: 15%;
+  }
+
+  .socialCircleQuote {
+    min-height: 48px;
+    min-width: 48px;
+    margin-top: 0;
+  }
+
+  .blockquote {
+    position: relative;
+    width: 68%;
+    margin-top: 6.5em;
+    overflow: hidden;
+  }
+
+  .quote {
+    font-size: x-large;
+  }
+
+  .author {
+    font-size: medium;
+  }
+
+  .authorTitle {
+    font-size: small;
+  }
+
+  .eventsContainer {
+    width: 70%;
+    min-height: 70vh;
+    padding-top: 4vh;
+
+  }
+
+  .eventsHeader {
+    font-size: 2.25em;
+  }
+
+  .seeMoreButton {
+    height: 2.5em;
+    width: 8em;
+    margin-left: .75em;
+  }
+
+  .eventsPreviewsContainer {
+    margin-top: 3vh;
+    min-height: 47.5vh;
+
+  }
+
+  .eventPreview {
+    min-width: 333px;
   }
 
 
+  .eventPreview a {
+    width: 100%;
+    height: 87.5%;
+  }
+
+  .eventImg {
+    width: 333px;
+    height: 333px;
+    margin: 0 auto;
+  }
+
+  .eventDate {
+    font-size: 1.35em;
+  }
+
+  .eventName {
+    font-size: 1.15em;
+    text-align: center;
+    line-height: 1.45em;
+  }
+
+  .orgMission {
+    min-height: 60vh;
+  }
+
+  .orgMissionImgContainer {
+    position: relative;
+    width: 70%;
+    min-height: 32vh;
+    background-position: 0% 27.5%;
+  }
+
+  .floatingMissionDiv {
+    position: absolute;
+    display:table;
+    vertical-align: middle;
+    width: 55%;
+    min-height: 14.5vh;
+    background-color: #6D8A9A;
+    top: -62px;
+    right: -10px;
+  }
+
+  .floatingMissionText {
+    margin: 3% auto 0 auto;
+    width: 95%;
+    padding-bottom: 24px;
+    font-size: 1.25em;
+  }
+
+  .coreValuesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    min-height: 160vh;
+  }
+
+  .coreValuesTop {
+    align-items: flex-start;
+    padding-top: 5%;
+    min-height: 38vh;
+    width: 80%;
+  }
+
+  .coreValuesImgDivOne {
+    width: 40%;
+    background-image: url('./../images/standup-violin.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .coreValuesTextOne {
+    height: 300px;
+    top: 24vh;
+    font-size: small;
+  }
+
+  .coreValuesBottom {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    padding-top: 8%;
+    padding-bottom: 0;
+    min-height: 80vh;
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .coreValuesTextTwo, .coreValuesTextFour {
+    width: 40%;
+    padding-bottom: 1em;
+  }
+
+  .coreValuesTextThree {
+    height: 350px;
+    top: 24vh;
+    font-size: small
+  }
+
+  .coreValuesTextFour {
+    margin-top: 18vh;
+  }
+
+  .coreValuesImgDivTwo {
+    width: 40%;
+    background-image: url('./../images/conduct.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+@media(min-width: 1600px){
+  .coreValuesTextOne, .coreValuesTextThree {
+    font-size: medium;
+  }
 }

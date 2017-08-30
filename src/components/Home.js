@@ -22,13 +22,14 @@ export default function Home (props) {
             </a>
           </div>
 
-          <blockquote>
+
+          <div className="blockquote">
             <p className="quote">"From the minute a child is taught to play an instrument, he's no longer poor. He is a child in progress who will become a citizen."</p>
             <div className="quoteAttribute">
               <p className="author">Dr. Jose Antonio Abreu</p>
               <p className="authorTitle">Founder of {"Venezuela's"} El Sistema</p>
             </div>
-          </blockquote>
+          </div>
         </div>
       </section>
 
@@ -73,7 +74,7 @@ export default function Home (props) {
       <section className="orgMission">
         <div className="orgMissionImgContainer">
           <div className="floatingMissionDiv">
-            <blockquote className="floatingMissionText">El Sistema Pittsburg provides {"Pittsburgh's"} youth with accessible and instensive classical music instruction.</blockquote>
+            <div className="floatingMissionText">El Sistema Pittsburg provides {"Pittsburgh's"} youth with accessible and instensive classical music instruction.</div>
           </div>
         </div>
       </section>
@@ -107,23 +108,20 @@ export default function Home (props) {
 
           <div className="coreValuesBottom">
           <div className="coreValuesImgDivTwo">
-
-
-
             <div className="coreValuesTextThree">
             <p className="textBlockThreeHeader">El Sistema Core Values</p>
               <ul className="valuesTextBlock">
                 <div className="valuesItem">
-                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Music education as social change</p>
+                  <i className="home-music fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Music education as social change</p>
                 </div>
                 <div className="valuesItem">
-                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Accessibility</p>
+                  <i className="home-music fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Accessibility</p>
                 </div>
                 <div className="valuesItem">
-                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">High standards of musical excellence</p>
+                  <i className="home-music fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">High standards of musical excellence</p>
                 </div>
                 <div className="valuesItem">
-                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Community</p>
+                  <i className="home-music fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Community</p>
                 </div>
               </ul>
               <Link to="/about" className="linkedButton">
