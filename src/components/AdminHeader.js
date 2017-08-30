@@ -4,10 +4,13 @@ import '../styles/adminHeader.css';
 export default class AdminHeader extends Component{
   constructor(props){
     super(props);
-
+      
   }
 
+
+
   render(){
+
     return(
       <main className="Ad_headerMain">
       <div className="adHeader_left">
