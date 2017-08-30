@@ -254,9 +254,9 @@
 
 .coreValuesTextThree {
   position: absolute;
-  min-height: 24vh;
+  height: 34vh;
   width: 70%;
-  bottom: -34vh;
+  bottom: -33vh;
   right: -1vh;
   padding: 1em;
   background-color: white;
@@ -427,7 +427,7 @@
   }
 
   .floatingMissionText {
-    font-size: .9em;
+    font-size: 1em;
     letter-spacing: 0.05em;
     line-height: 1.25em;
     padding-top: .7em;
@@ -439,12 +439,28 @@
 
   .coreValuesTop, .coreValuesBottom {
     padding-top: 7%;
-    min-height: 98vh;
+    min-height: 105vh;
+  }
+
+  .coreValuesBottom {
+    padding-bottom: 5%;
+  }
+
+  .coreValuesImgDivOne {
+    min-height: 300px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .coreValuesImgDivTwo {
+    min-height: 300px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .coreValuesTextOne {
-    min-height: 14vh;
-    bottom: -24vh;
+    height: 250px;
+    top: 24vh;
     left: -1vh;
   }
 
@@ -480,8 +496,9 @@
   }
 
   .coreValuesTextThree {
+    height: 350px;
     min-height: 24vh;
-    bottom: -33vh;
+    bottom: -32vh;
   }
 
   .valuesItem {
@@ -648,7 +665,6 @@
 
   .coreValuesImgDivOne {
     width: 40%;
-    min-height: 300px;
     background-image: url('./../images/standup-violin.jpg');
     background-size: cover;
     background-position: center;
@@ -657,16 +673,17 @@
   .coreValuesTextOne {
     height: 300px;
     top: 24vh;
+    font-size: small;
   }
 
   .coreValuesBottom {
     align-items: flex-start;
     flex-direction: row-reverse;
     padding-top: 8%;
+    padding-bottom: 0;
     min-height: 80vh;
     width: 80%;
     overflow: hidden;
-
   }
 
   .coreValuesTextTwo, .coreValuesTextFour {
@@ -677,6 +694,7 @@
   .coreValuesTextThree {
     height: 350px;
     top: 24vh;
+    font-size: small
   }
 
   .coreValuesTextFour {
@@ -685,11 +703,15 @@
 
   .coreValuesImgDivTwo {
     width: 40%;
-    min-height: 300px;
     background-image: url('./../images/conduct.jpg');
     background-size: cover;
     background-position: center;
   }
 
+}
 
+@media(min-width: 1600px){
+  .coreValuesTextOne, .coreValuesTextThree {
+    font-size: medium;
+  }
 }
