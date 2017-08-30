@@ -90,7 +90,7 @@ export default function Footer(props){
       <div className="bottomFooterDiv">
         <div className="bottomContents">
         <p>El Sistema Pittsburgh - 6 Loop St. #4, Pittsburgh, PA 15215 - Map - Main (777) 465-2342</p>
-        <p>Privacy Policy - Site Map - &copy; Copyright 2017</p>
+        <p>Privacy Policy - Site Map - <a href={process.env.REACT_APP_LOGIN} className="authLogin">Admin</a> - &copy; Copyright 2017</p>
         </div>
       </div>
     </footer>
