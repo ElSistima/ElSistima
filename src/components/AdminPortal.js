@@ -5,6 +5,8 @@ import AdminSideBar from './AdminSideBar';
 import AdminHome from './AdminHome';
 import AdminVolunteer from './AdminVolunteer';
 import AdminBlog from './AdminBlog';
+import AdminBlogEditor from './AdminBlogEditor';
+
 
 
 export default class AdminPortal extends Component{
@@ -39,6 +41,7 @@ export default class AdminPortal extends Component{
 
         <Switch>
           <Route exact path="/admin" component={AdminHome} />
+          <Route exact path="/admin/edit/blog" component={AdminBlogEditor}
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
           <Route exact path="/admin/blog" component={AdminBlog} />
 
