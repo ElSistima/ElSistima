@@ -115,7 +115,9 @@ module.exports = {
         default:break;
       }
 
-    db.post_add_event([type, title, thumbnails, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle ])
+    console.log(type, title, thumbnail, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle)
+
+    db.post_add_event([type, title, thumbnail, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle ])
         .then( (response) => {
           res.status(200).send('sentSuccessfully')} )
         .catch( (err) => {

@@ -154,26 +154,27 @@ app.get('/api/quote', userController.getQuote)
 app.get('/api/performances', userController.getPerformances)
 
 //===============POST REQUESTS===================
-app.post('/api/events')
-app.post('/api/volunteers')
-app.post('/api/quote')
-app.post('/api/newimage')
-app.post('/api/post')
+app.post('/api/events', userController.postEvent)
+app.post('/api/volunteers', userController.postVolunteer)
+app.post('/api/quote', userController.postQuote)
+// app.post('/api/newimage', userController.postImage)
+app.post('/api/post', userController.postNewPost)
 
 
 //===============PUT REQUESTS===================
-app.put('/api/events/:eventid')
-app.put('/api/volunteers/:volunteerid')
+app.put('/api/events/:eventid', userController.putEvent)
+app.put('/api/volunteers/:volunteerid', userController.putVolunteer)
 // app.put('/api/volunteers/profilePic/:volunteerid')
-app.put('/api/users/:userid')
+app.put('/api/users/:userid', userController.putUserAdmin)
 // app.put('/api/users/profilePic/:userid')
-app.put('/api/posts/:postid')
+app.put('/api/posts/:postid', userController.putPost)
 
 //===============DELETE REQUESTS===================
-app.delete('/api/posts/:postid')
-app.delete('/api/volunteers/:volunteerid')
+app.delete('/api/posts/:postid', userController.deletePost)
+app.delete('/api/volunteers/:volunteerid', userController.deleteVolunteer)
 // app.delete('/api/images/:imageid')
-app.delete('/api/events/eventid')
+app.delete('/api/events/:eventid', userController.deleteEvent)
+app.delete('/api/quote/:quoteid', userController.deleteQuote)
 
 
 
