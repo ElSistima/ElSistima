@@ -107,6 +107,9 @@ export default function Home (props) {
 
           <div className="coreValuesBottom">
           <div className="coreValuesImgDivTwo">
+
+
+
             <div className="coreValuesTextThree">
             <p className="textBlockThreeHeader">El Sistema Core Values</p>
               <ul className="valuesTextBlock">
@@ -127,6 +130,7 @@ export default function Home (props) {
                 <div className="coreValuesButton"><p className="supportUsButtonText">Read More</p>
                 </div>
               </Link>
+
             </div>
           </div>
 
@@ -144,7 +148,6 @@ export default function Home (props) {
               </p>
             </div>
           </div>
-
           </div>
         </div>
       </section>
