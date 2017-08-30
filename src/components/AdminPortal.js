@@ -4,6 +4,8 @@ import AdminHeader from './AdminHeader';
 import AdminSideBar from './AdminSideBar';
 import AdminHome from './AdminHome';
 import AdminVolunteer from './AdminVolunteer';
+import AdminBlog from './AdminBlog';
+
 
 export default class AdminPortal extends Component{
   constructor(props){
@@ -38,6 +40,8 @@ export default class AdminPortal extends Component{
         <Switch>
           <Route exact path="/admin" component={AdminHome} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
+          <Route exact path="/admin/blog" component={AdminBlog} />
+
         </Switch>
       </main>
     )
