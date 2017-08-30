@@ -72,7 +72,10 @@ export default function About(props){
               <div className="topBox">
                 <div className="volunteersCirclePic">
                 </div>
-                <div className="profileButton"></div>
+                <div className="volunteersProfileButton">
+                <div className="arrowImage"></div>
+
+                </div>
               </div>
               <p className="volunteersName">Charlie Brown</p>
               <p className="volunteersTitle">Volunteer Block Head</p>

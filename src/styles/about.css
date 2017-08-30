@@ -184,6 +184,7 @@
     box-shadow: 1px 1px 1px 1px;
     padding-bottom: 1em;
     background-color: white;
+
 }
 
 .topBox {
@@ -205,6 +206,26 @@
     border-radius: 50%;
     top: 70px;
     border: solid 1px;
+}
+
+.volunteersProfileButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3vh;
+    bottom: -3vh;
+    height: 2em;
+    width: 2em;
+    background-color: #ECC749;
+    border-radius: 50%;
+}
+
+.arrowImage {
+    background-image: url('./../images/keyboard-right-arrow-button.png');
+    height: 1em;
+    width: 1em;
 }
 
 .volunteersName {
