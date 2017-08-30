@@ -38,10 +38,10 @@
   margin-top: .5em;
 }
 
-blockquote {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 1em;
+.blockquote {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1em;
 }
 
 .quote {
@@ -79,7 +79,6 @@ blockquote {
   min-height: 30vh;
   width: 90%;
   margin: 0 auto;
-  /*background-color: pink;*/
 }
 
 .eventsHeaderContainer {
@@ -137,15 +136,15 @@ blockquote {
 }
 
 .previewOne {
-  background-image: url('./../images/pitt-violin.jpg');
+  background-image: url('./../images/pitt-violin-small.jpg');
 }
 
 .previewTwo {
-  background-image: url('./../images/pitt-carnival-showcase.jpg');
+  background-image: url('./../images/pitt-carnival-showcase-small.jpg');
 }
 
 .previewThree {
-  background-image: url('./../images/family-night-performance.jpeg');
+  background-image: url('./../images/family-night-performance-small.jpg');
 }
 
 .eventDate {
@@ -209,7 +208,6 @@ blockquote {
   justify-content: space-around;
   width: 90%;
   min-height: 225vh;
-  /*background-color: plum;*/
 }
 
 .coreValuesTop, .coreValuesBottom {
@@ -310,7 +308,6 @@ blockquote {
 }
 
 .coreValuesTextTwo, .coreValuesTextFour {
-
   width: 100%;
   min-height: 40vh;
   background-color: white;
@@ -359,9 +356,9 @@ blockquote {
     margin-top: 1.5em;
   }
 
-  blockquote {
-      width: 78%;
-      padding-top: 1.5em;
+  .blockquote {
+    width: 78%;
+    padding-top: 1.5em;
   }
 
   .quote {
@@ -505,5 +502,138 @@ blockquote {
     font-size: 1.25em;
   }
 
+}
+
+@media(min-width: 1000px){
+
+  .homeBanner {
+    min-height: 50vh;
+    background-position: 0% 25%;
+  }
+
+  .quoteContainer {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    height: 100%;
+  }
+
+  .socialIconsQuote {
+    /*margin-top: 3.5vh;*/
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    min-height: 15%;
+  }
+
+  .socialCircleQuote {
+    min-height: 48px;
+    min-width: 48px;
+    margin-top: 0;
+  }
+
+  .blockquote {
+    position: relative;
+    width: 68%;
+    /*min-height: 40%;*/
+    margin-top: 6.5em;
+    /*margin: 0 auto;*/
+    overflow: hidden;
+  }
+
+  .quote {
+    /*min-height: 50%;*/
+    font-size: x-large;
+  }
+
+  .author {
+    font-size: medium;
+  }
+
+  .authorTitle {
+    font-size: small;
+  }
+
+  /*Come back to code above*/
+
+  .eventsContainer {
+    width: 70%;
+    min-height: 70vh;
+    padding-top: 4vh;
+
+  }
+
+  .eventsHeader {
+    font-size: 2.25em;
+  }
+
+  .seeMoreButton {
+    height: 2.5em;
+    width: 8em;
+    margin-left: .75em;
+  }
+
+  .eventsPreviewsContainer {
+    margin-top: 3vh;
+    min-height: 47.5vh;
+
+  }
+
+  .eventPreview {
+    min-width: 333px;
+    /*background-color: lime;*/
+  }
+
+
+  .eventPreview a {
+    width: 100%;
+    height: 87.5%;
+  }
+
+  .eventImg {
+    width: 333px;
+    height: 333px;
+    margin: 0 auto;
+  }
+
+  .eventDate {
+    font-size: 1.35em;
+  }
+
+  .eventName {
+    font-size: 1.15em;
+    text-align: center;
+    line-height: 1.45em;
+  }
+
+  .orgMission {
+    min-height: 60vh;
+  }
+
+  .orgMissionImgContainer {
+    position: relative;
+    width: 70%;
+    min-height: 32vh;
+    background-position: 0% 27.5%;
+  }
+
+  .floatingMissionDiv {
+    position: absolute;
+    display:table;
+    vertical-align: middle;
+    width: 55%;
+    min-height: 14.5vh;
+    background-color: #6D8A9A;
+    top: -62px;
+    right: -10px;
+  }
+
+  .floatingMissionText {
+    margin: 3% auto 0 auto;
+    width: 95%;
+    padding-bottom: 24px;
+    font-size: 1.25em;
+  }
 
 }
