@@ -108,9 +108,6 @@ export default function Home (props) {
 
           <div className="coreValuesBottom">
           <div className="coreValuesImgDivTwo">
-
-
-
             <div className="coreValuesTextThree">
             <p className="textBlockThreeHeader">El Sistema Core Values</p>
               <ul className="valuesTextBlock">

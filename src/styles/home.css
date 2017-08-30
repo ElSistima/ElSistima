@@ -431,20 +431,17 @@
 
   .coreValuesContainer {
     min-height: 210vh;
-    /*background-color: plum;*/
   }
 
   .coreValuesTop, .coreValuesBottom {
     padding-top: 7%;
     min-height: 98vh;
-    /*background-color: lime;*/
   }
 
   .coreValuesTextOne {
     min-height: 14vh;
     bottom: -24vh;
     left: -1vh;
-
   }
 
   .valuesTextBlock, .textBlockTwoText, .textBlockFourText {
@@ -519,7 +516,6 @@
   }
 
   .socialIconsQuote {
-    /*margin-top: 3.5vh;*/
     position: absolute;
     display: flex;
     align-items: center;
@@ -536,14 +532,11 @@
   .blockquote {
     position: relative;
     width: 68%;
-    /*min-height: 40%;*/
     margin-top: 6.5em;
-    /*margin: 0 auto;*/
     overflow: hidden;
   }
 
   .quote {
-    /*min-height: 50%;*/
     font-size: x-large;
   }
 
@@ -554,8 +547,6 @@
   .authorTitle {
     font-size: small;
   }
-
-  /*Come back to code above*/
 
   .eventsContainer {
     width: 70%;
@@ -582,7 +573,6 @@
 
   .eventPreview {
     min-width: 333px;
-    /*background-color: lime;*/
   }
 
 
@@ -635,5 +625,67 @@
     padding-bottom: 24px;
     font-size: 1.25em;
   }
+
+  .coreValuesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    min-height: 160vh;
+  }
+
+  .coreValuesTop {
+    align-items: flex-start;
+    padding-top: 5%;
+    min-height: 38vh;
+    width: 80%;
+  }
+
+  .coreValuesImgDivOne {
+    width: 40%;
+    min-height: 300px;
+    background-image: url('./../images/standup-violin.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .coreValuesTextOne {
+    height: 300px;
+    top: 24vh;
+  }
+
+  .coreValuesBottom {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    padding-top: 8%;
+    min-height: 80vh;
+    width: 80%;
+    overflow: hidden;
+
+  }
+
+  .coreValuesTextTwo, .coreValuesTextFour {
+    width: 40%;
+    padding-bottom: 1em;
+  }
+
+  .coreValuesTextThree {
+    height: 350px;
+    top: 24vh;
+  }
+
+  .coreValuesTextFour {
+    margin-top: 18vh;
+  }
+
+  .coreValuesImgDivTwo {
+    width: 40%;
+    min-height: 300px;
+    background-image: url('./../images/conduct.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
 
 }
