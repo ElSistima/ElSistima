@@ -81,19 +81,18 @@ class AdminVolunteer_ADDNEW extends Component{
         <div className="add_pic_inner fullpicvolunteer">
           <div>Add Full Picture</div>
           <img src='https://i.imgur.com/FTLTf6u.png' />
+          <div className="pblg save_btn volunteersaveOR">SAVE</div>
         </div>
 
 
           <div className="add_pic_inner profileVolunteer">
             <div>Add Profile Picture</div>
             <img src='https://i.imgur.com/FTLTf6u.png' />
+            <div className="pblg cancel_btn volunteercancelOR">CANCEL</div>
           </div>
         </div>
 
-        <div className="anb_btn volunteerbtnOR">
-          <div className="pblg save_btn volunteersaveOR">SAVE</div>
-          <div className="pblg cancel_btn volunteercancelOR">CANCEL</div>
-        </div>
+
 
       </main>
     )

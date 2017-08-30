@@ -18,7 +18,7 @@ class AdminBlog_ADDNEW extends Component{
         <div className="anb_headerText">Add New Blog</div>
         <div className="anb_topInput">
           <input placeholder="Title"/>
-          <input placeholder="Caption"/>
+          <input className="captionInput" placeholder="Caption"/>
         </div>
 
         <div className="anb_Content">
@@ -32,19 +32,18 @@ class AdminBlog_ADDNEW extends Component{
         <div className="add_pic_inner">
           <div>Add Top Full Picture</div>
           <img src='https://i.imgur.com/FTLTf6u.png' />
+          <div className="pblg save_btn">SAVE</div>
         </div>
         <div className="add_pic_inner">
           <div>Add 2nd Full Picture</div>
           <img src='https://i.imgur.com/FTLTf6u.png' />
+          <div className="pblg cancel_btn">CANCEL</div>
         </div>
       </div>
 
 
 
-      <div className="anb_btn">
-        <div className="pblg save_btn">SAVE</div>
-        <div className="pblg cancel_btn">CANCEL</div>
-      </div>
+
       </main>
     )
   }
