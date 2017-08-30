@@ -1,0 +1,70 @@
+.Adhome_rcc_Main {
+  width: 200%;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
+  margin-bottom: 10px;
+}
+
+.rcc_header {
+  display: flex;
+}
+
+.rcc_header_big {
+  height: 30px;
+  background: #4e8aa8;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.rcc_header_big span {
+  margin-left: 10px;
+}
+
+.rcc_header div {
+  width: 50px;
+}
+
+.adhome_calender {
+  height: 400px;
+}
+
+@media(min-width: 700px) {
+  .Adhome_rcc_Main {
+    width: 90%;
+    height: 350px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 25px;
+    -webkit-box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
+    -moz-box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
+    box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
+  }
+
+  .adhome_calender {
+    height: 550px;
+  }
+}
+
+
+@media(min-width: 1000px) {
+  .Adhome_rcc_Main {
+    width: 50%;
+    height: 400px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    -webkit-box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
+    -moz-box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
+    box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
+  }
+
+  .adhome_calender {
+    height: 820px;
+    width: 45%;
+    position: relative;
+    top: -840px;
+    left: 40vw;
+  }
+}

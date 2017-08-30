@@ -1,0 +1,22 @@
+.Ad_homeMain {
+  background-color: white;
+  width: calc(100vw - 70%);
+  height: 100vh;
+  float: left;
+
+}
+
+
+
+@media(min-width: 700px) {
+  .Ad_homeMain {
+    width: calc(100vw - 31%);
+  }
+}
+
+
+@media(min-width: 1000px) {
+  .Ad_homeMain {
+    width: calc(100vw - 22%);
+  }
+}

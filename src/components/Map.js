@@ -39,7 +39,7 @@ class Map extends Component {
     return (
       <GoogleMapReact
         style={style}
-        bootstrapURLKeys={{key: "AIzaSyC66uQk7QMvpKqeLHO5zLU97yiqnzo_iDw"}}
+        bootstrapURLKeys={{key: {process.env.GOOGLE_MAP}}}
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
       >
