@@ -326,7 +326,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 32vh;
+    min-height: 37vh;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
@@ -339,7 +339,7 @@
 .whoWeAreBodyText {
     padding-top: 3.5em;
     padding-bottom: 1em;
-    font-size: .8em;
+    font-size: .9em;
     line-height: 1.4em;
 }
 
@@ -349,20 +349,20 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 1.5em;
-    width: 4em;
+    height: 2em;
+    width: 7em;
     background-color: #ECC749;
 }
 
 .whoWeAreButtonText {
-    font-size: .63em;
+    font-size: 1em;
 }
 
 .missionStatementContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    min-height: 24vh;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
@@ -381,7 +381,7 @@
 .missionStatementBodyText {
     padding-top: 3.5em;
     padding-bottom: 1em;
-    font-size: .8em;
+    font-size: .9em;
     line-height: 1.4em;
 }
 
@@ -391,20 +391,20 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 1.5em;
-    width: 4em;
+    height: 2em;
+    width: 7em;
     background-color: #ECC749;
 }
 
 .missionStatementButtonText {
-    font-size: .63em;
+    font-size: 1em;
 }
 
 .curriculumContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 23vh;
+    height: 24vh;
     background-color: white;
     color: rgb(74,95,107);
 }
@@ -422,7 +422,7 @@
 .curriculumBodyText {
     padding-top: 3.5em;
     padding-bottom: 1em;
-    font-size: .8em;
+    font-size: .9em;
     line-height: 1.4em;
 }
 
@@ -432,26 +432,27 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 1.5em;
-    width: 4em;
+    height: 2em;
+    width: 7em;
     background-color: #ECC749;
 }
 
 .curriculumButtonText {
-    font-size: .63em;
+    font-size: 1em;
 }
 
 .volunteersContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 75vh;
     background-color: white;
     color: rgb(74,95,107);
+    padding-top: 0em;
 }
 
 .volunteersText {
-    height: 80%;
+    height: 94%;
     width: 75%;
     background-color: white;
 }
@@ -463,8 +464,13 @@
 .volunteersBodyText {
     padding-top: 3.5em;
     padding-bottom: 3em;
-    font-size: .8em;
+    font-size: .9em;
     line-height: 1.4em;
+}
+
+.volunteersFormat {
+    display: flex;
+    justify-content: space-between;
 }
 
 .volunteersProfile {
@@ -486,11 +492,32 @@
     background-color: #5289A9;
 }
 
+.topBox2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: rgb(74,95,107);
+}
+
 .volunteersCirclePic {
     position: absolute;
     min-height: 7em;
     width: 7em;
     background-image: url('./../images/peanut1.jpeg');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+}
+
+.volunteersCirclePic2 {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut2.jpg');
     background-size: cover;
     border-radius: 50%;
     top: 70px;
@@ -527,7 +554,7 @@
     
 }
 
-.volunteersTitle {
+.volunteersPosition {
     font-size: .75em;
 }
 
@@ -557,7 +584,7 @@
 .volunteersFooter {
     display: flex;
     justify-content: center;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     padding-top: 1em;
     font-size: 1.2em;
 }
@@ -566,13 +593,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.5em;
-    width: 4em;
+    height: 2em;
+    width: 7em;
     background-color: #ECC749;
 }
 
 .volunteersButtonText {
-    font-size: .63em;
+    font-size: 1em;
+}
+
+.ourLocationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.ourLocationText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.ourLocationTitle {
+    font-size: 1.2em;
+}
+
+.ourLocationImage {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    height: 29vh;
+    width: 30vh;
+    margin-left: 8em;
+    background-image: url('./../images/pittsburgh-location.png');
+    background-size: cover;
 }
 
 

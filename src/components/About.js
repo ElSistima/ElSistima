@@ -68,6 +68,8 @@ export default function About(props){
           <br/>
           We welcome, support and encourage volunteer members from diverse occupational and educational backgrounds who believe in music making as a means for transforming lives.  Volunteers work together as highly collaborative teams.
           </p>
+
+          <div className="volunteersFormat">
             <div className="volunteersProfile">
               <div className="topBox">
                 <div className="volunteersCirclePic">
@@ -93,6 +95,35 @@ export default function About(props){
             </a>
           </div>
             </div>
+
+
+            <div className="volunteersProfile">
+              <div className="topBox2">
+                <div className="volunteersCirclePic2">
+                </div>
+                <div className="volunteersProfileButton">
+                <div className="arrowImage"></div>
+
+                </div>
+              </div>
+              <p className="volunteersName">Peppermint Patty</p>
+              <p className="volunteersPosition">Volunteer Accountant</p>
+              <div className="socialIconsAboutUs">
+            <a href="https://www.facebook.com/ElSistemaPittsburgh/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://twitter.com/elsistema" target="blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-twitter fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://www.linkedin.com/company/3276954/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
+            </a>
+          </div>
+            </div>
+          </div>
+
           <p className="volunteersFooter">Interested in becoming a volunteer?</p>
           <div className="volunteersButton">
             <p className="volunteersButtonText">Connect</p>
