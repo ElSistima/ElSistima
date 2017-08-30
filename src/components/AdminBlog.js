@@ -34,6 +34,8 @@ componentDidMount(){
 
     const fullPageStyle = { width: "100%" }
 
+    const postAmount = this.state.fetchedPosts.length == 1 ? "item selected" : "items selected"
+
     return(
       <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <section className="adminContentContainer">
@@ -41,15 +43,23 @@ componentDidMount(){
             <p className="adminPageHeader">Current Blog Posts</p>
           </div>
           <div className="itemsSelected">
-            <p>1 item selected</p>
+            <p>0 {postAmount}</p>
           </div>
-          <div className="columnTitles">
-            <div className="checkbox"></div>
-            <p>Title</p>
-            <p>Publish Date</p>
-            <p>Author</p>
-            <p><i className="fa fa-pencil fa-lg" aria-hidden="true"></i></p>
-            <p><i className="fa fa-trash fa-lg" aria-hidden="true"></i></p>
+          <div className="columnTitles postDetailsWrapper">
+            <div className="blogDetailsItem1">
+              <div className="checkbox"></div>
+            </div>
+            <div className="blogDetailsItem2">
+              <p>Title</p>
+            </div>
+            <div className="blogDetailsItem3">
+              <p>Publish Date</p>
+            </div>
+            <div className="blogDetailsItem4">
+              <p>Author</p>
+            </div>
+            <div className="blogDetailsItem5">
+            </div>
           </div>
           {allPosts}
         </section>
