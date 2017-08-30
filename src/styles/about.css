@@ -184,7 +184,10 @@
     box-shadow: 1px 1px 1px 1px;
     padding-bottom: 1em;
     background-color: white;
+}
 
+.volunteersProfile2 {
+    display: none;
 }
 
 .topBox {
@@ -297,6 +300,7 @@
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
+    padding-top: 2em;
 }
 
 .ourLocationText {
@@ -479,7 +483,15 @@
     box-shadow: 1px 1px 1px 1px;
     padding-bottom: 1em;
     background-color: white;
+}
 
+.volunteersProfile2 {
+    display: block;
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
 }
 
 .topBox {
