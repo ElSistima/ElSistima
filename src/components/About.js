@@ -78,7 +78,7 @@ export default function About(props){
                 </div>
               </div>
               <p className="volunteersName">Charlie Brown</p>
-              <p className="volunteersTitle">Volunteer Block Head</p>
+              <p className="volunteersPosition">Volunteer Block Head</p>
               <div className="socialIconsAboutUs">
             <a href="https://www.facebook.com/ElSistemaPittsburgh/" target="_blank">
               <div className="socialCircleAboutUs"><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
