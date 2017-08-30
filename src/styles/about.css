@@ -1,0 +1,1211 @@
+.aboutContainer {
+    min-height: 80vh;
+    width: 100%;
+
+}
+
+.parallax {
+    background-image: url('./../images/pittsburgh.jpg');
+    min-height: 80vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.whoWeAreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.whoWeAreText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.whoWeAreTitle {
+    font-size: .70em;
+}
+
+.whoWeAreBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.whoWeAreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    width: 3.5em;
+    background-color: #ECC749;
+}
+
+.whoWeAreButtonText {
+    font-size: .5em;
+}
+
+.imgContainerOne {
+    height: 20vh;
+    
+}
+
+.missionStatementContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.missionStatementText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.missionStatementTitle {
+    font-size: .7em;
+}
+
+.missionStatementBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.missionStatementButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    width: 3.5em;
+    background-color: #ECC749;
+}
+
+.missionStatementButtonText {
+    font-size: .5em;
+}
+
+.imgContainerTwo {
+    height: 20vh;
+}
+
+.curriculumContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.curriculumText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.curriculumTitle {
+    font-size: .7em;
+}
+
+.curriculumBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.curriculumButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    width: 3.5em;
+    background-color: #ECC749;
+}
+
+.curriculumButtonText {
+    font-size: .5em;
+}
+
+.imgContainerThree {
+    height: 20vh;
+}
+
+.volunteersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.volunteersText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.volunteersTitle {
+    font-size: .7em;
+}
+
+.volunteersBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.volunteersProfile {
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
+}
+
+.volunteersProfile2 {
+    display: none;
+}
+
+.volunteersProfile3 {
+    display: none;
+}
+
+.volunteersProfile4 {
+    display: none;
+}
+
+.volunteersProfile5 {
+    display: none;
+}
+
+.volunteersProfile6 {
+    display: none;
+}
+
+.topBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19vh;
+    width: 100%;
+    background-color: #5289A9;
+}
+
+/* .topBox2 {
+    display: none;
+}
+
+.topBox3 {
+    display: none;
+}
+
+.topBox4 {
+    display: none;
+}
+
+.topBox5 {
+    display: none;
+}
+
+.topBox6 {
+    display: none;
+} */
+
+.volunteersCirclePic {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut1.jpeg');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+}
+
+/* .volunteersCirclePic2 {
+    display: none;
+}
+
+.volunteersCirclePic3 {
+    display: none;
+}
+
+.volunteersCirclePic4 {
+    display: none;
+}
+
+.volunteersCirclePic5 {
+    display: none;
+}
+
+.volunteersCirclePic6 {
+    display: none;
+} */
+
+.volunteersProfileButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3vh;
+    bottom: -2.5vh;
+    height: 2em;
+    width: 2em;
+    background-color: #ECC749;
+    border-radius: 50%;
+}
+
+/* .volunteersProfileButton2 {
+    display: none;
+}
+
+.volunteersProfileButton3 {
+    display: none;
+}
+
+.volunteersProfileButton4 {
+    display: none;
+}
+
+.volunteersProfileButton5 {
+    display: none;
+}
+
+.volunteersProfileButton6 {
+    display: none;
+} */
+
+.arrowImage {
+    background-image: url('./../images/keyboard-right-arrow-button.png');
+    height: 1em;
+    width: 1em;
+}
+
+.volunteersName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding-top: 2.3em;
+    color: #5289A9;
+    
+}
+
+.volunteersPosition {
+    display: flex;
+    justify-content: center;
+    font-size: .75em;
+}
+
+.socialIconsAboutUs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 9px;
+  }
+  
+.socialIconsAboutUs a {
+    text-decoration: none;
+  }
+  
+.socialCircleAboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #ECC749;
+    margin-right: 1em;
+    margin-top: .5em;
+  }
+
+.volunteersFooter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.volunteersButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    width: 3.5em;
+    background-color: #ECC749;
+}
+
+.volunteersButtonText {
+    font-size: .5em;
+}
+
+.ourLocationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+    padding-top: 2em;
+}
+
+.ourLocationText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.ourLocationTitle {
+    font-size: .7em;
+}
+
+.ourLocationImage {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    height: 29vh;
+    width: 30vh;
+    margin-left: 35px;
+    background-image: url('./../images/pittsburgh-location.png');
+    background-size: cover;
+}
+
+@media(min-width: 700px){
+
+.whoWeAreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 37vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.whoWeAreTitle {
+    font-size: 1.2em;
+}
+
+.whoWeAreBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.whoWeAreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2em;
+    width: 7em;
+    background-color: #ECC749;
+}
+
+.whoWeAreButtonText {
+    font-size: 1em;
+}
+
+.missionStatementContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 24vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.missionStatementText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.missionStatementTitle {
+    font-size: 1.2em;
+}
+
+.missionStatementBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.missionStatementButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2em;
+    width: 7em;
+    background-color: #ECC749;
+}
+
+.missionStatementButtonText {
+    font-size: 1em;
+}
+
+.curriculumContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.curriculumText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.curriculumTitle {
+    font-size: 1.2em;
+}
+
+.curriculumBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.curriculumButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2em;
+    width: 7em;
+    background-color: #ECC749;
+}
+
+.curriculumButtonText {
+    font-size: 1em;
+}
+
+.volunteersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: white;
+    color: rgb(74,95,107);
+    padding-top: 0em;
+}
+
+.volunteersText {
+    height: 94%;
+    width: 75%;
+    background-color: white;
+}
+
+.volunteersTitle {
+    font-size: 1.2em;
+}
+
+.volunteersBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 3em;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.volunteersFormat {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.volunteersProfile {
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
+}
+
+.volunteersProfile2 {
+    display: block;
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
+}
+
+.volunteersProfile3 {
+    display: none;
+}
+
+.volunteersProfile4 {
+    display: none;
+}
+
+.volunteersProfile5 {
+    display: none;
+}
+
+.volunteersProfile6 {
+    display: none;
+}
+
+.topBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: #5289A9;
+}
+
+.topBox2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: rgb(74,95,107);
+}
+
+.volunteersCirclePic {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut1.jpeg');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+}
+
+.volunteersCirclePic2 {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut2.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+}
+
+.volunteersProfileButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3vh;
+    bottom: -1.7vh;
+    height: 2em;
+    width: 2em;
+    background-color: #ECC749;
+    border-radius: 50%;
+}
+
+.arrowImage {
+    background-image: url('./../images/keyboard-right-arrow-button.png');
+    height: 1em;
+    width: 1em;
+}
+
+.volunteersName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding-top: 2.3em;
+    color: #5289A9;
+    
+}
+
+.volunteersPosition {
+    font-size: .75em;
+}
+
+.socialIconsAboutUs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 9px;
+  }
+  
+.socialIconsAboutUs a {
+    text-decoration: none;
+  }
+  
+.socialCircleAboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #ECC749;
+    /* margin-right: 1em;
+    margin-top: .5em; */
+  }
+
+.volunteersFooter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    font-size: 1.2em;
+}
+
+.volunteersButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 7em;
+    background-color: #ECC749;
+}
+
+.volunteersButtonText {
+    font-size: 1em;
+}
+
+.ourLocationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.ourLocationText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.ourLocationTitle {
+    font-size: 1.2em;
+}
+
+.ourLocationImage {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    height: 29vh;
+    width: 30vh;
+    margin-left: 8em;
+    background-image: url('./../images/pittsburgh-location.png');
+    background-size: cover;
+}
+
+}
+
+@media(min-width: 1000px){
+
+.whoWeAreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 62vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+    
+.whoWeAreTitle {
+    font-size: 2.2em;
+    padding-top: 1em;
+}
+    
+.whoWeAreBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 2em;
+    font-size: 1.3em;
+    line-height: 1.65em;
+    font-weight: 300;
+}
+    
+.whoWeAreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2.5em;
+    width: 9em;
+    background-color: #ECC749;
+}
+    
+.whoWeAreButtonText {
+    font-size: 1.3em;
+}
+
+.imgContainerOne {
+    height: 40vh;   
+}
+
+.missionStatementContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.missionStatementText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.missionStatementTitle {
+    font-size: 2.2em;
+    padding-top: 1em;
+}
+
+.missionStatementBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 2em;
+    font-size: 1.3em;
+    line-height: 1.65em;
+    font-weight: 300;
+}
+
+.missionStatementButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2.5em;
+    width: 9em;
+    background-color: #ECC749;
+}
+
+.missionStatementButtonText {
+    font-size: 1.3em;
+}
+
+.imgContainerTwo {
+    height: 40vh;
+}
+
+.curriculumContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52vh;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.curriculumText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.curriculumTitle {
+    font-size: 2.2em;
+    padding-top: 1em;
+}
+
+.curriculumBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 2em;
+    font-size: 1.3em;
+    line-height: 1.65em;
+    font-weight: 300;
+}
+
+.curriculumButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2.5em;
+    width: 9em;
+    background-color: #ECC749;
+}
+
+.curriculumButtonText {
+    font-size: 1.3em;
+}
+
+.imgContainerThree {
+    height: 40vh;
+}
+
+.volunteersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    background-color: white;
+    color: rgb(74,95,107);
+    padding-top: 0em;
+    padding-bottom: 4em;
+}
+
+.volunteersText {
+    height: 94%;
+    width: 75%;
+    background-color: white;
+}
+
+.volunteersTitle {
+    font-size: 2.2em;
+    padding-top: 1em;
+}
+
+.volunteersBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 2em;
+    font-size: 1.3em;
+    line-height: 1.65em;
+    font-weight: 300;
+}
+
+.volunteersFormat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.volunteersProfile {
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
+    
+}
+
+.volunteersProfile2 {
+    display: block;
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
+    
+}
+
+/* .volunteersProfile3 {
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
+} */
+
+.volunteersProfile4 {
+    display: block;
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
+
+}
+
+/* .volunteersProfile5 {
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
+} */
+
+/* .volunteersProfile6 {
+    display: block;
+    height: 17.5em;
+    width: 17.5em;
+    box-shadow: 1px 1px 1px 1px;
+    padding-bottom: 1em;
+    background-color: white;
+} */
+
+.topBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: #5289A9;
+}
+
+.topBox2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: rgb(74,95,107);
+}
+
+/* .topBox3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: rgb(74,95,107);
+}
+
+.topBox4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: rgb(74,95,107);
+}
+
+.topBox5 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: rgb(74,95,107);
+}
+
+.topBox6 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: rgb(74,95,107);
+} */
+
+.volunteersCirclePic {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut1.jpeg');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+}
+
+.volunteersCirclePic2 {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut2.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+}
+
+/* .volunteersCirclePic3 {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut3.jpeg');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+} */
+
+.volunteersCirclePic4 {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut4.png');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+}
+
+/* .volunteersCirclePic5 {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut5.png');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+}
+
+.volunteersCirclePic6 {
+    position: absolute;
+    min-height: 7em;
+    width: 7em;
+    background-image: url('./../images/peanut6.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    top: 70px;
+    border: solid 1px;
+} */
+
+.volunteersProfileButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3vh;
+    bottom: -1.7vh;
+    height: 2em;
+    width: 2em;
+    background-color: #ECC749;
+    border-radius: 50%;
+}
+
+.arrowImage {
+    background-image: url('./../images/keyboard-right-arrow-button.png');
+    height: 1em;
+    width: 1em;
+}
+
+.volunteersName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding-top: 2.3em;
+    color: #5289A9;
+    
+}
+
+.volunteersPosition {
+    font-size: .75em;
+}
+
+.socialIconsAboutUs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 9px;
+  }
+  
+.socialIconsAboutUs a {
+    text-decoration: none;
+  }
+  
+.socialCircleAboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #ECC749;
+    /* margin-right: 1em;
+    margin-top: .5em; */
+  }
+
+.volunteersFooter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    font-size: 2.2em;
+    font-weight: 300;
+}
+
+.volunteersButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    width: 9em;
+    background-color: #ECC749;
+}
+
+.volunteersButtonText {
+    font-size: 1.3em;
+}
+
+.ourLocationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(74,95,107);
+    
+}
+
+.ourLocationText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.ourLocationTitle {
+    font-size: 2.2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.ourLocationImage {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    height: 29vh;
+    width: 30vh;
+    margin-left: 26em;
+    background-image: url('./../images/pittsburgh-location.png');
+    background-size: cover;
+}
+
+}
