@@ -70,6 +70,8 @@ export default function About(props){
           </p>
 
           <div className="volunteersFormat">
+
+
             <div className="volunteersProfile">
               <div className="topBox">
                 <div className="volunteersCirclePic">
@@ -122,7 +124,118 @@ export default function About(props){
             </a>
           </div>
             </div>
+
+
+            <div className="volunteersProfile3">
+              <div className="topBox3">
+                <div className="volunteersCirclePic3">
+                </div>
+                <div className="volunteersProfileButton">
+                <div className="arrowImage"></div>
+
+                </div>
+              </div>
+              <p className="volunteersName">Lucy van Pelt</p>
+              <p className="volunteersPosition">Volunteer Student Aid</p>
+              <div className="socialIconsAboutUs">
+            <a href="https://www.facebook.com/ElSistemaPittsburgh/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://twitter.com/elsistema" target="blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-twitter fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://www.linkedin.com/company/3276954/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
+            </a>
           </div>
+            </div>
+
+
+            <div className="volunteersProfile4">
+              <div className="topBox">
+                <div className="volunteersCirclePic4">
+                </div>
+                <div className="volunteersProfileButton">
+                <div className="arrowImage"></div>
+
+                </div>
+              </div>
+              <p className="volunteersName">Franklin</p>
+              <p className="volunteersPosition">Volunteer Music Teacher</p>
+              <div className="socialIconsAboutUs">
+            <a href="https://www.facebook.com/ElSistemaPittsburgh/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://twitter.com/elsistema" target="blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-twitter fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://www.linkedin.com/company/3276954/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
+            </a>
+          </div>
+            </div>
+
+
+            <div className="volunteersProfile5">
+              <div className="topBox">
+                <div className="volunteersCirclePic5">
+                </div>
+                <div className="volunteersProfileButton">
+                <div className="arrowImage"></div>
+
+                </div>
+              </div>
+              <p className="volunteersName">Snoopy</p>
+              <p className="volunteersPosition">Volunteer Fighter Pilot</p>
+              <div className="socialIconsAboutUs">
+            <a href="https://www.facebook.com/ElSistemaPittsburgh/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://twitter.com/elsistema" target="blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-twitter fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://www.linkedin.com/company/3276954/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
+            </a>
+          </div>
+            </div>
+
+
+            <div className="volunteersProfile6">
+              <div className="topBox2">
+                <div className="volunteersCirclePic6">
+                </div>
+                <div className="volunteersProfileButton">
+                <div className="arrowImage"></div>
+
+                </div>
+              </div>
+              <p className="volunteersName">Linus van Pelt</p>
+              <p className="volunteersPosition">Volunteer UX Designer</p>
+              <div className="socialIconsAboutUs">
+            <a href="https://www.facebook.com/ElSistemaPittsburgh/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://twitter.com/elsistema" target="blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-twitter fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://www.linkedin.com/company/3276954/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
+            </a>
+          </div>
+            </div>
+
+
+          </div>
+
 
           <p className="volunteersFooter">Interested in becoming a volunteer?</p>
           <div className="volunteersButton">
