@@ -3,8 +3,6 @@ import axios from 'axios';
 import IndivBlogPostDetails from './IndivBlogPostDetails';
 import './../styles/adminEditor.css';
 import {connect} from 'react-redux';
-
-
 class AdminBlog extends Component {
   constructor(props){
     super(props);
