@@ -96,5 +96,34 @@
     height: 2vh;
     width: 2vh;
   }
+}
+
+@media(min-width: 1000px){
+
+  .adminWrapper {
+    width: 78%;
+  }
+
+  .adminPageHeaderContainer {
+    min-height: 15.5vh;
+  }
+
+  .adminPageHeader {
+    font-size: xx-large;
+  }
+
+  .itemsSelected {
+    min-height: 7vh;
+  }
+
+  .columnTitles {
+    min-height: 7vh;
+  }
+
+
+  .checkbox {
+    min-height: 20px;
+    width: 20px;
+  }
 
 }
