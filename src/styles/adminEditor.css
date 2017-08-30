@@ -1,0 +1,36 @@
+.adminWrapper {
+  display: flex;
+  justify-content: center;
+  width: 78%;
+  min-height: 100vh;
+  background-color: plum;
+}
+
+.adminContentContainer {
+  width: 80%;
+  height: auto;
+  background-color: white;
+}
+
+.adminPageHeaderContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 12.5vh;
+  color: rgb(74,95,107);
+  padding-left: 2.5%;
+}
+
+.adminPageHeader {
+  font-size: large;
+}
+
+.itemsSelected {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 5vh;
+  padding-left: 2.5%;
+  background-color: #E8EFFC;
+  color: #5182EA;
+}

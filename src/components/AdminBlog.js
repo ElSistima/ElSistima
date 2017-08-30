@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import IndivBlogPostDetails from './IndivBlogPostDetails';
+import './../styles/adminEditor.css';
+
 
 export default class AdminBlog extends Component {
   constructor(props){
@@ -10,7 +13,8 @@ export default class AdminBlog extends Component {
   }
 
 componentDidMount(){
-  axios.get('http://localhost:8080/api/blogs').then(res => {
+  axios.get('/api/blogs').then(res => {
+    console.log("Res data is:", res.data)
     this.setState({
       fetchedPosts: res.data
     })
@@ -22,12 +26,21 @@ componentDidMount(){
 
     console.log("FetchedPosts Array is :", this.state.fetchedPosts)
 
+    const allPosts = this.state.fetchedPosts.map((post, i) => { return (
+      <IndivBlogPostDetails key={i} post={post} index={i}/>
+    )
+    })
+
     return(
-      <main className="adminBlogWrapper">
+      <main className="adminWrapper">
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
             <p className="adminPageHeader">Current Blog Posts</p>
           </div>
+          <div className="itemsSelected">
+            <p>1 item selected</p>
+          </div>
+          {allPosts}
         </section>
       </main>
     )

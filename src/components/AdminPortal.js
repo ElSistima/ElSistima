@@ -34,7 +34,7 @@ export default class AdminPortal extends Component{
     return(
       <main>
         <AdminHeader hamClicked={this.hamClicked}/>
-        <div style={this.state.sidebarOn?{}:hiddenHam}>
+        <div style={this.state.sidebarOn ? hiddenHam : null}>
           <AdminSideBar />
         </div>
 
