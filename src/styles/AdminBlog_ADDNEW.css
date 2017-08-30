@@ -1,0 +1,273 @@
+/* placeholder styleing */
+::-webkit-input-placeholder {
+    font-weight: lighter;/* WebKit, Blink, Edge */
+    color:    #e4e4e4;
+    font-size: 17px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   opacity:  1;
+   font-size: 17px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   opacity:  1;
+   font-size: 17px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   font-size: 17px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   font-size: 17px;
+}
+
+/* placeholder styleing */
+
+.AdminBlog_ADDNEW_Main {
+  float: left;
+  width: calc(100vw - 70%);
+  height: 820px;
+  /*background-color: red;*/
+}
+
+.add_new_blog {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+.anb_headerText {
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.anb_topInput input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  outline: none;
+
+}
+
+.lngipt {
+    margin-left: 18px;
+    width: 92%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    outline: none;
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+  }
+
+
+
+.anb_Content textarea{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  outline: none;
+}
+
+@media(min-width: 700px) {
+  .AdminBlog_ADDNEW_Main {
+    width: calc(100vw - 31%);
+    height: 1320px;
+  }
+
+
+
+  .anb_headerText {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  .add_new_blog {
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 4%;
+    height: 450px;
+
+  }
+
+  .volunteerOverwrite {
+    height: 460px;
+  }
+
+
+  .anb_topInput input{
+    margin-right: 25px;
+    height: 35px;
+    width: 40%;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .anb_Content textarea{
+    margin-top: 25px;
+    height: 330px;
+    width: 90%;
+    margin-left: 20px;
+    font-size: 15px;
+    line-height: 35px;
+  }
+
+  .taOverwrite textarea{
+    height: 110px;
+    /*border: 5px solid black;*/
+  }
+
+
+  .add_new_pics {
+    width: 82.5%;
+    height: 220px;
+    margin-left: 38px;
+    /*border: 2px solid red;*/
+    display: flex;
+  }
+
+  .add_pic_inner {
+    width: 50%;
+    height: 100%;
+    /*border: 2px solid green;*/
+  }
+
+  .add_pic_inner div{
+    margin-left: 30px;
+  }
+
+  .add_pic_inner img {
+    width: 180px;
+    height: 180px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .anb_btn {
+    height: 50px;
+    width: 82.5%;
+    margin-left: 38px;
+    /*border: 2px solid red;*/
+    margin-top: 60px;
+    display: flex;
+  }
+
+  .pblg {
+    width: 180px;
+    height: 100%;
+    /*border: 1px solid black;*/
+    margin-left: 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cancel_btn {
+    margin-left: 35px;
+    background-color: #ECECEC;
+    color: #b4b4b4
+  }
+
+  .save_btn {
+    background-color: #4E8AA8;
+    color: white;
+  }
+
+  /* ===========permission section*/
+  .permission {
+    width: 83%;
+    height: 100px;
+    /*background-color: red;*/
+    margin-left: 38px;
+  }
+
+  .singleCheck {
+    display: flex;
+    margin-right: 5px;
+  }
+
+  .checkBody {
+    display: flex;
+    margin-top: 25px;
+  }
+
+  .profileVolunteer img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-left: 25px;
+  }
+
+  .fullpicvolunteer img, .fullpicvolunteer div{
+    margin-left: 0px;
+  }
+
+  .volunteerbtnOR {
+    margin-top: 35px;
+  }
+
+  .volunteersaveOR {
+    margin-left: 0px;
+  }
+
+  .volunteercancelOR {
+    margin-left: 55px;
+  }
+}
+
+
+
+
+
+@media(min-width: 1000px) {
+  .AdminBlog_ADDNEW_Main {
+    width: calc(100vw - 22%);
+    height: 100vh;
+  }
+
+  .add_new_blog {
+    width: 50%;
+  }
+
+  .add_new_pics {
+    display: block;
+    position: absolute;
+    top: 17vh;
+    left: 61vw;
+    height: 500px;
+    width: 19.5%;
+    margin-left: 10vw;
+  }
+
+  .add_pic_inner {
+      width: 90%;
+      height: 50%;
+      text-align: center;
+      margin-bottom: 30px;
+
+    }
+
+  .add_pic_inner div {
+    margin-left: 3px;
+  }
+
+  /*=====permission&button section for volunteer*/
+  .permission, .volunteerbtnOR {
+    margin-left: 65px;
+  }
+
+  .volunteerbtnOR {
+    margin-top: 10px;
+  }
+}

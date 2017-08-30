@@ -111,16 +111,16 @@ export default function Home (props) {
             <p className="textBlockThreeHeader">El Sistema Core Values</p>
               <ul className="valuesTextBlock">
                 <div className="valuesItem">
-                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Music education as social change</p>
+                  <i className="home-music fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Music education as social change</p>
                 </div>
                 <div className="valuesItem">
-                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Accessibility</p>
+                  <i className="home-music fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Accessibility</p>
                 </div>
                 <div className="valuesItem">
-                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">High standards of musical excellence</p>
+                  <i className="home-music fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">High standards of musical excellence</p>
                 </div>
                 <div className="valuesItem">
-                  <i className="fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Community</p>
+                  <i className="home-music fa fa-music fa-fw" aria-hidden="true"></i><p className="valuesListItemText">Community</p>
                 </div>
               </ul>
               <Link to="/about" className="linkedButton">
