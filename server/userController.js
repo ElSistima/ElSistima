@@ -2,7 +2,7 @@ module.exports = {
 //==================GET REQUESTS==================
   getBlogPosts: function(req,res){
     const db = req.app.get('db');
-
+    console.log("GetBlogPosts Successful!")
     db.get_blog_posts()
       .then( (posts) => {
         res.status(200).send(posts)} )
