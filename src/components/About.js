@@ -69,7 +69,26 @@ export default function About(props){
           We welcome, support and encourage volunteer members from diverse occupational and educational backgrounds who believe in music making as a means for transforming lives.  Volunteers work together as highly collaborative teams.
           </p>
             <div className="volunteersProfile">
-              <p className="volunteersPlaceHolder">Charlie Brown</p>
+              <div className="topBox">
+                <div className="volunteersCirclePic">
+                </div>
+                <div className="profileButton"></div>
+              </div>
+              <p className="volunteersName">Charlie Brown</p>
+              <p className="volunteersTitle">Volunteer Block Head</p>
+              <div className="socialIconsAboutUs">
+            <a href="https://www.facebook.com/ElSistemaPittsburgh/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://twitter.com/elsistema" target="blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-twitter fa-fw" aria-hidden="true"></i></div>
+            </a>
+
+            <a href="https://www.linkedin.com/company/3276954/" target="_blank">
+              <div className="socialCircleAboutUs"><i className="fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
+            </a>
+          </div>
             </div>
           <p className="volunteersFooter">Interested in becoming a volunteer?</p>
           <div className="volunteersButton">
@@ -81,6 +100,7 @@ export default function About(props){
       <section className="ourLocationContainer">
         <div className="ourLocationText">
         <h1 className="ourLocationTitle">Our Location</h1>
+        <div className="ourLocationImage"></div>
         </div>
       </section>
      
