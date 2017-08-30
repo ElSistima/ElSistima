@@ -183,6 +183,7 @@
   background-color: #6D8A9A;
   top: -25px;
   right: -10px;
+  padding: .5% 0;
 }
 
 .floatingMissionText {
@@ -191,6 +192,9 @@
   font-weight: 300;
   letter-spacing: 0.03em;
   line-height: 1.15em;
+  width: 90%;
+  padding-top: 3%;
+  margin: 0 auto;
 }
 
 .orgCoreValues {
@@ -224,7 +228,7 @@
   min-height: 24vh;
   width: 90%;
   margin: 0 auto;
-  background-image: url('./../images/pitt-cello.jpeg');
+  background-image: url('./../images/standup-violin.jpg');
   background-size: cover;
 }
 
