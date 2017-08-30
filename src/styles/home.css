@@ -219,7 +219,6 @@ blockquote {
   padding-top: 7%;
   min-height: 108vh;
   width: 100%;
-  /*background-color: lime;*/
 }
 
 .coreValuesImgDivOne {
@@ -265,6 +264,7 @@ blockquote {
 .valuesTextBlock {
   font-size: .75em;
   line-height: 1.15em;
+  margin-top: 1em;
   color: rgb(74,95,107);
 }
 
@@ -315,7 +315,7 @@ blockquote {
   min-height: 40vh;
   background-color: white;
   border: 2px solid #5289A9;
-  margin: 25vh auto 0 auto;
+  margin: 27vh auto 0 auto;
   padding-bottom: 1em;
 }
 
@@ -340,7 +340,7 @@ blockquote {
   line-height: 1em;
 }
 
-.textBlockTwoText {
+.textBlockTwoText, .textBlockFourText {
   font-size: 1.25em;
   line-height: 1.2em;
 }
@@ -440,26 +440,29 @@ blockquote {
   .coreValuesTop, .coreValuesBottom {
     padding-top: 7%;
     min-height: 98vh;
-    background-color: lime;
+    /*background-color: lime;*/
   }
 
   .coreValuesTextOne {
     min-height: 14vh;
-    bottom: -18vh;
+    bottom: -24vh;
     left: -1vh;
 
   }
 
-  .valuesTextBlock {
-    font-size: 1em;
+  .valuesTextBlock, .textBlockTwoText, .textBlockFourText {
+    font-size: 1.15em;
+    line-height: 1.2em;
+    margin-top: 0em;
+
   }
 
   .coreValuesTextTwo {
     width: 100%;
-    min-height: 40vh;
+    min-height: 34vh;
     background-color: white;
     border: 2px solid #5289A9;
-    margin: 25vh auto 0 auto;
+    margin: 18vh auto 0 auto;
     padding-bottom: 1em;
   }
 
@@ -473,9 +476,33 @@ blockquote {
     line-height: 1.4em;
   }
 
-  .textBlockTwoText {
+  .textBlockThreeHeader {
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  .coreValuesTextThree {
+    min-height: 24vh;
+    bottom: -33vh;
+  }
+
+  .valuesItem {
+    font-size: 1.15em;
+    margin: .75em auto;
+  }
+
+  .coreValuesTextFour {
+    margin-top: 32vh;
+  }
+
+  .coreValuesButton {
+    width: 9.5em;
+    height: 2.75em;
+    margin-top: 1.4em;
+  }
+
+  .supportUsButtonText {
     font-size: 1.25em;
-    line-height: 1.2em;
   }
 
 
