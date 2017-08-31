@@ -3,11 +3,10 @@
   justify-content: center;
   width: 78%;
   min-height: 100vh;
-  background-color: plum;
 }
 
 .adminContentContainer {
-  width: 80%;
+  width: 95%;
   height: auto;
   background-color: white;
 }
@@ -26,6 +25,7 @@
 }
 
 .itemsSelected {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   width: 100%;
@@ -33,4 +33,110 @@
   padding-left: 2.5%;
   background-color: #E8EFFC;
   color: #5182EA;
+}
+
+.columnTitles {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 5vh;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.columnTitles p {
+  color: rgb(74,95,107);
+}
+
+.checkbox {
+  height: 17.5px;
+  width: 17.5px;
+  border: 1.5px solid rgb(74,95,107);
+  border-radius: 2px;
+}
+
+.editRemove {
+  display: flex;
+  justify-content: space-between;
+  width: 12.5%;
+  height: 100%;
+}
+
+@media(min-width: 700px){
+
+  .adminWrapper {
+    width: 69%;
+    min-height: 100vh;
+  }
+
+  .adminPageHeaderContainer {
+    min-height: 11.5vh;
+    padding-left: 3.5%;
+  }
+
+  .adminPageHeader {
+    font-size: x-large;
+  }
+
+  .itemsSelected {
+    min-height: 6vh;
+    padding-left: 3.5%;
+  }
+
+  .itemsSelected p {
+    font-size: large;
+  }
+
+  .columnTitles {
+    min-height: 6vh;
+  }
+
+  .columnTitles p {
+    font-size: large;
+  }
+
+  .checkbox {
+    height: 2vh;
+    width: 2vh;
+  }
+
+  .editRemove {
+    width: 11.5%;
+  }
+}
+
+@media(min-width: 1000px){
+
+  .adminWrapper {
+    width: 78%;
+  }
+
+  .adminPageHeaderContainer {
+    min-height: 15.5vh;
+  }
+
+  .adminPageHeader {
+    font-size: xx-large;
+  }
+
+  .itemsSelected {
+    min-height: 7vh;
+  }
+
+  .columnTitles {
+    min-height: 7vh;
+  }
+
+
+  .checkbox {
+    min-height: 20px;
+    width: 20px;
+  }
+
+  .editRemove {
+    width: 6%;
+  }
+
 }
