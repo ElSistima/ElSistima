@@ -1045,9 +1045,9 @@
 }
 
 .ourLocationContainer {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     min-height: 30em;
     width: 100%;
     background-color: white;
@@ -1073,7 +1073,7 @@
     align-items: center;
     height: 29vh;
     width: 30vh;
-    margin-left: 26em;
+    margin: 0px auto 0px auto;
     background-image: url('./../images/pittsburgh-location.png');
     background-size: cover;
 }
