@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import './../styles/indivBlogPostDetails.css';
+import {Link} from 'react-router-dom';
 
 export default class IndivBlogPostDetails extends Component {
   constructor(props){
@@ -51,6 +52,7 @@ export default class IndivBlogPostDetails extends Component {
           <p>{this.props.post.user_name}</p>
         </div>
         <div className="blogDetailsItem5">
+        
           <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
           <p><i className="fa fa-trash" aria-hidden="true" onClick={this.deletePost.bind(this)}></i></p>
         </div>
