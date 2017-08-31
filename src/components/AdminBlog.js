@@ -13,32 +13,26 @@ class AdminBlog extends Component {
       }
   }
 
-componentDidMount(){
-  axios.get('/api/blogs').then(res => {
-    console.log("Res data is:", res.data)
-    this.setState({
-      fetchedPosts: res.data
+  componentDidMount(){
+    axios.get('/api/blogs').then(res => {
+      console.log("Res data is:", res.data)
+      this.setState({
+        fetchedPosts: res.data
+      })
     })
-  })
-.catch(err => console.log("Error is: ", err))
-}
+  .catch(err => console.log("Error is: ", err))
+  }
 
-updateCheckCount(){
-  this.setState({
-    amountChecked: !this.state.checkAllBoxes ? this.state.fetchedPosts.length : 0
-  })
-}
 
-markAllChecked(){
-  this.setState({
-    checkAllBoxes: !this.state.checkAllBoxes
-  })
-  this.updateCheckCount()
-}
+  markAllChecked(){
+    this.setState({
+      checkAllBoxes: !this.state.checkAllBoxes
+    })
+  }
 
 
   render(){
-
+    console.log("All boxes checked ", this.state.checkAllBoxes)
     console.log("FetchedPosts Array is :", this.state.fetchedPosts)
 
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
@@ -46,7 +40,7 @@ markAllChecked(){
     const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
 
     const allPosts = this.state.fetchedPosts.map((post, i) => { return (
-      <IndivBlogPostDetails key={i} post={post} index={i} checkAll={this.state.checkAllBoxes}/>
+      <IndivBlogPostDetails key={i} post={post} index={i} checkAll={this.state.checkAllBoxes} checkedQty={0}/>
     )
     })
 
