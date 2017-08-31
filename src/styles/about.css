@@ -216,25 +216,7 @@
     background-color: #5289A9;
 }
 
-/* .topBox2 {
-    display: none;
-}
 
-.topBox3 {
-    display: none;
-}
-
-.topBox4 {
-    display: none;
-}
-
-.topBox5 {
-    display: none;
-}
-
-.topBox6 {
-    display: none;
-} */
 
 .volunteersCirclePic {
     position: absolute;
@@ -247,25 +229,7 @@
     border: solid 1px;
 }
 
-/* .volunteersCirclePic2 {
-    display: none;
-}
 
-.volunteersCirclePic3 {
-    display: none;
-}
-
-.volunteersCirclePic4 {
-    display: none;
-}
-
-.volunteersCirclePic5 {
-    display: none;
-}
-
-.volunteersCirclePic6 {
-    display: none;
-} */
 
 .volunteersProfileButton {
     display: flex;
@@ -281,25 +245,7 @@
     border-radius: 50%;
 }
 
-/* .volunteersProfileButton2 {
-    display: none;
-}
 
-.volunteersProfileButton3 {
-    display: none;
-}
-
-.volunteersProfileButton4 {
-    display: none;
-}
-
-.volunteersProfileButton5 {
-    display: none;
-}
-
-.volunteersProfileButton6 {
-    display: none;
-} */
 
 .arrowImage {
     background-image: url('./../images/keyboard-right-arrow-button.png');
@@ -948,13 +894,7 @@
     
 }
 
-/* .volunteersProfile3 {
-    height: 17.5em;
-    width: 17.5em;
-    box-shadow: 1px 1px 1px 1px;
-    padding-bottom: 1em;
-    background-color: white;
-} */
+
 
 .volunteersProfile4 {
     display: block;
@@ -966,22 +906,7 @@
 
 }
 
-/* .volunteersProfile5 {
-    height: 17.5em;
-    width: 17.5em;
-    box-shadow: 1px 1px 1px 1px;
-    padding-bottom: 1em;
-    background-color: white;
-} */
 
-/* .volunteersProfile6 {
-    display: block;
-    height: 17.5em;
-    width: 17.5em;
-    box-shadow: 1px 1px 1px 1px;
-    padding-bottom: 1em;
-    background-color: white;
-} */
 
 .topBox {
     position: relative;
@@ -1003,45 +928,6 @@
     background-color: rgb(74,95,107);
 }
 
-/* .topBox3 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 13vh;
-    width: 100%;
-    background-color: rgb(74,95,107);
-}
-
-.topBox4 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 13vh;
-    width: 100%;
-    background-color: rgb(74,95,107);
-}
-
-.topBox5 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 13vh;
-    width: 100%;
-    background-color: rgb(74,95,107);
-}
-
-.topBox6 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 13vh;
-    width: 100%;
-    background-color: rgb(74,95,107);
-} */
 
 .volunteersCirclePic {
     position: absolute;
@@ -1065,16 +951,7 @@
     border: solid 1px;
 }
 
-/* .volunteersCirclePic3 {
-    position: absolute;
-    min-height: 7em;
-    width: 7em;
-    background-image: url('./../images/peanut3.jpeg');
-    background-size: cover;
-    border-radius: 50%;
-    top: 70px;
-    border: solid 1px;
-} */
+
 
 .volunteersCirclePic4 {
     position: absolute;
@@ -1087,27 +964,6 @@
     border: solid 1px;
 }
 
-/* .volunteersCirclePic5 {
-    position: absolute;
-    min-height: 7em;
-    width: 7em;
-    background-image: url('./../images/peanut5.png');
-    background-size: cover;
-    border-radius: 50%;
-    top: 70px;
-    border: solid 1px;
-}
-
-.volunteersCirclePic6 {
-    position: absolute;
-    min-height: 7em;
-    width: 7em;
-    background-image: url('./../images/peanut6.jpg');
-    background-size: cover;
-    border-radius: 50%;
-    top: 70px;
-    border: solid 1px;
-} */
 
 .volunteersProfileButton {
     display: flex;
