@@ -216,25 +216,7 @@
     background-color: #5289A9;
 }
 
-/* .topBox2 {
-    display: none;
-}
 
-.topBox3 {
-    display: none;
-}
-
-.topBox4 {
-    display: none;
-}
-
-.topBox5 {
-    display: none;
-}
-
-.topBox6 {
-    display: none;
-} */
 
 .volunteersCirclePic {
     position: absolute;
@@ -247,25 +229,7 @@
     border: solid 1px;
 }
 
-/* .volunteersCirclePic2 {
-    display: none;
-}
 
-.volunteersCirclePic3 {
-    display: none;
-}
-
-.volunteersCirclePic4 {
-    display: none;
-}
-
-.volunteersCirclePic5 {
-    display: none;
-}
-
-.volunteersCirclePic6 {
-    display: none;
-} */
 
 .volunteersProfileButton {
     display: flex;
@@ -281,25 +245,7 @@
     border-radius: 50%;
 }
 
-/* .volunteersProfileButton2 {
-    display: none;
-}
 
-.volunteersProfileButton3 {
-    display: none;
-}
-
-.volunteersProfileButton4 {
-    display: none;
-}
-
-.volunteersProfileButton5 {
-    display: none;
-}
-
-.volunteersProfileButton6 {
-    display: none;
-} */
 
 .arrowImage {
     background-image: url('./../images/keyboard-right-arrow-button.png');
@@ -400,13 +346,15 @@
     background-size: cover;
 }
 
+
+
 @media(min-width: 700px){
 
 .whoWeAreContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 37vh;
+    min-height: 40vh;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
@@ -484,7 +432,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 24vh;
+    height: 27vh;
     background-color: white;
     color: rgb(74,95,107);
 }
@@ -740,16 +688,25 @@
 
 }
 
+
+
+
+
 @media(min-width: 1000px){
 
 .whoWeAreContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 62vh;
+    min-height: 40em;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
+}
+
+.whoWeAreText {
+    /* min-height: vh; */
+    background-color: transparent;
 }
     
 .whoWeAreTitle {
@@ -759,7 +716,8 @@
     
 .whoWeAreBodyText {
     padding-top: 3.5em;
-    padding-bottom: 2em;
+    padding-bottom: 3%;
+    /* min-height: 62vh; */
     font-size: 1.3em;
     line-height: 1.65em;
     font-weight: 300;
@@ -771,9 +729,11 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;
     height: 2.5em;
     width: 9em;
     background-color: #ECC749;
+
 }
     
 .whoWeAreButtonText {
@@ -788,7 +748,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 46vh;
+    min-height: 27em;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
@@ -836,7 +796,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 52vh;
+    min-height: 28em;
     background-color: white;
     color: rgb(74,95,107);
 }
@@ -883,7 +843,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 92vh;
+    min-height: 60em;
     background-color: white;
     color: rgb(74,95,107);
     padding-top: 0em;
@@ -934,13 +894,7 @@
     
 }
 
-/* .volunteersProfile3 {
-    height: 17.5em;
-    width: 17.5em;
-    box-shadow: 1px 1px 1px 1px;
-    padding-bottom: 1em;
-    background-color: white;
-} */
+
 
 .volunteersProfile4 {
     display: block;
@@ -952,29 +906,14 @@
 
 }
 
-/* .volunteersProfile5 {
-    height: 17.5em;
-    width: 17.5em;
-    box-shadow: 1px 1px 1px 1px;
-    padding-bottom: 1em;
-    background-color: white;
-} */
 
-/* .volunteersProfile6 {
-    display: block;
-    height: 17.5em;
-    width: 17.5em;
-    box-shadow: 1px 1px 1px 1px;
-    padding-bottom: 1em;
-    background-color: white;
-} */
 
 .topBox {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 13vh;
+    height:8em;
     width: 100%;
     background-color: #5289A9;
 }
@@ -984,50 +923,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 13vh;
+    height: 8em;
     width: 100%;
     background-color: rgb(74,95,107);
 }
 
-/* .topBox3 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 13vh;
-    width: 100%;
-    background-color: rgb(74,95,107);
-}
-
-.topBox4 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 13vh;
-    width: 100%;
-    background-color: rgb(74,95,107);
-}
-
-.topBox5 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 13vh;
-    width: 100%;
-    background-color: rgb(74,95,107);
-}
-
-.topBox6 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 13vh;
-    width: 100%;
-    background-color: rgb(74,95,107);
-} */
 
 .volunteersCirclePic {
     position: absolute;
@@ -1051,16 +951,7 @@
     border: solid 1px;
 }
 
-/* .volunteersCirclePic3 {
-    position: absolute;
-    min-height: 7em;
-    width: 7em;
-    background-image: url('./../images/peanut3.jpeg');
-    background-size: cover;
-    border-radius: 50%;
-    top: 70px;
-    border: solid 1px;
-} */
+
 
 .volunteersCirclePic4 {
     position: absolute;
@@ -1073,27 +964,6 @@
     border: solid 1px;
 }
 
-/* .volunteersCirclePic5 {
-    position: absolute;
-    min-height: 7em;
-    width: 7em;
-    background-image: url('./../images/peanut5.png');
-    background-size: cover;
-    border-radius: 50%;
-    top: 70px;
-    border: solid 1px;
-}
-
-.volunteersCirclePic6 {
-    position: absolute;
-    min-height: 7em;
-    width: 7em;
-    background-image: url('./../images/peanut6.jpg');
-    background-size: cover;
-    border-radius: 50%;
-    top: 70px;
-    border: solid 1px;
-} */
 
 .volunteersProfileButton {
     display: flex;
@@ -1178,7 +1048,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 58vh;
+    min-height: 30em;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
@@ -1209,3 +1079,222 @@
 }
 
 }
+
+/* Width adjustments */
+
+@media(max-width: 1120px){
+    
+    .volunteersProfile4 {
+        display: none;
+    }
+    
+    }
+
+@media(max-width: 746px){
+        
+    .volunteersProfile2 {
+        display: none;
+    }
+        
+    }
+
+    /* Height adjustments */
+/* 
+@media(max-height: 920px){
+    
+.whoWeAreTitle {
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+    
+.whoWeAreBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 3%;
+    min-height: 10vh;
+    font-size: 1em;
+    line-height: 1.65em;
+    font-weight: 300;
+}
+    
+.whoWeAreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    height: 2em;
+    width: 7em;
+    background-color: #ECC749;
+
+}
+    
+.whoWeAreButtonText {
+    font-size: 1em;
+}
+
+.missionStatementText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.missionStatementTitle {
+    font-size: 1.2em;
+}
+
+.missionStatementBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.missionStatementButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2em;
+    width: 7em;
+    background-color: #ECC749;
+}
+
+.missionStatementButtonText {
+    font-size: 1em;
+}
+
+.curriculumText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.curriculumTitle {
+    font-size: 1.2em;
+}
+
+.curriculumBodyText {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.curriculumButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2em;
+    width: 7em;
+    background-color: #ECC749;
+}
+
+.curriculumButtonText {
+    font-size: 1em;
+}
+        
+} */
+/* 
+@media(max-height: 610px){
+
+.whoWeAreTitle {
+font-size: 1.2em;
+padding-top: 1em;
+}
+
+.whoWeAreBodyText {
+padding-top: 3.5em;
+padding-bottom: 1%;
+min-height: 10vh;
+font-size: .75em;
+line-height: 1.65em;
+font-weight: 300;
+}
+
+.whoWeAreButton {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 1em;
+height: 1.5em;
+width: 4.75em;
+background-color: #ECC749;
+
+}
+
+.whoWeAreButtonText {
+font-size: .75em;
+}
+
+.missionStatementText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.missionStatementTitle {
+    font-size: .7em;
+}
+
+.missionStatementBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.missionStatementButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1.5em;
+    width: 4.75em;
+    background-color: #ECC749;
+}
+
+.missionStatementButtonText {
+    font-size: .75em;
+}
+
+.curriculumText {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+}
+
+.curriculumTitle {
+    font-size: .7em;
+}
+
+.curriculumBodyText {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: .5em;
+    line-height: 1.3em;
+}
+
+.curriculumButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    width: 3.5em;
+    background-color: #ECC749;
+}
+
+.curriculumButtonText {
+    font-size: .5em;
+}
+    
+} */
+
