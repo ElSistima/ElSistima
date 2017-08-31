@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './../styles/adminEditor.css';
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 
@@ -33,6 +34,9 @@ class AdminPerformances extends Component {
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
             <p className="adminPageHeader">Current Performances</p>
+            <Link to="/admin/performances/addNew">
+              <i className="fa fa-plus-square" aria-hidden="true"></i>
+            </Link>
           </div>
           <div className="itemsSelected">
             <p>ITEMS SELECTED TEXT GOES HERE</p>

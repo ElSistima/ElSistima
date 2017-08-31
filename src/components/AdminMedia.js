@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './../styles/adminEditor.css';
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 class AdminMedia extends Component{
@@ -32,6 +33,9 @@ class AdminMedia extends Component{
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
             <p className="adminPageHeader">Current Media</p>
+            <Link to="/admin/media/addNew">
+              <i className="fa fa-plus-square" aria-hidden="true"></i>
+            </Link>
           </div>
           <div className="itemsSelected">
             <p>ITEMS SELECTED TEXT GOES HERE</p>
