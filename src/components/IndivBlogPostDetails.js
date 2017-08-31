@@ -15,6 +15,7 @@ export default class IndivBlogPostDetails extends Component {
     })
   }
 
+
   render(){
 
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
@@ -24,7 +25,7 @@ export default class IndivBlogPostDetails extends Component {
     return(
       <main className="postDetailsWrapper" style={this.state.itemChecked ? itemRowSelectedStyle : null}>
         <div className="blogDetailsItem1">
-          <div className="checkbox" onClick={this.markChecked.bind(this)} style={this.state.itemChecked ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
+          <div className="checkbox" onClick={this.markChecked.bind(this)} style={this.state.itemChecked || this.props.checkAll ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
         </div>
         <div className="blogDetailsItem2">
           <p>{this.props.post.post_title}</p>

@@ -7,7 +7,9 @@ class AdminBlog extends Component {
   constructor(props){
     super(props);
       this.state ={
-        fetchedPosts: []
+        fetchedPosts: [],
+        checkAllBoxes: false,
+        amountChecked: 0
       }
   }
 
@@ -21,12 +23,30 @@ componentDidMount(){
 .catch(err => console.log("Error is: ", err))
 }
 
+updateCheckCount(){
+  this.setState({
+    amountChecked: !this.state.checkAllBoxes ? this.state.fetchedPosts.length : 0
+  })
+}
+
+markAllChecked(){
+  this.setState({
+    checkAllBoxes: !this.state.checkAllBoxes
+  })
+  this.updateCheckCount()
+}
+
+
   render(){
 
     console.log("FetchedPosts Array is :", this.state.fetchedPosts)
 
+    const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
+
+    const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
+
     const allPosts = this.state.fetchedPosts.map((post, i) => { return (
-      <IndivBlogPostDetails key={i} post={post} index={i}/>
+      <IndivBlogPostDetails key={i} post={post} index={i} checkAll={this.state.checkAllBoxes}/>
     )
     })
 
@@ -41,11 +61,11 @@ componentDidMount(){
             <p className="adminPageHeader">Current Blog Posts</p>
           </div>
           <div className="itemsSelected">
-            <p>0 {postAmount}</p>
+            <p>{this.state.amountChecked} {postAmount}</p>
           </div>
-          <div className="columnTitles postDetailsWrapper">
+          <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">
-              <div className="checkbox"></div>
+              <div className="checkbox" onClick={this.markAllChecked.bind(this)} style={this.state.checkAllBoxes ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
             </div>
             <div className="blogDetailsItem2">
               <p>Title</p>
