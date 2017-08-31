@@ -55,6 +55,29 @@ module.exports = {
         .catch( (err) => {
           res.status(500).send(err)} )
   },
+  getClasses: function(req,res){
+    const db = req.app.get('db');
+    console.log('here')
+    db.get_classes()
+      .then((classes) => res.status(200).send(classes))
+      .catch((err) => res.status(500).send(err))
+  },
+  getBlogById: function(req,res){
+    const db = req.app.get('db');
+    const {blogid} = req.params;
+
+    db.get_blogs_by_id([blogid])
+      .then((blog) => res.status(200).send(blog))
+      .catch((err) => res.status(500).send(err))
+  },
+  getEventById: function(req,res){
+    const db = req.app.get('db');
+    const {eventid} = req.params
+
+    db.get_events_by_id([eventid])
+      .then((event) => res.status(200).send(event))
+      .catch((err) => res.status(500).send(err))
+  },
 
   //=============POST========================
 
