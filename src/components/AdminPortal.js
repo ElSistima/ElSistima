@@ -11,7 +11,8 @@ import AdminBlog from './AdminBlog';
 import AdminBlogEditor from './AdminBlogEditor';
 import {hamClicked} from './../ducks/reducer';
 import {connect} from 'react-redux';
-
+import AdminCP_ADDNEW  from './AdminCP_ADDNEW';
+import AdminCT_ADDNEW from './AdminCT_ADDNEW';
 
 
 
@@ -50,9 +51,10 @@ class AdminPortal extends Component{
           <Route exact path="/admin/edit/blog" component={AdminBlogEditor} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
 
-          <Route exact path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
-          <Route exact path="/admin/volunteer/addNew" component={AdminVolunteer_ADDNEW} />
-          <Route exact path="/admin/blog" component={AdminBlog} />
+          <Route path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
+          <Route path="/admin/volunteer/addNew" component={AdminVolunteer_ADDNEW} />
+          <Route path="/admin/contentPic/addNew" component={AdminCP_ADDNEW} />
+          <Route path="/admin/contentText/addNew" component={AdminCT_ADDNEW} />
 
 
         </Switch>
