@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './../styles/publicBlog.css';
 
 export default function PublicBlog(props){
   return (

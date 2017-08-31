@@ -1,6 +1,9 @@
 .Adhome_rcc_Main {
-  width: 200%;
+  width: 90%;
+  margin-top: 15px;
+  margin-left: 5%;
   height: 200px;
+  border: 1px solid #ececec;
   background-color: white;
   box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
   margin-bottom: 10px;
@@ -36,7 +39,7 @@
     height: 350px;
     background-color: white;
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 5%;
     -webkit-box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
     -moz-box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
     box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
@@ -65,6 +68,6 @@
     width: 45%;
     position: relative;
     top: -840px;
-    left: 40vw;
+    left: 51.8%;
   }
 }
