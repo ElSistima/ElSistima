@@ -913,7 +913,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 13vh;
+    height:8em;
     width: 100%;
     background-color: #5289A9;
 }
@@ -923,7 +923,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 13vh;
+    height: 8em;
     width: 100%;
     background-color: rgb(74,95,107);
 }
@@ -1048,7 +1048,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 28em;
+    min-height: 30em;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
