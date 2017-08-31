@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/AdminBlog_ADDNEW.css';
+import '../styles/adminBlogUpdate.css';
 import axios from 'axios';
 import {connect} from 'react-redux';
 
@@ -43,12 +44,12 @@ class AdminBlog_UPDATE extends Component{
       <div className="add_new_blog">
         <div className="anb_headerText">Update Blog</div>
         <div className="anb_topInput">
-          <input value={this.state.postTitle}/>
-          <input className="captionInput" value={this.state.postSubtitle}/>
+          <input value={this.state.postTitle} className="blogTitle"/>
+          <input className="captionInput" value={this.state.postSubtitle} className="blogSubtitle"/>
         </div>
 
         <div className="maintxt_Content anb_overwrite">
-          <textarea value={this.state.postContent}></textarea>
+          <textarea value={this.state.postContent} className="blogContent"></textarea>
         </div>
       </div>
 
@@ -66,12 +67,6 @@ class AdminBlog_UPDATE extends Component{
           <div className="pblg cancel_btn">CANCEL</div>
         </div>
       </div>
-
-      <div className="web_btn">
-        <div className="singlebtn web_save">UPDATE</div>
-        <div className="singlebtn web_cancel">CANCEL</div>
-      </div>
-
 
       </main>
     )
