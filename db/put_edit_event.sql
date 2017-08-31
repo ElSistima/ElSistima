@@ -9,3 +9,7 @@ update calendar set event_minute = $9 where id = $1;
 update calendar set event_hour_end = $10 where id = $1;
 update calendar set event_minute_end = $11 where id = $1;
 update calendar set subtitle = $12 where id = $1;
+update calendar set date_days_end= $13 where id = $1;
+update calendar set date_month_end = $14 where id = $1;
+update calendar set date_year_end = $15 where id = $1;
+update calendar set date_month_end_num = $16 where id = $1;

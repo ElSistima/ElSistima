@@ -9,6 +9,10 @@ import AdminBlog_ADDNEW from './AdminBlog_ADDNEW';
 import AdminVolunteer_ADDNEW from './AdminVolunteer_ADDNEW';
 import AdminBlog from './AdminBlog';
 import AdminBlogEditor from './AdminBlogEditor';
+import AdminClasses from './AdminClasses';
+import AdminPerformances from './AdminPerformances';
+import AdminContentText from './AdminContentText';
+import AdminMedia from './AdminMedia';
 import {hamClicked} from './../ducks/reducer';
 import {connect} from 'react-redux';
 
@@ -53,8 +57,10 @@ class AdminPortal extends Component{
           <Route exact path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
           <Route exact path="/admin/volunteer/addNew" component={AdminVolunteer_ADDNEW} />
           <Route exact path="/admin/blog" component={AdminBlog} />
-
-
+          <Route exact path="/admin/classes" component={AdminClasses} />
+          <Route exact path="/admin/performances" component={AdminPerformances} />
+          <Route exact path="/admin/contenttext" component={AdminContentText} />
+          <Route exact path="/admin/media" component={AdminMedia} />
         </Switch>
       </main>
     )
