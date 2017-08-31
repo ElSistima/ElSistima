@@ -82,6 +82,7 @@ class AdminBlog extends Component {
               <p>Author</p>
             </div>
             <div className="blogDetailsItem5">
+              <p>Actions</p>
             </div>
           </div>
           {allPosts}
