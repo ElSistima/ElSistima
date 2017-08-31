@@ -55,12 +55,36 @@ module.exports = {
         .catch( (err) => {
           res.status(500).send(err)} )
   },
+  getClasses: function(req,res){
+    const db = req.app.get('db');
+    console.log('here')
+    db.get_classes()
+      .then((classes) => res.status(200).send(classes))
+      .catch((err) => res.status(500).send(err))
+  },
+  getBlogById: function(req,res){
+    const db = req.app.get('db');
+    const {blogid} = req.params;
+
+    db.get_blogs_by_id([blogid])
+      .then((blog) => res.status(200).send(blog))
+      .catch((err) => res.status(500).send(err))
+  },
+  getEventById: function(req,res){
+    const db = req.app.get('db');
+    const {eventid} = req.params
+
+    db.get_events_by_id([eventid])
+      .then((event) => res.status(200).send(event))
+      .catch((err) => res.status(500).send(err))
+  },
 
   //=============POST========================
 
 
   postEvent: function(req,res){
     let month_num;
+    let month_end_num;
     const db = req.app.get('db');
     const {type,
       title,
@@ -72,7 +96,10 @@ module.exports = {
       startHour,
       startMinute,
       endHour,
-      endMinute} = req.body;
+      endMinute,
+      endDay,
+      endMonth,
+      endYear} = req.body;
 
       switch (month) {
         case 'January':
@@ -115,9 +142,50 @@ module.exports = {
         default:break;
       }
 
-    console.log(type, title, thumbnail, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle)
+      switch (endMonth) {
+        case 'January':
+          month_end_num = 1;
+          break;
+        case 'February':
+          month_end_num = 2;
+          break;
+        case 'March':
+          month_end_num = 3;
+          break;
+        case 'April':
+          month_end_num = 4;
+          break;
+        case 'May':
+          month_end_num = 5;
+          break;
+        case 'June':
+          month_end_num = 6;
+          break;
+        case 'July':
+          month_end_num = 7;
+          break;
+        case 'August':
+          month_end_num = 8;
+          break;
+        case 'September':
+          month_end_num = 9;
+          break;
+        case 'October':
+          month_end_num = 10;
+          break;
+        case 'November':
+          month_end_num = 11;
+          break;
+        case 'December':
+          month_end_num = 12;
+          break;
 
-    db.post_add_event([type, title, thumbnail, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle ])
+        default:break;
+      }
+
+    console.log(type, title, thumbnail, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle, endDay, endMonth, endYear, month_end_num)
+
+    db.post_add_event([type, title, thumbnail, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle,endDay, endMonth, endYear, month_end_num ])
         .then( (response) => {
           res.status(200).send('sentSuccessfully')} )
         .catch( (err) => {
@@ -212,19 +280,22 @@ module.exports = {
 
   putEvent: function(req,res){
     let month_num;
+    let month_end_num;
     const db = req.app.get('db');
     const {eventid} = req.params;
     const {type,
       title,
       subtitle,
-      thumbnail,
       day,
       month,
       year,
       startHour,
       startMinute,
       endHour,
-      endMinute} = req.body;
+      endMinute,
+      endDay,
+      endMonth,
+      endYear} = req.body;
 
       switch (month) {
         case 'January':
@@ -266,9 +337,50 @@ module.exports = {
 
         default:break;
       }
-    console.log(eventid, type, title, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle)
 
-    db.put_edit_event([eventid, type, title, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle ])
+      switch (endMonth) {
+        case 'January':
+          month_end_num = 1;
+          break;
+        case 'February':
+          month_end_num = 2;
+          break;
+        case 'March':
+          month_end_num = 3;
+          break;
+        case 'April':
+          month_end_num = 4;
+          break;
+        case 'May':
+          month_end_num = 5;
+          break;
+        case 'June':
+          month_end_num = 6;
+          break;
+        case 'July':
+          month_end_num = 7;
+          break;
+        case 'August':
+          month_end_num = 8;
+          break;
+        case 'September':
+          month_end_num = 9;
+          break;
+        case 'October':
+          month_end_num = 10;
+          break;
+        case 'November':
+          month_end_num = 11;
+          break;
+        case 'December':
+          month_end_num = 12;
+          break;
+
+        default:break;
+      }
+    console.log(eventid, type, title, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle,endDay, endMonth, endYear, month_end_num)
+
+    db.put_edit_event([eventid, type, title, year, month, day, month_num, startHour, startMinute, endHour, endMinute,subtitle,endDay, endMonth, endYear, month_end_num ])
     .then( (response) => {
       res.status(200).send('sentSuccessfully')} )
     .catch( (err) => {
