@@ -44,7 +44,7 @@
 @media(min-width: 1000px) {
   .Ad_sidebarMain {
     width: 22%;
-    height: 100vh;
+    height: 850px;
     background-color: #EDEDED;
   }
 }

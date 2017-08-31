@@ -27,7 +27,7 @@
    font-size: 12px;
 }
 
-/* placeholder styleing */
+/* placeholder styleing ends*/
 
 .AdminBlog_ADDNEW_Main {
   float: left;
@@ -38,7 +38,7 @@
 
 .add_new_blog {
   width: 90%;
-  height: 250px;
+  /*height: 250px;*/
   background-color: white;
   margin-bottom: 20px;
   /*border: 2px solid red;*/
@@ -53,6 +53,7 @@
 .anb_headerText {
   height: 20px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .anb_topInput {
@@ -249,6 +250,153 @@
     box-shadow: 0 8px 6px -6px rgba(194,192,194,1)
   }
 /*=======content text editor ends*/
+
+
+/*===========================ADD NEW CALENDER(CLASS)*/
+.classRepeat {
+  height: 55px;
+  width: 90%;
+  /*border: 1px solid black;*/
+  margin-left: 4.5%;
+  font-size: 13px;
+  color: #BEBEBE;
+}
+
+.selectRepeat {
+  display: flex;
+  margin-top: 15px;
+}
+
+.eachInput {
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+  margin-right: 5px;
+  /*border: 2px solid red;*/
+}
+
+.inputLine {
+  display: flex;
+}
+
+.inputLineStart {
+  margin-left: 45px;
+}
+/*---------sliderbar*--------------*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*---------sliderbar ends-------------*/
+.hrSelector {
+  display: flex;
+  width: 90%;
+  margin-left: 4.5%;
+  margin-top: 20px;
+  height: 45px;
+  /*border: 2px solid red;*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSelect {
+  display: flex;
+  /*border: 2px solid teal;*/
+  height: 100%;
+}
+
+.eachSelect {
+  border: none;
+  background: transparent;
+  border-top: 1px solid #D5D5D5;
+  border-bottom: 1px solid #D5D5D5;
+  border-right: 1px solid lightgray;
+  border-radius: 0px;
+  height: 100%;
+  width: 35%;
+}
+
+.removeRightBD {
+  border-right: none;
+}
+
+.calender_class_pic {
+  width: 100%;
+}
+
+.location {
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid darkgray;
+}
+
+.calender_class_btn {
+  font-size: 12px;
+  margin-top: 65px;
+  /*border: 2px solid red;*/
+  width: 90%;
+  justify-content: center;
+
+}
+
+.calender_class_cancel {
+  margin-left: 10px;
+}
+/*===========================ADD NEW CALENDER(CLASS) ENDS*/
 @media(min-width: 700px) {
   .AdminBlog_ADDNEW_Main {
     width: calc(100vw - 31%);
@@ -301,6 +449,10 @@
   display: none
 }
 
+.calender_class_btn {
+  margin-top: 150px;
+}
+
 
 }
 
@@ -309,6 +461,13 @@
 
 
 @media(min-width: 1000px) {
+
+
+
+
+
+
+
   .AdminBlog_ADDNEW_Main {
     width: calc(100vw - 22%);
     height: 100vh;
@@ -401,4 +560,26 @@
     display: none;
   }
   /*========content pic editor ends*/
+
+  .calender_class_mainTxt textarea{
+    /*border: 2px solid red;*/
+    height: 110px;
+  }
+
+  .classRepeat {
+    font-size: 17px;
+    font-style: lighter;
+  }
+
+  .calender_class_btn {
+    margin-top: 150px;
+  }
+
+  .hrSelector {
+    width: 50%;
+  }
+
+  .leftSelect {
+    width: 40%
+  }
 }

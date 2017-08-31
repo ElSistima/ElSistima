@@ -1,7 +1,7 @@
 import React from 'react';
 import './../styles/global-style.css';
 import './../styles/about.css';
-import { Parallax } from 'react-parallax';
+
 
 
 
@@ -49,9 +49,13 @@ export default function About(props){
           <p className="curriculumBodyText">
             Rehersals for ESPGH are three days per week after the standard school day. On occation, there are weekend rehearsal dates to help preparedness for upcoming events. Rehearsals address balances between instrument sections and emphasize playing exactly together, matching rhythms, styles tones, and executions, such as bow strokes and articulations.
           </p>
-          <div className="curriculumButton">
+          <div className="curriculumButton" id="myBtn">
           <p className="curriculumButtonText">Read More</p>
         </div>
+
+      
+
+
         </div>
       </section>
 
