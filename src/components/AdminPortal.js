@@ -11,7 +11,6 @@ import AdminBlog from './AdminBlog';
 import AdminBlogEditor from './AdminBlogEditor';
 import AdminClasses from './AdminClasses';
 import AdminPerformances from './AdminPerformances';
-import AdminContentPics from './AdminContentPics';
 import AdminContentText from './AdminContentText';
 import AdminMedia from './AdminMedia';
 import {hamClicked} from './../ducks/reducer';
@@ -60,7 +59,6 @@ class AdminPortal extends Component{
           <Route exact path="/admin/blog" component={AdminBlog} />
           <Route exact path="/admin/classes" component={AdminClasses} />
           <Route exact path="/admin/performances" component={AdminPerformances} />
-          <Route exact path="/admin/contentpics" component={AdminContentPics} />
           <Route exact path="/admin/contenttext" component={AdminContentText} />
           <Route exact path="/admin/media" component={AdminMedia} />
         </Switch>

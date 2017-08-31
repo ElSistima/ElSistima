@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './../styles/adminEditor.css';
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 
@@ -32,7 +33,10 @@ class AdminClasses extends Component {
       <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
-            <p className="adminPageHeader">Current Blog Posts</p>
+            <p className="adminPageHeader">Current Classes</p>
+            <Link to="/admin/classes/addNew">
+              <i className="fa fa-plus-square" aria-hidden="true"></i>
+            </Link>
           </div>
           <div className="itemsSelected">
             <p>ITEMS SELECTED TEXT GOES HERE</p>
@@ -42,13 +46,13 @@ class AdminClasses extends Component {
               <div className="checkbox" onClick={this.markAllChecked.bind(this)} style={this.state.checkAllBoxes ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
             </div>
             <div className="blogDetailsItem2">
-              <p>Name</p>
+              <p>Title</p>
             </div>
             <div className="blogDetailsItem3">
-              <p>Email Address</p>
+              <p>Start Date</p>
             </div>
             <div className="blogDetailsItem4">
-              <p>Job</p>
+              <p>End Date</p>
             </div>
             <div className="blogDetailsItem5">
               <p>Actions</p>

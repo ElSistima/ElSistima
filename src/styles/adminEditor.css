@@ -12,6 +12,7 @@
 }
 
 .adminPageHeaderContainer {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   width: 100%;
@@ -21,7 +22,13 @@
 }
 
 .adminPageHeader {
+  box-sizing: border-box;
   font-size: large;
+  margin-right: .75em;
+}
+
+.fa-plus-square {
+  color: #F3A537;
 }
 
 .itemsSelected {
@@ -80,6 +87,10 @@
     font-size: x-large;
   }
 
+  .fa-plus-square {
+    font-size: 1.25em;
+  }
+
   .itemsSelected {
     min-height: 6vh;
     padding-left: 3.5%;
@@ -119,6 +130,10 @@
 
   .adminPageHeader {
     font-size: xx-large;
+  }
+
+  .fa-plus-square {
+    font-size: 1.5em;
   }
 
   .itemsSelected {
