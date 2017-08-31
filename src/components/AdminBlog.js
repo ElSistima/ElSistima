@@ -26,7 +26,8 @@ class AdminBlog extends Component {
 
   markAllChecked(){
     this.setState({
-      checkAllBoxes: !this.state.checkAllBoxes
+      checkAllBoxes: !this.state.checkAllBoxes,
+      amountChecked: this.state.fetchedPosts.length
     })
   }
 
@@ -55,7 +56,7 @@ class AdminBlog extends Component {
             <p className="adminPageHeader">Current Blog Posts</p>
           </div>
           <div className="itemsSelected">
-            <p>{this.state.amountChecked} {postAmount}</p>
+            <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {postAmount}</p>
           </div>
           <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">
