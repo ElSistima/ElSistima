@@ -9,12 +9,42 @@ export default function Media(props){
   return (
     <main className="mediaMainContent">
       <section className="photoVideoToggleContainer">
-      {/* <ToggleSwitch>
-        </ToggleSwitch> */}
-        <h1>There's supposed to be a toggle switch here</h1>
-      
+        <div className="photoVideoToggleSwitch">
+          <p className="photoVideoToggleText">Photo</p>
+          <div className="toggleTrack">
+            <div className="switchSwitch"></div>
+          </div>
+          <p className="photoVideoToggleText">Video</p>
+        </div>
+        </section>
+
+        <section className="dateFilterContainer">
+          <div className="dateFilter">
+            <div className="dropMenus">
+              <p className="dropMenusText">Year</p>
+              <div className="dropArrow"></div>
+            </div>
+            <div className="dropMenus2">
+              <p className="dropMenusText">Month</p>
+              <div className="dropArrow"></div>
+            </div>
+            <div className="dropMenus3">
+              <p className="dropMenusText">Title</p>
+              <div className="dropArrow"></div>
+            </div>
+          </div>
+          <div className="filterButton">Filter</div>
+        </section>
+
+        <section className="mediaGridContainer">
+          <div mediaGrid>
+            
+          </div>
 
         </section>
+      
+
+        
     </main>
   )
 }
