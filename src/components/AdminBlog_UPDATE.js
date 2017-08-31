@@ -7,7 +7,10 @@ class AdminBlog_UPDATE extends Component{
   constructor(props){
     super(props);
       this.state={
-        post: null
+        post: null,
+        postTitle: '',
+        postSubtitle: '',
+        postContent: ''
       }
   }
 
@@ -17,15 +20,21 @@ class AdminBlog_UPDATE extends Component{
     axios.get(`/api/blogs/${this.props.match.params.posts_id}`).then(res => {
       console.log("Response is:", res.data)
       this.setState({
-        post: res.data[0]
+        post: res.data[0],
+        postTitle: res.data[0].post_title,
+        postSubtitle: res.data[0].blog_subtitle,
+        postContent: res.data[0].post_content
       })
     }).catch(err => console.log(err))
   }
 
 
 
+
   render(){
     console.log("State post is: ", this.state.post)
+    console.log("State post title is: ", this.state.postTitle)
+
 
     const fullPageStyle = { width: "100%" }
 
@@ -34,12 +43,12 @@ class AdminBlog_UPDATE extends Component{
       <div className="add_new_blog">
         <div className="anb_headerText">Update Blog</div>
         <div className="anb_topInput">
-          <input placeholder="title"/>
-          <input className="captionInput" placeholder="Caption"/>
+          <input value={this.state.postTitle}/>
+          <input className="captionInput" value={this.state.postSubtitle}/>
         </div>
 
         <div className="maintxt_Content anb_overwrite">
-          <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
+          <textarea value={this.state.postContent}></textarea>
         </div>
       </div>
 
