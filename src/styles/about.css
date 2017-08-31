@@ -1048,7 +1048,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 58vh;
+    min-height: 28em;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
