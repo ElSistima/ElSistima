@@ -5,17 +5,27 @@ export default class IndivBlogPostDetails extends Component {
   constructor(props){
     super(props);
       this.state ={
-        itemChecked: false
+        itemChecked: false,
+        checkedQty: 0
       }
   }
 
   markChecked(){
     this.setState({
-      itemChecked: !this.state.itemChecked
+      itemChecked: !this.state.itemChecked,
+      checkedQty: this.state.checkedQty == 0 ? 1 : 0
+    })
+  }
+
+  componentWillReceiveProps(nextProps){
+    this.setState({
+      itemChecked: nextProps.checkAll
     })
   }
 
   render(){
+
+    console.log("Item checked :", this.state.itemChecked, "CheckedQty :", this.state.checkedQty)
 
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
 
