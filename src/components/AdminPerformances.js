@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import './../styles/adminEditor.css';
 import {connect} from 'react-redux';
 
-class AdminVolunteer extends Component{
+
+class AdminPerformances extends Component {
   constructor(props){
     super(props);
       this.state ={
@@ -66,4 +67,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps)(AdminVolunteer);
+export default connect(mapStateToProps)(AdminPerformances);

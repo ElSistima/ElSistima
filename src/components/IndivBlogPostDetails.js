@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import './../styles/indivBlogPostDetails.css';
 
 export default class IndivBlogPostDetails extends Component {
@@ -23,9 +24,13 @@ export default class IndivBlogPostDetails extends Component {
     })
   }
 
+  deletePost(){
+    axios.delete(`/api/posts/${this.props.post.posts_id}`).then(res => this.props.reloadPosts()).catch(err => console.log(err))
+  }
+
   render(){
 
-    console.log("Item checked :", this.state.itemChecked, "CheckedQty :", this.state.checkedQty)
+    console.log("Item checked :", this.state.itemChecked)
 
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
 
@@ -47,7 +52,7 @@ export default class IndivBlogPostDetails extends Component {
         </div>
         <div className="blogDetailsItem5">
           <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
-          <p><i className="fa fa-trash" aria-hidden="true"></i></p>
+          <p><i className="fa fa-trash" aria-hidden="true" onClick={this.deletePost.bind(this)}></i></p>
         </div>
       </main>
     )
