@@ -23,6 +23,16 @@ class AdminBlog extends Component {
   .catch(err => console.log("Error is: ", err))
   }
 
+  reloadPosts(){
+    axios.get('/api/blogs').then(res => {
+      console.log("Res data is:", res.data)
+      this.setState({
+        fetchedPosts: res.data
+      })
+    })
+  .catch(err => console.log("Error is: ", err))
+  }
+
 
   markAllChecked(){
     this.setState({
@@ -41,7 +51,7 @@ class AdminBlog extends Component {
     const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
 
     const allPosts = this.state.fetchedPosts.map((post, i) => { return (
-      <IndivBlogPostDetails key={i} post={post} index={i} checkAll={this.state.checkAllBoxes} checkedQty={0}/>
+      <IndivBlogPostDetails key={i} post={post} index={i} checkAll={this.state.checkAllBoxes} checkedQty={0} reloadPosts={this.reloadPosts.bind(this)}/>
     )
     })
 
