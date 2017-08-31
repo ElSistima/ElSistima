@@ -33,7 +33,7 @@ class AdminMedia extends Component{
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
             <p className="adminPageHeader">Current Media</p>
-            <Link to="/admin/media/addNew">
+            <Link to="/admin/contentPic/addNew">
               <i className="fa fa-plus-square" aria-hidden="true"></i>
             </Link>
           </div>

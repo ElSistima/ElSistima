@@ -19,6 +19,8 @@ import {connect} from 'react-redux';
 import AdminCP_ADDNEW  from './AdminCP_ADDNEW';
 import AdminCT_ADDNEW from './AdminCT_ADDNEW';
 import AdminCalender_ADDNEW_Class from './AdminCalender_ADDNEW_Class';
+import AdminCalender_ADDNEW_Perf from './AdminCalender_ADDNEW_Perf';
+
 
 
 
@@ -57,6 +59,7 @@ class AdminPortal extends Component{
           <Route exact path="/admin/edit/blog" component={AdminBlogEditor} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
           <Route path="/admin/calenderClass/addNew" component={AdminCalender_ADDNEW_Class} />
+          <Route path="/admin/calenderPerf/addNew" component={AdminCalender_ADDNEW_Perf} />
 
 
 
