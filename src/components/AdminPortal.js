@@ -13,6 +13,8 @@ import AdminClasses from './AdminClasses';
 import AdminPerformances from './AdminPerformances';
 import AdminContentText from './AdminContentText';
 import AdminMedia from './AdminMedia';
+
+import AdminBlog_UPDATE from './AdminBlog_UPDATE';
 import {hamClicked} from './../ducks/reducer';
 import {connect} from 'react-redux';
 
@@ -61,6 +63,8 @@ class AdminPortal extends Component{
           <Route exact path="/admin/performances" component={AdminPerformances} />
           <Route exact path="/admin/contenttext" component={AdminContentText} />
           <Route exact path="/admin/media" component={AdminMedia} />
+
+          <Route exact path="/admin/blog/update/:posts_id" component={AdminBlog_UPDATE} />
         </Switch>
       </main>
     )
