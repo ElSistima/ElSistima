@@ -31,7 +31,7 @@ class AdminVolunteer extends Component{
       <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
-            <p className="adminPageHeader">Current Blog Posts</p>
+            <p className="adminPageHeader">Current Volunteers</p>
           </div>
           <div className="itemsSelected">
             <p>ITEMS SELECTED TEXT GOES HERE</p>
