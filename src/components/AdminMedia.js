@@ -31,7 +31,7 @@ class AdminMedia extends Component{
       <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
-            <p className="adminPageHeader">Current Blog Posts</p>
+            <p className="adminPageHeader">Current Media</p>
           </div>
           <div className="itemsSelected">
             <p>ITEMS SELECTED TEXT GOES HERE</p>
@@ -41,13 +41,13 @@ class AdminMedia extends Component{
               <div className="checkbox" onClick={this.markAllChecked.bind(this)} style={this.state.checkAllBoxes ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
             </div>
             <div className="blogDetailsItem2">
-              <p>Name</p>
+              <p>Type</p>
             </div>
             <div className="blogDetailsItem3">
-              <p>Email Address</p>
+              <p>Date Published</p>
             </div>
             <div className="blogDetailsItem4">
-              <p>Job</p>
+              <p>Title</p>
             </div>
             <div className="blogDetailsItem5">
               <p>Actions</p>
