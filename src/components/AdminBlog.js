@@ -2,7 +2,10 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import IndivBlogPostDetails from './IndivBlogPostDetails';
 import './../styles/adminEditor.css';
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+
+
 class AdminBlog extends Component {
   constructor(props){
     super(props);
@@ -64,6 +67,9 @@ class AdminBlog extends Component {
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
             <p className="adminPageHeader">Current Blog Posts</p>
+            <Link to="/admin/blog/addNew">
+              <i className="fa fa-plus-square" aria-hidden="true"></i>
+            </Link>
           </div>
           <div className="itemsSelected">
             <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {postAmount}</p>
