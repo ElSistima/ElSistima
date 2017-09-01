@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/AdminBlog_ADDNEW.css';
+import '../styles/AdminBlogEditor.css';
 import {connect} from 'react-redux';
 
 class AdminBlog_ADDNEW extends Component{
@@ -30,12 +30,12 @@ class AdminBlog_ADDNEW extends Component{
 
       <div className="add_new_pics">
         <div className="add_pic_inner">
-          <div>Add Top Full Picture</div>
+          <p className="picInnerText">Add Top Full Picture</p>
           <img src='https://i.imgur.com/FTLTf6u.png' />
           <div className="pblg save_btn">SAVE</div>
         </div>
         <div className="add_pic_inner">
-          <div>Add 2nd Full Picture</div>
+          <p className="picInnerText">Add 2nd Full Picture</p>
           <img src='https://i.imgur.com/FTLTf6u.png' />
           <div className="pblg cancel_btn">CANCEL</div>
         </div>

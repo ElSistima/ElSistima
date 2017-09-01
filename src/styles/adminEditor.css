@@ -1,7 +1,6 @@
 .adminWrapper {
   display: flex;
-  justify-content: center;
-  width: 78%;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -23,7 +22,7 @@
 
 .adminPageHeader {
   box-sizing: border-box;
-  font-size: large;
+  font-size: x-large;
   margin-right: .75em;
 }
 
@@ -84,7 +83,7 @@
   }
 
   .adminPageHeader {
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   .fa-plus-square {
@@ -122,6 +121,11 @@
 
   .adminWrapper {
     width: 78%;
+    padding-bottom: 6vh;
+  }
+
+  .adminContentContainer {
+    flex-direction: column;
   }
 
   .adminPageHeaderContainer {
@@ -143,7 +147,6 @@
   .columnTitles {
     min-height: 7vh;
   }
-
 
   .checkbox {
     min-height: 20px;
