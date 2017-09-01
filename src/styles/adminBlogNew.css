@@ -1,0 +1,263 @@
+.adminWrapperBlogNew {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 2vh;
+}
+
+.adminContentContainerBlogNew {
+  margin: 0 auto;
+}
+
+.addNewBlogNew {
+  width: 90%;
+  min-height: 50vh;
+  background-color: white;
+  margin: 2vh auto 2vh;
+}
+
+.adminPageTitleBlogNew {
+  min-height: 5vh;
+  text-align: left;
+  font-size: x-large;
+}
+
+.titleBlogNew, .subtitleBlogNew, .blogContent {
+  font-size: small;
+}
+
+.topInputBlogNew {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 8vh;
+  margin-bottom: 4vh;
+}
+
+.topInputBlogNew input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  outline: none;
+  width: 45%;
+  min-height: 8vh;
+}
+
+.contentBlogNew {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: small;
+}
+
+.addNewPicsBlogNew {
+  width: 90%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  font-size: small;
+  margin: 4vh auto 0 auto;
+  padding-bottom: 5vh;
+}
+
+.addPicInnerBlogNew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42.5%;
+}
+
+.picInnerTextBlogNew{
+  font-size: small;
+}
+
+.addPicInnerBlogNew img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.updateBtnBlogNew, .saveBtnBlogNew {
+  background-color: #4E8AA8;
+  color: white;
+  }
+
+.cancelBtnBlogNew {
+  background-color: #ECECEC;
+  color: #b4b4b4;
+  }
+
+.saveCancelBtnContainerBlogNew {
+  display: none
+}
+
+.overwriteBlogNew {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.overwriteBlogNew textarea{
+  width: 100%;
+  padding: 0;
+  min-height: 50vh;
+  border: none;
+}
+
+.buttonBlogNew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57.5%;
+  height: 4vh;
+  border-radius: 5px;
+  margin-top: 1.25vh;
+  box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
+  font-size: small;
+}
+
+@media(min-width: 700px) {
+
+  .adminWrapperBlogNew {
+    width: 69%;
+    padding-top: 3vh;
+  }
+
+  .adminContentContainerBlogNew {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .adminPageTitleBlogNew {
+    font-size: xx-large;
+  }
+
+  .titleBlogNew, .subtitleBlogNew, .blogContent, .picInnerTextBlogNew {
+    font-size: x-large;
+  }
+
+  .contentBlogNew {
+    font-size: x-large;
+  }
+
+  .saveCancelBtnContainerBlogNew {
+    display: none
+  }
+
+  .addNewPicsBlogNew {
+    width: 100%;
+    min-height: 20vh;
+  }
+
+  .addPicInnerBlogNew {
+    width: 40%;
+    margin-bottom: 3vh;
+  }
+
+  .picInnerTextBlogNew{
+    margin-top: 2vh;
+    font-size: x-large;
+  }
+
+  .addPicInnerBlogNew img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .buttonBlogNew {
+    width: 57.5%;
+    height: 50px;
+    margin-top: 3vh;
+    font-size: large;
+  }
+
+}
+
+@media(min-width: 1000px) {
+
+  .adminWrapperBlogNew {
+    padding-top: 5vh;
+  }
+
+  .adminContentContainerBlogNew{
+    width: 90%;
+    min-height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .addNewBlogNew {
+    width: 60%;
+  }
+
+  .titleBlogNew, .subtitleBlogNew, .blogContent {
+    font-size: x-large;
+  }
+
+  .picInnerTextBlogNew {
+    font-size: large;
+  }
+
+  .overwriteBlogNew textarea{
+    min-height: 62.5vh;
+  }
+
+  .addNewPicsBlogNew {
+    width: 25%;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 75vh;
+  }
+
+  .addPicInnerBlogNew {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .addPicInnerBlogNew img {
+    width: 65%;
+    height: auto;
+  }
+
+  .addPicInnerBlogNew div {
+    margin-left: 3px;
+  }
+
+  .saveCancelBtnContainerBlogNew {
+    box-sizing: border-box;
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    margin: 0 auto 4vh auto;
+  }
+
+  .buttonBlogNew {
+   width: 150px;
+   height: 40px;
+   margin-left: 3.5%;
+   margin-top: 0;
+ }
+
+  .updateBtnBlogNewDesktop, .cancelBtnBlogNewDesktop {
+    color: white;
+    background-color: #4e8aa8;
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
+  }
+
+  .cancelBtnBlogNewDesktop {
+    background-color: #ECECEC;
+    color: #b4b4b4;
+  }
+
+  .updateBtnBlogNew, .cancelBtnBlogNew {
+    display: none;
+  }
+
+}
