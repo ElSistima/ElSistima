@@ -14,6 +14,8 @@ import AdminPerformances from './AdminPerformances';
 import AdminContentPics from './AdminContentPics';
 import AdminContentText from './AdminContentText';
 import AdminMedia from './AdminMedia';
+
+import AdminBlog_UPDATE from './AdminBlog_UPDATE';
 import {hamClicked} from './../ducks/reducer';
 import {connect} from 'react-redux';
 import AdminCP_ADDNEW  from './AdminCP_ADDNEW';
@@ -61,8 +63,6 @@ class AdminPortal extends Component{
           <Route path="/admin/calenderClass/addNew" component={AdminCalender_ADDNEW_Class} />
           <Route path="/admin/calenderPerf/addNew" component={AdminCalender_ADDNEW_Perf} />
 
-
-
           <Route path="/admin/contentPic/addNew" component={AdminCP_ADDNEW} />
           <Route path="/admin/contentText/addNew" component={AdminCT_ADDNEW} />
           <Route exact path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
@@ -74,6 +74,7 @@ class AdminPortal extends Component{
           <Route exact path="/admin/contenttext" component={AdminContentText} />
           <Route exact path="/admin/media" component={AdminMedia} />
 
+          <Route exact path="/admin/blog/update/:posts_id" component={AdminBlog_UPDATE} />
         </Switch>
       </main>
     )

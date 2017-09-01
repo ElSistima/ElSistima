@@ -32,6 +32,153 @@
 .adhome_calender {
   height: 400px;
 }
+@keyframes notification {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  40% {
+    opacity: 1;
+    transform: none;
+  }
+
+  60% {
+    opacity: 1;
+    transform: none;
+  }
+
+  100%{
+    opacity: 0;
+   transform: translate3d(0, -2000px, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
+.Completed {
+  width: 30%;
+  height: 10vh;
+  background-color: #e9ebee;
+  border-radius: 4px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  z-index: 99;
+  animation: notification 2000ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperBox {
+  width: 100%;
+  height: 55vh;
+  background-color: #e9ebee;
+  border-radius: 4px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  z-index: 99;
+  animation: fadeInDown 300ms;
+}
+.selectBox {
+  position: relative;
+}
+.selectBox h1{
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.titleBox{
+  margin-left: 20%;
+}
+.titleBox h3 {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.titleInput{
+  display: inline-block;
+  margin-left: 10%;
+}
+.subtitleInput{
+  display: inline-block;
+  margin-left: 5.3%;
+}
+.titleOption {
+  margin-left: 10%;
+}
+
+.startBox,
+.endBox{
+  text-align: center;
+}
+.startBox h4,
+.endBox h4{
+  display: inline-block;
+  margin: 5px;
+}
+
+.startBox h3,
+.endBox h3 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.buttonBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.theXbutton{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.turnButton button {
+  border: none;
+  background-color: #4088af;
+  height: 30px;
+  color: white;
+  margin-left: 10px;
+}
+
+.turnButton2 {
+  border: none;
+  background-color: #4088af;
+  height: 30px;
+  color: white;
+}
+
 
 @media(min-width: 700px) {
   .Adhome_rcc_Main {
