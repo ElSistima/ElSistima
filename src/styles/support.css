@@ -243,6 +243,10 @@
   font-size: 145%;
 }
 
+.supportTopBody {
+  font-size: 110%;
+}
+
 .donateinstSubTitle, .donateinstAddress {
   font-size: 19px;
 }
@@ -306,5 +310,73 @@
 .volunteer {
   height: 450px;
 }
+
+.helpTitle {
+  height: 100px;
+  color: #60605F;
+}
+
+}
+
+
+@media(min-width: 1000px) {
+  .supportTopBody {
+    width: 75%;
+    height: 900px;
+  }
+
+  .supportInnerBox, .innerBody {
+    height: 300px;
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .supportTitle {
+    height: 200px;
+    font-size: 45px;
+  }
+
+  .innerBoxTitle {
+    height: 100px;
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .howdonation {
+    margin-top: 55px;
+  }
+
+ .helpTitle {
+   height: 180px;
+    font-size: 29px;
+    color: #60605F;
+ }
+
+ .donate {
+   width: 45%;
+   height: 740px;
+   margin: 0;
+ }
+
+
+ .waysToHelp {
+   position: relative;
+ }
+
+ .desktopDonateInst {
+   position: absolute;
+   top:170px;
+   height: 300px;
+   left: 55%;
+   width: 40%;
+ }
+
+ .desktopVolunteer {
+   position: absolute;
+   top: 490px;
+   height: 430px;
+   left: 55%;
+   width: 40%;
+ }
 
 }
