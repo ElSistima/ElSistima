@@ -11,15 +11,14 @@
     "express": "^4.15.4",
     "express-session": "^1.15.5",
     "massive": "^3.2.2",
+    "moment": "^2.18.1",
     "nodemon": "^1.11.0",
     "passport": "^0.4.0",
     "passport-auth0": "^0.6.0",
     "react": "^15.6.1",
+    "react-big-calendar": "^0.15.0",
     "react-dom": "^15.6.1",
     "react-parallax": "^1.4.4",
-
-
-
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.12",
