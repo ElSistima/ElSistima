@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/AdminBlog_ADDNEW.css';
-import '../styles/adminBlogUpdate.css';
+import '../styles/AdminBlogEditor.css';
 import axios from 'axios';
 import {connect} from 'react-redux';
 
@@ -41,33 +40,38 @@ class AdminBlog_UPDATE extends Component{
 
     return(
       <main className="AdminBlog_ADDNEW_Main" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
-      <div className="add_new_blog">
-        <div className="anb_headerText">Update Blog</div>
-        <div className="anb_topInput">
-          <input value={this.state.postTitle} className="blogTitle"/>
-          <input className="captionInput" value={this.state.postSubtitle} className="blogSubtitle"/>
+        <div className="adminContentContainer">
+          <div className="add_new_blog">
+            <div className="anb_headerText"><p>Update Blog</p></div>
+            <div className="anb_topInput">
+              <input value={this.state.postTitle} className="blogTitle"/>
+              <input className="captionInput" value={this.state.postSubtitle} className="blogSubtitle"/>
+            </div>
+
+            <div className="maintxt_Content anb_overwrite">
+              <textarea value={this.state.postContent} className="blogContent"></textarea>
+            </div>
+          </div>
+
+          <div className="add_new_pics">
+            <div className="add_pic_inner">
+              <p className="picInnerText">Add Top Full Picture</p>
+              <img src='https://i.imgur.com/FTLTf6u.png' />
+              <div className="pblg save_btn">UPDATE</div>
+            </div>
+            <div className="add_pic_inner">
+              <p className="picInnerText">Add 2nd Full Picture</p>
+              <img src='https://i.imgur.com/FTLTf6u.png' />
+              <div className="pblg cancel_btn">CANCEL</div>
+            </div>
+          </div>
+
         </div>
 
-        <div className="maintxt_Content anb_overwrite">
-          <textarea value={this.state.postContent} className="blogContent"></textarea>
+        <div className="web_btn">
+          <div className="singlebtn web_save">SAVE</div>
+          <div className="singlebtn web_cancel">CANCEL</div>
         </div>
-      </div>
-
-
-
-      <div className="add_new_pics">
-        <div className="add_pic_inner">
-          <div>Add Top Full Picture</div>
-          <img src='https://i.imgur.com/FTLTf6u.png' />
-          <div className="pblg save_btn">UPDATE</div>
-        </div>
-        <div className="add_pic_inner">
-          <div>Add 2nd Full Picture</div>
-          <img src='https://i.imgur.com/FTLTf6u.png' />
-          <div className="pblg cancel_btn">CANCEL</div>
-        </div>
-      </div>
-
       </main>
     )
   }
