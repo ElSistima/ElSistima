@@ -5,25 +5,48 @@ import {connect} from 'react-redux';
 class AdminBlog_ADDNEW extends Component{
   constructor(props){
     super(props);
+      this.state={
+        blogNewTitle: '',
+        blogNewSubtitle: '',
+        blogNewContent: ''
+      }
 
   }
 
-  render(){
+  trackTitleChange(event){
+    this.setState({
+      blogNewTitle: event.target.value
+    })
+  }
 
+  trackSubtitleChange(event){
+    this.setState({
+      blogNewSubtitle: event.target.value
+    })
+  }
+
+  trackContentChange(event){
+    this.setState({
+      blogNewContent: event.target.value
+    })
+  }
+
+  render(){
+    console.log("Content is: ", this.state.blogNewContent)
     const fullPageStyle = { width: "100%" }
 
     return(
       <main className="adminWrapperBlogNew" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <div className="adminContentContainerBlogNew">
           <div className="addNewBlogNew">
-            <p className="adminPageTitleBlogNew">Update BlogNew</p>
+            <p className="adminPageTitleBlogNew">Create New Blog Post</p>
             <div className="topInputBlogNew">
-              <input placeholder="Title" className="titleBlogNew"/>
-              <input className="captionInputBlogNew" placeholder="Subtitle" className="subtitleBlogNew"/>
+              <input placeholder="Title" className="titleBlogNew" onChange={this.trackTitleChange.bind(this)}/>
+              <input placeholder="Subtitle" className="subtitleBlogNew" onChange={this.trackSubtitleChange.bind(this)}/>
             </div>
 
             <div className="overwriteBlogNew">
-              <textarea placeholder="Blog content here" className="contentBlogNew"></textarea>
+              <textarea placeholder="Blog content here" className="contentBlogNew" onChange={this.trackContentChange.bind(this)}></textarea>
             </div>
           </div>
 
@@ -31,7 +54,7 @@ class AdminBlog_ADDNEW extends Component{
             <div className="addPicInnerBlogNew">
               <p className="picInnerTextBlogNew">Add Top Full Picture</p>
               <img src='https://i.imgur.com/FTLTf6u.png' />
-              <div className="buttonBlogNew updateBtnBlogNew">UPDATE</div>
+              <div className="buttonBlogNew updateBtnBlogNew">SAVE</div>
             </div>
             <div className="addPicInnerBlogNew">
               <p className="picInnerTextBlogNew">Add 2nd Full Picture</p>
@@ -43,7 +66,7 @@ class AdminBlog_ADDNEW extends Component{
         </div>
 
         <div className="saveCancelBtnContainerBlogNew">
-          <div className="buttonBlogNew updateBtnBlogNewDesktop">UPDATE</div>
+          <div className="buttonBlogNew updateBtnBlogNewDesktop">SAVE</div>
           <div className="buttonBlogNew cancelBtnBlogNewDesktop">CANCEL</div>
         </div>
       </main>
