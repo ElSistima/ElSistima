@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/AdminBlogEditor.css';
+import '../styles/adminBlogEditor.css';
 import axios from 'axios';
 import {connect} from 'react-redux';
 
@@ -14,7 +14,6 @@ class AdminBlog_UPDATE extends Component{
       }
   }
 
-
   componentDidMount(){
     console.log("Param is: ", this.props.match.params.posts_id)
     axios.get(`/api/blogs/${this.props.match.params.posts_id}`).then(res => {
@@ -28,9 +27,6 @@ class AdminBlog_UPDATE extends Component{
     }).catch(err => console.log(err))
   }
 
-
-
-
   render(){
     console.log("State post is: ", this.state.post)
     console.log("State post title is: ", this.state.postTitle)
@@ -39,28 +35,28 @@ class AdminBlog_UPDATE extends Component{
     const fullPageStyle = { width: "100%" }
 
     return(
-      <main className="AdminBlog_ADDNEW_Main" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
-        <div className="adminContentContainer">
-          <div className="add_new_blog">
-            <div className="anb_headerText"><p>Update Blog</p></div>
-            <div className="anb_topInput">
-              <input value={this.state.postTitle} className="blogTitle"/>
-              <input className="captionInput" value={this.state.postSubtitle} className="blogSubtitle"/>
+      <main className="adminMainBlog" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
+        <div className="adminContentContainerBlog">
+          <div className="addNewBlog">
+            <p className="adminPageTitleBlog">Update Blog</p>
+            <div className="topInputBlog">
+              <input value={this.state.postTitle} className="titleBlog"/>
+              <input className="captionInputBlog" value={this.state.postSubtitle} className="subtitleBlog"/>
             </div>
 
-            <div className="maintxt_Content anb_overwrite">
-              <textarea value={this.state.postContent} className="blogContent"></textarea>
+            <div className="overwriteBlog">
+              <textarea value={this.state.postContent} className="contentBlog"></textarea>
             </div>
           </div>
 
-          <div className="add_new_pics">
-            <div className="add_pic_inner">
-              <p className="picInnerText">Add Top Full Picture</p>
+          <div className="addNewPicsBlog">
+            <div className="addPicInnerBlog">
+              <p className="picInnerTextBlog">Add Top Full Picture</p>
               <img src='https://i.imgur.com/FTLTf6u.png' />
-              <div className="pblg save_btn">UPDATE</div>
+              <div className="pblg saveBtnBlog">UPDATE</div>
             </div>
-            <div className="add_pic_inner">
-              <p className="picInnerText">Add 2nd Full Picture</p>
+            <div className="addPicInnerBlog">
+              <p className="picInnerTextBlog">Add 2nd Full Picture</p>
               <img src='https://i.imgur.com/FTLTf6u.png' />
               <div className="pblg cancel_btn">CANCEL</div>
             </div>
@@ -68,7 +64,7 @@ class AdminBlog_UPDATE extends Component{
 
         </div>
 
-        <div className="web_btn">
+        <div className="saveCancelBtnContainer">
           <div className="singlebtn web_save">SAVE</div>
           <div className="singlebtn web_cancel">CANCEL</div>
         </div>

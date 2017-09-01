@@ -59,6 +59,7 @@ class AdminPortal extends Component{
           <Route exact path="/admin/edit/blog" component={AdminBlogEditor} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
           <Route path="/admin/calenderClass/addNew" component={AdminCalender_ADDNEW_Class} />
+
           <Route path="/admin/contentPic/addNew" component={AdminCP_ADDNEW} />
           <Route path="/admin/contentText/addNew" component={AdminCT_ADDNEW} />
           <Route exact path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
@@ -69,6 +70,7 @@ class AdminPortal extends Component{
           <Route exact path="/admin/contentpics" component={AdminContentPics} />
           <Route exact path="/admin/contenttext" component={AdminContentText} />
           <Route exact path="/admin/media" component={AdminMedia} />
+
           <Route exact path="/admin/blog/update/:posts_id" component={AdminBlog_UPDATE} />
         </Switch>
       </main>

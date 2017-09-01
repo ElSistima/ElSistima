@@ -1,43 +1,84 @@
-
-.adminMainBlog {
-  box-sizing: border-box;
-  float: left;
-  min-height: 100vh;
-  padding-top: 2vh;
-  /*background-color: blue;*/
+::-webkit-input-placeholder {
+    font-weight: lighter;/* WebKit, Blink, Edge */
+    color:    #e4e4e4;
+    font-size: 12px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   opacity:  1;
+   font-size: 12px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   opacity:  1;
+   font-size: 12px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   font-size: 12px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   font-weight: lighter;
+   color:    #e4e4e4;
+   font-size: 12px;
 }
 
-.adminContentContainerBlog {
+/* placeholder styleing */
+
+.AdminBlog_ADDNEW_Main {
+  box-sizing: border-box;
+  float: left;
+  width: calc(100vw - 14%);
+  min-height: 100vh;
+  padding-top: 2vh;
+  /*background-color: red;*/
+}
+
+.adminContentContainer {
   margin: 0 auto;
 }
 
-.addNewBlog {
+.add_new_blog {
   width: 90%;
-  min-height: 50vh;
+  min-height: 70vh;
   background-color: white;
-  margin: 2vh auto 2vh;
+  /*background-color: lime;*/
+
+  margin-bottom: 20px;
+  /*border: 2px solid red;*/
+  margin-top: 15px;
+  margin-left: 4.5%;
 }
 
-.adminPageTitleBlog {
-  height: 5vh;
-  text-align: left;
+.volunteerOverwrite {
+    height: 405px;
+  }
+
+.anb_headerText {
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.anb_headerText p {
   font-size: x-large;
-  /*background-color: plum;*/
 }
 
-.titleBlog, .subtitleBlog, .blogContent {
+.blogTitle, .blogSubtitle, .blogContent {
   font-size: small;
 }
 
-.topInputBlog {
+.anb_topInput {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  /*border: 2px solid black;*/
   min-height: 8vh;
-  margin-bottom: 4vh;
 }
 
-.topInputBlog input{
+.anb_topInput input{
   background: transparent;
   border: none;
   border-bottom: 1px solid darkgray;
@@ -45,6 +86,26 @@
   width: 45%;
   min-height: 8vh;
 }
+
+.lngipt {
+  width: 100%;
+  border-bottom: 1px solid darkgray;
+  height: 45px;
+  display: flex;
+  align-items: center;
+
+}
+
+.lngipt input{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.maintxt_Content {
+  min-height: 50vh;
+}
+
 
 .maintxt_Content textarea{
   background: transparent;
@@ -56,43 +117,66 @@
   margin-top: 30px;
 }
 
-.contentBlog {
-  box-sizing: border-box;
-  width: 100%;
-  font-size: small;
+
+/* permission */
+.permission {
+  width: 90%;
+  height: 100px;
+  margin-left: 4.5%;
+  /*border: 2px solid black;*/
+  font-size: 14px;
+
 }
 
+.singleCheck {
+  display: flex;
+  margin-right: 5px;
+}
 
-.addNewPicsBlog {
-  width: 90%;
+.checkBody {
+  display: flex;
+  margin-top: 14px;
+  flex-wrap: wrap;
+  height: 60px;
+  font-size: 12px;
+}
+/*permission section ends*/
+
+.add_new_pics {
+  width: 100%;
   min-height: 20vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   display: flex;
   justify-content: space-around;
   font-size: small;
-  margin: 3vh auto 0 auto;
-  padding-bottom: 5vh;
-  /*background-color: lime;*/
 }
 
-.addPicInnerBlog {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 42.5%;
+.add_pic_inner {
+  text-align: center;
+  /*border: 2px solid green;*/
 }
 
-.picInnerTextBlog{
-  font-size: small;
-}
-
-.addPicInnerBlog img {
-  width: 100%;
-  height: auto;
+.add_pic_inner img {
+  width: 100px;
+  height: 100px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
 
-.saveBtnBlog {
+.pblg {
+    width: 130px;
+    /*margin-left: 5px;*/
+    height: 30px;
+    margin-top: 35px;
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.save_btn {
     background-color: #4E8AA8;
     color: white;
   }
@@ -102,24 +186,17 @@
     color: #b4b4b4;
   }
 
-.saveCancelBtnContainer {
+.web_btn {
   display: none
 }
 
-.overwriteBlog {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.overwriteBlog textarea{
-  width: 100%;
-  padding: 0;
+.anb_overwrite textarea{
   min-height: 50vh;
 }
 
 @media(min-width: 700px) {
 
-  .adminMainBlog {
+  .AdminBlog_ADDNEW_Main {
     width: calc(100vw - 31%);
     min-height: 50vh;
   }
@@ -128,7 +205,7 @@
     margin: 0 auto;
   }
 
-  .titleBlog, .subtitleBlog, .blogContent, .picInnerTextBlog {
+  .blogTitle, .blogSubtitle, .blogContent, .picInnerText {
     font-size: large;
   }
 
@@ -137,7 +214,7 @@
     width: 100%;
   }
 
-  .overwriteBlog textarea{
+  .anb_overwrite textarea{
     min-height: 55vh;
   }
 
@@ -178,31 +255,25 @@
   }
 
   /* placeholder styleing */
-  .saveCancelBtnContainer {
+  .web_btn {
     display: none
   }
 
-  .addNewPicsBlog {
+  .add_new_pics {
+    min-height: 40vh;
     width: 100%;
-    min-height: 20vh;
-    margin: 0 auto;
-    /*background-color: lime;*/
-  }
-
-  ..addPicInnerBlog {
-    width: 40%;
-    margin-bottom: 6vh;
-  }
-
-  .picInnerTextBlog{
+    margin-top: 4vh;
     font-size: medium;
+    margin-bottom: 0vh;
   }
 
-  ..addPicInnerBlog img {
+  .add_pic_inner {
+    text-align: center;
+  }
+
+  .add_pic_inner img {
     width: 100%;
     height: auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
   }
 
   .pblg {
@@ -227,11 +298,11 @@
     /*background-color: lime;*/
   }
 
-  .addNewBlog {
+  .add_new_blog {
     width: 60%;
   }
 
-  .addNewPicsBlog {
+  .add_new_pics {
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -240,19 +311,20 @@
     margin-bottom: 6vh;
   }
 
-  ..addPicInnerBlog {
+  .add_pic_inner {
       width: 100%;
       /*height: 50%;*/
       text-align: center;
       margin-bottom: 30px;
-  }
 
-  ..addPicInnerBlog img {
+    }
+
+  .add_pic_inner img {
     width: 65%;
     height: auto;
   }
 
-  ..addPicInnerBlog div {
+  .add_pic_inner div {
     margin-left: 3px;
   }
 
@@ -275,7 +347,7 @@
   }
 
   /*web responsive button*/
-  .saveCancelBtnContainer {
+  .web_btn {
     box-sizing: border-box;
     display: flex;
     width: 90%;
@@ -308,11 +380,11 @@
     margin-left: 5%;
   }
 
-  .titleBlog, .subtitleBlog, .blogContent {
+  .blogTitle, .blogSubtitle, .blogContent {
     font-size: x-large;
   }
 
-  .picInnerTextBlog {
+  .picInnerText {
     font-size: large;
   }
 
@@ -320,7 +392,7 @@
     min-height: 62.5vh;
   }
 
-  .overwriteBlog textarea{
+  .anb_overwrite textarea{
     min-height: 62.5vh;
   }
 
