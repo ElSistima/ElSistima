@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/AdminBlogEditor.css';
+import '../styles/adminBlogEditor.css';
 import {connect} from 'react-redux';
 
 class AdminBlog_ADDNEW extends Component{

@@ -4,15 +4,12 @@ import AdminHeader from './AdminHeader';
 import AdminSideBar from './AdminSideBar';
 import AdminHome from './AdminHome';
 import AdminVolunteer from './AdminVolunteer';
-
 import AdminBlog_ADDNEW from './AdminBlog_ADDNEW';
 import AdminVolunteer_ADDNEW from './AdminVolunteer_ADDNEW';
 import AdminBlog from './AdminBlog';
-import AdminBlogEditor from './AdminBlogEditor';
 import AdminClasses from './AdminClasses';
 import AdminPerformances from './AdminPerformances';
 import AdminContentPics from './AdminContentPics';
-import AdminContentText from './AdminContentText';
 import AdminMedia from './AdminMedia';
 
 import AdminBlog_UPDATE from './AdminBlog_UPDATE';
@@ -56,10 +53,8 @@ class AdminPortal extends Component{
 
         <Switch>
           <Route exact path="/admin" component={AdminHome} />
-          <Route exact path="/admin/edit/blog" component={AdminBlogEditor} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
           <Route path="/admin/calenderClass/addNew" component={AdminCalender_ADDNEW_Class} />
-
           <Route path="/admin/contentPic/addNew" component={AdminCP_ADDNEW} />
           <Route path="/admin/contentText/addNew" component={AdminCT_ADDNEW} />
           <Route exact path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
@@ -68,9 +63,7 @@ class AdminPortal extends Component{
           <Route exact path="/admin/classes" component={AdminClasses} />
           <Route exact path="/admin/performances" component={AdminPerformances} />
           <Route exact path="/admin/contentpics" component={AdminContentPics} />
-          <Route exact path="/admin/contenttext" component={AdminContentText} />
           <Route exact path="/admin/media" component={AdminMedia} />
-
           <Route exact path="/admin/blog/update/:posts_id" component={AdminBlog_UPDATE} />
         </Switch>
       </main>
