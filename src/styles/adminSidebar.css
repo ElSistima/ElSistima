@@ -1,4 +1,5 @@
 .Ad_sidebarMain {
+  box-sizing: border-box;
   width: 14%;
   height: 860px;
   background-color: #EDEDED;
@@ -8,7 +9,6 @@
 
 .sideNav {
   height: 60px;
-  /*border: 2px solid red;*/
   display: flex;
   align-items: center;
 }
@@ -20,7 +20,6 @@
 
 .sidefa {
   font-size: 20px;
-  width: 35px;
   margin-left: 15px;
 }
 
@@ -39,6 +38,17 @@
     display: inline-block;
   }
 
+  .sideNav {
+    box-sizing: border-box;
+    font-size: large;
+  }
+
+  .sidefa {
+    font-size: 1.15em;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+
   .Ad_sidebarMain {
     width: 31%;
     height: 1320px;
@@ -51,5 +61,15 @@
     width: 22%;
     height: 850px;
     background-color: #EDEDED;
+  }
+
+  .sideNav {
+    font-size: large;
+  }
+
+  .sidefa {
+    font-size: 1.15em;
+    margin-left: 33px;
+    margin-right: 28.5px;
   }
 }
