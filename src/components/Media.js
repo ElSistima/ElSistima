@@ -10,7 +10,7 @@ export default function Media(props){
     <main className="mediaMainContent">
       <section className="photoVideoToggleContainer">
         <div className="photoVideoToggleSwitch">
-          <p className="photoVideoToggleText">Photo</p>
+          <p className="photoVideoToggleText">Photos</p>
           {/* <div className="toggleTrack">
             <div className="switchSwitch"></div>
           </div> */}
@@ -43,7 +43,7 @@ export default function Media(props){
 
         <section className="videosHeader">
           <div className="photoVideoToggleSwitch">
-              <p className="photoVideoToggleText">Video</p>
+              <p className="photoVideoToggleText">Videos</p>
               </div>
           </section>
 
