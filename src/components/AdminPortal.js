@@ -1,5 +1,7 @@
+// BEGINNING OF ALL IMPORTS
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
+
 import AdminHeader from './AdminHeader';
 import AdminSideBar from './AdminSideBar';
 import AdminHome from './AdminHome';
@@ -11,15 +13,15 @@ import AdminClasses from './AdminClasses';
 import AdminPerformances from './AdminPerformances';
 import AdminContentPics from './AdminContentPics';
 import AdminMedia from './AdminMedia';
-
 import AdminBlog_UPDATE from './AdminBlog_UPDATE';
-import {hamClicked} from './../ducks/reducer';
-import {connect} from 'react-redux';
 import AdminCP_ADDNEW  from './AdminCP_ADDNEW';
 import AdminCT_ADDNEW from './AdminCT_ADDNEW';
 import AdminCalender_ADDNEW_Class from './AdminCalender_ADDNEW_Class';
 
+import {hamClicked} from './../ducks/reducer';
+import {connect} from 'react-redux';
 
+// END OF ALL IMPORTS
 
 class AdminPortal extends Component{
   constructor(props){
@@ -54,17 +56,16 @@ class AdminPortal extends Component{
         <Switch>
           <Route exact path="/admin" component={AdminHome} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
-          <Route path="/admin/calenderClass/addNew" component={AdminCalender_ADDNEW_Class} />
-          <Route path="/admin/contentPic/addNew" component={AdminCP_ADDNEW} />
-          <Route path="/admin/contentText/addNew" component={AdminCT_ADDNEW} />
-          <Route exact path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
           <Route exact path="/admin/volunteer/addNew" component={AdminVolunteer_ADDNEW} />
-          <Route exact path="/admin/blog" component={AdminBlog} />
           <Route exact path="/admin/classes" component={AdminClasses} />
           <Route exact path="/admin/performances" component={AdminPerformances} />
           <Route exact path="/admin/contentpics" component={AdminContentPics} />
+          <Route path="/admin/contentPic/addNew" component={AdminCP_ADDNEW} />
           <Route exact path="/admin/media" component={AdminMedia} />
+          <Route exact path="/admin/blog" component={AdminBlog} />
+          <Route exact path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
           <Route exact path="/admin/blog/update/:posts_id" component={AdminBlog_UPDATE} />
+
         </Switch>
       </main>
     )
