@@ -89,9 +89,9 @@ export default function Support(props){
         <div className="supportShare">
           <div>Share</div>
           <div className="socialWrapper">
-            <div className="socialCircleVolunteer"><i className="volunteerSocial fa fa-facebook fa-fw" aria-hidden="true"></i></div>
-            <div className="socialCircleVolunteer"><i className="volunteerSocial fa fa-twitter fa-fw" aria-hidden="true"></i></div>
-            <div className="socialCircleVolunteer"><i className="volunteerSocial fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
+            <div className=""><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
+            <div className=""><i className="fa fa-twitter fa-fw" aria-hidden="true"></i></div>
+            <div className=""><i className="fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
           </div>
         </div>
 

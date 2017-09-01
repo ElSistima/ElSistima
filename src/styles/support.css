@@ -222,20 +222,7 @@
   justify-content: space-between;
 }
 
-.socialCircleVolunteer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: #4A4A4A;
-  color: white;
-}
 
-.volunteerSocial {
-  color: white;
-}
 
 
 @media(min-width: 700px) {
