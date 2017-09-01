@@ -38,13 +38,13 @@ export default function Media(props){
 
         <section className="mediaGridPhotosContainer">
           <div className="mediaGridPhotos">
-            
+            PHOTOS HERE
           </div>
         </section>
 
         <section className="mediaGridVideosContainer">
           <div className="mediaGridVideos">
-            
+            VIDEOS HERE
           </div>
         </section>
       
