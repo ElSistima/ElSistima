@@ -30,6 +30,11 @@
   width: 25%;
 }
 
+.blogDetailsItem2 a {
+  text-decoration: none;
+  color: rgb(74,95,107);
+}
+
 .blogDetailsItem3{
   justify-content: center;
   width: 20%;
