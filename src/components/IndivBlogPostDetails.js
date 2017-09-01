@@ -31,6 +31,8 @@ export default class IndivBlogPostDetails extends Component {
 
   render(){
 
+    console.log("Props is: ", this.props.post.posts_id)
+
     console.log("Item checked :", this.state.itemChecked)
 
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
@@ -52,8 +54,9 @@ export default class IndivBlogPostDetails extends Component {
           <p>{this.props.post.user_name}</p>
         </div>
         <div className="blogDetailsItem5">
-        
+        <Link to={"/admin/blog/update/" + this.props.post.posts_id}>
           <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
+        </Link>
           <p><i className="fa fa-trash" aria-hidden="true" onClick={this.deletePost.bind(this)}></i></p>
         </div>
       </main>

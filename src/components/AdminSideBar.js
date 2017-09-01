@@ -28,13 +28,6 @@ export default class AdminSideBar extends Component{
           </div>
         </Link>
 
-        <Link to="/admin/contenttext">
-          <div className="sideNav">
-            <i className="sidefa fa fa-file" aria-hidden="true"></i>
-            <div>Content Text</div>
-          </div>
-        </Link>
-
         <Link to="/admin/media">
           <div className="sideNav">
             <i className="sidefa fa fa-picture-o" aria-hidden="true"></i>
