@@ -11,7 +11,6 @@ import AdminClasses from './AdminClasses';
 import AdminPerformances from './AdminPerformances';
 import AdminContentPics from './AdminContentPics';
 import AdminMedia from './AdminMedia';
-
 import AdminBlog_UPDATE from './AdminBlog_UPDATE';
 import {hamClicked} from './../ducks/reducer';
 import {connect} from 'react-redux';
