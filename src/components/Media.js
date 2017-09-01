@@ -11,14 +11,13 @@ export default function Media(props){
       <section className="photoVideoToggleContainer">
         <div className="photoVideoToggleSwitch">
           <p className="photoVideoToggleText">Photo</p>
-          <div className="toggleTrack">
+          {/* <div className="toggleTrack">
             <div className="switchSwitch"></div>
-          </div>
-          <p className="photoVideoToggleText">Video</p>
+          </div> */}
         </div>
         </section>
 
-        <section className="dateFilterContainer">
+        {/* <section className="dateFilterContainer">
           <div className="dateFilter">
             <div className="dropMenus">
               <p className="dropMenusText">Year</p>
@@ -34,7 +33,7 @@ export default function Media(props){
             </div>
           </div>
           <div className="filterButton">Filter</div>
-        </section>
+        </section> */}
 
         <section className="mediaGridPhotosContainer">
           <div className="mediaGridPhotos">
@@ -42,7 +41,14 @@ export default function Media(props){
           </div>
         </section>
 
+        <section className="videosHeader">
+          <div className="photoVideoToggleSwitch">
+              <p className="photoVideoToggleText">Video</p>
+              </div>
+          </section>
+
         <section className="mediaGridVideosContainer">
+         
           <div className="mediaGridVideos">
             VIDEOS HERE
           </div>

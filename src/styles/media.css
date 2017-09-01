@@ -9,8 +9,6 @@
     align-items: center;
     height: 3em;
     width: 50%;
-    background-color: white;
-
 }
 
 .photoVideoToggleSwitch {
@@ -116,16 +114,24 @@
     height: 90%;
     width: 90%;
     background-color: palegreen;
-
 }
 
 .mediaGridVideosContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 80vh;
     width: 100%;
     background-color: skyblue;
+}
+
+.videosHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 50%;
 }
 
 .mediaGridVideos {
