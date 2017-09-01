@@ -52,7 +52,6 @@ class AdminPortal extends Component{
           <AdminSideBar />
         </div>
 
-
         <Switch>
           <Route exact path="/admin" component={AdminHome} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
