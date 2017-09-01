@@ -4,7 +4,6 @@ import AdminHeader from './AdminHeader';
 import AdminSideBar from './AdminSideBar';
 import AdminHome from './AdminHome';
 import AdminVolunteer from './AdminVolunteer';
-
 import AdminBlog_ADDNEW from './AdminBlog_ADDNEW';
 import AdminVolunteer_ADDNEW from './AdminVolunteer_ADDNEW';
 import AdminBlog from './AdminBlog';
@@ -57,9 +56,6 @@ class AdminPortal extends Component{
           <Route exact path="/admin/edit/blog" component={AdminBlogEditor} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
           <Route path="/admin/calenderClass/addNew" component={AdminCalender_ADDNEW_Class} />
-
-
-
           <Route path="/admin/contentPic/addNew" component={AdminCP_ADDNEW} />
           <Route path="/admin/contentText/addNew" component={AdminCT_ADDNEW} />
           <Route exact path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
