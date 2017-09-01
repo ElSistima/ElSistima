@@ -45,7 +45,9 @@ export default class IndivBlogPostDetails extends Component {
           <div className="checkbox" onClick={this.markChecked.bind(this)} style={this.state.itemChecked ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
         </div>
         <div className="blogDetailsItem2">
+          <Link to={`/blog/${this.props.post.posts_id}`}>
           <p>{this.props.post.post_title}</p>
+          </Link>
         </div>
         <div className="blogDetailsItem3">
           <p>{this.props.post.date_month_number}/{this.props.post.date_day}/{this.props.post.date_year}</p>
