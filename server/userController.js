@@ -222,6 +222,7 @@ module.exports = {
   },
 
   postNewPost: function(req,res){
+
     let month_num;
     const db = req.app.get('db');
     const {postContent, postThumbnail, postTitle,  year, month, day, blogImage, blogSubtitle} = req.body
@@ -266,6 +267,7 @@ module.exports = {
       default:break;
     }
 
+    console.log(100, postContent, postThumbnail, postTitle, year, month, day, month_num, blogImage, blogSubtitle)
     db.post_add_posts([100, postContent, postThumbnail, postTitle, year, month, day, month_num, blogImage, blogSubtitle])
     .then( (response) => {
       res.status(200).send('sentSuccessfully')} )

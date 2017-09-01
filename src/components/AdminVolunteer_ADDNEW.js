@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import '../styles/AdminBlogEditor.css';
 import {connect} from 'react-redux';
 
 

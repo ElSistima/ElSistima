@@ -1,52 +1,90 @@
 import React, {Component} from 'react';
-import '../styles/AdminBlogEditor.css';
+import '../styles/adminBlogNew.css';
+import axios from 'axios';
 import {connect} from 'react-redux';
 
 class AdminBlog_ADDNEW extends Component{
   constructor(props){
     super(props);
+      this.state={
+        blogNewTitle: '',
+        blogNewSubtitle: '',
+        blogNewContent: ''
+      }
 
   }
 
-  render(){
+  trackTitleChange(event){
+    this.setState({
+      blogNewTitle: event.target.value
+    })
+  }
 
+  trackSubtitleChange(event){
+    this.setState({
+      blogNewSubtitle: event.target.value
+    })
+  }
+
+  trackContentChange(event){
+    this.setState({
+      blogNewContent: event.target.value
+    })
+  }
+
+  clickSave(){
+    let newPostObject = {
+      postContent: this.state.blogNewContent,
+      postThumbnail: 'https://www.edutopia.org/sites/default/files/profile_pictures/daveguymon_headshot.jpeg',
+      postTitle: this.state.blogNewTitle,
+      year: 2017,
+      month: 'September',
+      day: 15,
+      blogImage: 'https://images.bigcartel.com/theme_images/11457208/DevMtnLogoNoBG.png',
+      blogSubtitle: this.state.blogNewSubtitle
+    }
+
+    !this.state.blogNewTitle || !this.state.blogNewSubtitle || !this.state.blogNewContent ? alert("Be sure you have a title, subtitle, and blog content before saving your post.") : axios.post('/api/post',newPostObject).then(res => console.log(res)).catch(err => console.log(err));
+  }
+
+  render(){
+    console.log("Content is: ", this.state.blogNewContent)
     const fullPageStyle = { width: "100%" }
 
     return(
-      <main className="AdminBlog_ADDNEW_Main" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
-      <div className="add_new_blog">
-        <div className="anb_headerText">Add New Blog</div>
-        <div className="anb_topInput">
-          <input placeholder="Title"/>
-          <input className="captionInput" placeholder="Caption"/>
+      <main className="adminWrapperBlogNew" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
+        <div className="adminContentContainerBlogNew">
+          <div className="addNewBlogNew">
+            <p className="adminPageTitleBlogNew">Create New Blog Post</p>
+            <div className="topInputBlogNew">
+              <input placeholder="Title" className="titleBlogNew" onChange={this.trackTitleChange.bind(this)}/>
+              <input placeholder="Subtitle" className="subtitleBlogNew" onChange={this.trackSubtitleChange.bind(this)}/>
+            </div>
+
+            <div className="overwriteBlogNew">
+              <textarea placeholder="Blog content here" className="contentBlogNew" onChange={this.trackContentChange.bind(this)}></textarea>
+            </div>
+          </div>
+
+          <div className="addNewPicsBlogNew">
+            <div className="addPicInnerBlogNew">
+              <p className="picInnerTextBlogNew">Add Top Full Picture</p>
+              <img src='https://i.imgur.com/FTLTf6u.png' />
+              <div className="buttonBlogNew updateBtnBlogNew" onClick={this.clickSave.bind(this)}>SAVE</div>
+            </div>
+            <div className="addPicInnerBlogNew">
+              <p className="picInnerTextBlogNew">Add 2nd Full Picture</p>
+              <img src='https://i.imgur.com/FTLTf6u.png' />
+              <div className="buttonBlogNew cancelBtnBlogNew">CANCEL</div>
+            </div>
+          </div>
+
         </div>
 
-        <div className="maintxt_Content anb_overwrite">
-          <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
+        <div className="saveCancelBtnContainerBlogNew">
+          <div className="buttonBlogNew updateBtnBlogNewDesktop" onClick={this.clickSave.bind(this)}>SAVE</div>
+          <div className="buttonBlogNew cancelBtnBlogNewDesktop">CANCEL</div>
         </div>
-      </div>
-
-
-
-      <div className="add_new_pics">
-        <div className="add_pic_inner">
-          <p className="picInnerText">Add Top Full Picture</p>
-          <img src='https://i.imgur.com/FTLTf6u.png' />
-          <div className="pblg save_btn">SAVE</div>
-        </div>
-        <div className="add_pic_inner">
-          <p className="picInnerText">Add 2nd Full Picture</p>
-          <img src='https://i.imgur.com/FTLTf6u.png' />
-          <div className="pblg cancel_btn">CANCEL</div>
-        </div>
-      </div>
-
-      <div className="web_btn">
-        <div className="singlebtn web_save">SAVE</div>
-        <div className="singlebtn web_cancel">CANCEL</div>
-      </div>
-
-
       </main>
     )
   }
