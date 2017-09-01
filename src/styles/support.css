@@ -1,0 +1,24 @@
+.supportUsWrapper {
+  height: 700px; /*just testing */
+  width: 100%;
+  background: red;
+}
+
+.supportTopBody {
+  width: 80%;
+  border: 2px solid black;
+  height: 350px;
+  margin-left: 35px;
+}
+
+.supportTitle {
+  height: 50px;
+  width: 100%;
+  border: 2px solid green;
+}
+
+.supportInnerBox {
+  width: 100%;
+  height: 145px;
+  border: 2px solid teal;
+}
