@@ -1,24 +1,132 @@
 .supportUsWrapper {
-  height: 700px; /*just testing */
+  height: 1000px; /*just testing */
   width: 100%;
-  background: red;
+  background: #FEFEF7;
+  color: #4A4A4A;
 }
 
 .supportTopBody {
   width: 80%;
   border: 2px solid black;
-  height: 350px;
+  height: 410px;
   margin-left: 35px;
 }
 
 .supportTitle {
-  height: 50px;
+  height: 55px;
   width: 100%;
-  border: 2px solid green;
+  /*border: 2px solid green;*/
+  display: flex;
+  align-items: center;
+  font-size: 19px;
 }
 
 .supportInnerBox {
   width: 100%;
-  height: 145px;
-  border: 2px solid teal;
+  height: 170px;
+  /*border: 2px solid teal;*/
+  font-size: 0.75em;
+  line-height: 1.5;
+}
+
+.innerBoxTitle {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  /*border: 2px solid orange;*/
+  font-size: 15px;
+}
+
+.innerBody {
+  color: #7F7F7B;
+}
+
+.waysToHelp {
+  width: 80%;
+  border: 2px solid black;
+  height: 410px;
+  margin-left: 35px;
+}
+
+.helpTitle {
+  border: 2px solid red;
+  height: 55px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate {
+  width: 80%;
+  height: 350px;
+  border-radius: 5px;
+  font-size: 19px;
+  border: 1px solid lightgray;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 1.5px 1.5px 1px #B1B1AB
+}
+
+.donateTitle {
+  margin-left: 10px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  /*border: 2px solid red;*/
+}
+
+.donateInnerBox, .donateInner {
+  height: 50px;
+  width: 100%;
+  border: 2px solid orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.donateInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.donateInnerBox img {
+  width: 80px;
+  height: 100%;
+  margin-right: 5px;
+}
+
+.enterAmount, .cardNumInput, .cvcTitle{
+  width: 70px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.cardNumInput {
+  width: 212px;
+  height: 30px;
+}
+
+.cvcTitle {
+  width: 100px;
+  height: 30px;
+}
+
+.cvcInputLine {
+  display: flex;
+  font-size: 12px;
+}
+
+.cvcInputLine div {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.donateInnerTitle {
+  font-size: 13px;
+  margin-left: 10px;
+  /*border: 2px solid red;*/
 }
