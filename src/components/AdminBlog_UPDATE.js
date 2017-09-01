@@ -65,8 +65,8 @@ class AdminBlog_UPDATE extends Component{
         </div>
 
         <div className="saveCancelBtnContainerBlog">
-          <div className="singlebtn web_save">SAVE</div>
-          <div className="singlebtn web_cancel">CANCEL</div>
+          <div className="buttonBlog updateBtnBlogDesktop">UPDATE</div>
+          <div className="buttonBlog cancelBtnBlogDesktop">CANCEL</div>
         </div>
       </main>
     )
