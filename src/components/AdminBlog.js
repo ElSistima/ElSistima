@@ -46,8 +46,6 @@ class AdminBlog extends Component {
 
 
   render(){
-    console.log("All boxes checked ", this.state.checkAllBoxes)
-    console.log("FetchedPosts Array is :", this.state.fetchedPosts)
 
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
 
