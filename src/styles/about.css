@@ -50,6 +50,7 @@
     height: 1em;
     width: 3.5em;
     background-color: #ECC749;
+    border-radius: 3px;
 }
 
 .whoWeAreButtonText {
@@ -97,6 +98,7 @@
     height: 1em;
     width: 3.5em;
     background-color: #ECC749;
+    border-radius: 3px;
 }
 
 .missionStatementButtonText {
@@ -142,6 +144,7 @@
     height: 1em;
     width: 3.5em;
     background-color: #ECC749;
+    border-radius: 3px;
 }
 
 .curriculumButtonText {
@@ -308,6 +311,7 @@
     height: 1em;
     width: 3.5em;
     background-color: #ECC749;
+    border-radius: 3px;
 }
 
 .volunteersButtonText {
