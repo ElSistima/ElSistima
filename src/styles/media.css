@@ -54,6 +54,7 @@
     height: 2em;
     width: 70%;
     background-color: white;
+    padding-bottom: 1em;
 }
 
 .dateFilter {
@@ -102,6 +103,33 @@
     font-size: .8em;
 }
 
-.mediaGridContainer {
-    
+.mediaGridPhotosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-color: goldenrod;
+}
+
+.mediaGridPhotos {
+    height: 90%;
+    width: 90%;
+    background-color: palegreen;
+
+}
+
+.mediaGridVideosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.mediaGridVideos {
+    height: 90%;
+    width: 90%;
+    background-color: palevioletred
 }

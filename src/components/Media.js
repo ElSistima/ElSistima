@@ -36,11 +36,16 @@ export default function Media(props){
           <div className="filterButton">Filter</div>
         </section>
 
-        <section className="mediaGridContainer">
-          <div mediaGrid>
+        <section className="mediaGridPhotosContainer">
+          <div className="mediaGridPhotos">
             
           </div>
+        </section>
 
+        <section className="mediaGridVideosContainer">
+          <div className="mediaGridVideos">
+            
+          </div>
         </section>
       
 
