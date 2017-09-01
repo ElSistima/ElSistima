@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 
 
-export default class MediaType extends Component{
+export default class PhotoCard extends Component{
     constructor(props){
         super(props);
 
@@ -21,10 +22,13 @@ export default class MediaType extends Component{
     }
 
     render(){
+        return(
+            <main className="photoCardContainer">
+                <div></div>
+            </main>
+
+        )
         
 
     }
-        return(
-    
-    )
 }
