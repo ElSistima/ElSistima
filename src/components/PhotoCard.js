@@ -7,13 +7,13 @@ export default class PhotoCard extends Component{
         super(props);
 
         this.state = {
-            
+            isPhoto: true
         }
     }
 
     componentDidMount(){
         axios.get('/api/media').then(res => {
-            console.log("Res data is:", res.data)
+            // console.log("Res data is:", res.data)
             this.setState({
                 fetchedMedia: res.data
             })
@@ -24,7 +24,7 @@ export default class PhotoCard extends Component{
     render(){
         return(
             <main className="photoCardContainer">
-                <div></div>
+                <div className="tester">Here's a Test</div>
             </main>
 
         )

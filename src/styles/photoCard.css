@@ -1,3 +1,11 @@
 .photoCardContainer{
-    
+    height: 500px;
+    width: 500px;
+    background-image: url('./../images/peanut5.png');
+}
+
+.tester {
+    height: 500px;
+    width: 500px;
+    background-image: url('./../images/peanut5.png');
 }

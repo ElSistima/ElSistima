@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './../styles/media.css';
 import axios from 'axios';
+import PhotoCard from './PhotoCard';
 
 
 
@@ -25,14 +26,36 @@ export default class Media extends Component{
   }
 
   render(){
+    console.log('this is a test', this.state)
+    var test = this.state.fetchedMedia
+    var pictures = [];
+    for(var key in test){
+      pictures.push(test[key])
+    }
+    var media = pictures.map((picture, index) => {
+      return(
+        <PhotoCard
+        image={picture}
+        key={index}
+        />
+        
+      )
+    })
+
+
     return (
       <main className="mediaMainContent">
+        
         <section className="photoVideoToggleContainer">
           <div className="photoVideoToggleSwitch">
             <p className="photoVideoToggleText">Photos</p>
             {/* <div className="toggleTrack">
               <div className="switchSwitch"></div>
             </div> */}
+
+            {/* test div */}
+            <div>{media}</div>
+
           </div>
           </section>
   
@@ -56,7 +79,7 @@ export default class Media extends Component{
   
           <section className="mediaGridPhotosContainer">
             <div className="mediaGridPhotos">
-              PHOTOS HERE
+              PHOTOS HERE 
             </div>
           </section>
   
