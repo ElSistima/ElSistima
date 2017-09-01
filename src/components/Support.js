@@ -46,7 +46,7 @@ export default function Support(props){
               <div> 3 or 4 digit code</div>
             </div>
           </div>
-          <div className="donateInner">
+          <div className="donateInner donationSubmit">
             <div className="submitBtn"><span>SUBMIT</span></div>
           </div>
         </div>
@@ -78,8 +78,8 @@ export default function Support(props){
           </div>
 
 
-          <div className="volunteerInner">
-            <div className="submitBtn volunteerSubmit"><span>SUBMIT</span></div>
+          <div className="volunteerInner volunteerSubmit">
+            <div className="submitBtn"><span>SUBMIT</span></div>
           </div>
 
         </div>
@@ -89,9 +89,9 @@ export default function Support(props){
         <div className="supportShare">
           <div>Share</div>
           <div className="socialWrapper">
-            <div className="socialCircleVolunteer"><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
-            <div className="socialCircleVolunteer"><i className="fa fa-twitter fa-fw" aria-hidden="true"></i></div>
-            <div className="socialCircleVolunteer"><i className="fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
+            <div className="socialCircleVolunteer"><i className="volunteerSocial fa fa-facebook fa-fw" aria-hidden="true"></i></div>
+            <div className="socialCircleVolunteer"><i className="volunteerSocial fa fa-twitter fa-fw" aria-hidden="true"></i></div>
+            <div className="socialCircleVolunteer"><i className="volunteerSocial fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
           </div>
         </div>
 

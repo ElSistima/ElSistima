@@ -9,7 +9,7 @@
   width: 80%;
   /*border: 2px solid black;*/
   height: 410px;
-  margin-left: 35px;
+  margin: 0 auto;
 }
 
 .supportTitle {
@@ -44,8 +44,8 @@
 .waysToHelp {
   width: 80%;
   /*border: 2px solid black;*/
-  height: 1310px;
-  margin-left: 35px;
+  height: 1210px;
+  margin: 0 auto;
 }
 
 .helpTitle {
@@ -59,7 +59,7 @@
 
 .donate {
   width: 80%;
-  height: 395px;
+  /*height: 395px;*/
   border-radius: 5px;
   font-size: 19px;
   border: 1px solid lightgray;
@@ -129,6 +129,7 @@
   font-size: 13px;
   margin-left: 10px;
   /*border: 2px solid red;*/
+
 }
 
 .expirationInputLine {
@@ -141,8 +142,8 @@
   width: 100px;
   height: 40px;
   border-radius: 5px;
-  margin-left: 60px;
-  margin-top: 5px;
+  /*margin-left: 60px;
+  margin-top: 5px;*/
   color: white;
   font-size: 14px;
   display: flex;
@@ -150,6 +151,16 @@
   justify-content: center;
 }
 
+
+.donationSubmit, .volunteerSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volunteerSubmit {
+  width: 205px;
+}
 
 /*donate instrument */
 .donateInstrument {
@@ -191,32 +202,109 @@
   width: 150px;
 }
 
-.volunteerSubmit {
-  width: 205px;
-  margin-top: 17px;
-  margin-left: 10px;
-}
 
 .supportShare {
-  width: 200px;
-  height: 160px;
-  border: 2px solid red;
+  width: 150px;
+  height: 120px;
+  /*border: 2px solid red;*/
   margin: 0 auto;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .socialWrapper {
   display: flex;
+  margin-top: 15px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .socialCircleVolunteer {
-  /*display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center;*/
+  align-items: center;
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  /*background-color: #4A4A4A;*/
-  margin-right: 1em;
-  margin-top: .5em;
+  background-color: #4A4A4A;
+  color: white;
+}
+
+.volunteerSocial {
+  color: white;
+}
+
+
+@media(min-width: 700px) {
+.supportTitle, .innerBoxTitle, .innerBody, .helpTitle, .donateTitle, .donateInnerTitle, .volunteerinnerTitle {
+  font-size: 145%;
+}
+
+.donateinstSubTitle, .donateinstAddress {
+  font-size: 19px;
+}
+
+.donateTitle {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+.enterAmount, .expirationInput, .expirationInput {
+  width: 120px;
+}
+
+
+.cardNumInput {
+  width: 400px;
+}
+
+.donateInnerBox, .donateInner {
+  height: 105px;
+  margin-bottom: 15px;
+}
+
+.donateInner {
+  margin-bottom: 25px;
+}
+.cvcTitle {
+  width: 120px;
+}
+
+.enterAmount, .cardNumInput, .cvcTitle, .expirationInput, .volunteerInput {
+  height: 50px;
+  margin-left: 20px;
+}
+
+.donateTitle, .donateinstSubTitle, .donateinstAddress, .volunteerinnerTitle, .donateInnerTitle {
+  margin-left: 20px;
+}
+
+.donateInnerBox img {
+    width: 140px;
+  }
+
+.waysToHelp {
+  height: 1800px;
+}
+
+.donateTitle {
+  height: 63px;
+}
+
+.donateInstrument {
+  height: 270px;
+}
+
+.volunteerInner {
+  height: 120px;
+}
+
+.volunteer {
+  height: 450px;
+}
+
 }
