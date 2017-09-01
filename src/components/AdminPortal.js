@@ -11,13 +11,16 @@ import AdminBlog from './AdminBlog';
 import AdminBlogEditor from './AdminBlogEditor';
 import AdminClasses from './AdminClasses';
 import AdminPerformances from './AdminPerformances';
+import AdminContentPics from './AdminContentPics';
 import AdminContentText from './AdminContentText';
 import AdminMedia from './AdminMedia';
 
 import AdminBlog_UPDATE from './AdminBlog_UPDATE';
 import {hamClicked} from './../ducks/reducer';
 import {connect} from 'react-redux';
-
+import AdminCP_ADDNEW  from './AdminCP_ADDNEW';
+import AdminCT_ADDNEW from './AdminCT_ADDNEW';
+import AdminCalender_ADDNEW_Class from './AdminCalender_ADDNEW_Class';
 
 
 
@@ -55,15 +58,17 @@ class AdminPortal extends Component{
           <Route exact path="/admin" component={AdminHome} />
           <Route exact path="/admin/edit/blog" component={AdminBlogEditor} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
-
+          <Route path="/admin/calenderClass/addNew" component={AdminCalender_ADDNEW_Class} />
+          <Route path="/admin/contentPic/addNew" component={AdminCP_ADDNEW} />
+          <Route path="/admin/contentText/addNew" component={AdminCT_ADDNEW} />
           <Route exact path="/admin/blog/addNew" component={AdminBlog_ADDNEW} />
           <Route exact path="/admin/volunteer/addNew" component={AdminVolunteer_ADDNEW} />
           <Route exact path="/admin/blog" component={AdminBlog} />
           <Route exact path="/admin/classes" component={AdminClasses} />
           <Route exact path="/admin/performances" component={AdminPerformances} />
+          <Route exact path="/admin/contentpics" component={AdminContentPics} />
           <Route exact path="/admin/contenttext" component={AdminContentText} />
           <Route exact path="/admin/media" component={AdminMedia} />
-
           <Route exact path="/admin/blog/update/:posts_id" component={AdminBlog_UPDATE} />
         </Switch>
       </main>
