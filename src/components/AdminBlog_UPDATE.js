@@ -35,7 +35,7 @@ class AdminBlog_UPDATE extends Component{
     const fullPageStyle = { width: "100%" }
 
     return(
-      <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
+      <main className="adminWrapperBlog" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <div className="adminContentContainerBlog">
           <div className="addNewBlog">
             <p className="adminPageTitleBlog">Update Blog</p>
