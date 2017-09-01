@@ -38,7 +38,9 @@ export default class Media extends Component{
         image={picture}
         key={index}
         />
-        
+        // test.map(item => {
+        //   console.log(item)
+        // })
       )
     })
 
@@ -54,7 +56,7 @@ export default class Media extends Component{
             </div> */}
 
             {/* test div */}
-            <div>{media}</div>
+            
 
           </div>
           </section>
@@ -80,6 +82,7 @@ export default class Media extends Component{
           <section className="mediaGridPhotosContainer">
             <div className="mediaGridPhotos">
               PHOTOS HERE 
+            <div>{media}</div>
             </div>
           </section>
   

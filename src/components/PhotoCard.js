@@ -22,9 +22,16 @@ export default class PhotoCard extends Component{
     }
 
     render(){
+        // var media = this.state.fetchedMedia;
+        // var photos = [];
+        // for(var key in test) {
+        //     photos.pust(test[key])
+        // }
+
+    
         return(
             <main className="photoCardContainer">
-                <div className="tester">Here's a Test</div>
+                <div className="tester">Yo a picture</div>
             </main>
 
         )
