@@ -78,7 +78,13 @@ module.exports = {
       .then((event) => res.status(200).send(event))
       .catch((err) => res.status(500).send(err))
   },
+  getMedia: function(req, res){
+    const db = req.app.get('db');
 
+    db.get_media()
+      .then((media) => res.status(200).send(media))
+      .catch((err) => res.status(500).send(err))
+  },
   //=============POST========================
 
 
@@ -267,13 +273,6 @@ module.exports = {
     .catch( (err) => {
       res.status(500).send(err)} )
   },
-
-
-  // postImage: function(req,res){
-  //   const db = req.app.get('db');
-  //
-  //
-  // },
 
 
   //===============PUT REQUESTS===================
@@ -476,17 +475,18 @@ module.exports = {
       res.status(500).send(err)} )
 
   },
-  // deleteImage: function(req,res){
-  //   const db = req.app.get('db');
-  //   const {imageid} = req.params
-  //
-  //   db.delete_volunteer([imageid])
-  //   .then( (response) => {
-  //     res.status(200).send('sentSuccessfully')} )
-  //   .catch( (err) => {
-  //     res.status(500).send(err)} )
-  //
-  // },
+  deleteMedia: function(req,res){
+    const db = req.app.get('db');
+    const {mediaid} = req.params
+    console.log(mediaid)
+
+    db.delete_media([mediaid])
+    .then( (response) => {
+      res.status(200).send('sentSuccessfully')} )
+    .catch( (err) => {
+      res.status(500).send(err)} )
+
+  },
 
 
   deleteEvent: function(req,res){

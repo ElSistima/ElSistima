@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import '../styles/AdminBlogEditor.css';
+import './../styles/adminBlog_ADDNEW.css';
 import {connect} from 'react-redux';
 
-class AdminBlog_ADDNEW extends Component{
+class AdminCT_ADDNEW extends Component{
   constructor(props){
     super(props);
 
@@ -15,10 +15,10 @@ class AdminBlog_ADDNEW extends Component{
     return(
       <main className="AdminBlog_ADDNEW_Main" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
       <div className="add_new_blog">
-        <div className="anb_headerText">Add New Blog</div>
+        <div className="anb_headerText">Add New Text Content</div>
         <div className="anb_topInput">
+          <input placeholder="Catagory"/>
           <input placeholder="Title"/>
-          <input className="captionInput" placeholder="Caption"/>
         </div>
 
         <div className="maintxt_Content anb_overwrite">
@@ -28,24 +28,15 @@ class AdminBlog_ADDNEW extends Component{
 
 
 
-      <div className="add_new_pics">
-        <div className="add_pic_inner">
-          <p className="picInnerText">Add Top Full Picture</p>
-          <img src='https://i.imgur.com/FTLTf6u.png' />
-          <div className="pblg save_btn">SAVE</div>
-        </div>
-        <div className="add_pic_inner">
-          <p className="picInnerText">Add 2nd Full Picture</p>
-          <img src='https://i.imgur.com/FTLTf6u.png' />
-          <div className="pblg cancel_btn">CANCEL</div>
-        </div>
+      <div className="ctBT_overwrite">
+        <div className="ctBT_singlebtn ctBT_web_save">SAVE</div>
+        <div className="ctBT_singlebtn ctBT_web_cancel">CANCEL</div>
       </div>
 
       <div className="web_btn">
         <div className="singlebtn web_save">SAVE</div>
         <div className="singlebtn web_cancel">CANCEL</div>
       </div>
-
 
       </main>
     )
@@ -58,4 +49,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps)(AdminBlog_ADDNEW);
+export default connect(mapStateToProps)(AdminCT_ADDNEW);
