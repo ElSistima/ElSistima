@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './../styles/adminEditor.css';
+import IndivMediaDetails from './IndivMediaDetails';
+import axios from 'axios';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
@@ -7,16 +9,35 @@ class AdminMedia extends Component{
   constructor(props){
     super(props);
       this.state ={
-        fetchedPosts: [],
+        fetchedMedia: [],
         checkAllBoxes: false,
         amountChecked: 0
       }
   }
 
+  componentDidMount(){
+    axios.get('/api/media').then(res => {
+      console.log("Res data is:", res.data)
+      this.setState({
+        fetchedMedia: res.data
+      })
+    })
+  .catch(err => console.log("Error is: ", err))
+  }
+
+  reloadMedia(){
+    axios.get('/api/media').then(res => {
+      console.log("Media res.data is: ", res.data)
+      this.setState({
+        fetchedMedia: res.data
+      })
+    }).catch(err => console.log("Error is: ", err))
+  }
+
   markAllChecked(){
     this.setState({
       checkAllBoxes: !this.state.checkAllBoxes,
-      amountChecked: this.state.fetchedPosts.length
+      amountChecked: this.state.fetchedMedia.length
     })
   }
 
@@ -27,6 +48,11 @@ class AdminMedia extends Component{
     const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
 
     const fullPageStyle = { width: "100%" }
+
+    const allMedia = this.state.fetchedMedia.map((media, i) => { return (
+      <IndivMediaDetails key={i} index={i} media={media} checkAll={this.state.checkAllBoxes} checkedQty={0} reloadMedia={this.reloadMedia.bind(this)}/>
+    )
+  })
 
     return(
       <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
@@ -57,7 +83,7 @@ class AdminMedia extends Component{
               <p>Actions</p>
             </div>
           </div>
-          INDIV VOLUNTEER COMPONENT HERE
+          {allMedia}
         </section>
       </main>
     )
