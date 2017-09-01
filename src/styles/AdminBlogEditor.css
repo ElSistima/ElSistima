@@ -1,10 +1,10 @@
-
-.adminMainBlog {
+.adminWrapper {
   box-sizing: border-box;
-  float: left;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  width: 100%;
   padding-top: 2vh;
-  /*background-color: blue;*/
 }
 
 .adminContentContainerBlog {
@@ -19,10 +19,9 @@
 }
 
 .adminPageTitleBlog {
-  height: 5vh;
+  min-height: 5vh;
   text-align: left;
   font-size: x-large;
-  /*background-color: plum;*/
 }
 
 .titleBlog, .subtitleBlog, .blogContent {
@@ -46,22 +45,11 @@
   min-height: 8vh;
 }
 
-.maintxt_Content textarea{
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid darkgray;
-  outline: none;
-  width: 100%;
-  min-height: 50vh;
-  margin-top: 30px;
-}
-
 .contentBlog {
   box-sizing: border-box;
   width: 100%;
   font-size: small;
 }
-
 
 .addNewPicsBlog {
   width: 90%;
@@ -71,7 +59,6 @@
   font-size: small;
   margin: 3vh auto 0 auto;
   padding-bottom: 5vh;
-  /*background-color: lime;*/
 }
 
 .addPicInnerBlog {
@@ -92,17 +79,17 @@
   margin-bottom: 10px;
 }
 
-.saveBtnBlog {
+.updateBtnBlog {
     background-color: #4E8AA8;
     color: white;
   }
 
-.cancel_btn {
+.cancelBtnBlog {
     background-color: #ECECEC;
     color: #b4b4b4;
   }
 
-.saveCancelBtnContainer {
+.saveCancelBtnContainerBlog {
   display: none
 }
 
@@ -119,101 +106,66 @@
 
 @media(min-width: 700px) {
 
-  .adminMainBlog {
-    width: calc(100vw - 31%);
-    min-height: 50vh;
+  .adminWrapper {
+    padding-top: 3vh;
   }
 
-  .adminContentContainer {
+  .adminContentContainerBlog {
+    width: 95%;
     margin: 0 auto;
   }
 
+  .adminPageTitleBlog {
+    font-size: xx-large;
+  }
+
   .titleBlog, .subtitleBlog, .blogContent, .picInnerTextBlog {
-    font-size: large;
+    font-size: x-large;
   }
 
-  .maintxt_Content{
-    min-height: 55vh;
-    width: 100%;
+  .contentBlog {
+    font-size: x-large;
   }
 
-  .overwriteBlog textarea{
-    min-height: 55vh;
-  }
-
-  .volunteersaveOR {
-    margin-left: 10px;
-  }
-
-  .volunteer_anp {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 10px;
-  }
-
-  .profileVolunteer {
-    margin-left: 25px;
-  }
-
-  /* placeholder styleing */
-  ::-webkit-input-placeholder {
-
-      font-size: 15px;
-  }
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-
-     font-size: 15px;
-  }
-  ::-moz-placeholder { /* Mozilla Firefox 19+ */
-
-     font-size: 15px;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-
-     font-size: 15px;
-  }
-  ::-ms-input-placeholder { /* Microsoft Edge */
-
-     font-size: 15px;
-  }
-
-  /* placeholder styleing */
-  .saveCancelBtnContainer {
+  .saveCancelBtnContainerBlog {
     display: none
   }
 
   .addNewPicsBlog {
     width: 100%;
     min-height: 20vh;
-    margin: 0 auto;
-    /*background-color: lime;*/
+    margin: 4vh auto 0 auto;
   }
 
-  ..addPicInnerBlog {
+  .addPicInnerBlog {
     width: 40%;
-    margin-bottom: 6vh;
+    margin-bottom: 3vh;
   }
 
   .picInnerTextBlog{
-    font-size: medium;
+    margin-top: 2vh;
+    font-size: x-large;
   }
 
-  ..addPicInnerBlog img {
+  .addPicInnerBlog img {
     width: 100%;
     height: auto;
     margin-top: 15px;
     margin-bottom: 10px;
   }
 
-  .pblg {
-      width: 70%;
-      height: 36px;
-      margin: 30px auto 0 auto;
-      box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  .buttonBlog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 57.5%;
+    height: 4.5vh;
+    border-radius: 5px;
+    margin-top: 3vh;
+    box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
+    font-size: large;
+  }
+
 }
 
 @media(min-width: 1000px) {
@@ -240,19 +192,19 @@
     margin-bottom: 6vh;
   }
 
-  ..addPicInnerBlog {
+  .addPicInnerBlog {
       width: 100%;
       /*height: 50%;*/
       text-align: center;
       margin-bottom: 30px;
   }
 
-  ..addPicInnerBlog img {
+  .addPicInnerBlog img {
     width: 65%;
     height: auto;
   }
 
-  ..addPicInnerBlog div {
+  .addPicInnerBlog div {
     margin-left: 3px;
   }
 
@@ -260,10 +212,6 @@
     display: none;
   }
 
-  /*=====permission&button section for volunteer*/
-  .permission {
-    font-size: 16px;
-  }
 
   .checkBody {
     font-size: 15px;

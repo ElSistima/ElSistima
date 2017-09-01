@@ -35,7 +35,7 @@ class AdminBlog_UPDATE extends Component{
     const fullPageStyle = { width: "100%" }
 
     return(
-      <main className="adminMainBlog" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
+      <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <div className="adminContentContainerBlog">
           <div className="addNewBlog">
             <p className="adminPageTitleBlog">Update Blog</p>
@@ -53,18 +53,18 @@ class AdminBlog_UPDATE extends Component{
             <div className="addPicInnerBlog">
               <p className="picInnerTextBlog">Add Top Full Picture</p>
               <img src='https://i.imgur.com/FTLTf6u.png' />
-              <div className="pblg saveBtnBlog">UPDATE</div>
+              <div className="buttonBlog updateBtnBlog">UPDATE</div>
             </div>
             <div className="addPicInnerBlog">
               <p className="picInnerTextBlog">Add 2nd Full Picture</p>
               <img src='https://i.imgur.com/FTLTf6u.png' />
-              <div className="pblg cancel_btn">CANCEL</div>
+              <div className="buttonBlog cancelBtnBlog">CANCEL</div>
             </div>
           </div>
 
         </div>
 
-        <div className="saveCancelBtnContainer">
+        <div className="saveCancelBtnContainerBlog">
           <div className="singlebtn web_save">SAVE</div>
           <div className="singlebtn web_cancel">CANCEL</div>
         </div>
