@@ -15,7 +15,7 @@ export default class IndivBlogPostDetails extends Component {
   markChecked(){
     this.setState({
       itemChecked: !this.state.itemChecked,
-      checkedQty: this.state.checkedQty == 0 ? 1 : 0
+      checkedQty: this.state.checkedQty === 0 ? 1 : 0
     })
   }
 

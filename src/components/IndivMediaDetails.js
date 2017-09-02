@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import './../styles/indivBlogPostDetails.css';
+import AdminMedia_UPDATE from './AdminMedia_UPDATE';
 import {Link} from 'react-router-dom';
 
 export default class IndivMediaDetails extends Component {
@@ -23,6 +24,10 @@ export default class IndivMediaDetails extends Component {
     this.setState({
       itemChecked: nextProps.checkAll
     })
+  }
+
+  deleteMedia(){
+    axios.delete(`/api/media/${this.props.media.id}`).then(res => this.props.reloadMedia()).catch(err => console.log(err))
   }
 
 
@@ -58,9 +63,11 @@ export default class IndivMediaDetails extends Component {
         </div>
         <div className="blogDetailsItem5">
 
-          <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
+          <Link to={"/admin/media/update/" + this.props.media.id}>
+            <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
+          </Link>
 
-          <p><i className="fa fa-trash" aria-hidden="true" ></i></p>
+          <p><i className="fa fa-trash" aria-hidden="true" onClick={this.deleteMedia.bind(this)}></i></p>
         </div>
       </main>
     )
