@@ -43,9 +43,9 @@ export default class IndivClassDetails extends Component {
 
     const monthDigits = monthFromDB < 10 ? '0' + monthFromDB : monthFromDB;
 
-    const monthEndFromDB = this.props.classObj.date_month_end_number;
+    const monthEndFromDB = this.props.classObj.date_month_end_num;
 
-    const monthEndDigits = monthFromDB < 10 ? '0' + monthFromDB : monthFromDB;
+    const monthEndDigits = monthEndFromDB < 10 ? '0' + monthEndFromDB : monthEndFromDB;
 
     const daysFromDB = this.props.classObj.date_days;
 

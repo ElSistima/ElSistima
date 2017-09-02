@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import './../styles/indivBlogPostDetails.css';
-import AdminMedia_UPDATE from './AdminMedia_UPDATE';
 import {Link} from 'react-router-dom';
 
 export default class IndivMediaDetails extends Component {
@@ -16,7 +15,7 @@ export default class IndivMediaDetails extends Component {
   markChecked(){
     this.setState({
       itemChecked: !this.state.itemChecked,
-      checkedQty: this.state.checkedQty == 0 ? 1 : 0
+      checkedQty: this.state.checkedQty === 0 ? 1 : 0
     })
   }
 

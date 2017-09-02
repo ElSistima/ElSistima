@@ -42,9 +42,9 @@ export default class IndivPerformanceDetails extends Component {
 
     const monthDigits = monthFromDB < 10 ? '0' + monthFromDB : monthFromDB;
 
-    const monthEndFromDB = this.props.performance.date_month_end_number;
+    const monthEndFromDB = this.props.performance.date_month_end_num;
 
-    const monthEndDigits = monthFromDB < 10 ? '0' + monthFromDB : monthFromDB;
+    const monthEndDigits = monthEndFromDB < 10 ? '0' + monthEndFromDB : monthEndFromDB;
 
 
     const daysFromDB = this.props.performance.date_days;
