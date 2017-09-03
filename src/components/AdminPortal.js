@@ -17,6 +17,8 @@ import AdminBlog_UPDATE from './AdminBlog_UPDATE';
 import AdminCP_ADDNEW  from './AdminCP_ADDNEW';
 import AdminCT_ADDNEW from './AdminCT_ADDNEW';
 import AdminCalender_ADDNEW_Class from './AdminCalender_ADDNEW_Class';
+import AdminCalender_ADDNEW_Perf from './AdminCalender_ADDNEW_Perf';
+
 
 import {hamClicked} from './../ducks/reducer';
 import {connect} from 'react-redux';
