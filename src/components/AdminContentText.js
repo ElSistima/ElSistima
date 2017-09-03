@@ -33,7 +33,7 @@ class AdminContentText extends Component{
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
             <p className="adminPageHeader">Current Text Content</p>
-            <Link to="/admin/classes/addNew">
+            <Link to="/admin/contenttext/addNew">
               <i className="fa fa-plus-square" aria-hidden="true"></i>
             </Link>
           </div>
