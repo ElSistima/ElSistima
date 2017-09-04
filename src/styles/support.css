@@ -1,0 +1,369 @@
+.supportUsWrapper {
+  /*height: 1000px;*/
+  width: 100%;
+  background: #FEFEF7;
+  color: #4A4A4A;
+}
+
+.supportTopBody {
+  width: 80%;
+  /*border: 2px solid black;*/
+  height: 410px;
+  margin: 0 auto;
+}
+
+.supportTitle {
+  height: 55px;
+  width: 100%;
+  /*border: 2px solid green;*/
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+}
+
+.supportInnerBox {
+  width: 100%;
+  height: 170px;
+  /*border: 2px solid teal;*/
+  font-size: 0.75em;
+  line-height: 1.5;
+}
+
+.innerBoxTitle {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  /*border: 2px solid orange;*/
+  font-size: 15px;
+}
+
+.innerBody {
+  color: #7F7F7B;
+}
+
+.waysToHelp {
+  width: 80%;
+  /*border: 2px solid black;*/
+  height: 1210px;
+  margin: 0 auto;
+}
+
+.helpTitle {
+  /*border: 2px solid red;*/
+  height: 55px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate {
+  width: 80%;
+  /*height: 395px;*/
+  border-radius: 5px;
+  font-size: 19px;
+  border: 1px solid lightgray;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 1.5px 1.5px 1px #B1B1AB;
+  margin-bottom: 20px;
+}
+
+.donateTitle {
+  margin-left: 10px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  /*border: 2px solid red;*/
+}
+
+.donateInnerBox, .donateInner {
+  height: 55px;
+  width: 100%;
+  /*border: 2px solid orange;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.donateInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.donateInnerBox img {
+  width: 80px;
+  height: 100%;
+  margin-right: 5px;
+}
+
+.enterAmount, .cardNumInput, .cvcTitle, .expirationInput, .volunteerInput{
+  width: 70px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.cardNumInput {
+  width: 212px;
+}
+
+
+.cvcTitle {
+  width: 100px;
+}
+
+.cvcInputLine {
+  display: flex;
+  font-size: 12px;
+}
+
+.cvcInputLine div {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.donateInnerTitle {
+  font-size: 13px;
+  margin-left: 10px;
+  /*border: 2px solid red;*/
+
+}
+
+.expirationInputLine {
+  display: flex;
+}
+
+
+.submitBtn {
+  background-color: #4B91DD;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  /*margin-left: 60px;
+  margin-top: 5px;*/
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.donationSubmit, .volunteerSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volunteerSubmit {
+  width: 205px;
+}
+
+/*donate instrument */
+.donateInstrument {
+  height: 200px;
+  margin-top: 40px;
+}
+
+.donateinstSubTitle {
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.donateinstAddress {
+  font-size: 12.5px;
+  margin-left: 10px;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+.volunteer {
+  margin-top: 40px;
+  height: 280px;
+}
+
+.volunteerInner {
+  /*border: 2px solid red;*/
+  height: 75px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.volunteerinnerTitle {
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.volunteerInput {
+  width: 150px;
+}
+
+
+.supportShare {
+  width: 150px;
+  height: 120px;
+  /*border: 2px solid red;*/
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialWrapper {
+  display: flex;
+  margin-top: 15px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+
+
+@media(min-width: 700px) {
+.supportTitle, .innerBoxTitle, .innerBody, .helpTitle, .donateTitle, .donateInnerTitle, .volunteerinnerTitle {
+  font-size: 145%;
+}
+
+.supportTopBody {
+  font-size: 110%;
+}
+
+.donateinstSubTitle, .donateinstAddress {
+  font-size: 19px;
+}
+
+.donateTitle {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+.enterAmount, .expirationInput, .expirationInput {
+  width: 120px;
+}
+
+
+.cardNumInput {
+  width: 400px;
+}
+
+.donateInnerBox, .donateInner {
+  height: 105px;
+  margin-bottom: 15px;
+}
+
+.donateInner {
+  margin-bottom: 25px;
+}
+.cvcTitle {
+  width: 120px;
+}
+
+.enterAmount, .cardNumInput, .cvcTitle, .expirationInput, .volunteerInput {
+  height: 50px;
+  margin-left: 20px;
+}
+
+.donateTitle, .donateinstSubTitle, .donateinstAddress, .volunteerinnerTitle, .donateInnerTitle {
+  margin-left: 20px;
+}
+
+.donateInnerBox img {
+    width: 140px;
+  }
+
+.waysToHelp {
+  height: 1800px;
+}
+
+.donateTitle {
+  height: 63px;
+}
+
+.donateInstrument {
+  height: 270px;
+}
+
+.volunteerInner {
+  height: 120px;
+}
+
+.volunteer {
+  height: 450px;
+}
+
+.helpTitle {
+  height: 100px;
+  color: #60605F;
+}
+
+}
+
+
+@media(min-width: 1000px) {
+  .supportTopBody {
+    width: 75%;
+    height: 900px;
+  }
+
+  .supportInnerBox, .innerBody {
+    height: 300px;
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .supportTitle {
+    height: 200px;
+    font-size: 45px;
+  }
+
+  .innerBoxTitle {
+    height: 100px;
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .howdonation {
+    margin-top: 55px;
+  }
+
+ .helpTitle {
+   height: 180px;
+    font-size: 29px;
+    color: #60605F;
+ }
+
+ .donate {
+   width: 45%;
+   height: 740px;
+   margin: 0;
+ }
+
+
+ .waysToHelp {
+   position: relative;
+ }
+
+ .desktopDonateInst {
+   position: absolute;
+   top:170px;
+   height: 300px;
+   left: 55%;
+   width: 40%;
+ }
+
+ .desktopVolunteer {
+   position: absolute;
+   top: 490px;
+   height: 430px;
+   left: 55%;
+   width: 40%;
+ }
+
+}
