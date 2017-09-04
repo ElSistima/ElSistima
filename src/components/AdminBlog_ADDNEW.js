@@ -41,7 +41,7 @@ class AdminBlog_ADDNEW extends Component{
       year: 2017,
       month: 'September',
       day: 15,
-      blogImage: 'https://images.bigcartel.com/theme_images/11457208/DevMtnLogoNoBG.png',
+      blogImage: 'https://www.couleursjazz.fr/site/wp-content/uploads/2015/09/el-sistema-2-credit-peter-dammann.jpg',
       blogSubtitle: this.state.blogNewSubtitle
     }
     !this.state.blogNewTitle || !this.state.blogNewSubtitle || !this.state.blogNewContent ? alert("Be sure you have a title, subtitle, and blog content before saving your post.") : axios.post('/api/post',newPostObject).then(res => console.log(res)).catch(err => console.log(err));
