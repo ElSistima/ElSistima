@@ -1,11 +1,30 @@
 .photoCardContainer{
-    /* height: 500px;
-    width: 500px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 8em;
+    width: 100%;
     background-color: red;
+    font-size: 1em;
 }
 
 .tester {
     /* height: 500px;
     width: 500px; */
-    background-color: lightseagreen;
+    background-image: lightseagreen;
+}
+.tester2 {
+    /* height: 500px;
+    width: 500px; */
+    background-color: lightsalmon;
+}
+.tester3 {
+    /* height: 500px;
+    width: 500px; */
+    background-color: palegoldenrod;
+}
+.tester4 {
+    /* height: 500px;
+    width: 500px; */
+    background-color: aquamarine;
 }

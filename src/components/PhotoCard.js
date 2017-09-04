@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import './../styles/photoCard.css';
 
 
 export default class PhotoCard extends Component{
@@ -33,15 +34,18 @@ export default class PhotoCard extends Component{
         // for(var key in test) {
         //     photos.pust(test[key])
         // }
-
+        
        
     
         return(
             <main className="photoCardContainer">
+                <div className="mediaImage">
+                    <img src={props.media_url} 
+                    height={200}
+                    width={200}/></div>
                 <div className="tester">{this.props.media.caption}</div>
-                <div className="tester2">{this.props.media.id}</div>
+                {/* <div className="tester2">{this.props.media.id}</div> */}
                 <div className="tester3">{this.props.media.is_picture}</div>
-                <div className="tester4">{this.props.media.media_url}</div>
             </main>
 
         )
