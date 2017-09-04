@@ -7,6 +7,7 @@
     width: 6.9em;
     background-color: white;
     box-shadow: 1px 1px 1px;
+    /* border: solid 1px; */
     border-radius: 2px;
     color: rgb(74,95,107);
 }
