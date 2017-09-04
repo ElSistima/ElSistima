@@ -208,9 +208,11 @@ module.exports = {
 
   postVolunteer: function(req,res){
     const db = req.app.get('db');
-    const {name, email, title, profilePic, facebookLink, twitterLink, LinkedInLink, summary} = req.body
+    const {name, email, title, profilePic, facebookLink, twitterLink, linkedInLink, summary} = req.body
 
-    db.post_add_volunteer([name, email, title, profilePic, facebookLink, twitterLink, LinkedInLink, summary])
+    console.log(name, email, title, profilePic, facebookLink, twitterLink, linkedInLink, summary)
+
+    db.post_add_volunteer([name, email, title, profilePic, facebookLink, twitterLink, linkedInLink, summary])
       .then( (response) => {
         res.status(200).send('sentSuccessfully')} )
       .catch( (err) => {
