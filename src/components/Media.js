@@ -59,9 +59,7 @@ export default class Media extends Component{
         /* image={picture}
         key={index} */
         />
-        // test.map(item => {
-        //   console.log(item)
-        // })
+        
       )
     })
 
@@ -72,9 +70,7 @@ export default class Media extends Component{
         /* image={picture}
         key={index} */
         />
-        // test.map(item => {
-        //   console.log(item)
-        // })
+       
       )
     })
 
