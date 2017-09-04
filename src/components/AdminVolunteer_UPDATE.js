@@ -20,14 +20,20 @@ class AdminVolunteer_UPDATE extends Component{
 
   componentDidMount(){
     axios.get(`/api/volunteers/${this.props.match.params.vol_id}`).then(res => {
-      console.log(res.data)
+      console.log("Res data is: ", res.data[0])
       this.setState({
+        fName: res.data[0].name.split(" ")[0],
+        lName: res.data[0].name.split(" ")[1],
+        email: res.data[0].email,
+        title: res.data[0].title,
+        bio: res.data[0].summary
+
       })
     })
   }
 
   render(){
-
+    console.log("last name: ", this.state.lName)
     const fullPageStyle = { width: "100%" }
 
     return(
@@ -35,15 +41,15 @@ class AdminVolunteer_UPDATE extends Component{
         <div className="add_new_blog volunteerOverwrite">
             <div className="anb_headerText">Update Volunteer</div>
             <div className="anb_topInput anv_topInput">
-              <input placeholder="First Name"/>
-              <input placeholder="Last Name"/>
+              <input placeholder="First Name" value={this.state.fName}/>
+              <input placeholder="Last Name" value={this.state.lName}/>
             </div>
 
-            <div className="lngipt"><input placeholder="Email Address"/></div>
-            <div className="lngipt"><input placeholder="Job"/></div>
+            <div className="lngipt"><input placeholder="Email Address" value={this.state.email} /></div>
+            <div className="lngipt"><input placeholder="Job" value={this.state.title}/></div>
 
             <div className="maintxt_Content taOverwrite">
-              <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "></textarea>
+              <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " value={this.state.bio}></textarea>
             </div>
         </div>
 
