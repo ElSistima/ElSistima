@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import {connect} from 'react-redux';
-
-
 
 class AdminVolunteer_ADDNEW extends Component{
   constructor(props){
@@ -78,6 +77,33 @@ class AdminVolunteer_ADDNEW extends Component{
       twitterLink: '',
       linkedInLink: ''
     })
+  }
+
+  clickSave() {
+    let newVolObj = {
+      name: this.state.fName + " " + this.state.lName,
+      email: this.state.email,
+      title: this.state.title,
+      profilePic: "https://s3.amazonaws.com/devmountain/www/img/pic-jeremy.jpg",
+      facebookLink: this.state.facebookLink,
+      twitterLink: this.state.twitterLink,
+      linkedInLink: this.state.linkedInLink,
+      summary: this.state.bio
+    }
+    !this.state.fName || !this.state.lName || !this.state.email || !this.state.title || !this.state.bio ? alert("Be sure you have input your first and last name, email, job title, and a short bio about yourself before submitting your volunteer information.") :
+    axios.post('/api/volunteers', newVolObj).then(res => {
+      alert("New volunteer created.")
+      this.setState({
+        fName: '',
+        lName: '',
+        email: '',
+        title: '',
+        bio: '',
+        facebookLink: '',
+        twitterLink: '',
+        linkedInLink: ''
+      })
+    }).catch(err => console.log(err))
   }
 
   render(){
@@ -165,7 +191,7 @@ class AdminVolunteer_ADDNEW extends Component{
         </div>
 
         <div className="web_btn">
-          <div className="singlebtn web_save">SAVE</div>
+          <div className="singlebtn web_save" onClick={this.clickSave.bind(this)}>SAVE</div>
           <div className="singlebtn web_cancel" onClick={this.clickCancel.bind(this)}>CANCEL</div>
         </div>
 
