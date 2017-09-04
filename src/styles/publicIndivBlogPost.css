@@ -2,7 +2,6 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 75vh;
-  /*background-color: plum;*/
 }
 
 .blogPostContent {
@@ -10,7 +9,6 @@
   min-height: 75vh;
   margin: 0 auto;
   padding: 5vh 0 2vh 0;
-  /*background-color: white;*/
 }
 
 .blogAuthorDetails {
@@ -22,7 +20,6 @@
   align-items: center;
   padding-left: 2.5%;
   margin-bottom: 5%;
-  /*background-color: lime;*/
 }
 
 .blogAuthorPic img{
@@ -66,14 +63,14 @@
 }
 
 .blogSubtitle {
-  margin: 3% 0;
+  margin: 3% 0 4.5% 0;
   color: #4D819F;
   font-size: small;
 }
 
-.blogContent {
+.blogBodyContent {
   font-size: small;
-  line-height: 1.15em;
+  line-height: 1.25em;
 }
 
 .blogPostFooter {
@@ -83,7 +80,6 @@
   justify-content: space-between;
   width: 100%;
   height: 7.5vh;
-  /*background-color: plum;*/
   margin-top: 7.5%;
   margin-bottom: 7.5%;
 }
@@ -113,4 +109,36 @@
 .returnToBlogs a {
   text-decoration: none;
   color: black;
+}
+
+@media(min-width: 700px){
+
+  .blogPostContent {
+    width: 75%;
+    min-height: 75vh;
+    margin: 0 auto;
+    padding: 5vh 0 2vh 0;
+  }
+
+  .blogAuthorName p {
+    font-size: x-large;
+  }
+
+  .titleDate p {
+    font-size: x-large;
+    font-weight: 700;
+  }
+
+  .blogDate {
+    font-size: medium;
+  }
+
+  .blogSubtitle {
+    font-size: medium;
+  }
+
+  .blogBodyContent {
+    font-size: medium;
+    line-height: 1.15em;
+  }
 }

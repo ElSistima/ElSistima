@@ -64,7 +64,7 @@ export default class PublicIndivBlogPost extends Component {
             </div>
             <p className="blogSubtitle">{this.state.indivPostSubtitle}</p>
           </div>
-        <p className="blogContent">{this.state.indivPostContent}</p>
+        <p className="blogBodyContent">{this.state.indivPostContent}</p>
         <div className="blogPostFooter">
         <div className="blogPlaceholderDiv"></div>
           <div className="blogEndLogo"></div>
@@ -75,7 +75,7 @@ export default class PublicIndivBlogPost extends Component {
           </div>
         </div>
         </div>
-        
+
       </main>
     )
   }
