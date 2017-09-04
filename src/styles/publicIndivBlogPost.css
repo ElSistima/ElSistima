@@ -25,8 +25,8 @@
 .blogAuthorPic img{
   display: flex;
   align-items: center;
-  height: 7.5vh;
-  width: auto;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
 }
 
@@ -135,6 +135,11 @@
     width: 75%;
   }
 
+  .blogAuthorPic img{
+    height: 65px;
+    width: 65px;
+  }
+
   .blogAuthorName p {
     font-size: x-large;
   }
@@ -176,6 +181,7 @@
     display: flex;
     align-items: center;
     height: 75px;
+    width: 75px;
   }
 
   .blogAuthorName {
