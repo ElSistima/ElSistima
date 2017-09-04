@@ -106,7 +106,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 120em;
+    min-height: 190em;
     width: 100%;
     background-color: white;
 }
@@ -131,7 +131,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 110em;
+    min-height: 150em;
     width: 100%;
     background-color: white;
 }
@@ -185,7 +185,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30em;
+    flex-direction: column;
+    min-height: 120em;
     width: 100%;
     background-color: white;
 }
@@ -198,19 +199,13 @@
     width: 95%;
     background-color: white;
 }
-
-.photosFormat {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
    
 .mediaGridVideosContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 30em;
+    min-height: 120em;
     width: 100%;
     background-color: white;
 }

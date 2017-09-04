@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import './../styles/media.css';
 import axios from 'axios';
 import MediaCard from './MediaCard';
-
-
+import VideoCard from './VideoCard';
 
 
 export default class Media extends Component{
@@ -55,9 +54,10 @@ export default class Media extends Component{
     const allPictures = this.state.fetchedPictures.map((media, index) => {
       return(
         <MediaCard
-        key={index} index={index} media={media} reloadMedia={this.reloadMedia.bind(this)}
-        /* image={picture}
-        key={index} */
+        /* key={index}  */
+        /* index={index}  */
+        media={media} 
+        /* reloadMedia={this.reloadMedia.bind(this)} */
         />
         
       )
@@ -65,10 +65,11 @@ export default class Media extends Component{
 
     const allVideos = this.state.fetchedVideos.map((media, index) => {
       return(
-        <MediaCard
-        key={index} index={index} media={media} reloadMedia={this.reloadMedia.bind(this)}
-        /* image={picture}
-        key={index} */
+        <VideoCard
+        /* key={index} 
+        index={index}  */
+        media={media} 
+        /* reloadMedia={this.reloadMedia.bind(this)} */
         />
        
       )
