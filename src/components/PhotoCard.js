@@ -21,6 +21,12 @@ export default class PhotoCard extends Component{
         .catch(err => console.log("There was an Error: ", err))
     }
 
+    // componentWillReceiveProps(nextProps){
+    //     this.setState({
+        
+    //     })
+    // }
+
     render(){
         // var media = this.state.fetchedMedia;
         // var photos = [];
@@ -28,10 +34,14 @@ export default class PhotoCard extends Component{
         //     photos.pust(test[key])
         // }
 
+       
     
         return(
             <main className="photoCardContainer">
-                <div className="tester">Yo a picture</div>
+                <div className="tester">{this.props.media.caption}</div>
+                <div className="tester2">{this.props.media.id}</div>
+                <div className="tester3">{this.props.media.is_picture}</div>
+                <div className="tester4">{this.props.media.media_url}</div>
             </main>
 
         )

@@ -25,18 +25,28 @@ export default class Media extends Component{
     .catch(err => console.log("There was an Error: ", err))
   }
 
+  reloadMedia(){
+    axios.get('/api/media').then(res => {
+      console.log("Media res.data is: ", res.data)
+      this.setState({
+        fetchedMedia: res.data
+      })
+    }).catch(err => console.log("Error is: ", err))
+  }
+
   render(){
     console.log('this is a test', this.state)
-    var test = this.state.fetchedMedia
-    var pictures = [];
+    const test = this.state.fetchedMedia
+    const pictures = [];
     for(var key in test){
       pictures.push(test[key])
     }
-    var media = pictures.map((picture, index) => {
+    const media = this.state.fetchedMedia.map((media, index) => {
       return(
         <PhotoCard
-        image={picture}
-        key={index}
+        key={index} index={index} media={media} reloadMedia={this.reloadMedia.bind(this)}
+        /* image={picture}
+        key={index} */
         />
         // test.map(item => {
         //   console.log(item)
@@ -96,6 +106,7 @@ export default class Media extends Component{
            
             <div className="mediaGridVideos">
               VIDEOS HERE
+            <div>{media}</div>
             </div>
           </section>
         
