@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import './../styles/publicIndivBlogPost.css';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 export default class PublicIndivBlogPost extends Component {
@@ -42,10 +44,37 @@ export default class PublicIndivBlogPost extends Component {
     console.log(this.state)
 
     return(
-      <main>
-        <p>{this.state.indivPostTitle}</p>
-        <p>{this.state.indivPostSubtitle}</p>
-        <p>{this.state.indivPostContent}</p>
+      <main className="blogPostWrapper">
+        <div className="blogPostContent">
+          <div className="blogAuthorDetails">
+            <div className="blogAuthorPic">
+              <img src={this.state.postAuthorPic} alt="Author picture"/>
+            </div>
+            <div className="blogAuthorName">
+            <p>{this.state.postAuthor}</p>
+            </div>
+          </div>
+          <div className="blogPostTopImage">
+            <img src={this.state.indivPostImg} />
+          </div>
+
+          <div className="blogDetails">
+            <div className="titleDate">
+              <p>{this.state.indivPostTitle}   <span className="blogpostTitlePipe">|</span>   <span className="blogDate">{this.state.postDateMonth} {this.state.postDateDay}, {this.state.postDateYear}</span></p>
+            </div>
+            <p className="blogSubtitle">{this.state.indivPostSubtitle}</p>
+          </div>
+        <p className="blogBodyContent">{this.state.indivPostContent}</p>
+        <div className="blogPostFooter">
+        <div className="blogPlaceholderDiv"></div>
+          <div className="blogEndLogo"></div>
+          <div className="returnToBlogs">
+          <Link to ="/blog">
+            <p>{"<   "}Return to Blogs</p>
+          </Link>
+          </div>
+        </div>
+        </div>
 
       </main>
     )
