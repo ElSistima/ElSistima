@@ -24,6 +24,7 @@ handleSubmit(ev){
   this.props.stripe.createToken().then( token => {
       console.log('Received Stripe token:', token);
       axios.post('http://localhost:8080/api/payment', { token, amount: 100 } ).then(response => {
+        console.log(response, 'this is response')
           alert('Thank you for your donation')
         });
     });

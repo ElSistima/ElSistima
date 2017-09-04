@@ -2,6 +2,7 @@ import React from 'react';
 import './../styles/support.css';
 import SupportDonate from './SupportDonate';
 import {Elements} from 'react-stripe-elements';
+import Volunteer from './Volunteer';
 
 export default function Support(props){
   return (
@@ -39,27 +40,7 @@ export default function Support(props){
 
 
 
-
-        <div className="donate volunteer desktopVolunteer">
-          <div className="donateTitle">Volunteer Sign-Up</div>
-
-          <div className="volunteerInner">
-            <div className="volunteerinnerTitle">Name</div>
-            <input className="volunteerInput"/>
-          </div>
-
-          <div className="volunteerInner">
-            <div className="volunteerinnerTitle">Email</div>
-            <input className="volunteerInput"/>
-          </div>
-
-
-          <div className="volunteerInner volunteerSubmit">
-            <div className="submitBtn"><span>SUBMIT</span></div>
-          </div>
-
-        </div>
-
+        <Volunteer />
 
 
         <div className="supportShare">
