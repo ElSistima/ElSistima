@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './../styles/publicIndivBlogPost.css';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 export default class PublicIndivBlogPost extends Component {
@@ -64,10 +65,17 @@ export default class PublicIndivBlogPost extends Component {
             <p className="blogSubtitle">{this.state.indivPostSubtitle}</p>
           </div>
         <p className="blogContent">{this.state.indivPostContent}</p>
-        <div className="returnToBlogs">
-          <p>{"<"} Return to Blogs</p>
+        <div className="blogPostFooter">
+        <div className="blogPlaceholderDiv"></div>
+          <div className="blogEndLogo"></div>
+          <div className="returnToBlogs">
+          <Link to ="/blog">
+            <p>{"<"} Return to Blogs</p>
+          </Link>
+          </div>
         </div>
         </div>
+        
       </main>
     )
   }
