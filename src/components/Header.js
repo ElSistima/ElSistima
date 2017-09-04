@@ -40,7 +40,7 @@ export default class Header extends Component {
           </Link>
           </div>
 
-          <div className="headerSupportButton"><p>Support Us</p></div>
+          <Link to="/support"><div className="headerSupportButton"><p>Support Us</p></div></Link>
         </nav>
       </main>
     )

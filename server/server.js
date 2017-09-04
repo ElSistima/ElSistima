@@ -215,7 +215,7 @@ console.log(req.body.token.token.id, 'this is the token id')
 }, function(err, charge) {
     if (err) {
       console.log(err)
-      res.sendStatus(500) 
+      res.sendStatus(500)
     } else
     return res.sendStatus(200);
   // if (err && err.type === 'StripeCardError') {
