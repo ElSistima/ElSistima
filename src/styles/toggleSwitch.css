@@ -1,0 +1,17 @@
+.toggler {
+    background-color: yellow;
+    height: 500px;
+    width: 500px;
+}
+.circleSwitch {
+    background-color: red;
+    height: 10px;
+    width: 10px;
+}
+
+.other-class {
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}

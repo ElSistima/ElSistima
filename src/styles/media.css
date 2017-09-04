@@ -1,0 +1,231 @@
+.mediaMainContent {
+    min-height: 80vh;
+    width: 100%;
+}
+
+.photoVideoToggleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 50%;
+}
+
+.photoVideoToggleSwitch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+    background-color: white;
+    color: rgb(74,95,107);
+}
+
+.photoVideoToggleText {
+    padding: 0, auto;
+}
+
+
+
+.mediaGridPhotosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    width: 100%;
+    background-color: white;
+}
+
+.mediaGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 99%;
+    width: 95%;
+    background-color: white;
+}
+
+.photosFormat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mediaGridVideosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150vh;
+    width: 100%;
+    background-color: white;
+}
+
+.videosHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 50%;
+    border-top: solid 1px;
+}
+
+@media(min-width: 700px){
+
+.mediaMainContent {
+    min-height: 80vh;
+    width: 100%;
+}
+
+.photoVideoToggleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 50%;
+    padding: 1em 0;
+}
+
+.photoVideoToggleSwitch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+    background-color: white;
+    
+}
+
+.photoVideoToggleText {
+    padding: 0, auto;
+    font-size: 2em;
+}
+
+
+.mediaGridPhotosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160vh;
+    width: 100%;
+    background-color: white;
+}
+
+.mediaGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 99%;
+    width: 95%;
+    background-color: white;
+}
+
+.photosFormat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+   
+.mediaGridVideosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150vh;
+    width: 100%;
+    background-color: white;
+}
+
+.videosHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 50%;
+    border-top: solid 1px;
+    padding: 1em 0;
+}
+
+
+}
+@media (min-width: 1000px){
+
+.mediaMainContent {
+    min-height: 80vh;
+    width: 100%;
+}
+
+.photoVideoToggleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 50%;
+    padding: 1.5em 0;
+}
+
+.photoVideoToggleSwitch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+    background-color: white;
+    
+}
+
+.photoVideoToggleText {
+    padding: 0, auto;
+    font-size: 2.25em;
+}
+
+
+.mediaGridPhotosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.mediaGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 99%;
+    width: 95%;
+    background-color: white;
+}
+
+.photosFormat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+   
+.mediaGridVideosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 95vh;
+    width: 100%;
+    background-color: white;
+}
+
+.videosHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 50%;
+    border-top: solid 1px;
+    padding: 1.5em 0;
+}
+
+
+}
