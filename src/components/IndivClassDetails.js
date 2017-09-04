@@ -3,7 +3,7 @@ import axios from 'axios';
 import './../styles/indivBlogPostDetails.css';
 import {Link} from 'react-router-dom';
 
-export default class IndivBlogPostDetails extends Component {
+export default class IndivClassDetails extends Component {
   constructor(props){
     super(props);
       this.state ={
@@ -20,24 +20,41 @@ export default class IndivBlogPostDetails extends Component {
   }
 
   componentWillReceiveProps(nextProps){
+    console.log("IndivClass Component Mounted")
     this.setState({
       itemChecked: nextProps.checkAll
     })
   }
 
-  deletePost(){
-    axios.delete(`/api/posts/${this.props.post.posts_id}`).then(res => this.props.reloadPosts()).catch(err => console.log(err))
+  deleteClass(){
+    axios.delete(`/api/events/${this.props.classObj.id}`).then(res => this.props.reloadClasses()).catch(err => console.log(err))
   }
+
 
   render(){
 
-    console.log("Props is: ", this.props.post.posts_id)
-
-    console.log("Item checked :", this.state.itemChecked)
+    console.log("Props, dude: ", this.props)
 
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
 
     const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
+
+    const monthFromDB = this.props.classObj.date_month_number;
+
+    const monthDigits = monthFromDB < 10 ? '0' + monthFromDB : monthFromDB;
+
+    const monthEndFromDB = this.props.classObj.date_month_end_num;
+
+    const monthEndDigits = monthEndFromDB < 10 ? '0' + monthEndFromDB : monthEndFromDB;
+
+    const daysFromDB = this.props.classObj.date_days;
+
+    const daysDigits = daysFromDB < 10 ? '0' + daysFromDB : daysFromDB;
+
+    const daysEndFromDB = this.props.classObj.date_days_end;
+
+    const daysEndDigits = daysEndFromDB < 10 ? '0' + daysEndFromDB : daysEndFromDB;
+
 
     return(
       <main className="postDetailsWrapper" style={this.state.itemChecked ? itemRowSelectedStyle : null}>
@@ -45,21 +62,19 @@ export default class IndivBlogPostDetails extends Component {
           <div className="checkbox" onClick={this.markChecked.bind(this)} style={this.state.itemChecked ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
         </div>
         <div className="blogDetailsItem2">
-          <Link to={`/blog/${this.props.post.posts_id}`}>
-          <p>{this.props.post.post_title}</p>
-          </Link>
+          <p>{this.props.classObj.title}</p>
         </div>
         <div className="blogDetailsItem3">
-          <p>{this.props.post.date_month_number}/{this.props.post.date_day}/{this.props.post.date_year}</p>
+          <p>{monthDigits}/{daysDigits}/{this.props.classObj.date_year}</p>
         </div>
         <div className="blogDetailsItem4">
-          <p>{this.props.post.user_name}</p>
+          <p>{monthEndDigits}/{daysEndDigits}/{this.props.classObj.date_year_end}</p>
         </div>
         <div className="blogDetailsItem5">
-        <Link to={"/admin/blog/update/" + this.props.post.posts_id}>
-          <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
-        </Link>
-          <p><i className="fa fa-trash" aria-hidden="true" onClick={this.deletePost.bind(this)}></i></p>
+          <Link to={"/admin"}>
+            <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
+          </Link>
+          <p><i className="fa fa-trash" aria-hidden="true" onClick={this.deleteClass.bind(this)}></i></p>
         </div>
       </main>
     )
