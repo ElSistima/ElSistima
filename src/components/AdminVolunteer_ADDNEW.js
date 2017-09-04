@@ -28,10 +28,6 @@ class AdminVolunteer_ADDNEW extends Component{
             <div className="maintxt_Content taOverwrite">
               <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "></textarea>
             </div>
-
-            <div className="maintxt_Content taOverwrite">
-              <textarea placeholder="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></textarea>
-            </div>
         </div>
 
         <div className="permission">

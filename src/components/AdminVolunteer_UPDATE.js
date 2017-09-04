@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import {connect} from 'react-redux';
 
 
@@ -18,7 +19,11 @@ class AdminVolunteer_UPDATE extends Component{
   }
 
   componentDidMount(){
-  
+    axios.get(`/api/volunteers/${this.props.match.params.vol_id}`).then(res => {
+      console.log(res.data)
+      this.setState({
+      })
+    })
   }
 
   render(){
