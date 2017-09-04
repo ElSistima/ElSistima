@@ -1,25 +1,27 @@
 .blogPostWrapper {
   width: 100%;
   min-height: 75vh;
-  background-color: plum;
+  /*background-color: plum;*/
 }
 
 .blogPostContent {
   width: 95%;
   min-height: 75vh;
   margin: 0 auto;
-  padding-top: 5vh;
-  background-color: white;
+  padding: 5vh 0 2vh 0;
+  /*background-color: white;*/
 }
 
 .blogAuthorDetails {
+  box-sizing: border-box;
   width: 100%;
   min-height: 7.5vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 2.5%;
-  background-color: lime;
+  margin-bottom: 5%;
+  /*background-color: lime;*/
 }
 
 .blogAuthorPic img{
@@ -38,7 +40,7 @@
 }
 
 .blogAuthorName p {
-  font-size: large;
+  font-size: medium;
 }
 
 .blogPostTopImage, .blogPostTopImage img {
@@ -49,7 +51,7 @@
 .titleDate {
   display: flex;
   width: 100%;
-  margin: 3% 0;
+  margin: 5% 0;
 }
 
 .titleDate p {
@@ -71,4 +73,12 @@
 .blogContent {
   font-size: small;
   line-height: 1.15em;
+}
+
+.returnToBlogs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 7.5vh;
 }

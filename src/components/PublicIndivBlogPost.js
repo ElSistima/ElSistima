@@ -64,6 +64,9 @@ export default class PublicIndivBlogPost extends Component {
             <p className="blogSubtitle">{this.state.indivPostSubtitle}</p>
           </div>
         <p className="blogContent">{this.state.indivPostContent}</p>
+        <div className="returnToBlogs">
+          <p>{"<"} Return to Blogs</p>
+        </div>
         </div>
       </main>
     )
