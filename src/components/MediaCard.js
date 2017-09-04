@@ -25,9 +25,10 @@ export default class MediaCard extends Component{
         return(
             <main className="photoCardContainer">
                 <div className="mediaImage">
-                    <img src={this.props.media.media_url} 
-                    height={110}
-                    width={110}/></div>
+                    <img className="imageSize" src={this.props.media.media_url} 
+                    /* height={110}
+                    width={110} */
+                    /></div>
                 <div className="photoCaption">
                     {this.props.media.caption}
                     <div className="shareIcon"></div>
