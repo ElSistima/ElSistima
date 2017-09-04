@@ -1,0 +1,92 @@
+.photoCardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9em;
+    width: 6.9em;
+    background-color: white;
+    box-shadow: 1px 1px 1px;
+    border-radius: 2px;
+    color: rgb(74,95,107);
+}
+
+.mediaImage {
+    display: flex;
+    justify-content: center;
+    padding-bottom: .2em;
+    width: 100%;
+    background-color: white;
+}
+
+.imageSize {
+    height: 6.5em;
+    width: 6.5em;
+}
+
+.photoCaption {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    padding-top: 1em;
+    background-color: white;
+    font-size: .6em;
+    
+}
+
+.shareIcon {
+    height: 1.5em;
+    width: 1.5em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./../images/share1.png');
+}
+
+@media (min-width: 700px){
+
+.photoCardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+    width: 14em;
+    background-color: white;
+    box-shadow: 1px 1px 1px;
+    border-radius: 2px;
+}
+
+.mediaImage {
+    display: flex;
+    justify-content: center;
+    padding-bottom: .2em;
+    width: 100%;
+    background-color: white;
+}
+
+.imageSize {
+    height: 11em;
+    width: 11em;
+}
+
+.photoCaption {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    padding-top: 1em;
+    background-color: white;
+    font-size: 1.15em;
+    
+}
+
+.shareIcon {
+    height: 1.5em;
+    width: 1.5em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./../images/share1.png');
+}
+
+}
