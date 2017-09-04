@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import './../styles/support.css';
 import {injectStripe} from 'react-stripe-elements';
-import {CardNumberElement} from 'react-stripe-elements';
-import {CardExpiryElement} from 'react-stripe-elements';
-import {CardCVCElement} from 'react-stripe-elements';
+import {CardNumberElement, CardExpiryElement, CardCVCElement} from 'react-stripe-elements';
 import axios from 'axios';
 
 
