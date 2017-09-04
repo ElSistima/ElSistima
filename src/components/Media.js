@@ -91,8 +91,8 @@ export default class Media extends Component{
   
           <section className="mediaGridPhotosContainer">
             <div className="mediaGridPhotos">
-              PHOTOS HERE 
-            <div>{media}</div>
+              {/* PHOTOS HERE  */}
+            <div className="photosFormat">{media}</div>
             </div>
           </section>
   
@@ -106,7 +106,7 @@ export default class Media extends Component{
            
             <div className="mediaGridVideos">
               VIDEOS HERE
-            <div>{media}</div>
+            {/* <div>{media}</div> */}
             </div>
           </section>
         

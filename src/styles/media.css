@@ -109,16 +109,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     height: 80vh;
     width: 100%;
     background-color: goldenrod;
 }
 
 .mediaGridPhotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 90%;
     width: 90%;
     background-color: palegreen;
+}
+
+.photosFormat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .mediaGridVideosContainer {
