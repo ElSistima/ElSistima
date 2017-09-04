@@ -60,7 +60,7 @@ export default class PublicIndivBlogPost extends Component {
 
           <div className="blogDetails">
             <div className="titleDate">
-              <p>{this.state.indivPostTitle}   |   <span className="blogDate">{this.state.postDateMonth} {this.state.postDateDay}, {this.state.postDateYear}</span></p>
+              <p>{this.state.indivPostTitle}   <span className="blogpostTitlePipe">|</span>   <span className="blogDate">{this.state.postDateMonth} {this.state.postDateDay}, {this.state.postDateYear}</span></p>
             </div>
             <p className="blogSubtitle">{this.state.indivPostSubtitle}</p>
           </div>
@@ -70,7 +70,7 @@ export default class PublicIndivBlogPost extends Component {
           <div className="blogEndLogo"></div>
           <div className="returnToBlogs">
           <Link to ="/blog">
-            <p>{"<"} Return to Blogs</p>
+            <p>{"<   "}Return to Blogs</p>
           </Link>
           </div>
         </div>
