@@ -155,6 +155,7 @@ app.get('/api/performances', userController.getPerformances)
 app.get('/api/classes', userController.getClasses)
 app.get('/api/events/:eventid', userController.getEventById)
 app.get('/api/blogs/:blogid', userController.getBlogById)
+app.get('/api/volunteers/:volunteerid',userController.getVolunteerById)
 
 
 //===============POST REQUESTS===================

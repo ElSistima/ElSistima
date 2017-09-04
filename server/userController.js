@@ -78,6 +78,14 @@ module.exports = {
       .then((event) => res.status(200).send(event))
       .catch((err) => res.status(500).send(err))
   },
+  getVolunteerById: function(req,res){
+    const db = req.app.get('db');
+    const {volunteerid} = req.params
+
+    db.get_volunteer_by_id([volunteerid])
+      .then((volunteer) => res.status(200).send(volunteer))
+      .catch((err) => res.status(500).send(err))
+  },
   getMedia: function(req, res){
     const db = req.app.get('db');
 
@@ -268,7 +276,6 @@ module.exports = {
     }
 
     console.log(100, postContent, postThumbnail, postTitle, year, month, day, month_num, blogImage, blogSubtitle)
-
     db.post_add_posts([100, postContent, postThumbnail, postTitle, year, month, day, month_num, blogImage, blogSubtitle])
     .then( (response) => {
       res.status(200).send('sentSuccessfully')} )
