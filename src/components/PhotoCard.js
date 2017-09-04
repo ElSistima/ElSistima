@@ -40,9 +40,9 @@ export default class PhotoCard extends Component{
         return(
             <main className="photoCardContainer">
                 <div className="mediaImage">
-                    <img src={props.media_url} 
-                    height={200}
-                    width={200}/></div>
+                    <img src={this.props.media.media_url} 
+                    height={100}
+                    width={100}/></div>
                 <div className="tester">{this.props.media.caption}</div>
                 {/* <div className="tester2">{this.props.media.id}</div> */}
                 <div className="tester3">{this.props.media.is_picture}</div>

@@ -1,9 +1,11 @@
 .photoCardContainer{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 8em;
-    width: 100%;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    width: 7em;
     background-color: red;
     font-size: 1em;
 }
@@ -23,7 +25,8 @@
     width: 500px; */
     background-color: palegoldenrod;
 }
-.tester4 {
+.mediaImage {
+    
     /* height: 500px;
     width: 500px; */
     background-color: aquamarine;
