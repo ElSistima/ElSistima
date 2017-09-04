@@ -10,11 +10,13 @@ import Media from './Media';
 import Blog from './Blog';
 import PublicIndivBlogPost from './PublicIndivBlogPost';
 import Support from './Support';
+import {StripeProvider} from 'react-stripe-elements';
 
 
 class App extends Component {
   render() {
     return (
+      <StripeProvider apiKey="pk_test_XQpYW77nDK2V29K0MiP8B9u8">
       <main>
         <Header/>
           <Switch>
@@ -28,6 +30,7 @@ class App extends Component {
           </Switch>
         <Footer />
       </main>
+    </StripeProvider>
     );
   }
 }
