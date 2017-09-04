@@ -3,7 +3,7 @@ import axios from 'axios';
 import './../styles/indivBlogPostDetails.css';
 import {Link} from 'react-router-dom';
 
-export default class IndivBlogPostDetails extends Component {
+export default class IndivMediaDetails extends Component {
   constructor(props){
     super(props);
       this.state ={
@@ -25,19 +25,24 @@ export default class IndivBlogPostDetails extends Component {
     })
   }
 
-  deletePost(){
-    axios.delete(`/api/posts/${this.props.post.posts_id}`).then(res => this.props.reloadPosts()).catch(err => console.log(err))
+  deleteMedia(){
+    axios.delete(`/api/media/${this.props.media.id}`).then(res => this.props.reloadMedia()).catch(err => console.log(err))
   }
+
 
   render(){
 
-    console.log("Props is: ", this.props.post.posts_id)
-
-    console.log("Item checked :", this.state.itemChecked)
+    console.log("Props, dude: ", this.props)
 
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
 
     const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
+
+    const date = this.props.media.post_time;
+    let year = date.substr(0, 4);
+    let month = date.substr(4, 2);
+    let day = date.substr(6, 2);
+
 
     return(
       <main className="postDetailsWrapper" style={this.state.itemChecked ? itemRowSelectedStyle : null}>
@@ -45,21 +50,23 @@ export default class IndivBlogPostDetails extends Component {
           <div className="checkbox" onClick={this.markChecked.bind(this)} style={this.state.itemChecked ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
         </div>
         <div className="blogDetailsItem2">
-          <Link to={`/blog/${this.props.post.posts_id}`}>
-          <p>{this.props.post.post_title}</p>
-          </Link>
+
+          <p>{this.props.media.is_picture ? 'Image' : 'Video'}</p>
+
         </div>
         <div className="blogDetailsItem3">
-          <p>{this.props.post.date_month_number}/{this.props.post.date_day}/{this.props.post.date_year}</p>
+          <p>{month}/{day}/{year}</p>
         </div>
         <div className="blogDetailsItem4">
-          <p>{this.props.post.user_name}</p>
+          <p>{this.props.media.caption}</p>
         </div>
         <div className="blogDetailsItem5">
-        <Link to={"/admin/blog/update/" + this.props.post.posts_id}>
-          <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
-        </Link>
-          <p><i className="fa fa-trash" aria-hidden="true" onClick={this.deletePost.bind(this)}></i></p>
+
+          <Link to={"/admin/media/update/" + this.props.media.id}>
+            <p><i className="fa fa-pencil" aria-hidden="true"></i></p>
+          </Link>
+
+          <p><i className="fa fa-trash" aria-hidden="true" onClick={this.deleteMedia.bind(this)}></i></p>
         </div>
       </main>
     )
