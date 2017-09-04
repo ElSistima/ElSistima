@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './../styles/media.css';
 import axios from 'axios';
-import PhotoCard from './PhotoCard';
+import MediaCard from './MediaCard';
 
 
 
@@ -11,7 +11,9 @@ export default class Media extends Component{
     super(props);
 
     this.state = {
-      fetchedMedia: []
+      fetchedMedia: [],
+      fetchedPictures: [],
+      fetchedVideos: []
     }
   }
 
@@ -19,7 +21,15 @@ export default class Media extends Component{
     axios.get('/api/media').then(res => {
       console.log(res.data)
       this.setState({
-        fetchedMedia: res.data
+        fetchedMedia: res.data,
+
+        fetchedPictures: res.data.filter(mediaObj => {
+          return mediaObj.is_picture === true;
+        }),
+
+        fetchedVideos: res.data.filter(mediaObj => {
+          return mediaObj.is_picture === false;
+        })
       })
     })
     .catch(err => console.log("There was an Error: ", err))
@@ -35,15 +45,29 @@ export default class Media extends Component{
   }
 
   render(){
+    console.log('fetchedPictures', this.state.fetchedPictures)
     console.log('this is a test', this.state)
     const test = this.state.fetchedMedia
     const pictures = [];
     for(var key in test){
       pictures.push(test[key])
     }
-    const media = this.state.fetchedMedia.map((media, index) => {
+    const allPictures = this.state.fetchedPictures.map((media, index) => {
       return(
-        <PhotoCard
+        <MediaCard
+        key={index} index={index} media={media} reloadMedia={this.reloadMedia.bind(this)}
+        /* image={picture}
+        key={index} */
+        />
+        // test.map(item => {
+        //   console.log(item)
+        // })
+      )
+    })
+
+    const allVideos = this.state.fetchedVideos.map((media, index) => {
+      return(
+        <MediaCard
         key={index} index={index} media={media} reloadMedia={this.reloadMedia.bind(this)}
         /* image={picture}
         key={index} */
@@ -61,38 +85,14 @@ export default class Media extends Component{
         <section className="photoVideoToggleContainer">
           <div className="photoVideoToggleSwitch">
             <p className="photoVideoToggleText">Photos</p>
-            {/* <div className="toggleTrack">
-              <div className="switchSwitch"></div>
-            </div> */}
-
-            {/* test div */}
-            
-
           </div>
           </section>
   
-          {/* <section className="dateFilterContainer">
-            <div className="dateFilter">
-              <div className="dropMenus">
-                <p className="dropMenusText">Year</p>
-                <div className="dropArrow"></div>
-              </div>
-              <div className="dropMenus2">
-                <p className="dropMenusText">Month</p>
-                <div className="dropArrow"></div>
-              </div>
-              <div className="dropMenus3">
-                <p className="dropMenusText">Title</p>
-                <div className="dropArrow"></div>
-              </div>
-            </div>
-            <div className="filterButton">Filter</div>
-          </section> */}
   
           <section className="mediaGridPhotosContainer">
-            <div className="mediaGridPhotos">
-              {/* PHOTOS HERE  */}
-            <div className="photosFormat">{media}</div>
+            <div className="mediaGrid">
+             
+            <div className="photosFormat">{allPictures}</div>
             </div>
           </section>
   
@@ -104,9 +104,9 @@ export default class Media extends Component{
   
           <section className="mediaGridVideosContainer">
            
-            <div className="mediaGridVideos">
-              VIDEOS HERE
-            {/* <div>{media}</div> */}
+            <div className="mediaGrid">
+              
+            <div className="photosFormat">{allVideos}</div>
             </div>
           </section>
         

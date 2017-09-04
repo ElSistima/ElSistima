@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/AdminBlogEditor.css';
+import '../styles/adminBlogEditor.css';
 import axios from 'axios';
 import {connect} from 'react-redux';
 
