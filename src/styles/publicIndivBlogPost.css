@@ -1,0 +1,74 @@
+.blogPostWrapper {
+  width: 100%;
+  min-height: 75vh;
+  background-color: plum;
+}
+
+.blogPostContent {
+  width: 95%;
+  min-height: 75vh;
+  margin: 0 auto;
+  padding-top: 5vh;
+  background-color: white;
+}
+
+.blogAuthorDetails {
+  width: 100%;
+  min-height: 7.5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2.5%;
+  background-color: lime;
+}
+
+.blogAuthorPic img{
+  display: flex;
+  align-items: center;
+  height: 7.5vh;
+  width: auto;
+  border-radius: 50%;
+}
+
+.blogAuthorName {
+  display: flex;
+  align-items: center;
+  height: 7.5vh;
+  margin-left: 5%;
+}
+
+.blogAuthorName p {
+  font-size: large;
+}
+
+.blogPostTopImage, .blogPostTopImage img {
+  min-width: 100%;
+  min-height: 20vh;
+}
+
+.titleDate {
+  display: flex;
+  width: 100%;
+  margin: 3% 0;
+}
+
+.titleDate p {
+  font-size: large;
+  font-weight: 700;
+}
+
+.blogDate {
+  font-size: small;
+  font-weight: 300;
+}
+
+.blogSubtitle {
+  margin: 3% 0;
+  color: #4D819F;
+  font-size: small;
+}
+
+.blogContent {
+  font-size: small;
+  line-height: 1.15em;
+}
