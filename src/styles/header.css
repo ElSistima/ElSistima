@@ -8,8 +8,17 @@
   background-position: cover;
 }
 
-.logoContainer {
+.headerLogoLink {
   width: 30%;
+  height: 5vh;
+}
+
+.logoContainerDesktop, .logoContainerTablet{
+  display: none;
+}
+
+.logoContainerPhone {
+  width: 100%;
   height: 5vh;
   background-image: url('./../images/logoWhiteSmall.png');
   background-repeat: no-repeat;
@@ -89,12 +98,39 @@
 @media(min-width: 700px){
 
   .mainHeader {
-    padding: 0 10%;
+    min-height: 7.5vh;
+    padding: 0 5%;
+  }
+
+  .headerLogoLink {
+    width: 30%;
+    height: 7.5vh;
+  }
+
+  .logoContainerPhone{
+    display: none;
+  }
+
+  .logoContainerTablet {
+    display: flex;
+    width: 100%;
+    height: 7.5vh;
+    background-image: url('./../images/logoWhiteSmall.png');
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    background-color: rgba(74,95,107,0.85);
+  }
+
+  .mainNav {
+    width: 64%;
+    height: 6.5vh;
+    margin-top: 1vh;
   }
 
   .link a {
     height: 4vh;
-    padding: .5em .25em 8px .25em;
+    padding: .5em .75em 8px .25em;
   }
 
   .link  {
@@ -102,26 +138,47 @@
   }
 
   .mainNav p {
-    font-size: .75em;
+    font-size: .9em;
   }
 
   .headerSupportButton {
-    width: 5em;
-    height: 1.5em;
+    width: 100px;
+    height: 30px;
   }
 
 }
 
 @media(min-width: 1000px){
+
+  .logoContainerDesktop {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-size: 65%;
+  }
+
+  .logoContainerPhone, .logoContainerTablet {
+    display: none;
+  }
+
   .mainHeader {
     min-height: 10vh;
     padding: 0 8%;
   }
 
-  .logoContainer {
+  .headerLogoLinkDesktop {
     width: 17.5%;
     height: 10vh;
+  }
+
+  .logoContainerDesktop {
+    width: 100%;
+    height: 10vh;
     background-size: 65%;
+    background-image: url('./../images/logoWhiteSmall.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(74,95,107,0.85);
   }
 
   .mainNav {

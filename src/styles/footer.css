@@ -106,7 +106,9 @@
   }
 
   .footer {
+    box-sizing: border-box;
     min-height: 36vh;
+    padding-top: 40px;
   }
 
   .sectionsContainer {
