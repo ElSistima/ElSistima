@@ -245,6 +245,7 @@
     height: 2em;
     width: 2em;
     background-color: #ECC749;
+    box-shadow: 1px 1px 1px;
     border-radius: 50%;
 }
 

@@ -187,7 +187,8 @@
     align-items: center;
     flex-direction: column;
     min-height: 175em;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     background-color: white;
 }
 
@@ -206,7 +207,8 @@
     align-items: center;
     flex-direction: column;
     min-height: 140em;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     background-color: white;
 }
 

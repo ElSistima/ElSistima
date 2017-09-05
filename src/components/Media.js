@@ -65,7 +65,7 @@ export default class Media extends Component{
 
     const allVideos = this.state.fetchedVideos.map((media, index) => {
       return(
-        <VideoCard
+        <MediaCard
         /* key={index} 
         index={index}  */
         media={media} 
