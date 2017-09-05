@@ -13,11 +13,28 @@
   padding: 0 2%;
 }
 
-.pageTitle {
+.pageTitle, .recentHeader {
   font-size: larger;
   font-weight: 700;
   margin: 10% 0;
   padding-left: 2%;
+}
+
+.recentHeader {
+  font-weight: 400;
+}
+
+.blogSectionDivider {
+  width: 30%;
+  height: 100px;
+  margin: 0 auto 7.5% auto;
+  text-align: center;
+  /*background-color: red;*/
+}
+
+.fa-music {
+  font-size: 100px;
+  color: #86ADC2;
 }
 
 @media(min-width: 700px){

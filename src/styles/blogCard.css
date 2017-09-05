@@ -111,6 +111,7 @@
   background-color: #ECC749;
   right: 5%;
   bottom: 30%;
+  box-shadow: 2.5px 3px 5px 1px #ccc;
 }
 
 .fa-angle-right {
@@ -166,9 +167,54 @@
 
 }
 
-@media(min-width: 1000px){
+@media(min-width: 1250px) {
   .blogCardWrapper {
-    width: 30%;
     height: 300px;
+  }
+
+  .blogCardTop {
+    height: 55%;
+  }
+
+  .blogCardBottom {
+    width: 100%;
+    min-height: 45%;
+  }
+
+  .blogCardTitleDate {
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .blogCardTitle {
+    width: 58%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-right: 5px;
+    margin-bottom: 3.5%;
+  }
+
+  .blogCardDate {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    margin-bottom: 3.5%;
+  }
+}
+
+@media(min-width: 1400px){
+
+
+  .tabletSubtitle {
+    display: none;
+  }
+
+  .desktopSubtitle {
+    display: flex;
   }
 }
