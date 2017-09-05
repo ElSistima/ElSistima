@@ -155,7 +155,7 @@ export default class About extends Component{
           <br></br>
           <br></br>
           <br></br>
-          -Musicianship
+          <div className="curriculumHeader">Musicianship</div>
           <br></br>
           <br></br>
           Instruction focuses on foundational musicianship skills without the instrument. Often referred to as music theory, there are multiple aspects our curriculum addresses. Students are encouraged to perform rhythmic exercises (rhythmic theory), train their ears to recognize intervals and chord qualities (aural theory), learn how to perform melodies and rhythms accurately by sight (sight-reading), and practice writing down musical examples upon hearing them (dictation). Likewise, students will be educated on the premises of written theory and analysis, which is the in-depth understanding of music and the interdependent relationship between notes, melodic lines, and harmonies.
@@ -163,7 +163,7 @@ export default class About extends Component{
           <br></br>
           <br></br>
           <br></br>
-          – Ensemble and Private Instruction
+          <div className="curriculumHeader">Ensemble and Private Instruction</div>
           <br></br>
           <br></br>
           Ensemble instruction includes instruction on both large and small scales through both full ensemble rehearsals, as well as sectional rehearsals of same or related instruments. The purpose of all ensemble instruction is to encourage growth and understanding through a collaborative effort. This fosters a sense of community and cooperation throughout the ensemble, encouraging students to learn from one another and to work together towards a common goal.
@@ -174,7 +174,7 @@ export default class About extends Component{
           <br></br>
           <br></br>
           <br></br>
-          -Seminarios
+          <div className="curriculumHeader">Seminarios</div>
           <br></br>
           <br></br>
           A ‘seminario’ is a thorough examination of a specific orchestral or choir piece. This intensive learning experience is offered to individual sections (e.g. first violins). The teachers review repertoire with and without instruments, focusing on analysis, artistic interpretation, and performance technique. Often referred to as masterclasses or studio classes, seminarios encourage students to learn more about their instrument, its history, its capabilities, and their own personal ability to achieve and perform.
@@ -182,7 +182,7 @@ export default class About extends Component{
           <br></br>
           <br></br>
           <br></br>
-          -Bucket Band
+          <div className="curriculumHeader">Bucket Band</div>
           <br></br>
           <br></br>
           Bucket Band is a small ensemble-based class that emphasizes musical rhythm in addition to strengthening students, and enforces function skills and teamwork. The ensemble is comprised of a variety of low-to-no cost percussion instruments, including the namesake objects, buckets. Bucket Band allows for students to review and strengthen individual musical literacy skills while developing in a creative and fun way as a group.
@@ -190,7 +190,7 @@ export default class About extends Component{
           <br></br>
           <br></br>
           <br></br>
-          -Choir
+          <div className="curriculumHeader">Choir</div>
           <br></br>
           <br></br>
           Choir is a large ensemble-based class that emphasizes teamwork, cooperation, and positive self-efficacy through choral repertoire. The choir curriculum stresses musical theory and musical literacy, encouraging students to develop skills in sight-reading music and lyrics. Sight-reading is a skill which has been shown to improve cognitive function through the process of turning abstract musical notation into physical action. This course, requiring collective participation of participants, fosters intrinsic motivation and teamwork among students.
@@ -198,7 +198,7 @@ export default class About extends Component{
           <br></br>
           <br></br>
           <br></br>
-          -Rehearsals
+          <div className="curriculumHeader">Rehearsals</div>
           <br></br>
           <br></br>
           Rehearsals for ESPGH are three days per week after the standard school day. On occasion, there are weekend rehearsal dates to help preparedness for upcoming events. Rehearsals address balances between instrument sections and emphasize playing exactly together, matching rhythms, styles, tones, and executions, such as bow strokes and articulations. Students are expected to be prepared in rehearsals and focus foremost on playing as an ensemble. Repertoire in El Sistema Pittsburgh varies – beginners are given simplified or reduced orchestra versions of symphonic music, with the intention that, as they advance, they will play full orchestral pieces as they were originally written. Students are also exposed to other genres of music, including: jazz, Latin-American music, pop music, folk music, and recently composed music of many 
@@ -207,7 +207,7 @@ export default class About extends Component{
           <br></br>
           <br></br>
           <br></br>
-          -Performances
+          <div className="curriculumHeader">Performances</div>
           <br></br>
           <br></br>
           Performances occur as often as possible to make the community more aware of El Sistema activities. This helps to accustom the students to being on stage and developing pride in their work. ESPGH holds performances for students of all ages and skill levels, encouraging student retention through fostering positive personal experiences.

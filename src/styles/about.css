@@ -472,6 +472,11 @@
     background-color: white;
 }
 
+.curriculumHeader {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
 .curriculumTitle {
     font-size: 2em;
     margin: 1em 0 0 0;

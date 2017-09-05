@@ -3,6 +3,29 @@ import '../styles/adminBlogNew.css';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+import Dropzone from 'react-dropzone';
+
+const uploadImage = (file) => {
+  return axios.post("http://localhost:80/api/getSignedURL", {
+    filename: file.name,
+    filetype: file.type
+  })
+  .then(res => {
+    let options = {
+      headers: {
+        'Content-Type': file.type
+      }
+    }
+    return axios.put(res.data.url, file, options)
+    .then(res => {
+       return res.config.url.match(/.*\?/)[0].slice(0,-1)
+    })
+  })
+}
+
+
+
+
 
 class AdminBlog_ADDNEW extends Component{
   constructor(props){
@@ -10,7 +33,9 @@ class AdminBlog_ADDNEW extends Component{
       this.state={
         blogNewTitle: '',
         blogNewSubtitle: '',
-        blogNewContent: ''
+        blogNewContent: '',
+        picture1: 'https://i.imgur.com/FTLTf6u.png',
+        picture2: 'https://i.imgur.com/FTLTf6u.png'
       }
 
   }
@@ -19,6 +44,20 @@ class AdminBlog_ADDNEW extends Component{
     this.setState({
       blogNewTitle: event.target.value
     })
+  }
+
+  onDrop1(accepted, rejected){
+    uploadImage(accepted[0])
+    .then(url => {
+      this.setState({picture1: url})
+  })
+  }
+
+  onDrop2(accepted, rejected){
+    uploadImage(accepted[0])
+    .then(url => {
+      this.setState({picture2: url})
+  })
   }
 
   trackSubtitleChange(event){
@@ -36,12 +75,12 @@ class AdminBlog_ADDNEW extends Component{
   clickSave(){
     let newPostObject = {
       postContent: this.state.blogNewContent,
-      postThumbnail: 'https://www.edutopia.org/sites/default/files/profile_pictures/daveguymon_headshot.jpeg',
+      postThumbnail: this.state.picture1,
       postTitle: this.state.blogNewTitle,
       year: 2017,
       month: 'September',
       day: 15,
-      blogImage: 'https://www.couleursjazz.fr/site/wp-content/uploads/2015/09/el-sistema-2-credit-peter-dammann.jpg',
+      blogImage: this.state.picture2,
       blogSubtitle: this.state.blogNewSubtitle
     }
     !this.state.blogNewTitle || !this.state.blogNewSubtitle || !this.state.blogNewContent ? alert("Be sure you have a title, subtitle, and blog content before saving your post.") : axios.post('/api/post',newPostObject).then(res => console.log(res)).catch(err => console.log(err));
@@ -52,13 +91,35 @@ class AdminBlog_ADDNEW extends Component{
     this.setState({
       blogNewTitle: '',
       blogNewSubtitle: '',
-      blogNewContent: ''
+      blogNewContent: '',
+      picture1: 'https://i.imgur.com/FTLTf6u.png',
+      picture2: 'https://i.imgur.com/FTLTf6u.png' 
     })
   }
 
   render(){
+    console.log("images are: "+ this.state.picture1)
     console.log("Content is: ", this.state.blogNewContent)
     const fullPageStyle = { width: "100%" }
+    //backgroundImage
+    const placeholder1 = {
+      backgroundImage: `url('${this.state.picture1}')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: '80%',
+      height: '30vh',
+      marginTop: '15px',
+      marginBottom: '10px'
+    }
+    const placeholder2 = {
+      backgroundImage: `url(${this.state.picture2})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: '80%',
+      height: '30vh',
+      marginTop: '15px',
+      marginBottom: '10px'
+    }
 
     return(
       <main className="adminWrapperBlogNew" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
@@ -78,7 +139,9 @@ class AdminBlog_ADDNEW extends Component{
           <div className="addNewPicsBlogNew">
             <div className="addPicInnerBlogNew">
               <p className="picInnerTextBlogNew">Add Top Full Picture</p>
-              <img src='https://i.imgur.com/FTLTf6u.png' />
+              <Dropzone
+                style={placeholder1}
+                onDrop={(accepted, rejected) => this.onDrop1(accepted, rejected)}></Dropzone>
 
               <div className="buttonBlogNew updateBtnBlogNew" onClick={this.clickSave.bind(this)}>SAVE</div>
 
@@ -86,7 +149,9 @@ class AdminBlog_ADDNEW extends Component{
             </div>
             <div className="addPicInnerBlogNew">
               <p className="picInnerTextBlogNew">Add 2nd Full Picture</p>
-              <img src='https://i.imgur.com/FTLTf6u.png' />
+              <Dropzone
+                style={placeholder2}
+                onDrop={(accepted, rejected) => this.onDrop2(accepted, rejected)}></Dropzone>
               <div className="buttonBlogNew cancelBtnBlogNew" onClick={this.clickCancel.bind(this)}>CANCEL</div>
             </div>
           </div>
