@@ -4,29 +4,27 @@ import {Link} from 'react-router-dom';
 import MapInsert from './MapInsert';
 import { connect } from 'react-redux';
 
+
 class Home extends Component {
-  constructor(props){
-    super(props);
-
-    this.state={
-      mapClicked:this.props.mapClicked
-    }
-  }
-
 
 
 
 render(){
+  console.log('im state', this.props.darken)
+  var makeDark = {
+    filter: 'brightness(50%)'
+  }
   return (
     <main className="mainContent">
     {this.props.mapClicked?
         <div className="mapWrapper">
-          <div className="crossOut"><i className="fa fa-times" aria-hidden="true"></i>
+          <div className="crossOut" ><i className="crossOutIcon fa fa-times" aria-hidden="true"></i>
 </div>
           <MapInsert />
         </div>
       :
       ""}
+      <div style={this.props.darken?makeDark:{}}>
       <section className="homeBanner">
         <div className="quoteContainer">
           <div className="socialIconsQuote">
@@ -180,6 +178,7 @@ render(){
           </div>
         </div>
       </section>
+      </div>
     </main>
   )
 }
@@ -187,7 +186,8 @@ render(){
 
 function mapStateToProps(state){
   return {
-    mapClicked: state.mapClicked
+    mapClicked: state.mapClicked,
+    darken: state.darken
   }
 }
 

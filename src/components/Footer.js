@@ -2,19 +2,20 @@ import React, {Component} from 'react';
 import '../styles/footer.css';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
-import {mapClicked} from '../ducks/reducer';
+import {mapClicked, darken} from '../ducks/reducer';
 
 class Footer extends Component{
 
 
    mapClicked(){
      console.log('clicked yay')
-    this.props.mapClicked(!this.props.mapPopUp)
+    this.props.mapClicked(true);
+    this.props.darken(true);
   }
 
 
 render(){
-  console.log(this.props.mapPopUp, 'hihihi')
+  // console.log(this.props.mapPopUp, 'hihihi')
   return (
     <footer className="footer">
 
@@ -118,4 +119,4 @@ function mapStateToProps(state){
 }
 
 
-export default connect(mapStateToProps, {mapClicked})(Footer);
+export default connect(mapStateToProps, {mapClicked, darken})(Footer);
