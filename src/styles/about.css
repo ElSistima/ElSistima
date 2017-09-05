@@ -32,6 +32,7 @@
 
 .whoWeAreTitle {
     font-size: .70em;
+    color: rgb(74,95,107);
 }
 
 .whoWeAreBodyText {
@@ -40,6 +41,11 @@
     font-size: .5em;
     line-height: 1.3em;
 }
+
+/* .modalContainer {
+    display: flex;
+    justify-content: flex-end;
+} */
 
 .whoWeAreButton {
     display: flex;
