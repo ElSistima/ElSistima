@@ -10,18 +10,19 @@ class IndivBlogPostDetails extends Component {
   constructor(props){
     super(props);
       this.state ={
-        itemChecked: false,
-        checkedQty: 0
+        itemChecked: false
       }
   }
 
+
+
   markChecked(){
     this.setState({
-      itemChecked: !this.state.itemChecked,
-      checkedQty: this.state.checkedQty === 0 ? 1 : 0
+      itemChecked: !this.state.itemChecked
     })
-    this.props.blogItemClicked({this.props.post.posts_id})
+    this.props.blogItemClicked(this.props.post.posts_id)
   }
+
 
   componentWillReceiveProps(nextProps){
     this.setState({
@@ -33,12 +34,8 @@ class IndivBlogPostDetails extends Component {
     axios.delete(`/api/posts/${this.props.post.posts_id}`).then(res => this.props.reloadPosts()).catch(err => console.log(err))
   }
 
-  render(){
-
-    console.log("Props is: ", this.props.post.posts_id)
-
-    console.log("Item checked :", this.state.itemChecked)
-
+    render(){
+      console.log(this.state.itemChecked)
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
 
     const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
@@ -46,7 +43,9 @@ class IndivBlogPostDetails extends Component {
     return(
       <main className="postDetailsWrapper" style={this.state.itemChecked ? itemRowSelectedStyle : null}>
         <div className="blogDetailsItem1">
-          <div className="checkbox" onClick={this.markChecked.bind(this)} style={this.state.itemChecked ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
+
+         <div className="checkbox" onClick={this.markChecked.bind(this)} style={this.state.itemChecked ? checkedBoxStyle : null}><i className="fa fa-check fa-fw whiteCheck" aria-hidden="true"></i></div>
+
         </div>
         <div className="blogDetailsItem2">
           <Link to={`/blog/${this.props.post.posts_id}`}>

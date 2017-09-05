@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/adminBlogNew.css';
+import '../styles/adminMediaNew.css';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';

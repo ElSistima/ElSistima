@@ -11,7 +11,7 @@ export default function reducer(state = initialState, action){
     case HAM_CLICKED:
       return Object.assign({}, state, {clicked: action.payload});
     case BLOG_CLICKED:
-    return Object.assign({}, state, {blogItems: [...state.blogItems, action.payload]})
+    return Object.assign({}, state, {blogItems: [...state.blogItems, action.payload]} )
 
     default:
     return state;

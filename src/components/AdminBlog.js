@@ -13,19 +13,24 @@ class AdminBlog extends Component {
       this.state ={
         fetchedPosts: [],
         checkAllBoxes: false,
-        amountChecked: 0
+        itemsCountArr: []
       }
   }
 
   componentDidMount(){
     axios.get('/api/blogs').then(res => {
-      console.log("Res data is:", res.data)
+      var postsArr = [];
+      res.data.forEach(item => {
+        postsArr.push('')
+      })
       this.setState({
-        fetchedPosts: res.data
+        fetchedPosts: res.data,
+        itemsCountArr: postsArr
       })
     })
   .catch(err => console.log("Error is: ", err))
   }
+
 
   reloadPosts(){
     axios.get('/api/blogs').then(res => {
@@ -43,7 +48,15 @@ class AdminBlog extends Component {
       checkAllBoxes: !this.state.checkAllBoxes,
       amountChecked: this.state.fetchedPosts.length
     })
+  }
 
+  setItemTrue(index, value){
+
+    let clonearr =  this.state.itemsCountArr;
+    let splicearr = clonearr.splice(index, 1, value);
+    this.setState({
+      itemsCountArr: clonearr
+    })
   }
 
 
@@ -53,9 +66,15 @@ class AdminBlog extends Component {
 
     const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
 
-    const allPosts = this.state.fetchedPosts.map((post, i) => { return (
-      <IndivBlogPostDetails key={i} post={post} index={i} checkAll={this.state.checkAllBoxes} checkedQty={0} reloadPosts={this.reloadPosts.bind(this)}/>
+    const hideTrashAll = {display: "none"}
+
+    const allPosts = this.state.fetchedPosts.map((post, i) => {  return (
+      <IndivBlogPostDetails key={i} post={post} index={i} checkAll={this.state.checkAllBoxes} reloadPosts={this.reloadPosts.bind(this)} setItemTrue={this.setItemTrue.bind(this)}/>
     )
+    })
+
+    const filteredItemsCount = this.state.itemsCountArr.filter(item => {
+      return item === true
     })
 
     const fullPageStyle = { width: "100%" }
@@ -72,7 +91,8 @@ class AdminBlog extends Component {
             </Link>
           </div>
           <div className="itemsSelected">
-            <p>{this.state.checkAllBoxes ? this.props.blogItemsArr.length : 0} {postAmount}</p>
+            <p>{this.props.blogItemsArr.length} {postAmount}</p>
+            <i className="fa fa-trash trashAll" aria-hidden="true" style={this.props.blogItemsArr.length < 1 ? hideTrashAll : null}></i>
           </div>
           <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">
@@ -99,6 +119,7 @@ class AdminBlog extends Component {
 }
 
 function mapStateToProps(state){
+  console.log("Reducer state: ", state)
   return{
     dropdownDisplayed: state.clicked,
     blogItemsArr: state.blogItems
