@@ -1,12 +1,12 @@
 .photoCardContainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 7.2em;
-    width: 8em;
-    background-color: whitesmoke;
-    box-shadow: 1px 1px 1px;
+    height: 14em;
+    width: 17em;
+    background-color: white;
+    box-shadow: 3px 3px 5px 6px #ccc;
     /* border: solid 1px; */
     border-radius: 2px;
     color: rgb(74,95,107);
@@ -21,12 +21,12 @@
     flex-direction: column;
     /* padding-bottom: 2em; */
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .imageSize {
-    height: 4.8em;
-    width: 8em;
+    height: 10.2em;
+    width: 17em;
 }
 
 .photoCaption {
@@ -35,8 +35,8 @@
     align-items: center;
     width: 95%;
     padding-top: 1.5em;
-    background-color: whitesmoke;
-    font-size: .6em;
+    background-color: white;
+    font-size: .75em;
     
 }
 

@@ -1,7 +1,6 @@
 .aboutContainer {
     min-height: 80vh;
     width: 100%;
-
 }
 
 .parallax {
@@ -18,27 +17,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 14em;
+    min-height: 22em;
     width: 100%;
-    background-color: yellow;
+    background-color: white;
     color: rgb(74,95,107);
 }
 
 .whoWeAreText {
     height: 80%;
-    width: 75%;
+    width: 85%;
 }
 
 .whoWeAreTitle {
-    font-size: .70em;
+    font-size: 1.35em;
     color: rgb(74,95,107);
+    margin-top: 1em;
 }
 
 .whoWeAreBodyText {
     padding-top: 2em;
     padding-bottom: 1em;
-    font-size: .5em;
+    font-size: .75em;
     line-height: 1.3em;
+    background-color: white;
+    
 }
 
 /* .modalContainer {
@@ -52,14 +54,14 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 1em;
-    width: 3.5em;
+    height: 1.5em;
+    width: 4.75em;
     background-color: #ECC749;
     border-radius: 3px;
 }
 
 .whoWeAreButtonText {
-    font-size: .5em;
+    font-size: .75em;
 }
 
 .imgContainerOne {
@@ -71,7 +73,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10em;
+    min-height: 12em;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
@@ -79,18 +81,18 @@
 
 .missionStatementText {
     height: 80%;
-    width: 75%;
+    width: 85%;
     background-color: white;
 }
 
 .missionStatementTitle {
-    font-size: .7em;
+    font-size: 1.35em;
 }
 
 .missionStatementBodyText {
     padding-top: 2em;
     padding-bottom: 1em;
-    font-size: .5em;
+    font-size: .75em;
     line-height: 1.3em;
 }
 
@@ -100,14 +102,14 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 1em;
-    width: 3.5em;
+    height: 1.5em;
+    width: 4.75em;
     background-color: #ECC749;
     border-radius: 3px;
 }
 
 .missionStatementButtonText {
-    font-size: .5em;
+    font-size: .75em;
 }
 
 .imgContainerTwo {
@@ -118,25 +120,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10em;
+    min-height: 14em;
     background-color: white;
     color: rgb(74,95,107);
 }
 
 .curriculumText {
     height: 80%;
-    width: 75%;
+    width: 85%;
     background-color: white;
 }
 
 .curriculumTitle {
-    font-size: .7em;
+    font-size: 1.35em;
 }
 
 .curriculumBodyText {
     padding-top: 2em;
     padding-bottom: 1em;
-    font-size: .5em;
+    font-size: .75em;
     line-height: 1.3em;
 }
 
@@ -146,14 +148,14 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 1em;
-    width: 3.5em;
+    height: 1.5em;
+    width: 4.75em;
     background-color: #ECC749;
     border-radius: 3px;
 }
 
 .curriculumButtonText {
-    font-size: .5em;
+    font-size: .75em;
 }
 
 .imgContainerThree {
@@ -171,19 +173,25 @@
 
 .volunteersText {
     height: 80%;
-    width: 75%;
+    width: 85%;
     background-color: white;
 }
 
 .volunteersTitle {
-    font-size: .7em;
+    font-size: 1.35em;
+    margin-top: 1em;
 }
 
 .volunteersBodyText {
     padding-top: 2em;
     padding-bottom: 1em;
-    font-size: .5em;
+    font-size: .75em;
     line-height: 1.3em;
+}
+
+.volunteersFormat {
+    display: flex;
+    justify-content: center;
 }
 
 .volunteersProfile {
@@ -314,14 +322,14 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 1em;
-    width: 3.5em;
+    height: 1.5em;
+    width: 4.75em;
     background-color: #ECC749;
     border-radius: 3px;
 }
 
 .volunteersButtonText {
-    font-size: .5em;
+    font-size: .75em;
 }
 
 .ourLocationContainer {
@@ -368,11 +376,17 @@
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
-    padding: 1em 0 1em 0;
+    padding: 2.3em 0 1em 0;
+}
+
+.whoWeAreText {
+    height: 80%;
+    width: 85%;
 }
 
 .whoWeAreTitle {
     font-size: 2em;
+    margin-top: -.3em;
 }
 
 .whoWeAreBodyText {
@@ -412,7 +426,7 @@
 
 .missionStatementText {
     height: 80%;
-    width: 75%;
+    width: 85%;
     background-color: white;
 }
 
@@ -454,7 +468,7 @@
 
 .curriculumText {
     height: 80%;
-    width: 75%;
+    width: 85%;
     background-color: white;
 }
 
@@ -497,7 +511,7 @@
 
 .volunteersText {
     height: 94%;
-    width: 75%;
+    width: 85%;
     background-color: white;
 }
 
@@ -714,7 +728,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40em;
+    min-height: 38em;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
@@ -812,7 +826,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 28em;
+    min-height: 30em;
     background-color: white;
     color: rgb(74,95,107);
 }
@@ -874,7 +888,7 @@
 
 .volunteersTitle {
     font-size: 2.2em;
-    padding-top: 1em;
+    padding-top: 3em;
 }
 
 .volunteersBodyText {
