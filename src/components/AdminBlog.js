@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import IndivBlogPostDetails from './IndivBlogPostDetails';
 import './../styles/adminEditor.css';
+import {blogItemClicked} from './../ducks/reducer';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
@@ -42,6 +43,7 @@ class AdminBlog extends Component {
       checkAllBoxes: !this.state.checkAllBoxes,
       amountChecked: this.state.fetchedPosts.length
     })
+
   }
 
 
@@ -70,7 +72,7 @@ class AdminBlog extends Component {
             </Link>
           </div>
           <div className="itemsSelected">
-            <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {postAmount}</p>
+            <p>{this.state.checkAllBoxes ? this.props.blogItemsArr.length : 0} {postAmount}</p>
           </div>
           <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">
@@ -98,8 +100,9 @@ class AdminBlog extends Component {
 
 function mapStateToProps(state){
   return{
-    dropdownDisplayed: state.clicked
+    dropdownDisplayed: state.clicked,
+    blogItemsArr: state.blogItems
   }
 }
 
-export default connect(mapStateToProps)(AdminBlog);
+export default connect(mapStateToProps, {blogItemClicked})(AdminBlog);

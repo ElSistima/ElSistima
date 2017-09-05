@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import './../styles/indivBlogPostDetails.css';
+import {blogItemClicked} from './../ducks/reducer';
+import {connect} from 'react-redux';
+
 import {Link} from 'react-router-dom';
 
-export default class IndivBlogPostDetails extends Component {
+class IndivBlogPostDetails extends Component {
   constructor(props){
     super(props);
       this.state ={
@@ -17,6 +20,7 @@ export default class IndivBlogPostDetails extends Component {
       itemChecked: !this.state.itemChecked,
       checkedQty: this.state.checkedQty === 0 ? 1 : 0
     })
+    this.props.blogItemClicked({this.props.post.posts_id})
   }
 
   componentWillReceiveProps(nextProps){
@@ -65,3 +69,5 @@ export default class IndivBlogPostDetails extends Component {
     )
   }
 }
+
+export default connect(null, {blogItemClicked})(IndivBlogPostDetails)
