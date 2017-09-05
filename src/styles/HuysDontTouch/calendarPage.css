@@ -178,7 +178,7 @@
   color: #4a4a4a;
   height: 35vh;
   width: 90%;
-  background-image: url("https://mave.me/img/projects/full_placeholder.png");
+  background-image: url("https://mymusiccommunityblog.files.wordpress.com/2016/01/piano-student-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,6 +187,16 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
   animation: fadeInRight 500ms;
 }
+
+.filter {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 0;
+  z-index: 2
+}
+
 
 .event-start-day,
 .event-start-month{
@@ -198,6 +208,7 @@
   right: 47%;
   font-size: 7em;
   font-weight: 900;
+  z-index: 3;
 }
 
 .event-start-month {
@@ -206,6 +217,7 @@
   font-size: 7em;
   font-weight: 900;
   text-transform: uppercase;
+  z-index: 3;
 }
 
 
@@ -221,6 +233,7 @@
   font-size: 1.5em;
   position: absolute;
   right: 0;
+  z-index: 3;
 }
 
 .event-detail h1 {
@@ -243,6 +256,7 @@
   top: -6%;
   right: -3%;
   outline: none;
+  z-index: 4;
 }
 
 .close-button:active {

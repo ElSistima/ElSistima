@@ -151,6 +151,7 @@ export default class CalenderDetail extends Component{
               <h2>{this.state.titleInput}</h2>
               <h3>{`${this.state.startHour}:${this.state.startMinute < 10 ? `${this.state.startMinute}0` : this.state.startMinute} - ${this.state.endHour}:${this.state.endMinute < 10 ? `${this.state.endMinute}0` : this.state.endMinute}`}</h3>
             </div>
+            <div className='filter'></div>
             <button className="close-button"
                     onClick={this.closeEvent.bind(this)}
               ><i className="fa fa-times" aria-hidden="true"></i></button>

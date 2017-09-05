@@ -526,7 +526,7 @@ export default class Admin_Calender extends Component{
 
         <div className='buttonBox'>
           {this.displayButton()}
-          <button className='theXbutton' onClick={this.onXbutton.bind(this)}>[x]Close</button>
+          <button className='theXbutton' onClick={this.onXbutton.bind(this)}><i className="fa fa-times" aria-hidden="true"></i></button>
         </div>
       </div>
     </div>
