@@ -3,8 +3,7 @@
   justify-content: center;
   width: 100%;
   min-height: 75vh;
-  background-color: plum;
-
+  /*background-color: plum;*/
 }
 
 .publicBlogContent {
@@ -15,7 +14,7 @@
 }
 
 .pageTitle {
-  font-size: large;
+  font-size: larger;
   font-weight: 700;
   margin: 10% 0;
   padding-left: 2%;
@@ -29,6 +28,17 @@
     justify-content: space-between;
     width: 100%;
   }
-  
+
+  .pageTitle {
+    font-size: xx-large;
+  }
+}
+
+@media(min-width: 1000px) {
+
+  .publicBlogWrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
 
 }
