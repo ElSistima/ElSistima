@@ -41,7 +41,7 @@ export default class Blog extends Component{
     return (
       <main className="publicBlogWrapper">
         <div className="publicBlogContent">
-        <p className="pageTitle">El Sistema Blog</p>
+
 
 
         <p className="pageTitle recentHeader">Recent Posts</p>
@@ -49,7 +49,7 @@ export default class Blog extends Component{
         {recentBlogCards}
         </div>
 
-        <div className="blogSectionDivider"><i className="fa fa-music" aria-hidden="true"></i></div>
+        <div className="blogSectionDivider"><i className="fa fa-music blogNote" aria-hidden="true"></i></div>
 
         <div className="blogCardContainer">
         {allBlogCards}

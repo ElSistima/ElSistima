@@ -3,7 +3,6 @@
   justify-content: center;
   width: 100%;
   min-height: 75vh;
-  /*background-color: plum;*/
 }
 
 .publicBlogContent {
@@ -13,15 +12,17 @@
   padding: 0 2%;
 }
 
-.pageTitle, .recentHeader {
-  font-size: larger;
-  font-weight: 700;
+.recentHeader {
+  font-size: 1.35em;
+  font-weight: 400;
+  color: rgb(74,95,107);
   margin: 10% 0;
   padding-left: 2%;
 }
 
 .recentHeader {
   font-weight: 400;
+  color: rgb(74,95,107);
 }
 
 .blogSectionDivider {
@@ -29,10 +30,9 @@
   height: 100px;
   margin: 0 auto 7.5% auto;
   text-align: center;
-  /*background-color: red;*/
 }
 
-.fa-music {
+.blogNote {
   font-size: 100px;
   color: #86ADC2;
 }
@@ -46,8 +46,8 @@
     width: 100%;
   }
 
-  .pageTitle {
-    font-size: xx-large;
+  .recentHeader {
+    font-size: 2em;
   }
 }
 
@@ -56,6 +56,10 @@
   .publicBlogWrapper {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .recentHeader {
+    font-size: 2.25em;
   }
 
 }
