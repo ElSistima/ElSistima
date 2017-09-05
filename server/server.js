@@ -11,7 +11,7 @@ var cors = require('cors');
 var stripe = require('stripe')('sk_test_LkNfgMLBoBD50f69BBQYPnni')
 // var config = require('./config')
 var app = module.exports = express();
-var port = 80;
+var port = 8080;
 
 
 

@@ -13,7 +13,7 @@ const sign = (filename, filetype) => {
   let s3 = new aws.S3();
 
   let params = {
-    Bucket: 'facebook-clone01',
+    Bucket: 'elsistema',
     Key: filename,
     Expires: 60,
     ContentType: filetype
