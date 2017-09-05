@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300em;
+    min-height: 100em;
     width: 100%;
     background-color: white;
     margin: 1em 0;
@@ -60,7 +60,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 260em;
+    min-height: 100em;
     width: 100%;
     background-color: white;
 }
@@ -111,7 +111,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 200em;
+    min-height: 100em;
     width: 100%;
     background-color: white;
 }
