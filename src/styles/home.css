@@ -346,6 +346,31 @@
   line-height: 1.2em;
 }
 
+.mapWrapper {
+  position: fixed;
+  z-index: 1000;
+  left: 35%;
+  top: 14%;
+  width: 500px;
+  height: 500px;
+
+}
+
+.crossOut {
+  width: 40px;
+  height: 40px;
+  /*background-color: white;*/
+  /*border: 1px solid lightgray;*/
+  /*border-radius: 50%;*/
+  position: absolute;
+  z-index: 5000;
+  top: -15px;
+  right: -13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media(min-width: 700px){
 

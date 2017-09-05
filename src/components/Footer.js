@@ -1,8 +1,20 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../styles/footer.css';
 import {Link} from 'react-router-dom';
+import { connect } from 'react-redux';
+import {mapClicked} from '../ducks/reducer';
 
-export default function Footer(props){
+class Footer extends Component{
+
+
+   mapClicked(){
+     console.log('clicked yay')
+    this.props.mapClicked(!this.props.mapPopUp)
+  }
+
+
+render(){
+  console.log(this.props.mapPopUp, 'hihihi')
   return (
     <footer className="footer">
 
@@ -89,10 +101,21 @@ export default function Footer(props){
 
       <div className="bottomFooterDiv">
         <div className="bottomContents">
-        <p>El Sistema Pittsburgh - 6 Loop St. #4, Pittsburgh, PA 15215 - Map - Main (777) 465-2342</p>
+        <p>El Sistema Pittsburgh - 6 Loop St. #4, Pittsburgh, PA 15215 - <span onClick={this.mapClicked.bind(this) }>Map</span> - Main (777) 465-2342</p>
         <p>Privacy Policy - Site Map - <a href={process.env.REACT_APP_LOGIN} className="authLogin">Admin</a> - &copy; Copyright 2017</p>
         </div>
       </div>
     </footer>
   )
 }
+}
+
+function mapStateToProps(state){
+  console.log(state, 'this is state')
+  return {
+    mapPopUp: state.mapClicked
+  }
+}
+
+
+export default connect(mapStateToProps, {mapClicked})(Footer);

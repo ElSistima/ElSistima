@@ -1,10 +1,32 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './../styles/home.css';
 import {Link} from 'react-router-dom';
+import MapInsert from './MapInsert';
+import { connect } from 'react-redux';
 
-export default function Home (props) {
+class Home extends Component {
+  constructor(props){
+    super(props);
+
+    this.state={
+      mapClicked:this.props.mapClicked
+    }
+  }
+
+
+
+
+render(){
   return (
     <main className="mainContent">
+    {this.props.mapClicked?
+        <div className="mapWrapper">
+          <div className="crossOut"><i className="fa fa-times" aria-hidden="true"></i>
+</div>
+          <MapInsert />
+        </div>
+      :
+      ""}
       <section className="homeBanner">
         <div className="quoteContainer">
           <div className="socialIconsQuote">
@@ -161,3 +183,13 @@ export default function Home (props) {
     </main>
   )
 }
+}
+
+function mapStateToProps(state){
+  return {
+    mapClicked: state.mapClicked
+  }
+}
+
+
+export default connect(mapStateToProps)(Home);
