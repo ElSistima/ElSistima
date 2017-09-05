@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import './../styles/mediaCard.css';
+import './../styles/videoCard.css';
 
 
-export default class MediaCard extends Component{
+export default class VideoCard extends Component{
     constructor(props){
         super(props);
 
