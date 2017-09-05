@@ -19,19 +19,13 @@ export default class Calendar extends Component{
           </div>
         </div>
         <div className='nav'>
-          <div className='list'>
-            <h3><i className="fa fa-list" aria-hidden="true"></i>List</h3>
-          </div>
-        <div className='calendar'>
-          <h3><i className="fa fa-calendar" aria-hidden="true"></i>Calendar</h3>
-        </div>
-        <div className='showAll'>
-          <h3><i className="fa fa-calendar" aria-hidden="true"></i>Show All
-          <i className="fa fa-caret-down" aria-hidden="true"></i>
-          </h3>
-        </div>
-          <div className='nav_list'>
+          <div className='classes'>
+            <div></div>
             <h4>Classes</h4>
+          </div>
+          <br />
+          <div className='performances'>
+            <div></div>
             <h4>Performances</h4>
           </div>
         </div>

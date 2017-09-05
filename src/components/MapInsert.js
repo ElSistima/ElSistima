@@ -4,7 +4,7 @@ import GoogleMapReact from 'google-map-react';
 
 
 
-class Map extends Component {
+class MapInsert extends Component {
   static defaultProps = {
     center: {lat: 40.493547, lng: -79.936580},
     zoom: 11
@@ -13,9 +13,9 @@ class Map extends Component {
 
   render() {
     var style = {
-      height: '100%',
-      width: '100%',
-      backgroundColor:'red'
+      width: '100px',
+      height: '100px',
+      // backgroundColor:'red'
     }
     var style2 = {
       width: '50px',
@@ -38,12 +38,10 @@ class Map extends Component {
 
     return (
       <GoogleMapReact
-        style={style}
-        bootstrapURLKeys={{key: {process.env.GOOGLE_MAP}}}
+        bootstrapURLKeys={{key: "AIzaSyAKFtt59RLm03xdQmVLsAd6iCig8R4k7Ho"}}
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
       >
-
       <div lat={40.493547}
       lng={-79.936580}
       style={style4}>
@@ -56,4 +54,4 @@ class Map extends Component {
   }
 }
 
-export default Map;
+export default MapInsert;
