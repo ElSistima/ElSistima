@@ -11,17 +11,34 @@ export default class About extends Component{
     super();
 
     this.state = {
-      modalIsOpen: false
+      modalIsOpen: false,
+      modal2IsOpen: false,
+      modal3IsOpen: false,
     };
 
     this.openModal = this.openModal.bind(this);
+    this.openModal2 = this.openModal2.bind(this);
+    this.openModal3 = this.openModal3.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
   openModal(){
     this.setState({
-      modalIsOpen: true
+      modalIsOpen: true,
+      
+    });
+  }
+
+  openModal2(){
+    this.setState({
+      modal2IsOpen: true,
+    });
+  }
+
+  openModal3(){
+    this.setState({
+      modal3IsOpen: true,
     });
   }
 
@@ -31,7 +48,9 @@ export default class About extends Component{
 
   closeModal(){
     this.setState({
-      modalIsOpen: false
+      modalIsOpen: false,
+      modal2IsOpen: false,
+      modal3IsOpen: false
     });
   }
 
@@ -88,11 +107,11 @@ export default class About extends Component{
           El Sistema Pittsburgh provides Pittsburgh's youth with accessible and intensive classical music instruction. Utilizing music as a vehicle for positive change, ESPGH propmotes the development of music, cognitive and social skills, self-esteem, and community pride in youth.
         </p>
         <div className="modalContainer2">
-        <div onClick={this.openModal} className="missionStatementButton">
+        <div onClick={this.openModal2} className="missionStatementButton">
           <p className="missionStatementButtonText">Read More</p>
         </div>
-        {/* <Modal 
-            isOpen={this.state.modalIsOpen}
+        <Modal 
+            isOpen={this.state.modal2IsOpen}
             onAfterOpen={this.afterOpenModal}
             onRequestClose={this.closeModal}
             >
@@ -103,7 +122,7 @@ export default class About extends Component{
           <br></br>
           An orchestra is a phenomenal model of community. Musicians are inspired to present their best work, individually and in collaboration. The dissonant moments are embraced and sweeten the resolutions and harmonies. The chords resonate best when each nurtured player in the orchestra carries an understanding of the overall vision and an appreciation of the unique and valuable material of a neighbor. The creative and joyous energy of the music encourages diverse timbres and articulations enhancing the overall celebratory effect. The influential power of this model on a community is the driving force of the initiative. 
           </div>  
-        </Modal> */}
+        </Modal>
         </div>
         </div>
       </section>
@@ -118,24 +137,30 @@ export default class About extends Component{
           <p className="curriculumBodyText">
             Rehersals for ESPGH are three days per week after the standard school day. On occation, there are weekend rehearsal dates to help preparedness for upcoming events. Rehearsals address balances between instrument sections and emphasize playing exactly together, matching rhythms, styles tones, and executions, such as bow strokes and articulations.
           </p>
-          <div onClick={this.openModal} className="modalContainer3">
+          <div onClick={this.openModal3} className="modalContainer3">
           <div className="curriculumButton" id="myBtn">
           <p className="curriculumButtonText">Read More</p>
           </div>
-          {/* <Modal 
-            isOpen={this.state.modalIsOpen}
+          <Modal 
+            isOpen={this.state.modal3IsOpen}
             onAfterOpen={this.afterOpenModal}
             onRequestClose={this.closeModal}
             >
           <button onClick={this.closeModal}>close</button>
             <div className="curriculumTitle"ref={subtitle => this.subtitle = subtitle}>Curriculum</div>
+            <br></br>
+          <br></br>
           <div className="curriculumText">ESPGH is an after-school program with a curriculum that focuses on many different subjects: 
+          <br></br>
+          <br></br>
           <br></br>
           <br></br>
           -Musicianship
           <br></br>
           <br></br>
           Instruction focuses on foundational musicianship skills without the instrument. Often referred to as music theory, there are multiple aspects our curriculum addresses. Students are encouraged to perform rhythmic exercises (rhythmic theory), train their ears to recognize intervals and chord qualities (aural theory), learn how to perform melodies and rhythms accurately by sight (sight-reading), and practice writing down musical examples upon hearing them (dictation). Likewise, students will be educated on the premises of written theory and analysis, which is the in-depth understanding of music and the interdependent relationship between notes, melodic lines, and harmonies.
+          <br></br>
+          <br></br>
           <br></br>
           <br></br>
           – Ensemble and Private Instruction
@@ -147,10 +172,14 @@ export default class About extends Component{
           Private lessons are available, but usually less common than ensemble instruction due to El Sistema’s philosophy of group learning. While ensemble learning is the main tool of ESPGH, students who are interested in private lessons have the opportunity to work with a teacher one on one on both an as-needed and wanted basis, depending on the availability of the child and staff.
           <br></br>
           <br></br>
+          <br></br>
+          <br></br>
           -Seminarios
           <br></br>
           <br></br>
           A ‘seminario’ is a thorough examination of a specific orchestral or choir piece. This intensive learning experience is offered to individual sections (e.g. first violins). The teachers review repertoire with and without instruments, focusing on analysis, artistic interpretation, and performance technique. Often referred to as masterclasses or studio classes, seminarios encourage students to learn more about their instrument, its history, its capabilities, and their own personal ability to achieve and perform.
+          <br></br>
+          <br></br>
           <br></br>
           <br></br>
           -Bucket Band
@@ -159,16 +188,23 @@ export default class About extends Component{
           Bucket Band is a small ensemble-based class that emphasizes musical rhythm in addition to strengthening students, and enforces function skills and teamwork. The ensemble is comprised of a variety of low-to-no cost percussion instruments, including the namesake objects, buckets. Bucket Band allows for students to review and strengthen individual musical literacy skills while developing in a creative and fun way as a group.
           <br></br>
           <br></br>
+          <br></br>
+          <br></br>
           -Choir
           <br></br>
           <br></br>
           Choir is a large ensemble-based class that emphasizes teamwork, cooperation, and positive self-efficacy through choral repertoire. The choir curriculum stresses musical theory and musical literacy, encouraging students to develop skills in sight-reading music and lyrics. Sight-reading is a skill which has been shown to improve cognitive function through the process of turning abstract musical notation into physical action. This course, requiring collective participation of participants, fosters intrinsic motivation and teamwork among students.
           <br></br>
           <br></br>
+          <br></br>
+          <br></br>
           -Rehearsals
           <br></br>
           <br></br>
-          Rehearsals for ESPGH are three days per week after the standard school day. On occasion, there are weekend rehearsal dates to help preparedness for upcoming events. Rehearsals address balances between instrument sections and emphasize playing exactly together, matching rhythms, styles, tones, and executions, such as bow strokes and articulations. Students are expected to be prepared in rehearsals and focus foremost on playing as an ensemble. Repertoire in El Sistema Pittsburgh varies – beginners are given simplified or reduced orchestra versions of symphonic music, with the intention that, as they advance, they will play full orchestral pieces as they were originally written. Students are also exposed to other genres of music, including: jazz, Latin-American music, pop music, folk music, and recently composed music of many genres.
+          Rehearsals for ESPGH are three days per week after the standard school day. On occasion, there are weekend rehearsal dates to help preparedness for upcoming events. Rehearsals address balances between instrument sections and emphasize playing exactly together, matching rhythms, styles, tones, and executions, such as bow strokes and articulations. Students are expected to be prepared in rehearsals and focus foremost on playing as an ensemble. Repertoire in El Sistema Pittsburgh varies – beginners are given simplified or reduced orchestra versions of symphonic music, with the intention that, as they advance, they will play full orchestral pieces as they were originally written. Students are also exposed to other genres of music, including: jazz, Latin-American music, pop music, folk music, and recently composed music of many 
+          genres.
+          <br></br>
+          <br></br>
           <br></br>
           <br></br>
           -Performances
@@ -179,7 +215,7 @@ export default class About extends Component{
           <br></br>
           El Sistema Pittsburgh inculcates in the students a culture of performance and sharing their talents. The concerts are viewed as a means of demonstrating the learning process and a motivation tool for students. Performances by the students in El Sistema Pittsburgh provide opportunity to foster pride and strength in the community, and are always accessible to the public in a variety of ways.
           </div>  
-        </Modal> */}
+        </Modal>
         </div>
         </div>
       </section>
