@@ -12,7 +12,7 @@
   width: 95%;
   min-height: 75vh;
   padding: 0 2%;
-  background-color: white;
+  background-color: brown;
 }
 
 .pageTitle {
@@ -20,4 +20,8 @@
   font-weight: 700;
   margin: 10% 0;
   padding-left: 2%;
+}
+
+@media(min-width: 700px){
+
 }

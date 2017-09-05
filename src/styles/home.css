@@ -400,16 +400,19 @@
   .eventsPreviewsContainer {
     justify-content: space-between;
     min-height: 20vh;
+    width: 100%;
+    /*background-color: orange;*/
   }
 
   .eventPreview {
-    width: 22vh;
+    width: 30%;
     min-height: 28vh;
+    /*background-color: pink;*/
   }
 
   .eventImg {
-    width: 20vh;
-    height: 20vh;
+    width: 200px;
+    height: 200px;
   }
 
   .eventDate {
@@ -573,7 +576,6 @@
     width: 70%;
     min-height: 70vh;
     padding-top: 4vh;
-
   }
 
   .eventsHeader {
@@ -589,11 +591,11 @@
   .eventsPreviewsContainer {
     margin-top: 3vh;
     min-height: 47.5vh;
-
+    /*background-color: orange;*/
   }
 
   .eventPreview {
-    min-width: 333px;
+    width: 300px;
   }
 
 
@@ -603,8 +605,8 @@
   }
 
   .eventImg {
-    width: 333px;
-    height: 333px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
   }
 
@@ -671,9 +673,32 @@
   }
 
   .coreValuesTextOne {
-    height: 300px;
+    display: table;
+    min-height: 30vh;
     top: 24vh;
-    font-size: small;
+    /*background-color: plum;*/
+  }
+
+  .valuesTextContainer {
+    display: table-row;
+    width: 100%;
+    min-height: 25vh;
+    /*background-color: lime;*/
+  }
+
+  .homeButtonContainer {
+    box-sizing: border-box;
+    display: table-row;
+    width: 100%;
+    height: 5vh;
+    /*background-color: pink;*/
+  }
+
+  .coreValuesButton {
+    width: 9.5em;
+    height: 2.75em;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 
   .coreValuesBottom {
@@ -692,9 +717,20 @@
   }
 
   .coreValuesTextThree {
+    display: table;
     height: 350px;
     top: 24vh;
-    font-size: small
+    font-size: small;
+  }
+
+  .textBlockThreeHeader {
+    display: table-row;
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  .valuesTextBlockThree {
+    display: table-row;
   }
 
   .coreValuesTextFour {
@@ -706,6 +742,16 @@
     background-image: url('./../images/conduct.jpg');
     background-size: cover;
     background-position: center;
+  }
+
+  .supportUsButtonText {
+    font-size: large;
+  }
+
+  .readMoreButton {
+    width: 11.75em;
+    height: 3.25em;
+    margin-bottom: 5px;
   }
 
 }

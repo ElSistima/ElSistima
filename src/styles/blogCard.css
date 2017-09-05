@@ -6,6 +6,7 @@
   height: 350px;
   margin-bottom: 5%;
 }
+
 .blogCardContent {
   width: 100%;
   height: 350px;
@@ -108,4 +109,20 @@
 .fa-angle-right {
   font-size: large;
   color: black;
+}
+
+@media(min-width: 700px){
+
+  .blogCardWrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 32%;
+    height: 375px;
+    margin-right: 0;
+    border: 3px solid pink;
+    background-color: orange;
+  }
+
+
 }

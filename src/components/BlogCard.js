@@ -15,7 +15,7 @@ export default class BlogCard extends Component{
         <div className="blogCardContent">
           <section className="blogCardTop">
             <div className="blogCardTopImg">
-              <img src={this.props.card.blog_image} />
+              <img src={this.props.card.blog_image} alt="blog post banner"/>
             </div>
           </section>
           <section className="blogCardBottom">
@@ -28,7 +28,7 @@ export default class BlogCard extends Component{
             </div>
             <div className="blogCardAuthorDetails">
               <div className="blogCardAuthorPic">
-                <img src={this.props.card.user_profile_pic} />
+                <img src={this.props.card.user_profile_pic} alt="author thumbnail"/>
               </div>
               <p className="blogCardAuthorName">{this.props.card.user_name}</p>
             </div>
