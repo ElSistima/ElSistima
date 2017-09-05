@@ -466,7 +466,6 @@ input:checked + .slider:before {
 
   .add_new_blog {
     width: 50%;
-    margin-top: 50px;
   }
 
   .add_new_pics {
@@ -478,7 +477,6 @@ input:checked + .slider:before {
     height: 500px;
     width: 19.5%;
     margin-left: 10vw;
-    margin-top: 50px;
   }
 
   .add_pic_inner {
@@ -496,7 +494,6 @@ input:checked + .slider:before {
 
   .add_pic_inner div {
     margin-left: 3px;
-    font-size: 15px;
   }
 
   .pblg {
@@ -519,7 +516,6 @@ input:checked + .slider:before {
 
   /*web responsive button*/
   .web_btn {
-    margin-top: 100px;
     display: flex;
     width: 320px;
     /*border: 2px solid black;*/
@@ -577,11 +573,4 @@ input:checked + .slider:before {
   .leftSelect {
     width: 40%
   }
-
-  .ta_Description {
-    margin-bottom: 15px;
-    font-size: 15px;
-
-  }
-
 }
