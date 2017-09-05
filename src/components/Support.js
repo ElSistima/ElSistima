@@ -1,5 +1,8 @@
 import React from 'react';
 import './../styles/support.css';
+import SupportDonate from './SupportDonate';
+import {Elements} from 'react-stripe-elements';
+import Volunteer from './Volunteer';
 
 export default function Support(props){
   return (
@@ -22,35 +25,9 @@ export default function Support(props){
         <div className="helpTitle">3 Ways to Help</div>
 
 
-
-        <div className="donate">
-          <div className="donateTitle">Donate</div>
-          <div className="donateInnerBox">
-            <input className="enterAmount" placeholder="$100"/>
-            <img src='https://i.imgur.com/hUaDjhR.png' />
-          </div>
-          <div className="donateInner">
-            <div className="donateInnerTitle">Credit Card Number</div>
-            <input className="cardNumInput" placeholder="4584 - "/>
-          </div>
-          <div className="donateInner">
-            <div className="donateInnerTitle">Expiration</div>
-            <div className="expirationInputLine">
-              <input className="expirationInput"/> <input className="expirationInput"/>
-            </div>
-          </div>
-          <div className="donateInner">
-            <div className="donateInnerTitle">CVC/CVV</div>
-            <div className="cvcInputLine">
-              <input className="cvcTitle"/>
-              <div> 3 or 4 digit code</div>
-            </div>
-          </div>
-          <div className="donateInner donationSubmit">
-            <div className="submitBtn"><span>SUBMIT</span></div>
-          </div>
-        </div>
-
+        <Elements>
+        <SupportDonate />
+        </Elements>
 
 
 
@@ -63,27 +40,7 @@ export default function Support(props){
 
 
 
-
-        <div className="donate volunteer desktopVolunteer">
-          <div className="donateTitle">Volunteer Sign-Up</div>
-
-          <div className="volunteerInner">
-            <div className="volunteerinnerTitle">Name</div>
-            <input className="volunteerInput"/>
-          </div>
-
-          <div className="volunteerInner">
-            <div className="volunteerinnerTitle">Email</div>
-            <input className="volunteerInput"/>
-          </div>
-
-
-          <div className="volunteerInner volunteerSubmit">
-            <div className="submitBtn"><span>SUBMIT</span></div>
-          </div>
-
-        </div>
-
+        <Volunteer />
 
 
         <div className="supportShare">

@@ -7,14 +7,16 @@ import Home from './Home';
 import Calendar from './Calendar';
 import About from './About';
 import Media from './Media';
-import PublicBlog from './PublicBlog';
+import Blog from './Blog';
 import PublicIndivBlogPost from './PublicIndivBlogPost';
 import Support from './Support';
+import {StripeProvider} from 'react-stripe-elements';
 
 
 class App extends Component {
   render() {
     return (
+      <StripeProvider apiKey="pk_test_XQpYW77nDK2V29K0MiP8B9u8">
       <main>
         <Header/>
           <Switch>
@@ -22,12 +24,13 @@ class App extends Component {
             <Route path="/calendar" component={Calendar} />
             <Route path="/about" component={About} />
             <Route path="/media" component={Media} />
-            <Route exact path="/blog" component={PublicBlog} />
+            <Route exact path="/blog" component={Blog} />
             <Route path="/blog/:post_id" component={PublicIndivBlogPost} />
             <Route path="/support" component={Support} />
           </Switch>
         <Footer />
       </main>
+    </StripeProvider>
     );
   }
 }

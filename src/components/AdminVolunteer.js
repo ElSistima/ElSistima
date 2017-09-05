@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './../styles/adminEditor.css';
+import axios from 'axios';
+import IndivVolunteerDetails from './IndivVolunteerDetails';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
@@ -7,10 +9,26 @@ class AdminVolunteer extends Component{
   constructor(props){
     super(props);
       this.state ={
-        fetchedPosts: [],
+        fetchedVolunteers: [],
         checkAllBoxes: false,
         amountChecked: 0
       }
+  }
+
+  componentDidMount(){
+    axios.get('/api/volunteers').then(res => {
+      this.setState({
+        fetchedVolunteers: res.data
+      })
+    }).catch(err => console.log(err));
+  }
+
+  reloadVolunteers(){
+    axios.get('/api/volunteers').then(res => {
+      this.setState({
+        fetchedVolunteers: res.data
+      })
+    }).catch(err => console.log(err));
   }
 
   markAllChecked(){
@@ -21,12 +39,19 @@ class AdminVolunteer extends Component{
   }
 
   render(){
+    console.log(this.state.fetchedVolunteers)
 
     const checkedBoxStyle = { backgroundColor: "#5182EA", borderColor: "#5182EA"}
 
     const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
 
     const fullPageStyle = { width: "100%" }
+
+    const allVolunteers = this.state.fetchedVolunteers.map((person, i) => {
+      return (
+      <IndivVolunteerDetails key={i} index={i} person={person} checkAll={this.state.checkAllBoxes} reloadVolunteers={this.reloadVolunteers.bind(this)} />
+    )
+  })
 
     return(
       <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
@@ -57,7 +82,7 @@ class AdminVolunteer extends Component{
               <p>Actions</p>
             </div>
           </div>
-          INDIV VOLUNTEER COMPONENT HERE
+          {allVolunteers}
         </section>
       </main>
     )

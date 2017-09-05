@@ -8,6 +8,7 @@ import AdminHome from './AdminHome';
 import AdminVolunteer from './AdminVolunteer';
 import AdminBlog_ADDNEW from './AdminBlog_ADDNEW';
 import AdminVolunteer_ADDNEW from './AdminVolunteer_ADDNEW';
+import AdminVolunteer_UPDATE from './AdminVolunteer_UPDATE';
 import AdminBlog from './AdminBlog';
 import AdminClasses from './AdminClasses';
 import AdminPerformances from './AdminPerformances';
@@ -60,6 +61,7 @@ class AdminPortal extends Component{
           <Route exact path="/admin" component={AdminHome} />
           <Route exact path="/admin/volunteer" component={AdminVolunteer} />
           <Route exact path="/admin/volunteer/addNew" component={AdminVolunteer_ADDNEW} />
+          <Route exact path="/admin/volunteer/update/:vol_id" component={AdminVolunteer_UPDATE} />
           <Route exact path="/admin/classes" component={AdminClasses} />
           <Route exact path="/admin/performances" component={AdminPerformances} />
           <Route exact path="/admin/contentpics" component={AdminContentPics} />
