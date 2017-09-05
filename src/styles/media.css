@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85em;
+    height: 90em;
     width: 100%;
     background-color: white;
 }
@@ -55,7 +55,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 65em;
+    height: 70em;
     width: 100%;
     background-color: white;
 }
@@ -106,7 +106,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 190em;
+    min-height: 250em;
     width: 100%;
     background-color: white;
 }
@@ -131,7 +131,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 150em;
+    min-height: 200em;
     width: 100%;
     background-color: white;
 }
@@ -186,7 +186,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 175em;
+    min-height: 180em;
     width: 80%;
     margin: 0 auto;
     background-color: white;

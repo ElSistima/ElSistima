@@ -53,7 +53,7 @@ export default class Media extends Component{
     }
     const allPictures = this.state.fetchedPictures.map((media, index) => {
       return(
-        <MediaCard
+        <VideoCard
         /* key={index}  */
         /* index={index}  */
         media={media} 
@@ -65,7 +65,7 @@ export default class Media extends Component{
 
     const allVideos = this.state.fetchedVideos.map((media, index) => {
       return(
-        <MediaCard
+        <VideoCard
         /* key={index} 
         index={index}  */
         media={media} 

@@ -10,6 +10,7 @@
     /* border: solid 1px; */
     border-radius: 2px;
     color: rgb(74,95,107);
+    margin: .5%;
     
 }
 
@@ -18,7 +19,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: .2em;
+    /* padding-bottom: 2em; */
     width: 100%;
     background-color: whitesmoke;
 }
@@ -33,7 +34,7 @@
     justify-content: space-around;
     align-items: center;
     width: 95%;
-    padding-top: .1em;
+    padding-top: 1.5em;
     background-color: whitesmoke;
     font-size: .6em;
     
@@ -64,7 +65,7 @@
 .mediaImage {
     display: flex;
     justify-content: center;
-    padding-bottom: .2em;
+    /* padding-bottom: .2em; */
     width: 100%;
     background-color: whitesmoke;
 }
@@ -79,7 +80,7 @@
     justify-content: space-around;
     align-items: center;
     width: 95%;
-    padding-top: .1em;
+    padding-top: 1.5em;
     background-color: whitesmoke;
     font-size: 1.15em;
     
