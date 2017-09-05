@@ -12,7 +12,6 @@
   width: 95%;
   min-height: 75vh;
   padding: 0 2%;
-  background-color: brown;
 }
 
 .pageTitle {
@@ -23,5 +22,13 @@
 }
 
 @media(min-width: 700px){
+
+  .blogCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
 
 }

@@ -34,7 +34,9 @@ export default class Blog extends Component{
       <main className="publicBlogWrapper">
         <div className="publicBlogContent">
         <p className="pageTitle">El Sistema Blog</p>
+        <div className="blogCardContainer">
         {allBlogCards}
+        </div>
         </div>
       </main>
     )
