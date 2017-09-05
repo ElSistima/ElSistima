@@ -9,8 +9,36 @@
   margin-bottom: 10px;
 }
 
-.rcc_header {
+.rcc_rable_row {
   display: flex;
+  height: 55px;
+  /*border: 2px solid red;*/
+  border-bottom: 1px solid lightgray;
+}
+
+.tableInner {
+  width: calc(100% / 4);
+  /*border: 1px solid orange;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.tableInner input {
+  border: 2px solid red;
+}*/
+
+.innerWraper, .innerSpan {
+  /*border: 2px solid red;*/
+  width: 50%;
+  text-align: center;
+}
+
+
+
+.rcc_head {
+  height: 30px;
+  border: none;
 }
 
 .rcc_header_big {
@@ -25,9 +53,6 @@
   margin-left: 10px;
 }
 
-.rcc_header div {
-  width: 50px;
-}
 
 .adhome_calender {
   height: 400px;
