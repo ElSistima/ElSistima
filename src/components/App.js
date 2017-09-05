@@ -7,7 +7,7 @@ import Home from './Home';
 import Calendar from './Calendar';
 import About from './About';
 import Media from './Media';
-import PublicBlog from './PublicBlog';
+import Blog from './Blog';
 import PublicIndivBlogPost from './PublicIndivBlogPost';
 import Support from './Support';
 import {StripeProvider} from 'react-stripe-elements';
@@ -24,7 +24,7 @@ class App extends Component {
             <Route path="/calendar" component={Calendar} />
             <Route path="/about" component={About} />
             <Route path="/media" component={Media} />
-            <Route exact path="/blog" component={PublicBlog} />
+            <Route exact path="/blog" component={Blog} />
             <Route path="/blog/:post_id" component={PublicIndivBlogPost} />
             <Route path="/support" component={Support} />
           </Switch>

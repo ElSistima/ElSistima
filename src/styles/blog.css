@@ -1,0 +1,34 @@
+.publicBlogWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 75vh;
+  background-color: plum;
+
+}
+
+.publicBlogContent {
+  box-sizing: border-box;
+  width: 95%;
+  min-height: 75vh;
+  padding: 0 2%;
+}
+
+.pageTitle {
+  font-size: large;
+  font-weight: 700;
+  margin: 10% 0;
+  padding-left: 2%;
+}
+
+@media(min-width: 700px){
+
+  .blogCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+
+}
