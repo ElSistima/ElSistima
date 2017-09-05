@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 9em;
-    width: 10em;
+    height: 7.2em;
+    width: 8em;
     background-color: whitesmoke;
     box-shadow: 1px 1px 1px;
     /* border: solid 1px; */
@@ -25,8 +25,8 @@
 }
 
 .imageSize {
-    height: 5.7em;
-    width: 9.5em;
+    height: 4.8em;
+    width: 8em;
 }
 
 .photoCaption {
@@ -55,8 +55,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 18.9em;
-    width: 21em;
+    height: 15.3em;
+    width: 17em;
     background-color: whitesmoke;
     box-shadow: 3px 3px 3px;
     border-radius: 2px;
@@ -71,8 +71,8 @@
 }
 
 .imageSize {
-    height: 12em;
-    width: 20em;
+    height: 10.2em;
+    width: 17em;
 }
 
 .photoCaption {

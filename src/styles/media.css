@@ -8,9 +8,9 @@
     justify-content: center;
     align-items: center;
     height: 3em;
-    margin-top: 4.5em;
+    margin-top: 0em;
     width: 100%;
-    background-color: lightblue;
+    background-color: white;
 }
 
 .photoVideoToggleSwitch {
@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80%;
-    width: 90%;
+    width: 75%;
     background-color: red;
     color: rgb(74,95,107);
 }
@@ -42,7 +42,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: 99%;
-    width: 95%;
+    width: 75%;
     background-color: lightpink;
 }
 
@@ -67,7 +67,7 @@
     justify-content: center;
     align-items: center;
     height: 3em;
-    width: 50%;
+    width: 100%;
     border-top: solid 1px;
 }
 
@@ -83,8 +83,8 @@
     justify-content: center;
     align-items: center;
     height: 3em;
-    width: 50%;
-    padding: 1em 0;
+    width: 100%;
+    margin: 2em 0 1em 0;
 }
 
 .photoVideoToggleSwitch {
@@ -93,7 +93,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80%;
-    width: 60%;
+    width: 75%;
     background-color: white;
     
 }
@@ -108,7 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 250em;
+    min-height: 200em;
     width: 100%;
     background-color: white;
 }
@@ -118,7 +118,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: 99%;
-    width: 95%;
+    width: 75%;
     background-color: white;
 }
 
@@ -133,7 +133,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 200em;
+    min-height: 150em;
     width: 100%;
     background-color: white;
 }
@@ -143,7 +143,7 @@
     justify-content: center;
     align-items: center;
     height: 3em;
-    width: 50%;
+    width: 100%;
     border-top: solid 1px;
     padding: 1em 0;
 }

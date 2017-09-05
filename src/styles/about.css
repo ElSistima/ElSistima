@@ -20,14 +20,13 @@
     align-items: center;
     min-height: 14em;
     width: 100%;
-    background-color: white;
+    background-color: yellow;
     color: rgb(74,95,107);
 }
 
 .whoWeAreText {
     height: 80%;
     width: 75%;
-    background-color: white;
 }
 
 .whoWeAreTitle {
@@ -365,21 +364,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 22em;
+    min-height: 24em;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
+    padding: 1em 0 1em 0;
 }
 
 .whoWeAreTitle {
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .whoWeAreBodyText {
-    padding-top: 3.5em;
+    padding-top: 3em;
     padding-bottom: 1em;
     font-size: .9em;
     line-height: 1.4em;
+    background-color: white;
+    
 }
 
 .whoWeAreButton {
@@ -401,10 +403,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 15em;
+    min-height: 19em;
     width: 100%;
     background-color: white;
     color: rgb(74,95,107);
+    
 }
 
 .missionStatementText {
@@ -414,11 +417,12 @@
 }
 
 .missionStatementTitle {
-    font-size: 1.2em;
+    font-size: 2em;
+    margin: .5em 0 0 0;
 }
 
 .missionStatementBodyText {
-    padding-top: 3.5em;
+    padding-top: 3em;
     padding-bottom: 1em;
     font-size: .9em;
     line-height: 1.4em;
@@ -443,7 +447,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 17em;
+    height: 19em;
     background-color: white;
     color: rgb(74,95,107);
 }
@@ -455,11 +459,12 @@
 }
 
 .curriculumTitle {
-    font-size: 1.2em;
+    font-size: 2em;
+    margin: 1em 0 0 0;
 }
 
 .curriculumBodyText {
-    padding-top: 3.5em;
+    padding-top: 3em;
     padding-bottom: 1em;
     font-size: .9em;
     line-height: 1.4em;
@@ -497,11 +502,11 @@
 }
 
 .volunteersTitle {
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .volunteersBodyText {
-    padding-top: 3.5em;
+    padding-top: 3em;
     padding-bottom: 3em;
     font-size: .9em;
     line-height: 1.4em;
@@ -683,7 +688,7 @@
 }
 
 .ourLocationTitle {
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .ourLocationImage {
