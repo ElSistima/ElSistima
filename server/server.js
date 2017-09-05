@@ -1,5 +1,6 @@
 require('dotenv').config();
 var express = require('express');
+var awsController = require('./awsController');
 var massive = require('massive');
 var bodyParser = require('body-parser');
 var userController = require('./userController');
@@ -10,7 +11,7 @@ var cors = require('cors');
 var stripe = require('stripe')('sk_test_LkNfgMLBoBD50f69BBQYPnni')
 // var config = require('./config')
 var app = module.exports = express();
-var port = 8080;
+var port = 80;
 
 
 
@@ -164,7 +165,8 @@ app.post('/api/events', userController.postEvent)
 app.post('/api/volunteers', userController.postVolunteer)
 app.post('/api/quote', userController.postQuote)
 app.post('/api/post', userController.postNewPost)
-
+//AWS
+app.post('/api/getSignedURL', awsController.getSignedURL)
 
 //===============PUT REQUESTS===================
 app.put('/api/events/:eventid', userController.putEvent)
