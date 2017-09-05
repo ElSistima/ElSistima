@@ -26,13 +26,11 @@
     padding: 0, auto;
 }
 
-
-
 .mediaGridPhotosContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 85em;
     width: 100%;
     background-color: white;
 }
@@ -57,7 +55,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 150vh;
+    height: 65em;
     width: 100%;
     background-color: white;
 }
@@ -108,7 +106,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 160vh;
+    min-height: 190em;
     width: 100%;
     background-color: white;
 }
@@ -133,7 +131,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 150vh;
+    min-height: 150em;
     width: 100%;
     background-color: white;
 }
@@ -187,8 +185,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    flex-direction: column;
+    min-height: 175em;
+    width: 80%;
+    margin: 0 auto;
     background-color: white;
 }
 
@@ -200,20 +200,15 @@
     width: 95%;
     background-color: white;
 }
-
-.photosFormat {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
    
 .mediaGridVideosContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 95vh;
-    width: 100%;
+    min-height: 140em;
+    width: 80%;
+    margin: 0 auto;
     background-color: white;
 }
 
@@ -227,5 +222,28 @@
     padding: 1.5em 0;
 }
 
+
+}
+
+@media (max-width: 232px){
+
+.mediaGridPhotosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180em;
+    width: 100%;
+    background-color: white;
+}
+
+.mediaGridVideosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 180em;
+    width: 100%;
+    background-color: white;
+}
 
 }
