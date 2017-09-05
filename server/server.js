@@ -1,5 +1,6 @@
 require('dotenv').config();
 var express = require('express');
+var awsController = require('./awsController');
 var massive = require('massive');
 var bodyParser = require('body-parser');
 var userController = require('./userController');
@@ -164,7 +165,8 @@ app.post('/api/events', userController.postEvent)
 app.post('/api/volunteers', userController.postVolunteer)
 app.post('/api/quote', userController.postQuote)
 app.post('/api/post', userController.postNewPost)
-
+//AWS
+app.post('/api/getSignedURL', awsController.getSignedURL)
 
 //===============PUT REQUESTS===================
 app.put('/api/events/:eventid', userController.putEvent)
