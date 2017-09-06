@@ -13,11 +13,13 @@ var stripe = require('stripe')('sk_test_LkNfgMLBoBD50f69BBQYPnni')
 var app = module.exports = express();
 var port = 8080;
 
-
-
-
+const path = require('path')
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '..','build','index.html'));
+})
 
 app.use(cors());
+app.use( express.static( `${__dirname}/../build` ) );
 
 app.use(session({
   resave: true, //Without this you get a constant warning about default values
