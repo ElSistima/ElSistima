@@ -1,0 +1,67 @@
+.adminWrapperMediaNew {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 2vh;
+}
+
+.adminContentContainerMediaNew{
+  margin: 0 auto;
+}
+
+.addNewMediaNew {
+  width: 90%;
+  min-height: 50vh;
+  background-color: white;
+  margin: 2vh auto 2vh;
+}
+
+.adminPageTitleMediaNew{
+  min-height: 5vh;
+  text-align: left;
+  font-size: x-large;
+}
+
+.titleMediaNew, .categoryMediaNew, .urlMediaNew {
+  font-size: small;
+}
+
+.topInputMediaNew, .midInputMediaNew {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 8vh;
+  margin-bottom: 4vh;
+}
+
+.topInputMediaNew input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  outline: none;
+  width: 45%;
+  min-height: 8vh;
+}
+
+.midInputMediaNew input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  outline: none;
+  width: 100%;
+  min-height: 8vh;
+}
+
+.overwriteMediaNew {
+  min-height: 8vh;
+}
+
+.bottomInputMediaNew input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  outline: none;
+  width: 100%;
+  min-height: 16vh;
+}
