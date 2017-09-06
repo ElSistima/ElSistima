@@ -12,7 +12,6 @@ import AdminVolunteer_UPDATE from './AdminVolunteer_UPDATE';
 import AdminBlog from './AdminBlog';
 import AdminClasses from './AdminClasses';
 import AdminPerformances from './AdminPerformances';
-import AdminContentPics from './AdminContentPics';
 import AdminMedia from './AdminMedia';
 import AdminMedia_ADDNEW from './AdminMedia_ADDNEW';
 import AdminMedia_UPDATE from './AdminMedia_UPDATE';
@@ -64,7 +63,6 @@ class AdminPortal extends Component{
           <Route exact path="/admin/volunteer/update/:vol_id" component={AdminVolunteer_UPDATE} />
           <Route exact path="/admin/classes" component={AdminClasses} />
           <Route exact path="/admin/performances" component={AdminPerformances} />
-          <Route exact path="/admin/contentpics" component={AdminContentPics} />
           <Route path="/admin/contentPic/addNew" component={AdminCP_ADDNEW} />
           <Route exact path="/admin/media" component={AdminMedia} />
           <Route exact path="/admin/media/addNew" component={AdminMedia_ADDNEW} />

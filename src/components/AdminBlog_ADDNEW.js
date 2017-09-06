@@ -83,7 +83,16 @@ class AdminBlog_ADDNEW extends Component{
       blogImage: this.state.picture2,
       blogSubtitle: this.state.blogNewSubtitle
     }
-    !this.state.blogNewTitle || !this.state.blogNewSubtitle || !this.state.blogNewContent ? alert("Be sure you have a title, subtitle, and blog content before saving your post.") : axios.post('/api/post',newPostObject).then(res => console.log(res)).catch(err => console.log(err));
+    !this.state.blogNewTitle || !this.state.blogNewSubtitle || !this.state.blogNewContent ? alert("Be sure you have a title, subtitle, and blog content before saving your post.") : axios.post('/api/post',newPostObject).then(res => {
+       console.log(res)
+       this.setState({
+         blogNewTitle: '',
+         blogNewSubtitle: '',
+         blogNewContent: '',
+         picture1: 'https://i.imgur.com/FTLTf6u.png',
+         picture2: 'https://i.imgur.com/FTLTf6u.png'
+       })
+    }).catch(err => console.log(err));
   }
 
   clickCancel(){

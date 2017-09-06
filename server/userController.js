@@ -93,6 +93,14 @@ module.exports = {
       .then((media) => res.status(200).send(media))
       .catch((err) => res.status(500).send(err))
   },
+  getMediaById: function(req, res){
+    const db = req.app.get('db');
+    const {id} = req.params;
+
+    db.get_media_by_id([id])
+    .then(media => res.status(200).send(media))
+    .catch(err => res.status(500).send(err))
+  },
   //=============POST========================
 
 
@@ -468,8 +476,19 @@ module.exports = {
       res.status(200).send('sentSuccessfully')} )
     .catch( (err) => {
       res.status(500).send(err)} )
+  },
 
+  putMedia: function(req, res){
+    const db = req.app.get('db');
+    const {id} = req.params;
+    const {media_url, is_picture, description, post_time} = req.body;
 
+    db.put_edit_media([id, media_url, is_picture, description, post_time])
+    .then(response => {
+      res.status(200).send('sentSuccessfully')
+    }).catch(err => {
+      res.status(500).send(err)
+    })
   },
 
 
