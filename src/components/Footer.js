@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../styles/footer.css';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
+import MapInsert from './MapInsert';
 import {mapClicked, darken} from '../ducks/reducer';
 
 class Footer extends Component{
@@ -13,12 +14,23 @@ class Footer extends Component{
     this.props.darken(true);
   }
 
+  mapUnclicked(){
+    this.props.mapClicked(false);
+  }
+
 
 render(){
-  // console.log(this.props.mapPopUp, 'hihihi')
+  console.log(this.props.mapPopUp, 'hihihi')
   return (
     <footer className="footer">
-
+    {this.props.mapPopUp?
+        <div className="mapWrapper">
+          <div className="crossOut" onClick={this.mapUnclicked.bind(this) }><i className="crossOutIcon fa fa-times" aria-hidden="true"></i>
+</div>
+          <MapInsert />
+        </div>
+      :
+      ""}
       <div className="topFooterDiviPhone">
         <section className="stayConnectediPhone">
           <p>STAY CONNECTED</p>
