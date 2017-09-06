@@ -150,7 +150,7 @@ export default class About extends Component{
             <div className="curriculumTitle"ref={subtitle => this.subtitle = subtitle}>Curriculum</div>
             <br></br>
           <br></br>
-          <div className="curriculumText">ESPGH is an after-school program with a curriculum that focuses on many different subjects: 
+          <div className="curriculumBodyText">ESPGH is an after-school program with a curriculum that focuses on many different subjects: 
           <br></br>
           <br></br>
           <br></br>

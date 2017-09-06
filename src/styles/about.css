@@ -142,6 +142,11 @@
     line-height: 1.3em;
 }
 
+.curriculumHeader {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
 .curriculumButton {
     display: flex;
     justify-content: center;
@@ -187,6 +192,10 @@
     padding-bottom: 1em;
     font-size: .75em;
     line-height: 1.3em;
+}
+
+.curriculumHeader {
+
 }
 
 .volunteersFormat {
@@ -853,6 +862,11 @@
     font-size: 1.3em;
     line-height: 1.65em;
     font-weight: 300;
+}
+
+.curriculumHeader {
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 .curriculumButton {
