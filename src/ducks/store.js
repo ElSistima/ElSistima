@@ -1,6 +1,9 @@
-import {createStore} from 'redux';
+import {compose, createStore} from 'redux';
 import reducer from './reducer';
+import {autoRehydrate, persistStore} from 'redux-persist';
 
-let store = createStore(reducer);
+let store = compose(autoRehydrate())(createStore)(reducer);
+
+persistStore(store)
 
 export default store;
