@@ -106,19 +106,15 @@ class AdminBlog_UPDATE extends Component{
         postSubtitle: res.data[0].blog_subtitle,
         postContent: res.data[0].post_content
       })
+      this.props.history.push("/admin/blog")
     }).catch(err => console.log(err))
   }
 
   clickUpdate(){
     let updatedPostObj = {
       postContent: this.state.postContent,
-      postThumbnail: this.state.postThumbnail,
       postTitle: this.state.postTitle,
-      year: this.state.postDateYear,
-      month: this.state.postDateMonth,
-      day: this.state.postDateDay,
-      blogImage: this.state.postImg,
-      blogSubtitle: this.state.postSubtitle
+      postSubTitle: this.state.postSubtitle
     }
   !this.state.postTitle || !this.state.postSubtitle || !this.state.postContent ? alert("Be sure you have a title, subtitle, and blog content before updating your post.") :
     axios.put(`/api/posts/${this.props.match.params.posts_id}`, updatedPostObj).then(res => {
@@ -135,6 +131,8 @@ class AdminBlog_UPDATE extends Component{
           postDateYear: res.data[0].date_year,
           postThumbnail: res.data[0].post_thumbnail
         })
+        alert("Blog Post Updated.")
+        this.props.history.push("/admin/blog")
       }).catch(err => console.log(err))
     }).catch(err => console.log(err))
   }

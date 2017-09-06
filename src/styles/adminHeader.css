@@ -39,6 +39,11 @@
   font-size: 1.25em;
 }
 
+.publicHomeLink {
+  text-decoration: none;
+  color: white;
+}
+
 @media(min-width: 700px) {
   .Ad_headerMain {
     min-height: 10vh;

@@ -77,8 +77,8 @@ class AdminBlog_ADDNEW extends Component{
   }
 
   clickSave(){
-    var month = Math.floor(Math.random() * (1, 10));
-    var day = Math.floor(Math.random() * (1, 30));
+    var month = Math.floor(Math.random() * (2, 10));
+    var day = Math.floor(Math.random() * (2, 30));
     let monthName;
 
     switch(month){
@@ -113,15 +113,13 @@ class AdminBlog_ADDNEW extends Component{
         break;
     }
 
-    console.log("Month name is: ", monthName, this.state)
-
     let newPostObject = {
       postContent: this.state.blogNewContent,
       postThumbnail: this.state.picture1,
       postTitle: this.state.blogNewTitle,
       year: 2017,
       month: monthName,
-      day: `${day > 9 ? day : `0${day}`}`,
+      day: `${day > 9 ? day : `0 + ${day}`}`,
       blogImage: this.state.picture2,
       blogSubtitle: this.state.blogNewSubtitle
     }
@@ -134,6 +132,8 @@ class AdminBlog_ADDNEW extends Component{
          picture1: 'https://i.imgur.com/FTLTf6u.png',
          picture2: 'https://i.imgur.com/FTLTf6u.png'
        })
+       alert("New Blog Post Published.")
+       this.props.history.push("/admin/blog")
     }).catch(err => console.log(err));
   }
 
@@ -146,6 +146,7 @@ class AdminBlog_ADDNEW extends Component{
       picture1: 'https://i.imgur.com/FTLTf6u.png',
       picture2: 'https://i.imgur.com/FTLTf6u.png'
     })
+    this.props.history.push("/admin/blog")
   }
 
   render(){
