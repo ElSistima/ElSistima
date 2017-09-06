@@ -93,7 +93,7 @@ class AdminBlog_ADDNEW extends Component{
       blogNewSubtitle: '',
       blogNewContent: '',
       picture1: 'https://i.imgur.com/FTLTf6u.png',
-      picture2: 'https://i.imgur.com/FTLTf6u.png' 
+      picture2: 'https://i.imgur.com/FTLTf6u.png'
     })
   }
 
@@ -105,20 +105,12 @@ class AdminBlog_ADDNEW extends Component{
     const placeholder1 = {
       backgroundImage: `url('${this.state.picture1}')`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      width: '80%',
-      height: '30vh',
-      marginTop: '15px',
-      marginBottom: '10px'
+      backgroundPosition: 'center'
     }
     const placeholder2 = {
       backgroundImage: `url(${this.state.picture2})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      width: '80%',
-      height: '30vh',
-      marginTop: '15px',
-      marginBottom: '10px'
+      backgroundPosition: 'center'
     }
 
     return(
@@ -140,6 +132,7 @@ class AdminBlog_ADDNEW extends Component{
             <div className="addPicInnerBlogNew">
               <p className="picInnerTextBlogNew">Add Top Full Picture</p>
               <Dropzone
+                className="blogDropzone"
                 style={placeholder1}
                 onDrop={(accepted, rejected) => this.onDrop1(accepted, rejected)}></Dropzone>
 
@@ -150,6 +143,7 @@ class AdminBlog_ADDNEW extends Component{
             <div className="addPicInnerBlogNew">
               <p className="picInnerTextBlogNew">Add 2nd Full Picture</p>
               <Dropzone
+                className="blogDropzone"
                 style={placeholder2}
                 onDrop={(accepted, rejected) => this.onDrop2(accepted, rejected)}></Dropzone>
               <div className="buttonBlogNew cancelBtnBlogNew" onClick={this.clickCancel.bind(this)}>CANCEL</div>
