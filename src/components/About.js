@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './../styles/global-style.css';
 import './../styles/about.css';
+import {Link} from 'react-router-dom';
 import Modal from 'react-modal';
 
 
@@ -64,7 +65,7 @@ export default class About extends Component{
         <div className="whoWeAreText">
           <h1 className="whoWeAreTitle">Who We Are</h1>
             <p className="whoWeAreBodyText">
-              El Sistema is a philosophy of music educationcreated in Venezuela in 1975. It is the brainchild of Venezuelan musician, politician, economist and philanthropist Dr. Jose Natonio Abreu. At the rood of this philosophy is the idea that music education - specifically classical music education - can and should be used as a means of uplifting and unifying an underserved community, starting with the youth. All children over the age of 2 years are afforded the opportunity to own their own instrument, take private lessons, sing in a choir, and play in an orchestra for no cost. Most of the expenses are paid through government funding. El Sistema has touched the lives of over 2 million Venezuelan children, and over 180 nucleos have been established in virtually every town and city, no matter how rural or urban.
+              El Sistema is a philosophy of music education created in Venezuela in 1975. It is the brainchild of Venezuelan musician, politician, economist and philanthropist Dr. Jose Natonio Abreu. At the rood of this philosophy is the idea that music education - specifically classical music education - can and should be used as a means of uplifting and unifying an underserved community, starting with the youth. All children over the age of 2 years are afforded the opportunity to own their own instrument, take private lessons, sing in a choir, and play in an orchestra for no cost. Most of the expenses are paid through government funding. El Sistema has touched the lives of over 2 million Venezuelan children, and over 180 nucleos have been established in virtually every town and city, no matter how rural or urban.
             </p>
             <div className="modalContainer1">
             <div onClick={this.openModal} className="whoWeAreButton">
@@ -76,8 +77,10 @@ export default class About extends Component{
             onRequestClose={this.closeModal}
             >
           <button onClick={this.closeModal}>close</button>
+          <br></br>
+          <br></br>
             <div className="whoWeAreTitle"ref={subtitle => this.subtitle = subtitle}>Who We Are</div>
-          <div className="whoWeAreBodyText">El Sistema is a philosophy of music educationcreated in Venezuela in 1975. It is the brainchild of Venezuelan musician, politician, economist and philanthropist Dr. Jose Natonio Abreu. At the rood of this philosophy is the idea that music education - specifically classical music education - can and should be used as a means of uplifting and unifying an underserved community, starting with the youth. All children over the age of 2 years are afforded the opportunity to own their own instrument, take private lessons, sing in a choir, and play in an orchestra for no cost. Most of the expenses are paid through government funding. El Sistema has touched the lives of over 2 million Venezuelan children, and over 180 nucleos have been established in virtually every town and city, no matter how rural or urban.
+          <div className="whoWeAreBodyText">El Sistema is a philosophy of music education created in Venezuela in 1975. It is the brainchild of Venezuelan musician, politician, economist and philanthropist Dr. Jose Natonio Abreu. At the root of this philosophy is the idea that music education - specifically classical music education - can and should be used as a means of uplifting and unifying an underserved community, starting with the youth. All children over the age of 2 years are afforded the opportunity to own their own instrument, take private lessons, sing in a choir, and play in an orchestra for no cost. Most of the expenses are paid through government funding. El Sistema has touched the lives of over 2 million Venezuelan children, and over 180 nucleos have been established in virtually every town and city, no matter how rural or urban.
           <br></br>
           <br></br>
           At the heart of El Sistema is the orchestra, or the family and community. All children play together and metaphorically (or perhaps literally) fight and struggle together to overcome life's obstacles and to reach a common goal of social change. El Sistema's approach to music education emphasizes intensive ensemble participation from the earliest stages, group learning, peer teaching, and a commitment to keeping the joy and fun of musical learning and music making ever-present.
@@ -402,9 +405,11 @@ export default class About extends Component{
           </div>
 
 
-          <p className="volunteersFooter">Interested in becoming a volunteer?</p>
+          <h1 className="volunteersFooter">Interested in becoming a volunteer?</h1>
           <div className="volunteersButton">
+            <Link to="/support">
             <p className="volunteersButtonText">Connect</p>
+            </Link>
           </div>
         </div>
       </section>
