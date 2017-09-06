@@ -24,10 +24,10 @@ componentDidMount(){
     const homeLogo = {position: "absolute", top: "35px", height: "12.5vh", width: "25%"}
     const homeLogoPhone = {position: "absolute", top: "13px", height: "6vh", width: "30%"}
     const homeLogoTablet = {position: "absolute", top: "35px", height: "8.5vh", width: "27.5%"}
-    const makeDark = { filter: 'brightness(50%)'}
+
 
     return (
-      <main className="mainHeader" style={this.props.currentPage ? homeHeader : null} style={this.props.darken?makeDark:{}}>
+      <main className="mainHeader" style={this.props.currentPage ? homeHeader : null}>
 
       <Link to="/" className="headerLogoLink" onClick={()=>this.props.returnHome(true)}>
         <div className="logoContainerPhone" style={this.props.currentPage ? homeLogoPhone : null}>

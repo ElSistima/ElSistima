@@ -11,9 +11,10 @@
 
 .rcc_rable_row {
   display: flex;
-  height: 55px;
+  height: 25px;
   /*border: 2px solid red;*/
   border-bottom: 1px solid lightgray;
+  font-size: 12px;
 }
 
 .tableInner {
@@ -366,6 +367,12 @@
     height: 550px;
   }
 
+
+  .rcc_rable_row {
+    height: 36px;
+    font-size: 17px;
+}
+
   .wrapperBox {
     width: 80%;
     height: 50%;
@@ -391,6 +398,7 @@
     border-top: 2px solid #ececec;
     display: flex;
     justify-content: space-between;
+
   }
 }
 
@@ -414,6 +422,12 @@
     position: relative;
     top: -840px;
     left: 51.8%;
+  }
+
+
+  .rcc_rable_row {
+    height: 55px;
+    font-size: 20px;
   }
 
   .wrapperBox {
@@ -440,5 +454,6 @@
     border-top: 2px solid #ececec;
     display: flex;
     justify-content: space-between;
+
   }
 }
