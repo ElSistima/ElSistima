@@ -110,7 +110,7 @@
 @media(min-width: 700px){
 
   .adminWrapperMediaNew {
-    padding-top: 5vh;
+    padding-top: 3vh;
   }
 
   .adminContentContainerMediaNew{
@@ -142,9 +142,32 @@
   }
 
   .updateBtnMediaNewDesktop, .cancelBtnMediaNewDesktop {
-    width: 175px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     margin: 15px 3.5% 0 3.5%;
     font-size: large;
   }
+}
+
+@media(min-width: 1000px) {
+
+  .adminWrapperMediaNew {
+    padding-top: 5vh;
+  }
+
+  .adminContentContainerMediaNew{
+    width: 90%;
+    min-height: 50vh;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .addNewMediaNew {
+    width: 60%;
+  }
+
+  .saveCancelBtnContainerMediaNew {
+    width: 35%;
+  }
+
 }
