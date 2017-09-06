@@ -15,7 +15,14 @@ class AdminVolunteer extends Component{
       }
   }
 
+
   componentDidMount(){
+    axios.get('/api/admin')
+      .then(res => {
+        if(!res.data[0].admin_status){
+          this.props.history.push('/')
+        }
+      })
     axios.get('/api/volunteers').then(res => {
       this.setState({
         fetchedVolunteers: res.data
