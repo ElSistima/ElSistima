@@ -16,7 +16,7 @@
 .photoVideoToggleSwitch {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     height: 80%;
     width: 85%;
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100em;
+    height: 200em;
     width: 100%;
     background-color: white;
     margin: 1em 0;
@@ -60,7 +60,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100em;
+    height: 170em;
     width: 100%;
     background-color: white;
 }
@@ -111,7 +111,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100em;
+    min-height: 200em;
     width: 100%;
     background-color: white;
 }
@@ -157,45 +157,34 @@
 
 .mediaMainContent {
     min-height: 80vh;
-    width: 80%;
-}
-
-.photoVideoToggleContent {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 80%;
-    min-height: 5vh;
-    padding: 0 2%;
+    width: 100%;
 }
 
 .photoVideoToggleContainer {
-    margin:10% 0;
-    padding-left: 2%;
-    background-color: yellowgreen;
-    font-size: 1.35em;
-    font-weight: 400;
-    color: rgb(74,95,107);
-}
-
-/* .photoVideoToggleSwitch {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    font-weight: 400;
-    color: rgb(74,95,107);
-    margin: 10% 0;
-    height: 80%;
-    width: 70%;
-    background-color: red;
+    height: 3em;
+    width: 100%;
+    padding: 3em 0 0 0;
     
 }
 
 .photoVideoToggleSwitch {
-    padding-left: 2%;
-    font-size: 1.35em;
-} */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 70%;
+    background-color: white;
+    
+}
+
+.photoVideoToggleText {
+    padding: 0, auto;
+    font-size: 2.25em;
+}
 
 
 .mediaGridPhotosContainer {
@@ -203,7 +192,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 50em;
+    min-height: 180em;
     width: 80%;
     margin: 0 auto;
     background-color: white;
@@ -223,7 +212,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 90em;
+    min-height: 140em;
     width: 80%;
     margin: 0 auto;
     background-color: white;

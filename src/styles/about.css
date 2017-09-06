@@ -751,6 +751,7 @@
 .whoWeAreText {
     /* min-height: vh; */
     background-color: transparent;
+    width: 75%;
 }
     
 .whoWeAreTitle {
