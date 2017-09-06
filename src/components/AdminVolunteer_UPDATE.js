@@ -21,6 +21,12 @@ class AdminVolunteer_UPDATE extends Component{
   }
 
   componentDidMount(){
+    axios.get('/api/admin')
+      .then(res => {
+        if(!res.data[0].admin_status){
+          this.props.history.push('/')
+        }
+      })
     axios.get(`/api/volunteers/${this.props.match.params.vol_id}`).then(res => {
       console.log("Res data is: ", res.data[0])
       this.setState({

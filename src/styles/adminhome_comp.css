@@ -333,7 +333,7 @@
   }
   .Adhome_rcc_Main {
     width: 90%;
-    height: 35vh;
+    height: 50vh;
     background-color: white;
     margin-top: 20px;
     margin-left: 5%;
@@ -341,6 +341,12 @@
     -moz-box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
     box-shadow: 0px 1px 19px 3px rgba(222,222,222,1);
   }
+
+  .wrapperBox {
+    height: 65vh;
+  }
+
+
 }
 
 

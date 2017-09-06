@@ -19,6 +19,12 @@ class AdminBlog_UPDATE extends Component{
   }
 
   componentDidMount(){
+    axios.get('/api/admin')
+      .then(res => {
+        if(!res.data[0].admin_status){
+          this.props.history.push('/')
+        }
+      })
     console.log("Param is: ", this.props.match.params.posts_id)
     axios.get(`/api/blogs/${this.props.match.params.posts_id}`).then(res => {
       console.log("Response is:", res.data)
