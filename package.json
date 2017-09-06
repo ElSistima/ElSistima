@@ -4,6 +4,11 @@
   "private": true,
   "main": "server/server.js",
   "dependencies": {
+
+    "aws-sdk": "^2.109.0",
+
+    
+
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
@@ -19,6 +24,11 @@
     "react": "^15.6.1",
     "react-big-calendar": "^0.15.0",
     "react-dom": "^15.6.1",
+    "react-dropzone": "^4.1.1",
+
+    "react-modal": "^2.2.4",
+
+
     "react-parallax": "^1.4.4",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
