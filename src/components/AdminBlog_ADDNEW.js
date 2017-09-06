@@ -77,38 +77,50 @@ class AdminBlog_ADDNEW extends Component{
   }
 
   clickSave(){
-    var month = Math.floor(Math.random() * (10));
+    var month = Math.floor(Math.random() * (1, 10));
     var day = Math.floor(Math.random() * (1, 30));
+    let monthName;
 
     switch(month){
       case 1:
-        return 'January';
+        monthName = 'January';
+        break;
       case 2:
-        return 'February';
+        monthName = 'February';
+        break;
       case 3:
-        return 'March';
+        monthName = 'March';
+        break;
       case 4:
-        return 'April';
+        monthName = 'April';
+        break;
       case 5:
-        return 'May';
+        monthName = 'May';
+        break;
       case 6:
-        return 'June';
+        monthName = 'June';
+        break;
       case 7:
-        return 'July';
+        monthName = 'July';
+        break;
       case 8:
-        return 'August';
+        monthName = 'August';
+        break;
       case 9:
-        return 'September';
+        monthName = 'September';
+        break;
       default:
-        return 'September';
+        break;
     }
+
+    console.log("Month name is: ", monthName, this.state)
 
     let newPostObject = {
       postContent: this.state.blogNewContent,
       postThumbnail: this.state.picture1,
       postTitle: this.state.blogNewTitle,
       year: 2017,
-      month: month,
+      month: monthName,
       day: `${day > 9 ? day : `0${day}`}`,
       blogImage: this.state.picture2,
       blogSubtitle: this.state.blogNewSubtitle
@@ -137,7 +149,6 @@ class AdminBlog_ADDNEW extends Component{
   }
 
   render(){
-    console.log("New blog props is: ", this.props)
     const fullPageStyle = { width: "100%" }
     //backgroundImage
     const placeholder1 = {
