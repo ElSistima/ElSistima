@@ -101,4 +101,18 @@
     font-size: 3em;
 }
 
+.socialIconsQuote {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    min-height: 15%;
+  }
+
+  .socialCircleQuote {
+    min-height: 48px;
+    min-width: 48px;
+    margin-top: 0;
+  }
+
 }
