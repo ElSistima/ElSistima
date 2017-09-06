@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import Dropzone from 'react-dropzone';
 
 const uploadImage = (file) => {
-  return axios.post("http://localhost:80/api/getSignedURL", {
+  return axios.post("/api/getSignedURL", {
     filename: file.name,
     filetype: file.type
   })
@@ -23,10 +23,6 @@ const uploadImage = (file) => {
   })
 }
 
-
-
-
-
 class AdminBlog_ADDNEW extends Component{
   constructor(props){
     super(props);
@@ -37,7 +33,6 @@ class AdminBlog_ADDNEW extends Component{
         picture1: 'https://i.imgur.com/FTLTf6u.png',
         picture2: 'https://i.imgur.com/FTLTf6u.png'
       }
-
   }
 
   trackTitleChange(event){
@@ -107,8 +102,6 @@ class AdminBlog_ADDNEW extends Component{
   }
 
   render(){
-    console.log("images are: "+ this.state.picture1)
-    console.log("Content is: ", this.state.blogNewContent)
     const fullPageStyle = { width: "100%" }
     //backgroundImage
     const placeholder1 = {
@@ -139,7 +132,7 @@ class AdminBlog_ADDNEW extends Component{
 
           <div className="addNewPicsBlogNew">
             <div className="addPicInnerBlogNew">
-              <p className="picInnerTextBlogNew">Add Top Full Picture</p>
+              <p className="picInnerTextBlogNew">Upload Thumbnail Image</p>
               <Dropzone
                 className="blogDropzone"
                 style={placeholder1}
@@ -150,7 +143,7 @@ class AdminBlog_ADDNEW extends Component{
 
             </div>
             <div className="addPicInnerBlogNew">
-              <p className="picInnerTextBlogNew">Add 2nd Full Picture</p>
+              <p className="picInnerTextBlogNew">Upload Banner Image</p>
               <Dropzone
                 className="blogDropzone"
                 style={placeholder2}

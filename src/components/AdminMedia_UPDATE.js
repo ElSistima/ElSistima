@@ -41,7 +41,7 @@ class AdminMedia_UPDATE extends Component{
   componentDidMount(){
     axios.get(`/api/media/${this.props.match.params.id}`)
     .then(res => {
-      console.log("Update media res.date is: ", res.data[0])
+      console.log("Update media res.data is: ", res.data[0])
       this.setState({
         mediaTitle: '(Add New Title)',
         mediaCategoryBool: res.data[0].is_picture,
@@ -88,7 +88,6 @@ class AdminMedia_UPDATE extends Component{
     }
     !this.state.mediaFile || !this.state.mediaCategoryBool || !this.state.mediaDescription ? alert("Be sure you have a title, selected category, and description before saving your media file.") :
     axios.put(`/api/media/${this.props.match.params.id}`, updatedMediaObject).then(res => {
-      console.log(res)
       this.setState({
         mediaTitle: '',
         mediaCategoryBool: true,
