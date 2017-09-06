@@ -7,11 +7,12 @@
 }
 
 .adminContentContainerMediaNew{
+  width: 90%;
   margin: 0 auto;
 }
 
 .addNewMediaNew {
-  width: 90%;
+  width: 100%;
   min-height: 50vh;
   background-color: white;
   margin: 2vh auto 2vh;
@@ -23,7 +24,7 @@
   font-size: x-large;
 }
 
-.titleMediaNew, .categoryMediaNew, .urlMediaNew {
+.titleMediaNew, .contentMediaNew {
   font-size: small;
 }
 
@@ -44,6 +45,20 @@
   min-height: 8vh;
 }
 
+.mediaSelectContainer {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  width: 45%;
+  min-height: 8vh;
+}
+
+select {
+  font-size: small;
+
+}
+
 .midInputMediaNew input {
   background: transparent;
   border: none;
@@ -53,15 +68,42 @@
   min-height: 8vh;
 }
 
-.overwriteMediaNew {
-  min-height: 8vh;
+.bottomInputMediaNew {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.bottomInputMediaNew input {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid darkgray;
-  outline: none;
-  width: 100%;
-  min-height: 16vh;
+.mediaDropzone {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.saveCancelBtnContainerMediaNew {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.updateBtnMediaNewDesktop, .cancelBtnMediaNewDesktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 4vh;
+  margin-top: 1.25vh;
+  box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
+  font-size: small;
+  color: white;
+  background-color: #4e8aa8;
+  border-radius: 5px;
+}
+
+.cancelBtnMediaNewDesktop {
+  background-color: #ECECEC;
+  color: #b4b4b4;
 }
