@@ -37,7 +37,7 @@ class AdminPerformances extends Component {
   markAllChecked(){
     this.setState({
       checkAllBoxes: !this.state.checkAllBoxes,
-      amountChecked: this.state.fetchedPosts.length
+      amountChecked: this.state.fetchedPerformances.length
     })
   }
 
@@ -49,6 +49,10 @@ class AdminPerformances extends Component {
 
     const fullPageStyle = { width: "100%" }
 
+    const fetchedItemsAmount = this.state.fetchedPerformances.length == 1 ? "item selected" : "items selected"
+
+    const displayTrashAll = {display: "none"}
+
     const allPerformances = this.state.fetchedPerformances.map((performance, i) => {return (
       <IndivPerformanceDetails key={i} index={i} performance={performance} checkAll={this.state.checkAllBoxes} checkedQty={0} reloadPerformances={this.reloadPerformances.bind(this)}/>
     )
@@ -59,12 +63,13 @@ class AdminPerformances extends Component {
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
             <p className="adminPageHeader">Current Performances</p>
-            <Link to="/admin/performances/addNew">
+            <Link to="/admin">
               <i className="fa fa-plus-square" aria-hidden="true"></i>
             </Link>
           </div>
           <div className="itemsSelected">
-            <p>ITEMS SELECTED TEXT GOES HERE</p>
+            <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {fetchedItemsAmount}</p>
+            <p style={this.state.checkAllBoxes ? null : displayTrashAll}><i className="fa fa-trash trashAll" aria-hidden="true"></i></p>
           </div>
           <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">

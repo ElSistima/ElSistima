@@ -35,11 +35,16 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   min-height: 5vh;
-  padding-left: 2.5%;
+  padding: 0 3.25%;
   background-color: #E8EFFC;
   color: #5182EA;
+}
+
+.trashAll {
+  font-size: 1.25em;
 }
 
 .columnTitles {
@@ -93,7 +98,7 @@
 
   .itemsSelected {
     min-height: 6vh;
-    padding-left: 3.5%;
+    padding: 0 3.75%;
   }
 
   .itemsSelected p {
@@ -115,6 +120,10 @@
 
   .editRemove {
     width: 11.5%;
+  }
+
+  .trashAll {
+    font-size: 1.05em !important;
   }
 }
 
@@ -139,6 +148,10 @@
 
   .fa-plus-square {
     font-size: 1.5em;
+  }
+
+  .itemsSelected {
+    padding: 0 4.65%;
   }
 
   .itemsSelected {

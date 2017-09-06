@@ -41,7 +41,7 @@ class AdminVolunteer extends Component{
   markAllChecked(){
     this.setState({
       checkAllBoxes: !this.state.checkAllBoxes,
-      amountChecked: this.state.fetchedPosts.length
+      amountChecked: this.state.fetchedVolunteers.length
     })
   }
 
@@ -53,6 +53,10 @@ class AdminVolunteer extends Component{
     const itemRowSelectedStyle = { backgroundColor: "#E8E8E8" }
 
     const fullPageStyle = { width: "100%" }
+
+    const fetchedItemsAmount = this.state.fetchedVolunteers.length == 1 ? "item selected" : "items selected"
+
+    const displayTrashAll = {display: "none"}
 
     const allVolunteers = this.state.fetchedVolunteers.map((person, i) => {
       return (
@@ -70,7 +74,8 @@ class AdminVolunteer extends Component{
             </Link>
           </div>
           <div className="itemsSelected">
-            <p>ITEMS SELECTED TEXT GOES HERE</p>
+          <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {fetchedItemsAmount}</p>
+          <p style={this.state.checkAllBoxes ? null : displayTrashAll}><i className="fa fa-trash trashAll" aria-hidden="true"></i></p>
           </div>
           <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">

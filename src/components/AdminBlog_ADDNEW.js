@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import Dropzone from 'react-dropzone';
 
 const uploadImage = (file) => {
-  return axios.post("http://localhost:80/api/getSignedURL", {
+  return axios.post("/api/getSignedURL", {
     filename: file.name,
     filetype: file.type
   })
@@ -23,10 +23,6 @@ const uploadImage = (file) => {
   })
 }
 
-
-
-
-
 class AdminBlog_ADDNEW extends Component{
   constructor(props){
     super(props);
@@ -37,7 +33,6 @@ class AdminBlog_ADDNEW extends Component{
         picture1: 'https://i.imgur.com/FTLTf6u.png',
         picture2: 'https://i.imgur.com/FTLTf6u.png'
       }
-
   }
 
   componentDidMount(){
@@ -82,17 +77,64 @@ class AdminBlog_ADDNEW extends Component{
   }
 
   clickSave(){
+    var month = Math.floor(Math.random() * (2, 10));
+    var day = Math.floor(Math.random() * (2, 30));
+    let monthName;
+
+    switch(month){
+      case 1:
+        monthName = 'January';
+        break;
+      case 2:
+        monthName = 'February';
+        break;
+      case 3:
+        monthName = 'March';
+        break;
+      case 4:
+        monthName = 'April';
+        break;
+      case 5:
+        monthName = 'May';
+        break;
+      case 6:
+        monthName = 'June';
+        break;
+      case 7:
+        monthName = 'July';
+        break;
+      case 8:
+        monthName = 'August';
+        break;
+      case 9:
+        monthName = 'September';
+        break;
+      default:
+        break;
+    }
+
     let newPostObject = {
       postContent: this.state.blogNewContent,
       postThumbnail: this.state.picture1,
       postTitle: this.state.blogNewTitle,
       year: 2017,
-      month: 'September',
-      day: 15,
+      month: monthName,
+      day: `${day > 9 ? day : `0 + ${day}`}`,
       blogImage: this.state.picture2,
       blogSubtitle: this.state.blogNewSubtitle
     }
-    !this.state.blogNewTitle || !this.state.blogNewSubtitle || !this.state.blogNewContent ? alert("Be sure you have a title, subtitle, and blog content before saving your post.") : axios.post('/api/post',newPostObject).then(res => console.log(res)).catch(err => console.log(err));
+    !this.state.blogNewTitle || !this.state.blogNewSubtitle || !this.state.blogNewContent ? alert("Be sure you have a title, subtitle, and blog content before saving your post.") : axios.post('/api/post',newPostObject).then(res => {
+       console.log(res)
+       this.setState({
+         blogNewTitle: '',
+         blogNewSubtitle: '',
+         blogNewContent: '',
+         picture1: 'https://i.imgur.com/FTLTf6u.png',
+         picture2: 'https://i.imgur.com/FTLTf6u.png'
+       })
+       alert("New Blog Post Published.")
+       this.props.history.push("/admin/blog")
+    }).catch(err => console.log(err));
   }
 
   clickCancel(){
@@ -104,30 +146,21 @@ class AdminBlog_ADDNEW extends Component{
       picture1: 'https://i.imgur.com/FTLTf6u.png',
       picture2: 'https://i.imgur.com/FTLTf6u.png'
     })
+    this.props.history.push("/admin/blog")
   }
 
   render(){
-    console.log("images are: "+ this.state.picture1)
-    console.log("Content is: ", this.state.blogNewContent)
     const fullPageStyle = { width: "100%" }
     //backgroundImage
     const placeholder1 = {
       backgroundImage: `url('${this.state.picture1}')`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      width: '80%',
-      height: '30vh',
-      marginTop: '15px',
-      marginBottom: '10px'
+      backgroundPosition: 'center'
     }
     const placeholder2 = {
       backgroundImage: `url(${this.state.picture2})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      width: '80%',
-      height: '30vh',
-      marginTop: '15px',
-      marginBottom: '10px'
+      backgroundPosition: 'center'
     }
 
     return(
@@ -147,8 +180,9 @@ class AdminBlog_ADDNEW extends Component{
 
           <div className="addNewPicsBlogNew">
             <div className="addPicInnerBlogNew">
-              <p className="picInnerTextBlogNew">Add Top Full Picture</p>
+              <p className="picInnerTextBlogNew">Upload Thumbnail Image</p>
               <Dropzone
+                className="blogDropzone"
                 style={placeholder1}
                 onDrop={(accepted, rejected) => this.onDrop1(accepted, rejected)}></Dropzone>
 
@@ -157,8 +191,9 @@ class AdminBlog_ADDNEW extends Component{
 
             </div>
             <div className="addPicInnerBlogNew">
-              <p className="picInnerTextBlogNew">Add 2nd Full Picture</p>
+              <p className="picInnerTextBlogNew">Upload Banner Image</p>
               <Dropzone
+                className="blogDropzone"
                 style={placeholder2}
                 onDrop={(accepted, rejected) => this.onDrop2(accepted, rejected)}></Dropzone>
               <div className="buttonBlogNew cancelBtnBlogNew" onClick={this.clickCancel.bind(this)}>CANCEL</div>

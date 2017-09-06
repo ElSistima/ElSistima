@@ -55,6 +55,10 @@ class AdminMedia extends Component{
 
     const fullPageStyle = { width: "100%" }
 
+    const fetchedItemsAmount = this.state.fetchedMedia.length == 1 ? "item selected" : "items selected"
+
+    const displayTrashAll = {display: "none"}
+
     const allMedia = this.state.fetchedMedia.map((media, i) => { return (
       <IndivMediaDetails key={i} index={i} media={media} checkAll={this.state.checkAllBoxes} checkedQty={0} reloadMedia={this.reloadMedia.bind(this)}/>
     )
@@ -70,7 +74,8 @@ class AdminMedia extends Component{
             </Link>
           </div>
           <div className="itemsSelected">
-            <p>ITEMS SELECTED TEXT GOES HERE</p>
+          <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {fetchedItemsAmount}</p>
+          <p style={this.state.checkAllBoxes ? null : displayTrashAll}><i className="fa fa-trash trashAll" aria-hidden="true"></i></p>
           </div>
           <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">
