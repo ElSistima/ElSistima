@@ -52,6 +52,10 @@ class AdminClasses extends Component {
 
     const fullPageStyle = { width: "100%" }
 
+    const fetchedItemsAmount = this.state.fetchedClasses.length == 1 ? "item selected" : "items selected"
+
+    const displayTrashAll = {display: "none"}
+
     const allClasses = this.state.fetchedClasses.map((classObj, i) => {
       return (
       <IndivClassDetails key={i} index={i} classObj={classObj} checkAll={this.state.checkAllBoxes} checkedQty={0} reloadClasses={this.reloadClasses.bind(this)} />
@@ -68,7 +72,8 @@ class AdminClasses extends Component {
             </Link>
           </div>
           <div className="itemsSelected">
-            <p>ITEMS SELECTED TEXT GOES HERE</p>
+          <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {fetchedItemsAmount}</p>
+          <p style={this.state.checkAllBoxes ? null : displayTrashAll}><i className="fa fa-trash trashAll" aria-hidden="true"></i></p>
           </div>
           <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">

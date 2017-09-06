@@ -60,6 +60,9 @@ class AdminBlog extends Component {
 
     const fetchedItemsAmount = this.state.fetchedPosts.length == 1 ? "item selected" : "items selected"
 
+    const displayTrashAll = {display: "none"}
+
+
     return(
       <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
         <section className="adminContentContainer">
@@ -70,7 +73,8 @@ class AdminBlog extends Component {
             </Link>
           </div>
           <div className="itemsSelected">
-            <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {fetchedItemsAmount}</p>
+          <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {fetchedItemsAmount}</p>
+          <p style={this.state.checkAllBoxes ? null : displayTrashAll}><i className="fa fa-trash trashAll" aria-hidden="true"></i></p>
           </div>
           <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">
