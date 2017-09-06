@@ -34,7 +34,7 @@ export default class Admin_Calender extends Component{
   }
 
   componentDidMount(){
-    axios.get('/api/events').then(res => this.setState({events: res.data}))
+      axios.get('/api/events').then(res => this.setState({events: res.data}))
   }
 
   displayButton(){
@@ -106,7 +106,7 @@ export default class Admin_Calender extends Component{
   onDeleteTask(){
     axios.delete(`/api/events/${this.state.eventId}`)
       .then(res => {
-        console.log(res.date)
+
         axios.get('/api/events').then(res => this.setState({events: res.data}))
         this.setState({
           events: [],
@@ -154,7 +154,7 @@ export default class Admin_Calender extends Component{
     }
     axios.post('/api/events', eventobj)
       .then(res => {
-        console.log(res.data)
+
         axios.get('/api/events').then(res => this.setState({events: res.data}))
         this.setState({
           showEditBox: false,
@@ -198,7 +198,7 @@ export default class Admin_Calender extends Component{
     }
     axios.put(`/api/events/${this.state.eventId}`, eventobj)
       .then(res => {
-        console.log(res.data)
+
         axios.get('/api/events').then(res => this.setState({events: res.data}))
         this.setState({
           showEditBox: false,
@@ -295,11 +295,12 @@ export default class Admin_Calender extends Component{
 
 
 
+
+
   render(){
     var realevents = this.state.events.map(item => {
       var month = item.date_month_number - 1;
       var monthend = item.date_month_end_num - 1;
-      console.log(item)
       var hexColor;
       if(item.type == 'performance') {
         hexColor = '#4088af'
@@ -332,7 +333,7 @@ export default class Admin_Calender extends Component{
       display: 'none'
     }
     return(
-      <div className="Adhome_rcc_Main adhome_calender" >
+      <div className="Adhome_rcc_Main adhome_calender" ref="myRef">
         <BigCalendar
       selectable
       eventPropGetter={(this.eventStyleGetter)}

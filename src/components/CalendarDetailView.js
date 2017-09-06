@@ -58,7 +58,6 @@ export default class CalenderDetail extends Component{
     var realevents = this.state.events.map(item => {
       var month = item.date_month_number - 1;
       var monthend = item.date_month_end_num - 1;
-      console.log(item)
       var hexColor;
       if(item.type == 'performance') {
         hexColor = '#4088af'

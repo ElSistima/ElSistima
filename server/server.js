@@ -86,12 +86,12 @@ passport.deserializeUser(function(user, done) {
 app.get('/auth', passport.authenticate('auth0'));
 
 app.get('/auth/callback',
-  passport.authenticate('auth0', {successRedirect: process.env.LOGIN_SUCCESS_REDIRECT1}), function(req, res) {
+  passport.authenticate('auth0', {successRedirect: 'http://localhost:3000/admin'}), function(req, res) {
     res.status(200).send(req.user);
 })
 
 app.get('/auth/me', function(req, res) {
-
+  console.log(req.user.id)
   res.status(200).send(req.user);
 })
 
@@ -147,6 +147,28 @@ app.listen(port, ()=> {
 
 
 //=============GET REQUESTS =====================
+
+app.get('/api/admin', (req, res) => {
+  const db = req.app.get('db');
+  let id = false;
+  if(req.user){
+    id = req.user.id
+  };
+
+  console.log(id)
+
+  if(id){
+    db.get_user_admin_status([id])
+      .then(status => {
+        res.status(200).send(status);
+      })
+      .catch(err => res.status(500).send(err))
+  } else {
+    res.status(200).send([{admin_status: false}])
+  }
+
+})
+
 app.get('/api/blogs', userController.getBlogPosts)
 app.get('/api/events', userController.getEvents)
 app.get('/api/media', userController.getMedia)
