@@ -100,14 +100,14 @@
 }
 
 
-/*.mapWrapper {
+
+.mapWrapper {
   position: fixed;
   z-index: 1000;
-  left: 32%;
-  top: 7%;
-  width: 35%;
-  height: 35vw;
-
+  left: 17%;
+  top: 15%;
+  width: 68%;
+  height: 74vw;
 }
 
 .crossOut {
@@ -122,20 +122,6 @@
   align-items: center;
 }
 
-
-.crossOutIcon {
-  font-size: 25px;
-  color: orange;
-}*/
-
-.mapWrapper {
-  position: fixed;
-  z-index: 1000;
-  left: 17%;
-  top: 15%;
-  width: 68%;
-  height: 74vw;
-}
 
 
 
@@ -328,5 +314,32 @@
 
   .bottomFooterDiv p:nth-child(2) {
     font-size: 14px;
+  }
+
+  .mapWrapper {
+    position: fixed;
+    z-index: 1000;
+    left: 32%;
+    top: 7%;
+    width: 35%;
+    height: 35vw;
+
+  }
+
+  .crossOut {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 5000;
+    top: -21px;
+    right: -21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .crossOutIcon {
+    font-size: 55px;
   }
 }
