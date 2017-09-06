@@ -28,6 +28,7 @@
     "react-stripe-elements": "0.0.8",
     "react-toggle-switch": "^2.1.4",
     "redux": "^3.7.2",
+    "redux-promise-middleware": "^4.4.1",
     "stripe": "^4.24.1",
     "twitter-node-client": "0.0.6"
   },

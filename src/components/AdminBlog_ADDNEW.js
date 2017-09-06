@@ -40,6 +40,15 @@ class AdminBlog_ADDNEW extends Component{
 
   }
 
+  componentDidMount(){
+    axios.get('/api/admin')
+      .then(res => {
+        if(!res.data[0].admin_status){
+          this.props.history.push('/')
+        }
+      })
+  }
+
   trackTitleChange(event){
     this.setState({
       blogNewTitle: event.target.value
@@ -93,7 +102,7 @@ class AdminBlog_ADDNEW extends Component{
       blogNewSubtitle: '',
       blogNewContent: '',
       picture1: 'https://i.imgur.com/FTLTf6u.png',
-      picture2: 'https://i.imgur.com/FTLTf6u.png' 
+      picture2: 'https://i.imgur.com/FTLTf6u.png'
     })
   }
 

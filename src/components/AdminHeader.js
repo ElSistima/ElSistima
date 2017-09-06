@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import '../styles/adminHeader.css';
 
-export default class AdminHeader extends Component{
-  constructor(props){
-    super(props);
 
-  }
+export default class AdminHeader extends Component{
+
 
   render(){
 
