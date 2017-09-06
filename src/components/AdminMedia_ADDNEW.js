@@ -62,7 +62,7 @@ class AdminMedia_ADDNEW extends Component{
               <input placeholder="Title" value={this.state.mediaTitle} className="titleMediaNew" />
 
               <div className="mediaSelectContainer">
-                <select>
+                <select className="mediaTypeSelect">
                   <option value="Image">Image</option>
                   <option value="Video">Video</option>
                 </select>
