@@ -11,9 +11,10 @@
 
 .rcc_rable_row {
   display: flex;
-  height: 55px;
+  height: 25px;
   /*border: 2px solid red;*/
   border-bottom: 1px solid lightgray;
+  font-size: 12px;
 }
 
 .tableInner {
@@ -220,6 +221,11 @@
   .adhome_calender {
     height: 550px;
   }
+
+  .rcc_rable_row {
+    height: 36px;
+    font-size: 17px;
+  }
 }
 
 
@@ -241,5 +247,10 @@
     position: relative;
     top: -840px;
     left: 51.8%;
+  }
+
+  .rcc_rable_row {
+    height: 55px;
+    font-size: 20px;
   }
 }
