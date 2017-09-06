@@ -361,11 +361,12 @@
     height: 550px;
   }
 
-<<<<<<< HEAD
+
   .rcc_rable_row {
     height: 36px;
     font-size: 17px;
-=======
+}
+
   .wrapperBox {
     width: 80%;
     height: 50%;
@@ -391,7 +392,7 @@
     border-top: 2px solid #ececec;
     display: flex;
     justify-content: space-between;
->>>>>>> master
+
   }
 }
 
@@ -417,11 +418,12 @@
     left: 51.8%;
   }
 
-<<<<<<< HEAD
+
   .rcc_rable_row {
     height: 55px;
     font-size: 20px;
-=======
+  }
+
   .wrapperBox {
     width: 80%;
     height: 50%;
@@ -446,6 +448,6 @@
     border-top: 2px solid #ececec;
     display: flex;
     justify-content: space-between;
->>>>>>> master
+
   }
 }
