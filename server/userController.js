@@ -231,6 +231,17 @@ module.exports = {
         res.status(500).send(err)} )
   },
 
+  postMedia: function(req, res){
+    const db = req.app.get('db');
+    const {media_url, is_picture, description, post_time} = req.body;
+
+    db.post_media([media_url, is_picture, description, post_time]).then(response => {
+      res.status(200).send('sentSuccessfully')
+    }).catch(err => {
+      res.status(500).send(err)
+    })
+  },
+
   postNewPost: function(req,res){
 
     let month_num;

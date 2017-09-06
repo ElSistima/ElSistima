@@ -167,6 +167,7 @@ app.post('/api/quote', userController.postQuote)
 app.post('/api/post', userController.postNewPost)
 //AWS
 app.post('/api/getSignedURL', awsController.getSignedURL)
+app.post('/api/media', userController.postMedia)
 
 //===============PUT REQUESTS===================
 app.put('/api/events/:eventid', userController.putEvent)
