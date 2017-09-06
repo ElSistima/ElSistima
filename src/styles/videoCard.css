@@ -1,15 +1,16 @@
 .photoCardContainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 9em;
-    width: 10em;
-    background-color: whitesmoke;
-    box-shadow: 1px 1px 1px;
+    height: 14em;
+    width: 17em;
+    background-color: white;
+    box-shadow: 3px 3px 5px 6px #ccc;
     /* border: solid 1px; */
     border-radius: 2px;
     color: rgb(74,95,107);
+    margin: 5%;
     
 }
 
@@ -18,14 +19,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: .2em;
+    /* padding-bottom: 2em; */
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .imageSize {
-    height: 5.7em;
-    width: 9.5em;
+    height: 10.2em;
+    width: 17em;
 }
 
 .photoCaption {
@@ -33,9 +34,9 @@
     justify-content: space-around;
     align-items: center;
     width: 95%;
-    padding-top: .1em;
-    background-color: whitesmoke;
-    font-size: .6em;
+    padding-top: 1.5em;
+    background-color: white;
+    font-size: .75em;
     
 }
 
@@ -54,8 +55,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 18.9em;
-    width: 21em;
+    height: 15.3em;
+    width: 17em;
     background-color: whitesmoke;
     box-shadow: 3px 3px 3px;
     border-radius: 2px;
@@ -64,14 +65,14 @@
 .mediaImage {
     display: flex;
     justify-content: center;
-    padding-bottom: .2em;
+    /* padding-bottom: .2em; */
     width: 100%;
     background-color: whitesmoke;
 }
 
 .imageSize {
-    height: 12em;
-    width: 20em;
+    height: 10.2em;
+    width: 17em;
 }
 
 .photoCaption {
@@ -79,7 +80,7 @@
     justify-content: space-around;
     align-items: center;
     width: 95%;
-    padding-top: .1em;
+    padding-top: 1.5em;
     background-color: whitesmoke;
     font-size: 1.15em;
     
