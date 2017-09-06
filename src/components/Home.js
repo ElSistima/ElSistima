@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './../styles/home.css';
 import {Link} from 'react-router-dom';
-import MapInsert from './MapInsert';
-import { connect } from 'react-redux';
+
 
 
 class Home extends Component {
@@ -10,21 +9,10 @@ class Home extends Component {
 
 
 render(){
-  console.log('im state', this.props.darken)
-  var makeDark = {
-    filter: 'brightness(50%)'
-  }
+
   return (
     <main className="mainContent">
-    {this.props.mapClicked?
-        <div className="mapWrapper">
-          <div className="crossOut" ><i className="crossOutIcon fa fa-times" aria-hidden="true"></i>
-</div>
-          <MapInsert />
-        </div>
-      :
-      ""}
-      <div style={this.props.darken?makeDark:{}}>
+
       <section className="homeBanner">
         <div className="quoteContainer">
           <div className="socialIconsQuote">
@@ -178,18 +166,10 @@ render(){
           </div>
         </div>
       </section>
-      </div>
     </main>
   )
 }
 }
 
-function mapStateToProps(state){
-  return {
-    mapClicked: state.mapClicked,
-    darken: state.darken
-  }
-}
 
-
-export default connect(mapStateToProps)(Home);
+export default Home;
