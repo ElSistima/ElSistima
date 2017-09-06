@@ -16,6 +16,12 @@ class AdminMedia extends Component{
   }
 
   componentDidMount(){
+    axios.get('/api/admin')
+      .then(res => {
+        if(!res.data[0].admin_status){
+          this.props.history.push('/')
+        }
+      })
     axios.get('/api/media').then(res => {
       console.log("Res data is:", res.data)
       this.setState({

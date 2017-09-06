@@ -4,11 +4,18 @@ import AdminHome_RCC from './AdminHome_RCC';
 import AdminHome_SOAT from './AdminHome_SOAT';
 import Admin_Calender from './Admin_Calender';
 import {connect} from 'react-redux';
+import axios from 'axios';
+
+
 
 class AdminHome extends Component{
-  constructor(props){
-    super(props);
-
+  componentDidMount(){
+    axios.get('/api/admin')
+      .then(res => {
+        if(!res.data[0].admin_status){
+          this.props.history.push('/')
+        }
+      })
   }
 
   render(){

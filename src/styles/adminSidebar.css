@@ -1,7 +1,7 @@
 .Ad_sidebarMain {
   box-sizing: border-box;
   width: 14%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #EDEDED;
   color: #7b7b7c;
   float: left;
@@ -60,6 +60,7 @@
   .Ad_sidebarMain {
     width: 22%;
     background-color: #EDEDED;
+    height: 110vh;
   }
 
   .sideNav {

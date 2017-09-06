@@ -1,13 +1,16 @@
+import axios from 'axios';
+
 const initialState ={
   clicked: null,
   itemsCheckedCount: 0,
   mapClicked: false,
-  darken: false
+  darken: false,
 }
 
 const HAM_CLICKED = 'HAM_CLICKED';
 const MAP_CLICKED = 'MAP_CLICKED';
 const DARKEN_BKG = 'DARKEN_BKG';
+const UPDATE_ADMIN = 'UPDATE_ADMIN';
 
 export default function reducer(state = initialState, action){
   switch(action.type){
