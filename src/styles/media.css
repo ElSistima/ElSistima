@@ -8,7 +8,9 @@
     justify-content: center;
     align-items: center;
     height: 3em;
-    width: 50%;
+    margin-top: 1.3em;
+    width: 100%;
+    background-color: white;
 }
 
 .photoVideoToggleSwitch {
@@ -17,22 +19,25 @@
     justify-content: space-between;
     align-items: center;
     height: 80%;
-    width: 60%;
+    width: 85%;
     background-color: white;
     color: rgb(74,95,107);
+    margin: 1em 0;
 }
 
 .photoVideoToggleText {
     padding: 0, auto;
+    font-size: 1.35em;
 }
 
 .mediaGridPhotosContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85em;
+    min-height: 100em;
     width: 100%;
     background-color: white;
+    margin: 1em 0;
 }
 
 .mediaGrid {
@@ -40,7 +45,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: 99%;
-    width: 95%;
+    width: 90%;
     background-color: white;
 }
 
@@ -55,7 +60,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 65em;
+    min-height: 100em;
     width: 100%;
     background-color: white;
 }
@@ -65,7 +70,7 @@
     justify-content: center;
     align-items: center;
     height: 3em;
-    width: 50%;
+    width: 100%;
     border-top: solid 1px;
 }
 
@@ -81,8 +86,8 @@
     justify-content: center;
     align-items: center;
     height: 3em;
-    width: 50%;
-    padding: 1em 0;
+    width: 100%;
+    margin: 4em 0 3em 0;
 }
 
 .photoVideoToggleSwitch {
@@ -91,7 +96,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80%;
-    width: 60%;
+    width: 87%;
     background-color: white;
     
 }
@@ -106,7 +111,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 190em;
+    min-height: 100em;
     width: 100%;
     background-color: white;
 }
@@ -141,7 +146,7 @@
     justify-content: center;
     align-items: center;
     height: 3em;
-    width: 50%;
+    width: 100%;
     border-top: solid 1px;
     padding: 1em 0;
 }
@@ -160,8 +165,9 @@
     justify-content: center;
     align-items: center;
     height: 3em;
-    width: 50%;
-    padding: 1.5em 0;
+    width: 100%;
+    padding: 4em 0 0 0 ;
+    
 }
 
 .photoVideoToggleSwitch {
@@ -170,7 +176,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80%;
-    width: 60%;
+    width: 70%;
     background-color: white;
     
 }
@@ -186,7 +192,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 175em;
+    min-height: 50em;
     width: 80%;
     margin: 0 auto;
     background-color: white;
@@ -206,7 +212,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 140em;
+    min-height: 90em;
     width: 80%;
     margin: 0 auto;
     background-color: white;
