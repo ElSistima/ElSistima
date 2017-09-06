@@ -58,7 +58,7 @@ class AdminBlog extends Component {
 
     const fullPageStyle = { width: "100%" }
 
-    const postAmount = this.state.fetchedPosts.length == 1 ? "item selected" : "items selected"
+    const fetchedItemsAmount = this.state.fetchedPosts.length == 1 ? "item selected" : "items selected"
 
     return(
       <main className="adminWrapper" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
@@ -70,7 +70,7 @@ class AdminBlog extends Component {
             </Link>
           </div>
           <div className="itemsSelected">
-            <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {postAmount}</p>
+            <p>{this.state.checkAllBoxes ? this.state.amountChecked : 0} {fetchedItemsAmount}</p>
           </div>
           <div className="columnTitles postDetailsWrapper" style={this.state.checkAllBoxes ? itemRowSelectedStyle : null}>
             <div className="blogDetailsItem1">

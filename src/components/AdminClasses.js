@@ -63,7 +63,7 @@ class AdminClasses extends Component {
         <section className="adminContentContainer">
           <div className="adminPageHeaderContainer">
             <p className="adminPageHeader">Current Classes</p>
-            <Link to="/admin/classes/addNew">
+            <Link to="/admin">
               <i className="fa fa-plus-square" aria-hidden="true"></i>
             </Link>
           </div>
