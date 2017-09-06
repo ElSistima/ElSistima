@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/header.css';
 import {Link} from 'react-router-dom';
-import { connect } from 'react-redux';
+
 
 class Header extends Component {
   constructor(props){
@@ -35,10 +35,10 @@ returnHome(){
     const homeLogo = {position: "absolute", top: "35px", height: "12.5vh", width: "25%"}
     const homeLogoPhone = {position: "absolute", top: "13px", height: "6vh", width: "30%"}
     const homeLogoTablet = {position: "absolute", top: "35px", height: "8.5vh", width: "27.5%"}
-    const makeDark = { filter: 'brightness(50%)'}
+
 
     return (
-      <main className="mainHeader" style={this.state.currentPage ? homeHeader : null} style={this.props.darken?makeDark:{}}>
+      <main className="mainHeader">
 
       <Link to="/" className="headerLogoLink" onClick={this.returnHome.bind(this)}>
         <div className="logoContainerPhone" style={this.state.currentPage ? homeLogoPhone : null}>
@@ -89,11 +89,6 @@ returnHome(){
   }
 }
 
-function mapStateToProps(state){
-  return {
-    darken: state.darken
-  }
-}
 
 
-export default connect(mapStateToProps)(Header);
+export default Header;
