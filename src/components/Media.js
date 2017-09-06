@@ -80,8 +80,10 @@ export default class Media extends Component{
       <main className="mediaMainContent">
         
         <section className="photoVideoToggleContainer">
+          <div className="photoVideoToggleContent">
           <div className="photoVideoToggleSwitch">
             <p className="photoVideoToggleText">Photos</p>
+          </div>
           </div>
           </section>
   

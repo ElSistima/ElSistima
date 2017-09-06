@@ -157,34 +157,45 @@
 
 .mediaMainContent {
     min-height: 80vh;
-    width: 100%;
+    width: 80%;
+}
+
+.photoVideoToggleContent {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 80%;
+    min-height: 5vh;
+    padding: 0 2%;
 }
 
 .photoVideoToggleContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3em;
-    width: 100%;
-    padding: 4em 0 0 0 ;
-    
+    margin:10% 0;
+    padding-left: 2%;
+    background-color: yellowgreen;
+    font-size: 1.35em;
+    font-weight: 400;
+    color: rgb(74,95,107);
 }
 
-.photoVideoToggleSwitch {
+/* .photoVideoToggleSwitch {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-weight: 400;
+    color: rgb(74,95,107);
+    margin: 10% 0;
     height: 80%;
     width: 70%;
-    background-color: white;
+    background-color: red;
     
 }
 
-.photoVideoToggleText {
-    padding: 0, auto;
-    font-size: 2.25em;
-}
+.photoVideoToggleSwitch {
+    padding-left: 2%;
+    font-size: 1.35em;
+} */
 
 
 .mediaGridPhotosContainer {
