@@ -97,7 +97,6 @@ class AdminMedia_ADDNEW extends Component{
   }
 
   render(){
-    console.log("Media state is: ", this.state)
     const fullPageStyle = { width: "100%" }
 
     const placeholder = {

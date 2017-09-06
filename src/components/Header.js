@@ -30,6 +30,8 @@ returnHome(){
 }
 
   render(){
+console.log(localStorage.setItem('currentPage', this.state.currentPage))
+
 
     const homeHeader = {position: "relative"}
     const homeLogo = {position: "absolute", top: "35px", height: "12.5vh", width: "25%"}
