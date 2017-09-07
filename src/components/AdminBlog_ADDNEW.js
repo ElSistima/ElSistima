@@ -118,8 +118,10 @@ class AdminBlog_ADDNEW extends Component{
       postThumbnail: this.state.picture1,
       postTitle: this.state.blogNewTitle,
       year: 2017,
-      month: monthName,
-      day: `${day > 9 ? day : `0 + ${day}`}`,
+      // month: monthName,
+      month: 'September',
+      // day: `${day > 9 ? day : `0 + ${day}`}`,
+      day: 30,
       blogImage: this.state.picture2,
       blogSubtitle: this.state.blogNewSubtitle
     }

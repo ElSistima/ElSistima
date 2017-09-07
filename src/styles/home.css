@@ -259,8 +259,9 @@
 }
 
 .coreValuesTextThree {
+  box-sizing: border-box;
   position: absolute;
-  height: 34vh;
+  min-height: 38vh;
   width: 70%;
   bottom: -33vh;
   right: -1vh;
@@ -298,8 +299,7 @@
   align-items: center;
   width: 7em;
   height: 2em;
-  margin: 0 auto;
-  margin-top: 1em;
+  margin: 1.5em auto;
   border: 1px solid #ECC749;
 }
 
@@ -512,7 +512,8 @@
   }
 
   .coreValuesTextThree {
-    height: 350px;
+    box-sizing: border-box;
+    min-height: 350px;
     min-height: 24vh;
     bottom: -32vh;
   }
