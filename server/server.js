@@ -24,7 +24,7 @@ app.use(session({
   saveUninitialized: true, //Without this you get a constant warning about default values
   secret: 'asdjfa;klsdjfladsfjkadfs;lkj'
 }))
-// app.use( express.static( `${__dirname}/../build` ) );
+app.use( express.static( `${__dirname}/../build` ) );
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());
@@ -86,7 +86,7 @@ passport.deserializeUser(function(user, done) {
 app.get('/auth', passport.authenticate('auth0'));
 
 app.get('/auth/callback',
-  passport.authenticate('auth0', {successRedirect: 'http://localhost:3000/admin'}), function(req, res) {
+  passport.authenticate('auth0', {successRedirect: process.env.LOGIN_SUCCESS_REDIRECT1}), function(req, res) {
     res.status(200).send(req.user);
 })
 
@@ -253,7 +253,7 @@ console.log(req.body.token.token.id, 'this is the token id')
 //===============STRIPE PAYMENT ENDS===================
 
 
-// const path = require('path')
-// app.get('*', (req, res)=>{
-// res.sendFile(path.join(__dirname, '..','build','index.html'));
-// })
+const path = require('path')
+app.get('*', (req, res)=>{
+res.sendFile(path.join(__dirname, '..','build','index.html'));
+})
