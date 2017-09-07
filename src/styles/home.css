@@ -11,10 +11,16 @@
 }
 
 .quoteContainer {
+  box-sizing: border-box;
   position: absolute;
   height: 100%;
   width: 47.5%;
+  padding-top: 5px;
   background-color: rgba(74,95,107,0.85);
+}
+
+.homeSocial {
+  font-size: .75em;
 }
 
 .socialIconsQuote {
@@ -35,8 +41,7 @@
   width: 24px;
   border-radius: 50%;
   background-color: #ECC749;
-  margin-right: 1em;
-  margin-top: .5em;
+  margin: .25em .5em 0 .5em;
 }
 
 .blockquote {
@@ -130,8 +135,8 @@
 }
 
 .eventImg {
-  width: 35vh;
-  height: 35vh;
+  width: 30vh;
+  height: 30vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -364,13 +369,18 @@
   }
 
   .blockquote {
-    width: 78%;
+    width: 90%;
     padding-top: 1.5em;
   }
 
   .quote {
     font-size: 1em;
-    margin-bottom: 1em;
+    /*margin-bottom: 1em;*/
+    margin-top: 3em;
+  }
+
+  .homeSocial {
+    font-size: 1em;
   }
 
   .author {
@@ -543,6 +553,7 @@
   }
 
   .socialIconsQuote {
+    box-sizing: border-box;
     position: absolute;
     display: flex;
     align-items: center;
@@ -551,9 +562,13 @@
   }
 
   .socialCircleQuote {
-    min-height: 48px;
-    min-width: 48px;
-    margin-top: 0;
+    height: 54px;
+    width: 54px;
+    margin: 0 .75em 0 .75em;
+  }
+
+  .homeSocial {
+    font-size: 1.35em;
   }
 
   .blockquote {
@@ -565,6 +580,7 @@
 
   .quote {
     font-size: x-large;
+    margin-top: 0;
   }
 
   .author {

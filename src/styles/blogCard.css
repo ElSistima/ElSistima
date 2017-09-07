@@ -167,7 +167,7 @@
 
 }
 
-@media(min-width: 1250px) {
+@media(min-width: 1450px) {
   .blogCardWrapper {
     height: 300px;
   }
@@ -207,8 +207,8 @@
   }
 }
 
-@media(min-width: 1400px){
 
+@media(min-width: 1600px){
 
   .tabletSubtitle {
     display: none;

@@ -13,10 +13,7 @@ var stripe = require('stripe')('sk_test_LkNfgMLBoBD50f69BBQYPnni')
 var app = module.exports = express();
 var port = 8080;
 
-const path = require('path')
-app.get('*', (req, res)=>{
-  res.sendFile(path.join(__dirname, '..','build','index.html'));
-})
+
 
 app.use(cors());
 app.use( express.static( `${__dirname}/../build` ) );
@@ -88,7 +85,7 @@ passport.deserializeUser(function(user, done) {
 app.get('/auth', passport.authenticate('auth0'));
 
 app.get('/auth/callback',
-  passport.authenticate('auth0', {successRedirect: 'http://localhost:3000/admin'}), function(req, res) {
+  passport.authenticate('auth0', {successRedirect: process.env.LOGIN_SUCCESS_REDIRECT1}), function(req, res) {
     res.status(200).send(req.user);
 })
 
@@ -259,3 +256,8 @@ console.log(req.body.token.token.id, 'this is the token id')
 // app.get('*', (req, res)=>{
 // res.sendFile(path.join(__dirname, '..','build','index.html'));
 // })
+
+const path = require('path')
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '..','build','index.html'));
+})

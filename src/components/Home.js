@@ -17,15 +17,15 @@ render(){
         <div className="quoteContainer">
           <div className="socialIconsQuote">
             <a href="https://www.facebook.com/ElSistemaPittsburgh/" target="_blank">
-              <div className="socialCircleQuote"><i className="fa fa-facebook fa-fw" aria-hidden="true"></i></div>
+              <div className="socialCircleQuote"><i className="fa fa-facebook homeSocial" aria-hidden="true"></i></div>
             </a>
 
             <a href="https://twitter.com/elsistema" target="blank">
-              <div className="socialCircleQuote"><i className="fa fa-twitter fa-fw" aria-hidden="true"></i></div>
+              <div className="socialCircleQuote"><i className="fa fa-twitter homeSocial" aria-hidden="true"></i></div>
             </a>
 
             <a href="https://www.linkedin.com/company/3276954/" target="_blank">
-              <div className="socialCircleQuote"><i className="fa fa-linkedin fa-fw" aria-hidden="true"></i></div>
+              <div className="socialCircleQuote"><i className="fa fa-linkedin homeSocial" aria-hidden="true"></i></div>
             </a>
           </div>
 

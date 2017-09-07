@@ -20,10 +20,11 @@ class AdminHome extends Component{
 
   render(){
 
-      const fullPageStyle = { width: "100%" }
+      const fullPageStyle = { width: "100vw", margin: "0 auto" }
+      const dropDownStyle = {width: "calc(100vw - 17%)", margin: " 0 auto"}
 
     return(
-      <main className="Ad_homeMain" style={ this.props.dropdownDisplayed ? null : fullPageStyle}>
+      <main className="Ad_homeMain" style={ this.props.dropdownDisplayed ? dropDownStyle : fullPageStyle}>
         <AdminHome_RCC />
         <AdminHome_SOAT />
         <Admin_Calender />

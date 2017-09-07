@@ -2,7 +2,7 @@
   position: sticky;
   box-sizing: border-box;
   width: 14%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #EDEDED;
   color: #7b7b7c;
   float: left;
@@ -59,7 +59,7 @@
 
 @media(min-width: 1000px) {
   .Ad_sidebarMain {
-    width: 22%;
+    width: 17%;
     background-color: #EDEDED;
     height: 110vh;
   }
