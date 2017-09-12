@@ -7,6 +7,13 @@ export default class AdminSideBar extends Component{
   render(){
     return(
       <main className="Ad_sidebarMain">
+      <Link to="/admin">
+        <div className="sideNav">
+          <i className="sidefa fa fa-home" aria-hidden="true"></i>
+          <div>Admin Home</div>
+        </div>
+      </Link>
+
         <Link to="/admin/volunteer">
           <div className="sideNav">
             <i className="sidefa fa fa-user-circle" aria-hidden="true"></i>

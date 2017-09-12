@@ -1,0 +1,173 @@
+.adminWrapperMediaNew {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 2vh;
+}
+
+.adminContentContainerMediaNew{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.addNewMediaNew {
+  width: 100%;
+  min-height: 50vh;
+  background-color: white;
+  margin: 2vh auto 2vh;
+}
+
+.adminPageTitleMediaNew{
+  min-height: 5vh;
+  text-align: left;
+  font-size: x-large;
+}
+
+.titleMediaNew, .contentMediaNew {
+  font-size: small;
+}
+
+.topInputMediaNew, .midInputMediaNew {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 8vh;
+  margin-bottom: 4vh;
+}
+
+.topInputMediaNew input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  outline: none;
+  width: 45%;
+  min-height: 8vh;
+}
+
+.mediaSelectContainer {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  width: 45%;
+  min-height: 8vh;
+}
+
+.mediaTypeSelect {
+  font-size: small;
+}
+
+.midInputMediaNew input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid darkgray;
+  outline: none;
+  width: 100%;
+  min-height: 8vh;
+}
+
+.bottomInputMediaNew {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mediaDropzone {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.saveCancelBtnContainerMediaNew {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.updateBtnMediaNewDesktop, .cancelBtnMediaNewDesktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 4vh;
+  margin-top: 1.25vh;
+  box-shadow: 0 8px 6px -6px rgba(194,192,194,1);
+  font-size: small;
+  color: white;
+  background-color: #4e8aa8;
+  border-radius: 5px;
+}
+
+.cancelBtnMediaNewDesktop {
+  background-color: #ECECEC;
+  color: #b4b4b4;
+}
+
+@media(min-width: 700px){
+
+  .adminWrapperMediaNew {
+    padding-top: 3vh;
+  }
+
+  .adminContentContainerMediaNew{
+    width: 70%;
+  }
+
+  .addNewMediaNew {
+    width: 100%;
+  }
+
+  .adminPageTitleMediaNew {
+    font-size: xx-large;
+  }
+
+  .titleMediaNew, .contentMediaNew, .mediaTypeSelect {
+    font-size: x-large;
+  }
+
+  .mediaDropzone {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .saveCancelBtnContainerMediaNew {
+    width: 70%;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+  }
+
+  .updateBtnMediaNewDesktop, .cancelBtnMediaNewDesktop {
+    width: 150px;
+    height: 40px;
+    margin: 15px 3.5% 0 3.5%;
+    font-size: large;
+  }
+}
+
+@media(min-width: 1000px) {
+
+  .adminWrapperMediaNew {
+    padding-top: 5vh;
+  }
+
+  .adminContentContainerMediaNew{
+    width: 90%;
+    min-height: 50vh;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .addNewMediaNew {
+    width: 60%;
+  }
+
+  .saveCancelBtnContainerMediaNew {
+    width: 35%;
+  }
+
+}

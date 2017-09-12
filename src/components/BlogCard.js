@@ -19,7 +19,7 @@ export default class BlogCard extends Component{
 
   render(){
 
-    let imgStyle = {backgroundImage: `url("${this.props.card.blog_image}")`, backgroundSize: "cover", backgroundPosition: "center"}
+    let imgStyle = {backgroundImage: `url("${this.props.card.blog_image}")`, backgroundSize: "cover", backgroundPosition: "center 20%"}
 
     let subtitleLimit = this.state.subtitleSubstr > 15 ? `${String(this.state.subtitle).substring(0, 14)}...` : this.props.card.blog_subtitle
 
@@ -35,7 +35,7 @@ export default class BlogCard extends Component{
           <section className="blogCardBottom">
             <div className="blogCardTitleDate">
               <p className="blogCardTitle">{this.props.card.post_title}<span className="cardTitlePipe">|</span></p>
-              <p className="blogCardDate">{this.props.card.date_month} {this.props.card.date_day}, {this.props.card.date_year}</p>
+              <p className="blogCardDate">{this.props.card.date_month + " "} {this.props.card.date_day}, {this.props.card.date_year}</p>
               <p className="blogCardSubtitle">
               <span className="smartphoneSubtitle">{this.props.card.blog_subtitle}</span>
               <span className="tabletSubtitle">{subtitleLimit}</span>

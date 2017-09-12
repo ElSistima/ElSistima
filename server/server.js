@@ -172,6 +172,7 @@ app.get('/api/admin', (req, res) => {
 app.get('/api/blogs', userController.getBlogPosts)
 app.get('/api/events', userController.getEvents)
 app.get('/api/media', userController.getMedia)
+app.get('/api/media/:id', userController.getMediaById)
 app.get('/api/users', userController.getUsers)
 app.get('/api/volunteers', userController.getVolunteers)
 app.get('/api/quote', userController.getQuote)
@@ -189,6 +190,7 @@ app.post('/api/quote', userController.postQuote)
 app.post('/api/post', userController.postNewPost)
 //AWS
 app.post('/api/getSignedURL', awsController.getSignedURL)
+app.post('/api/media', userController.postMedia)
 
 //===============PUT REQUESTS===================
 app.put('/api/events/:eventid', userController.putEvent)
@@ -197,6 +199,7 @@ app.put('/api/volunteers/:volunteerid', userController.putVolunteer)
 app.put('/api/users/:userid', userController.putUserAdmin)
 // app.put('/api/users/profilePic/:userid')
 app.put('/api/posts/:postid', userController.putPost)
+app.put('/api/media/:mediaid', userController.putMedia)
 
 //===============DELETE REQUESTS===================
 app.delete('/api/posts/:postid', userController.deletePost)
