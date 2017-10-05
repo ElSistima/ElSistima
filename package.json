@@ -34,15 +34,15 @@
     "twitter-node-client": "0.0.6"
   },
   "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test --env=jsdom",
-  "eject": "react-scripts eject",
-  "now-start": "node server/server.js",
-  "deploy": "now --public --dotenv=.env.prod -d"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "now-start": "node server/server.js",
+    "deploy": "now --public --dotenv=.env.prod -d"
   },
-  "now":{
-  "alias":"huy-elsistema"
+  "now": {
+    "alias": "huy-elsistema"
   },
   "proxy": "http://localhost:8080"
 }
